@@ -1086,6 +1086,24 @@
         "runtime": {
           "bin/placeholder/BusinessObjects.dll": {}
         }
+      },
+      "DataAccessObjects/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "BusinessObjects": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.15",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.15",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.15",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.15"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessObjects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessObjects.dll": {}
+        }
       }
     }
   },
@@ -2928,12 +2946,18 @@
       "type": "project",
       "path": "../BusinessObjects/BusinessObjects.csproj",
       "msbuildProject": "../BusinessObjects/BusinessObjects.csproj"
+    },
+    "DataAccessObjects/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessObjects/DataAccessObjects.csproj",
+      "msbuildProject": "../DataAccessObjects/DataAccessObjects.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "AutoMapper >= 13.0.1",
       "BusinessObjects >= 1.0.0",
+      "DataAccessObjects >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.15",
       "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.15",
@@ -2977,6 +3001,9 @@
           "projectReferences": {
             "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj": {
               "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj"
+            },
+            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj": {
+              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj"
             }
           }
         }

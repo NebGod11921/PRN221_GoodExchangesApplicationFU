@@ -11,11 +11,11 @@ namespace DataAccessObjects
 {
     public static class DependencyInjections
     {
-        public static IServiceCollection AddInfrastructuresServices(this IServiceCollection services, string databaseConnection)
+        public static IServiceCollection AddInfrastructuresServices(this IServiceCollection services, string DatabaseConnection)
         {
             services.AddDbContext<AppDbContext>(opts =>
             {
-                opts.UseSqlServer(databaseConnection);
+                opts.UseSqlServer(DatabaseConnection);
                 opts.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
             });

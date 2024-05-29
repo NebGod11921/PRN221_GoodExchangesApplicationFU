@@ -1,5 +1,17 @@
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.deps.json
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.runtimeconfig.json
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.pdb
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\bin\Debug\net7.0\BusinessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\bin\Debug\net7.0\BusinessObjects.pdb
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.AssemblyReference.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfoInputs.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfo.cs
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.CoreCompileInputs.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.CopyComplete
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\refint\DataAccessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.pdb
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.genruntimeconfig.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\ref\DataAccessObjects.dll
