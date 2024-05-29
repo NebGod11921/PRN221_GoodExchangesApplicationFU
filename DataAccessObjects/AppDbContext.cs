@@ -26,7 +26,7 @@ namespace DataAccessObjects
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<TransactionType> TransactionTypes { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<UserProduct> UserProducts { get; set; }]
+        public DbSet<UserProduct> UserProducts { get; set; }
         public DbSet<TransactionProduct> TransactionProducts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1086,6 +1086,27 @@
         "runtime": {
           "bin/placeholder/BusinessObjects.dll": {}
         }
+      },
+      "MyRazorPage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "BusinessObjects": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.15",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.15",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.15",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.15"
+        },
+        "compile": {
+          "bin/placeholder/MyRazorPage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyRazorPage.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2928,6 +2949,11 @@
       "type": "project",
       "path": "../BusinessObjects/BusinessObjects.csproj",
       "msbuildProject": "../BusinessObjects/BusinessObjects.csproj"
+    },
+    "MyRazorPage/1.0.0": {
+      "type": "project",
+      "path": "../MyRazorPage/MyRazorPage.csproj",
+      "msbuildProject": "../MyRazorPage/MyRazorPage.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2939,7 +2965,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.15",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.15",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.15"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.15",
+      "MyRazorPage >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2977,6 +3004,9 @@
           "projectReferences": {
             "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj": {
               "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj"
+            },
+            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj": {
+              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj"
             }
           }
         }
@@ -3040,7 +3070,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   }

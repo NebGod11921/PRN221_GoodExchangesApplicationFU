@@ -1,0 +1,5 @@
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.AssemblyReference.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfoInputs.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfo.cs
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.CoreCompileInputs.cache

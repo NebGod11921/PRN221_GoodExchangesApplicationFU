@@ -1,0 +1,8 @@
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.csproj.AssemblyReference.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.AssemblyInfoInputs.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.AssemblyInfo.cs
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.csproj.CoreCompileInputs.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.MvcApplicationPartsAssemblyInfo.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.RazorAssemblyInfo.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\MyRazorPage\obj\Debug\net7.0\MyRazorPage.RazorAssemblyInfo.cs
