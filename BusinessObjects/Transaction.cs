@@ -18,5 +18,6 @@ namespace BusinessObjects
         public virtual TransactionType? TransactionType { get; set; }
         public int? PaymentId { get; set; }
         public virtual Payment? Payment { get; set; }
+        public virtual IEnumerable<TransactionProduct>? TransactionProducts { get; set; }
     }
 }

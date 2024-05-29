@@ -13,6 +13,6 @@ namespace BusinessObjects
         public string? PaymentMethod {  get; set; }
 
         //Relationship
-        public virtual IEnumerable<Payment>? Payments { get; set; }
+        public virtual IEnumerable<Transaction>? Transactions { get; set; }
     }
 }

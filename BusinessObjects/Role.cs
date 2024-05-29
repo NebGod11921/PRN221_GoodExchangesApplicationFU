@@ -9,6 +9,6 @@ namespace BusinessObjects
     public class Role : BaseEntity
     {
         public string? RoleName { get; set; }
-        public virtual IEnumerable<Role>? Roles { get; set;}
+        public virtual IEnumerable<User>? Users { get; set;}
     }
 }
