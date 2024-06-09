@@ -12,7 +12,7 @@ namespace BusinessObjects
         public string? Password { get; set; }
         public string? Email { get; set; }
         public byte[]? ProfilePicture { get; set; }
-        public int? TelephoneNumber { get; set; }
+        public string? TelephoneNumber { get; set; }
         public string? Address { get; set; }
         
         //Relationships
