@@ -41,3 +41,5 @@ MyRazorPage/.vs/MyRazorPage/FileContentIndex/4cacf744-3806-41fd-9c83-d7bef5529e0
 MyRazorPage/.vs/MyRazorPage/FileContentIndex/581ffed7-8ce0-4204-aa93-01871669f9d3.vsidx
 MyRazorPage/.vs/MyRazorPage/FileContentIndex/7dc0c9f3-e413-4108-8c4b-f615a950252d.vsidx
 MyRazorPage/.vs/MyRazorPage/v17/.suo
+*.BuildWithSkipAnalyzers
+*.vsidx
