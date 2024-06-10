@@ -62,6 +62,25 @@ namespace DataAccessObjects.Repositories
             }
         }
 
+        public async Task<IEnumerable<User>> GetUserInformationIncludeRoleName()
+        {
+            try
+            {
+                var result = await _appDbContext.Users.Include(x => x.Role).ToListAsync();
+                if (result.Count > 0)
+                {
+                    return result;
+                } else
+                {
+                    return null;
+                }
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<User> LoginByEmailAndPassword(string email, string password)
         {
             try
@@ -87,6 +106,21 @@ namespace DataAccessObjects.Repositories
         {
             await _appDbContext.Users.AddAsync(user);
             return user;
+        }
+
+        public async Task<IEnumerable<User>> SearchUserByNames(string name)
+        {
+            try
+            {
+                var result = await _appDbContext.Users.Where(x => x.UserName.Contains(name)).ToListAsync();
+                return result;
+
+
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

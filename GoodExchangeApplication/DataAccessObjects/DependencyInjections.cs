@@ -1,4 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DataAccessObjects.IRepositories;
+using DataAccessObjects.IServices;
+using DataAccessObjects.Repositories;
+using DataAccessObjects.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System;
@@ -13,6 +17,9 @@ namespace DataAccessObjects
     {
         public static IServiceCollection AddInfrastructuresServices(this IServiceCollection services, string DatabaseConnection)
         {
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IAccountService, AccountService>();
             services.AddDbContext<AppDbContext>(opts =>
             {
                 opts.UseSqlServer(DatabaseConnection);
