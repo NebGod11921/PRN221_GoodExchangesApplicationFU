@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj": {}
+    "E:\\pr_n\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj": {}
   },
   "projects": {
-    "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj": {
+    "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\obj\\",
+        "projectPath": "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\legion\\.nuget\\packages\\",
+        "outputPath": "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -94,25 +89,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj": {
+    "E:\\pr_n\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj",
+        "projectUniqueName": "E:\\pr_n\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
         "projectName": "DataAccessObjects",
-        "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\obj\\",
+        "projectPath": "E:\\pr_n\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
+        "packagesPath": "C:\\Users\\legion\\.nuget\\packages\\",
+        "outputPath": "E:\\pr_n\\GoodExchangeApplication\\DataAccessObjects\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,15 +111,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj"
+              "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
               }
             }
           }
@@ -192,25 +182,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj": {
+    "E:\\pr_n\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj",
+        "projectUniqueName": "E:\\pr_n\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
         "projectName": "MyRazorPage",
-        "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\obj\\",
+        "projectPath": "E:\\pr_n\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
+        "packagesPath": "C:\\Users\\legion\\.nuget\\packages\\",
+        "outputPath": "E:\\pr_n\\GoodExchangeApplication\\MyRazorPage\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -218,18 +204,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj"
+              "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "E:\\pr_n\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
               },
-              "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj": {
-                "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj"
+              "E:\\pr_n\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj": {
+                "projectPath": "E:\\pr_n\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj"
               }
             }
           }
@@ -296,7 +282,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
