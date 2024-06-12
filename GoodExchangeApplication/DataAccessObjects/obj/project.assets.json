@@ -2949,11 +2949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj",
+      "projectUniqueName": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
       "projectName": "DataAccessObjects",
-      "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj",
+      "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\obj\\",
+      "outputPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2975,8 +2975,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj"
+            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
             }
           }
         }

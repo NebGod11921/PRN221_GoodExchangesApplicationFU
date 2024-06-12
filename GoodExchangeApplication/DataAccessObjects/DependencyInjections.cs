@@ -1,5 +1,6 @@
 ﻿using DataAccessObjects.IRepositories;
 using DataAccessObjects.IServices;
+using DataAccessObjects.Mappers;
 using DataAccessObjects.Repositories;
 using DataAccessObjects.Services;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,7 @@ namespace DataAccessObjects
                 opts.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
             });
+            services.AddAutoMapper(typeof(MapperConfigurationProfile).Assembly);
             return services;
         }
     }

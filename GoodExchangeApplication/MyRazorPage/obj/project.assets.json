@@ -2973,11 +2973,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj",
+      "projectUniqueName": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
       "projectName": "MyRazorPage",
-      "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj",
+      "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\obj\\",
+      "outputPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2999,11 +2999,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj"
+            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
             },
-            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj": {
-              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj"
+            "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj": {
+              "projectPath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj"
             }
           }
         }

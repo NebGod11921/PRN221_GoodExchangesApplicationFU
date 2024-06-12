@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c1FpABrsyTDcN34RYTUJtGwUUQgTMhDhbzRjUOmfqrcyGuznR9tAnbiBlRjAu+n0yYV2FcGxu9dvgwKvGyb2Aw==",
+  "dgSpecHash": "fOGzwPhwbQB0/lGvQsB6D2aZkbttTSd+ZC+ldHQKAJnJc7ye0saFEFBK09colIIc8dA1z4GfhbNh1/UXJuq40A==",
   "success": true,
-  "projectFilePath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\DataAccessObjects\\DataAccessObjects.csproj",
+  "projectFilePath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",

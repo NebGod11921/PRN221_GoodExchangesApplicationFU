@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wmPFOSxX9WjoMr82Xsa3HrvVUJH5LYcS1f6JPC/WqNaiq+wU16QJRkLTqYMaC4EbLAiPxNu7G1Ysm2vq4UF5fg==",
+  "dgSpecHash": "yGygoXLAydO1/AnJp/+plg8R1WVI7tJU7uUM6XOui7HYUnGOFp99+fDioZj074/MuiuROH29a1AaGNhz4I9LEA==",
   "success": true,
-  "projectFilePath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\MyRazorPage\\MyRazorPage.csproj",
+  "projectFilePath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",

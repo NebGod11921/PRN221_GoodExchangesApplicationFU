@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SDL7G64XlsPiyL0TfJSI1Cz2oBu5+opT+PEaOFlDLaeEZcteXFcSmsVXdwjfMpnWOFTJp/U7JpRd+KNKsKHeIA==",
+  "dgSpecHash": "sNNv6hwzdz0KzqwNd3Jp/E3jI71Ag4/a1LxWJgN6/tmE01eFCrwFs+rHeakydxLNg2Gpk4LTbJ5eSXc7+tLOjg==",
   "success": true,
-  "projectFilePath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\BusinessObjects\\BusinessObjects.csproj",
+  "projectFilePath": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
