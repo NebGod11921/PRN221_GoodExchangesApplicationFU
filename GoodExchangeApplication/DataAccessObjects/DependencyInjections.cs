@@ -1,5 +1,6 @@
 ﻿using DataAccessObjects.IRepositories;
 using DataAccessObjects.IServices;
+using DataAccessObjects.Mappers;
 using DataAccessObjects.Repositories;
 using DataAccessObjects.Services;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace DataAccessObjects
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IAccountService, AccountService>();
+            services.AddAutoMapper(typeof(MapperConfigurationProfile).Assembly);
             services.AddDbContext<AppDbContext>(opts =>
             {
                 opts.UseSqlServer(DatabaseConnection);

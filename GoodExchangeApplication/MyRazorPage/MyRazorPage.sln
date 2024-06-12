@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRazorPage", "MyRazorPage.csproj", "{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRazorPage", "MyRazorPage.csproj", "{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "..\BusinessObjects\BusinessObjects.csproj", "{C0323B13-8188-4336-B21B-BA4F1991CE0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "..\BusinessObjects\BusinessObjects.csproj", "{C0323B13-8188-4336-B21B-BA4F1991CE0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObjects", "..\DataAccessObjects\DataAccessObjects.csproj", "{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessObjects", "..\DataAccessObjects\DataAccessObjects.csproj", "{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
