@@ -28,6 +28,7 @@ namespace DataAccessObjects
                 opts.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
             });
+            services.AddAutoMapper(typeof(MapperConfigurationProfile).Assembly);
             return services;
         }
     }
