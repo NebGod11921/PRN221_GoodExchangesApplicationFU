@@ -141,5 +141,36 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<User> UpdateUserStatusByName(string userName)
+        {
+            User user = await _unitOfWork.AccountRepository.SearchUserByNames(userName) as User;
+            if (user == null)
+            {
+                throw new Exception("User not found");
+            }
+
+            try
+            {
+                if (user.Status.Equals(1))
+                {
+                    user.Status = 0;
+                    _unitOfWork.AccountRepository.Update(user);
+                    await _unitOfWork.SaveChangeAsync();
+                }
+                if (user.Status.Equals(0))
+                {
+                    user.Status = 1;
+                    _unitOfWork.AccountRepository.Update(user);
+                    await _unitOfWork.SaveChangeAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while updating the user status", ex);
+            }
+            return user;
+        }
+
     }
 }
