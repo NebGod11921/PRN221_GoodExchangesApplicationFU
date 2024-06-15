@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\su2024\\prn221\\example\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\su2024\\prn221\\example\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\su2024\\prn221\\example\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\su2024\\prn221\\example\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\irepositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\IUnitOfWork.cs",
+              "ToolTip": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T07:54:30.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IRepositories\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\IRepositories\\IAccountRepository.cs",
+              "ToolTip": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IRepositories\\IAccountRepository.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\IRepositories\\IAccountRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAywBAAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T07:50:29.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\Repositories\\AccountRepository.cs",
+              "ToolTip": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\Repositories\\AccountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T07:50:26.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\Services\\AccountService.cs",
+              "ToolTip": "E:\\SU2024\\PRN221\\Example\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\AccountService.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\Services\\AccountService.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAAIgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T07:50:20.096Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
