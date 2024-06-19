@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\MyRazorPage.bundle.scp.css"
     },
     {
+      "Id": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\auth\\login.css",
+      "PackagePath": "staticwebassets\\css\\auth\\login.css"
+    },
+    {
       "Id": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\side_image.jpg",
+      "PackagePath": "staticwebassets\\images\\side_image.jpg"
     },
     {
       "Id": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\site.js",

@@ -26,23 +26,23 @@
                 <div class="col-md-6 right">
                     <div class="input-box">
                         <h1 class="text-center">Login</h1>
-                        <form method="post" class="my-4">
+                        <form asp-page-handler="Login" method="post" class="my-4">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="input-field">
                                 <label class="control-label">Email</label>
-                                <input class="input" />
+                                <input class="input" name="Email" />
                                 <span class="text-danger"></span>
                             </div>
                             <div class="input-field">
                                 <label class="control-label">Password</label>
-                                <input class="input" type="password" />
+                                <input class="input" name="Password" type="password" />
                                 <span class="text-danger"></span>
                             </div>
                             <div class="form-group text-danger">
                                 @ViewData["notification"]
                             </div>
                             <div class="input-field">
-                                <button method="post" asp-page-handler="login" type="submit" class="btn btn-primary submit" value="Sign Up">Register</button>
+                                <button method="post" asp-page-handler="login" type="submit" class="btn btn-primary submit" value="Sign In">Login</button>
                             </div>
                         </form>
                         <div class="signin">

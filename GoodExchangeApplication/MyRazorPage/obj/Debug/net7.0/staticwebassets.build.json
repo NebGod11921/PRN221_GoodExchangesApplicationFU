@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BlThVFo1rISXsugX2p57YwNyT7iEbH10mFUKlqCT/ng=",
+  "Hash": "1CoiRG0lZn94qo7UkB3ZIKCD6dy3a2hn4r+6c1HqK4Q=",
   "Source": "MyRazorPage",
   "BasePath": "_content/MyRazorPage",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MyRazorPage.bundle.scp.css"
     },
     {
+      "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\auth\\login.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+      "BasePath": "_content/MyRazorPage",
+      "RelativePath": "css/auth/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\auth\\login.css"
+    },
+    {
       "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\site.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
@@ -83,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\logo.svg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+      "BasePath": "_content/MyRazorPage",
+      "RelativePath": "images/logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.svg"
+    },
+    {
+      "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\side_image.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+      "BasePath": "_content/MyRazorPage",
+      "RelativePath": "images/side_image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\side_image.jpg"
     },
     {
       "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\site.js",

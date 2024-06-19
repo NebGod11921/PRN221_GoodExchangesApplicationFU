@@ -27,4 +27,8 @@
     <ProjectReference Include="..\DataAccessObjects\DataAccessObjects.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Test\" />
+  </ItemGroup>
+
 </Project>

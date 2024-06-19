@@ -158,3 +158,4 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazo
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.pdb
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\scopedcss\Pages\Shared\_UserLayout.cshtml.rz.scp.css
