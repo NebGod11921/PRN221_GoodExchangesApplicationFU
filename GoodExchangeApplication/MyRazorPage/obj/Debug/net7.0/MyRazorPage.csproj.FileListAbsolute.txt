@@ -158,3 +158,4 @@ D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExch
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.pdb
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\scopedcss\Pages\Shared\_UserLayout.cshtml.rz.scp.css
