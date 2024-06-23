@@ -15,5 +15,7 @@ namespace DataAccessObjects.IRepositories
         public Task<bool> CheckTelephoneNumberExists(string phoneNumber);
         public Task<IEnumerable<User>> GetUserInformationIncludeRoleName();
         public Task<IEnumerable<User>> SearchUserByNames(string name);
+        public Task<User> UpdateUser(User user, int userId);
+       /* public Task<bool> RemoveUser(int userId);*/
     }
 }
