@@ -1,48 +1,269 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-h585kgjiel] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
 a[b-h585kgjiel] {
-  color: #0077cc;
+	text-decoration: none;
 }
 
-.btn-primary[b-h585kgjiel] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+ul[b-h585kgjiel] {
+	list-style-type: none;
 }
 
-.nav-pills .nav-link.active[b-h585kgjiel], .nav-pills .show > .nav-link[b-h585kgjiel] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+body[b-h585kgjiel] {
+	position: relative;
 }
 
-.border-top[b-h585kgjiel] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-h585kgjiel] {
-  border-bottom: 1px solid #e5e5e5;
-}
+	body *[b-h585kgjiel] {
+		font-family: "Inter", sans-serif;
+	}
 
-.box-shadow[b-h585kgjiel] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
+	body #x[b-h585kgjiel] {
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		color: white;
+		position: absolute;
+		top: 0;
+		z-index: 101;
+		font-size: 25px;
+		display: none;
+		cursor: pointer;
+	}
 
-button.accept-policy[b-h585kgjiel] {
-  font-size: 1rem;
-  line-height: inherit;
-}
+	body #lmenu[b-h585kgjiel] {
+		transition: 0.5s;
+		height: 100%;
+		background-color: #FFFFFF;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
 
-.footer[b-h585kgjiel] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
-}
+	body main[b-h585kgjiel] {
+		background-color: #E3E6E6;
+	}
+
+		body main section header #header1[b-h585kgjiel] {
+			background-color: black;
+		}
+
+			body main section header #header1 > ul[b-h585kgjiel] {
+				list-style-type: none;
+			}
+
+				body main section header #header1 > ul > li img[b-h585kgjiel] {
+					height: 65%;
+				}
+
+				body main section header #header1 > ul > li:nth-of-type(5) div:nth-of-type(2) i[b-h585kgjiel] {
+					font-size: 10px;
+					color: gray;
+				}
+
+				body main section header #header1 > ul > li:nth-of-type(7) > div > div:nth-of-type(1)[b-h585kgjiel] {
+					position: relative;
+				}
+
+					body main section header #header1 > ul > li:nth-of-type(7) > div > div:nth-of-type(1) span[b-h585kgjiel] {
+						position: absolute;
+						left: 45%;
+						top: -20%;
+						display: flex;
+						font-size: 18px;
+					}
+
+				body main section header #header1 > ul > li:nth-of-type(7) > div > div:nth-of-type(2)[b-h585kgjiel] {
+					font-size: 18px;
+				}
+
+		body main section header #head2[b-h585kgjiel] {
+			background-color: #232F3E;
+		}
+
+			body main section header #head2 div ul[b-h585kgjiel] {
+				list-style: none;
+			}
+
+				body main section header #head2 div ul li[b-h585kgjiel] {
+					color: white;
+				}
+
+					body main section header #head2 div ul li a[b-h585kgjiel] {
+						color: white;
+						text-decoration: none;
+					}
+
+					body main section header #head2 div ul li:hover[b-h585kgjiel] {
+						border: 1px solid white;
+						border-radius: 2px;
+						cursor: pointer;
+					}
+
+			body main section header #head2 div span a[b-h585kgjiel] {
+				color: white;
+				text-decoration: none;
+			}
+
+				body main section header #head2 div span a:hover[b-h585kgjiel] {
+					cursor: pointer;
+					border: 1px solid white;
+					border-radius: 2px;
+				}
+
+		body main #smain[b-h585kgjiel] {
+			position: relative;
+			z-index: 1;
+		}
+
+		body main .pic[b-h585kgjiel] {
+			background-color: white;
+		}
+
+			body main .pic > h5[b-h585kgjiel] {
+				height: 15%;
+				display: flex;
+				cursor: pointer;
+			}
+
+			body main .pic > div[b-h585kgjiel] {
+				height: 15%;
+			}
+
+				body main .pic > div:nth-of-type(1)[b-h585kgjiel] {
+					height: 70%;
+					cursor: pointer;
+				}
+
+					body main .pic > div:nth-of-type(1) > div[b-h585kgjiel] {
+						height: 50%;
+					}
+
+			body main .pic span:nth-of-type(1)[b-h585kgjiel] {
+				cursor: pointer;
+			}
+
+				body main .pic span:nth-of-type(1) button[b-h585kgjiel] {
+					height: 30%;
+				}
+
+	body #afterMain[b-h585kgjiel] {
+		background-color: white;
+		position: relative;
+		z-index: 2;
+	}
+
+		body #afterMain span:nth-of-type(2) a[b-h585kgjiel] {
+			color: rgb(42, 184, 194);
+		}
+
+		body #afterMain button[b-h585kgjiel] {
+			background-color: #FFC635;
+		}
+
+	body #btop[b-h585kgjiel] {
+		color: white;
+		background-color: #37475A;
+		cursor: pointer;
+	}
+
+		body #btop:hover[b-h585kgjiel] {
+			background-color: #404f61;
+		}
+
+		body #btop a[b-h585kgjiel] {
+			color: rgb(224, 224, 224);
+		}
+
+	body #foot[b-h585kgjiel] {
+		position: relative;
+		z-index: 5;
+	}
+
+		body #foot footer > div:nth-of-type(1)[b-h585kgjiel] {
+			background-color: #232F3E;
+			color: white;
+		}
+
+			body #foot footer > div:nth-of-type(1) div > ul > li a[b-h585kgjiel] {
+				color: rgb(224, 224, 224);
+			}
+
+		body #foot footer > div:nth-of-type(2)[b-h585kgjiel] {
+			background-color: #000000;
+			color: rgb(224, 224, 224);
+		}
+
+	body #topLmenu[b-h585kgjiel] {
+		background-color: #232F3E;
+		cursor: pointer;
+	}
+
+		body #topLmenu span[b-h585kgjiel] {
+			color: white;
+		}
+
+			body #topLmenu span i[b-h585kgjiel] {
+				color: white;
+			}
+
+	body .d1[b-h585kgjiel] {
+		border-bottom: 1px solid black;
+		transition: 0.5s;
+	}
+
+		body .d1 ul li[b-h585kgjiel] {
+			cursor: pointer;
+		}
+
+			body .d1 ul li:nth-of-type(1)[b-h585kgjiel] {
+				cursor: auto;
+			}
+
+				body .d1 ul li:nth-of-type(1):hover[b-h585kgjiel] {
+					background-color: white;
+				}
+
+			body .d1 ul li:hover[b-h585kgjiel] {
+				background-color: #EAEDED;
+			}
+
+	body .d2[b-h585kgjiel] {
+		min-height: 0 !important;
+		opacity: 0;
+		height: 0 !important;
+	}
+
+	body #dnMenu[b-h585kgjiel] {
+		transition: 0.5s;
+		overflow: hidden;
+	}
+
+	body #dnMenu2[b-h585kgjiel] {
+		transition: 0.5s;
+		min-height: 0 !important;
+		overflow: hidden;
+	}
+
+	body .lm[b-h585kgjiel] {
+		left: -500px !important;
+	}
+
+	body .btm1[b-h585kgjiel] {
+		display: flex;
+		align-items: end !important;
+		height: 50px;
+	}
+
+	body #fullsc[b-h585kgjiel] {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		background-color: rgba(0, 0, 0, 0.774);
+		display: none;
+		overflow: auto;
+	}
+/*# sourceMappingURL=global.css.map */
