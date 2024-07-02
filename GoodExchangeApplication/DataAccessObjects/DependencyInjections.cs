@@ -22,6 +22,9 @@ namespace DataAccessObjects
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IAccountService, AccountService>();
             services.AddAutoMapper(typeof(MapperConfigurationProfile).Assembly);
+
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepo, ProductRepo>();
             services.AddDbContext<AppDbContext>(opts =>
             {
                 opts.UseSqlServer(DatabaseConnection);
