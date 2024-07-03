@@ -24,7 +24,7 @@ namespace MyRazorPage.Pages.Account
                 if (string.IsNullOrEmpty(Password) && string.IsNullOrEmpty(Email))
                 {
                     return Page();
-                }
+                }   
                 else
                 {
                     var result = _accountService.LoginAccountAsync(Email, Password);

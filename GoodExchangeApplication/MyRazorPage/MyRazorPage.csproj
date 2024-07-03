@@ -27,4 +27,8 @@
     <ProjectReference Include="..\DataAccessObjects\DataAccessObjects.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\back\" />
+  </ItemGroup>
+
 </Project>
