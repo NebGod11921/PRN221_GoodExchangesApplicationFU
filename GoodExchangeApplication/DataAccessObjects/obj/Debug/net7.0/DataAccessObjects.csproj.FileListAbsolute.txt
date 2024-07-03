@@ -32,20 +32,21 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAc
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.pdb
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.genruntimeconfig.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\ref\DataAccessObjects.dll
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.deps.json
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.runtimeconfig.json
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.dll
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.pdb
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\BusinessObjects.dll
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\BusinessObjects.pdb
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.AssemblyReference.cache
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfoInputs.cache
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfo.cs
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.CoreCompileInputs.cache
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.CopyComplete
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.dll
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\refint\DataAccessObjects.dll
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.pdb
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.genruntimeconfig.cache
-D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\ref\DataAccessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.deps.json
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.runtimeconfig.json
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\DataAccessObjects.pdb
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\BusinessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\bin\Debug\net7.0\BusinessObjects.pdb
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.AssemblyReference.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfoInputs.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.AssemblyInfo.cs
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.csproj.CoreCompileInputs.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.sourcelink.json
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAcce.79975846.Up2Date
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\refint\DataAccessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.pdb
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\DataAccessObjects.genruntimeconfig.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\obj\Debug\net7.0\ref\DataAccessObjects.dll

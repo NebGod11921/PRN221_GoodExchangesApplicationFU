@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {}
+    "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {}
   },
   "projects": {
-    "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+    "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
-        "packagesPath": "C:\\Users\\khoad\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\obj\\",
+        "projectPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\duykh\\.nuget\\packages\\",
+        "outputPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Visual Community\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\khoad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\duykh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -94,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
