@@ -107,7 +107,7 @@ namespace DataAccessObjects.Services
                     updateProduct.Description = checkExist.Description;
                     updateProduct.Image = checkExist.Image;
                     updateProduct.Title = checkExist.Title;
-                    _unitOfWork.ProductRepository.Update(checkExist);
+                    _unitOfWork.ProductRepository.UpdateProduct(checkExist.Id);
                 }
 
                 return updateProduct;

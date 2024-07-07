@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\Transaction\" />
     <Folder Include="wwwroot\images\back\" />
   </ItemGroup>
 
