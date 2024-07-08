@@ -17,10 +17,10 @@ namespace MyRazorPage.Pages
         {
                 
         }
-        public IActionResult OnPostLogout()
+        public async Task<IActionResult> OnPostLogout()
         {
             HttpContext.Session.Clear();
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Account/Login");
         }
     }
 }

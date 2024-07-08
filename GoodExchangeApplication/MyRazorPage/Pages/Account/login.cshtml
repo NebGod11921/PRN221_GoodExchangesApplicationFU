@@ -1,8 +1,10 @@
 ﻿@page "/login"
 @model MyRazorPage.Pages.Account.loginModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "login";
-    
+    Layout = null;
+
 }
 
 <head>
@@ -20,7 +22,7 @@
                 <div class="col-md-6 side-image">
                     <img src="~/images/side_image.jpg" alt="" />
                     <div class="text">
-                        <p>Join the community of FU Students <i>- Gooodies</i></p>
+                        <p>Join the community of FU Students <i>- Goodies</i></p>
                     </div>
                 </div>
                 @*Login Form *@
@@ -31,11 +33,15 @@
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="input-field">
                                 <label class="control-label">Email</label>
+                                <br />
+                                <br />
                                 <input class="input" name="Email" />
                                 <span class="text-danger"></span>
                             </div>
                             <div class="input-field">
                                 <label class="control-label">Password</label>
+                                <br />
+                                <br />
                                 <input class="input" name="Password" type="password" />
                                 <span class="text-danger"></span>
                             </div>
@@ -47,11 +53,13 @@
                             </div>
                         </form>
                         <div class="signin">
-                            <p>Already have an account? <a asp-page="./login">Login here</a></p>
+                            <p>Not having an account</p>
+                            <a asp-page="/Account/register">Register here</a>
                         </div>
-                        <div class="signin">
+                       
+                        @* <div class="signin">
                             <p>Do you a admin? <a asp-page="./LoginAdmin">Login admin here</a></p>
-                        </div>
+                        </div> *@
                     </div>
 
                 </div>

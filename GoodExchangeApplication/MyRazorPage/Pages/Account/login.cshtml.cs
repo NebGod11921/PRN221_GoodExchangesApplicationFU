@@ -1,6 +1,8 @@
 using DataAccessObjects.IServices;
+using DataAccessObjects.ViewModels.AccountDTOS;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Text.Json;
 
 
 namespace MyRazorPage.Pages.Account
@@ -27,9 +29,11 @@ namespace MyRazorPage.Pages.Account
                 }   
                 else
                 {
-                    var result = _accountService.LoginAccountAsync(Email, Password);
+                    var result = await _accountService.LoginAccountAsync(Email, Password);
                     if (result != null)
                     {
+                        var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
+                        HttpContext.Session.SetString("GetUser", json);
                         return RedirectToPage("/Index");
                     } else
                     {
