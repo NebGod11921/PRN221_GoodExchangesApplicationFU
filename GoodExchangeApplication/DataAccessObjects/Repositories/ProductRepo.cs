@@ -23,7 +23,7 @@ namespace DataAccessObjects.Repositories
             return IdProduct;
         }
 
-        public async Task<List<Product>> GetProduct()
+        public async Task<IEnumerable<Product>> GetProduct()
         {
             return await _appDbContext.Products.ToListAsync();
         }

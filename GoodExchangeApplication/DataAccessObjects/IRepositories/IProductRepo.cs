@@ -10,7 +10,7 @@ namespace DataAccessObjects.IRepositories
     public interface IProductRepo
     {
         public Task<Product> GetByID(int id);
-        public Task<List<Product>> GetProduct();
+        public Task<IEnumerable<Product>> GetProduct();
         public Task<Product> CreateProduct(Product product);
         public Task<bool> UpdateProduct(int id);
         public Task<bool> DeleteProduct(int id);

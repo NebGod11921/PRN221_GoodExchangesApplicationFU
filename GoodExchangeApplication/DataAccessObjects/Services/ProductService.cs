@@ -20,18 +20,17 @@ namespace DataAccessObjects.Services
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<IEnumerable<ResponseProductDTO>> GetAllProducts(ResponseProductDTO productDTO)
+        public async Task<IEnumerable<ResponseProductDTO>> GetAllProducts()
         {
             try
             {
-                var result = await _unitOfWork.ProductRepository.GetProduct();
-                var map = _mapper.Map<IEnumerable<ResponseProductDTO>>(productDTO);
+                var result = (await _unitOfWork.ProductRepository.GetProduct()).Select(x=>_mapper.Map<ResponseProductDTO>(x));
                 if (result == null)
                 {
                     return null;
                 }
                 else
-                    return map;
+                    return result;
             }
             catch (Exception ex)
             {
