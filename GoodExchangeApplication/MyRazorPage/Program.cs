@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConfiguration();
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddInfrastructuresServices(configuration.DatabaseConnection);
 builder.Services.AddSession(opts =>
 {

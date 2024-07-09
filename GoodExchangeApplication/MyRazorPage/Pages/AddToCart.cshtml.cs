@@ -1,6 +1,8 @@
 
+using DataAccessObjects.ViewModels.CartDTOS;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Text.Json;
 
 namespace MyRazorPage.Pages.Transaction
 {
@@ -10,15 +12,22 @@ namespace MyRazorPage.Pages.Transaction
 
 
 
-        public IActionResult AddToCart(int Id, int Quantity = 1)
+        
+
+
+        public IEnumerable<CartDTOs> CartDTOs { get; set; }
+
+
+        public void OnGet()
         {
-            return  Page();
+            var getSession =  HttpContext.Session.GetString("MyCart");
+            if (getSession != null)
+            {
+                var json = JsonSerializer.Deserialize<IEnumerable<CartDTOs>>(getSession);
+                CartDTOs = json;
+            }
+
         }
-
-
-
-
-
 
 
 

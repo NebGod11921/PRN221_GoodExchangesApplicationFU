@@ -3,6 +3,7 @@ using DataAccessObjects.IServices;
 using DataAccessObjects.Mappers;
 using DataAccessObjects.Repositories;
 using DataAccessObjects.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -27,7 +28,7 @@ namespace DataAccessObjects
             services.AddScoped<ITransactionRepo, TransactionRepo>();
             services.AddScoped<IPaymentRepo, PaymentRepo>();
             services.AddScoped<ITransactionType, TransactionTypeRepo>();
-
+            services.AddScoped<IAddToCartService, CartService>();
 
             services.AddDbContext<AppDbContext>(opts =>
             {

@@ -279,7 +279,11 @@
                                     <span>@result.Price</span>
                                 </div>
                                 <div class="cart">
-                                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                                    <form asp-page-handler="TransferToProductDetail" method="post">
+                                        <input type="hidden" name="txtProductId" value="@result.Id"/>
+                                        <input type="submit" class="btn btn-primary" value="ViewDetail" />
+                                    </form>
+                                    
                                 </div>
                             </div>
                             <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>

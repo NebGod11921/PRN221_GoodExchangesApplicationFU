@@ -147,5 +147,28 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<ProductDTos> GetProductByIdSecondVers(int productId)
+        {
+            try
+            {
+                var result = await _unitOfWork.ProductRepository.GetByID(productId);
+                if (result != null)
+                {
+                    var mappedResult = _mapper.Map<ProductDTos>(result);
+                    return mappedResult;
+                }
+                else
+                {
+                    return null;
+                }
+
+
+
+            }catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
