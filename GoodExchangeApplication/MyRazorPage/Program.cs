@@ -6,7 +6,12 @@ var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConf
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddInfrastructuresServices(configuration.DatabaseConnection);
-builder.Services.AddSession();
+builder.Services.AddSession(opts =>
+{
+    opts.IdleTimeout = TimeSpan.FromSeconds(20);
+    opts.Cookie.HttpOnly = true;
+    opts.Cookie.IsEssential = true;
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

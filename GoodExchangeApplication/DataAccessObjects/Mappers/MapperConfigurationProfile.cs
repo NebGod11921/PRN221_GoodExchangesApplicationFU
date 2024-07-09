@@ -18,6 +18,10 @@ namespace DataAccessObjects.Mappers
             CreateMap<User, RegisterAccountDTOs>().ReverseMap();    
             CreateMap<User, AccountDTOs>().ReverseMap();
 
+            //
+            CreateMap<Product, ProductDTos>().ReverseMap();
+
+
             CreateMap<Product, RequestProductDTO>().ReverseMap();
             CreateMap<Product, ResponseProductDTO>().ReverseMap();
             CreateMap<ResponseProductDTO, RequestProductDTO>().ReverseMap();

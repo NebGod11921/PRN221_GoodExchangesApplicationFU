@@ -9,6 +9,21 @@ namespace MyRazorPage.Pages.Transaction
 
 
 
+
+        public IActionResult AddToCart(int Id, int Quantity = 1)
+        {
+            return  Page();
+        }
+
+
+
+
+
+
+
+
+
+
         public IActionResult CheckOut()
         {
             TempData["PaymentClientId"] = "";

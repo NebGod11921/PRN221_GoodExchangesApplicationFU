@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.IRepositories
 {
-    public interface IProductRepo
+    public interface IProductRepo : IGenericRepository<Product>
     {
         public Task<Product> GetByID(int id);
         public Task<List<Product>> GetProduct();

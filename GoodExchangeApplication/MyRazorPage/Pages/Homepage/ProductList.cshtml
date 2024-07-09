@@ -249,322 +249,46 @@
             <br>
             <div class="row">
                 <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Leather laptop bag navy</a>
+                @foreach(var result in Model.ProductDtos)
+                {
+                    <div class="product-list col-xs-12">
+                        <div class="product-item">
+                            <div class="item-overlay">
+                                <div class="clickable">
+                                    <a href="#">Leather laptop bag navy</a>
+                                </div>
                             </div>
+                            <div class="image">
+                                <a href="#"><img src="@result.Image" alt="Product 1"></a>
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">@result.Title</a>
+                                </div>
+                                <div class="description">
+                                    <p>@result.Description</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-stack"><i class="fa fa-star"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
+                                </div>
+                                <div class="price">
+                                    <span>@result.Price</span>
+                                </div>
+                                <div class="cart">
+                                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
+                            <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
                         </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="Product 1"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Leather laptop bag navy</a>
-                            </div>
-                            <div class="description">
-                                <p>Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel..</p>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                            </div>
-                            <div class="price">
-                                <span>$866.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
                     </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Waxed canvas laptop bag olive</a>
-                            </div>
-                        </div>
-                        <div class="sale-tag">
-                            <span>SALE</span>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Product 2"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Waxed canvas laptop bag olive</a>
-                            </div>
-                            <div class="description">
-                                <p>Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
-                            </div>
-                            <div class="price">
-                                <span class="price-new">$830.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Leather laptop bag orange</a>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Product 3"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Leather laptop bag orange</a>
-                            </div>
-                            <div class="description">
-                                <p>MacBook Air is ultrathin, ultraportsble, and ultra unlike anything else. But you don't lose inche..</p>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                            </div>
-                            <div class="price">
-                                <span>$866.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Waxed canvas laptop bag navy</a>
-                            </div>
-                        </div>
-                        <div class="sale-tag">
-                            <span>SALE</span>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="Product 4"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Waxed canvas laptop bag navy</a>
-                            </div>
-                            <div class="description">
-                                <p>Latest Intel mobile architecture Powered by the most advanced mobile processors..</p>
-                            </div>
-                            <div class="price">
-                                <span class="price-new">$1178.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Leather laptop bag navy</a>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Product 1"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Leather laptop bag navy</a>
-                            </div>
-                            <div class="description">
-                                <p>Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel..</p>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                            </div>
-                            <div class="price">
-                                <span>$866.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Waxed canvas laptop bag olive</a>
-                            </div>
-                        </div>
-                        <div class="sale-tag">
-                            <span>SALE</span>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Product 2"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Waxed canvas laptop bag olive</a>
-                            </div>
-                            <div class="description">
-                                <p>Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
-                            </div>
-                            <div class="price">
-                                <span class="price-new">$830.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Leather laptop bag orange</a>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Product 3"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Leather laptop bag orange</a>
-                            </div>
-                            <div class="description">
-                                <p>MacBook Air is ultrathin, ultraportsble, and ultra unlike anything else. But you don't lose inche..</p>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                            </div>
-                            <div class="price">
-                                <span>$866.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Waxed canvas laptop bag navy</a>
-                            </div>
-                        </div>
-                        <div class="sale-tag">
-                            <span>SALE</span>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Product 4"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Waxed canvas laptop bag navy</a>
-                            </div>
-                            <div class="description">
-                                <p>Latest Intel mobile architecture Powered by the most advanced mobile processors..</p>
-                            </div>
-                            <div class="price">
-                                <span class="price-new">$1178.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
-                <!-- Product Item -->
-                <div class="product-list col-xs-12">
-                    <div class="product-item">
-                        <div class="item-overlay">
-                            <div class="clickable">
-                                <a href="#">Leather laptop bag navy</a>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Product 1"></a>
-                        </div>
-                        <div class="caption">
-                            <div class="name">
-                                <a href="#">Leather laptop bag navy</a>
-                            </div>
-                            <div class="description">
-                                <p>Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel..</p>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star"></i></span>
-                                <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
-                            </div>
-                            <div class="price">
-                                <span>$866.00</span>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="btn btn-primary">Add to Cart</button>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
-                        <button type="button" class="btn btn-default compare" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fa fa-circle-o"></i></button>
-                    </div>
-                </div>
-                <!--/ Product Item -->
+                } 
+               
+               
 
             </div>
         </div>

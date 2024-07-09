@@ -20,6 +20,12 @@ namespace DataAccessObjects.Services
             _unitOfWork = unitOfWork;
         }
 
+        
+
+
+
+
+
         public async Task<IEnumerable<ResponseProductDTO>> GetAllProducts(ResponseProductDTO productDTO)
         {
             try
@@ -107,12 +113,36 @@ namespace DataAccessObjects.Services
                     updateProduct.Description = checkExist.Description;
                     updateProduct.Image = checkExist.Image;
                     updateProduct.Title = checkExist.Title;
-                    _unitOfWork.ProductRepository.UpdateProduct(checkExist.Id);
+                     await _unitOfWork.ProductRepository.UpdateProduct(checkExist.Id);
                 }
 
                 return updateProduct;
             }
             catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        
+        public async Task<IEnumerable<ProductDTos>> GetAllProductsSecVers()
+        {
+            try
+            {
+                var result = await _unitOfWork.ProductRepository.GetAllAsync();
+                if (result != null)
+                {
+                    var mappedResult = _mapper.Map<IEnumerable<ProductDTos>>(result);
+                    return mappedResult;
+                }
+                else
+                {
+                    return null;
+                }
+
+
+
+
+            } catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
