@@ -65,7 +65,7 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
-        public async Task<ResponseProductDTO> CreateProduct(RequestProductDTO newProduct)
+        public async Task<RequestProductDTO> CreateProduct(RequestProductDTO newProduct)
         {
             try
             {
@@ -73,12 +73,10 @@ namespace DataAccessObjects.Services
                 var createProduct = await _unitOfWork.ProductRepository.CreateProduct(map);
                 if (createProduct != null)
                 {
-                    createProduct.Popularities = 1;
-                    /*var checkExist=await _unitOfWork.ProductRepository.CheckExist(createProduct.Id);*/
-                    var result = _mapper.Map<ResponseProductDTO>(createProduct);
+                    var result = _mapper.Map<RequestProductDTO>(createProduct);
                     return result;
                 }
-                return null;
+                else return null;
             }
             catch (Exception ex)
             {
@@ -103,20 +101,16 @@ namespace DataAccessObjects.Services
         {
             try
             {
-                var checkExist = await _unitOfWork.ProductRepository.GetByID(updateProduct.Id);
+                var map = _mapper.Map<Product>(updateProduct);
+                var checkExist = await _unitOfWork.ProductRepository.GetByID(map.Id);
                 if (checkExist != null)
                 {
-                    updateProduct.Location = checkExist.Location;
-                    updateProduct.Status = checkExist.Status;
-                    updateProduct.Quantity = checkExist.Quantity;
-                    updateProduct.Price = checkExist.Price;
-                    updateProduct.Description = checkExist.Description;
-                    updateProduct.Image = checkExist.Image;
-                    updateProduct.Title = checkExist.Title;
-                     await _unitOfWork.ProductRepository.UpdateProduct(checkExist.Id);
+                    var result = await _unitOfWork.ProductRepository.UpdateProduct(map.Id);
+                    var mapResult = _mapper.Map<ResponseProductDTO>(result);
+                    return mapResult;
                 }
-
-                return updateProduct;
+                else return null;
+                
             }
             catch (Exception ex)
             {
