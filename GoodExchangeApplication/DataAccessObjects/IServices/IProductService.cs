@@ -16,7 +16,7 @@ namespace DataAccessObjects.IServices
 
 
         public Task<ResponseProductDTO> GetById(int id);
-        public Task<ResponseProductDTO> CreateProduct(RequestProductDTO createProduct);
+        public Task<RequestProductDTO> CreateProduct(RequestProductDTO createProduct);
         public Task<ResponseProductDTO> UpdateProduct(ResponseProductDTO updateProduct);
         public Task<bool> DeleteProduct(int id);
     }
