@@ -49,7 +49,7 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html> *@
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +69,7 @@
                 @*Main logo here*@
                 <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                     <div class="main-logo">
-                        <a href="">
+                        <a asp-page="/Index">
                             <img src="./images/logo.svg" alt="logo" />
                         </a>
                     </div>

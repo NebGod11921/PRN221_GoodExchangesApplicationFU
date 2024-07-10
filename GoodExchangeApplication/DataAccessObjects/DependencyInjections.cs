@@ -27,9 +27,10 @@ namespace DataAccessObjects
             services.AddScoped<IProductRepo, ProductRepo>();
             services.AddScoped<ITransactionRepo, TransactionRepo>();
             services.AddScoped<IPaymentRepo, PaymentRepo>();
-            services.AddScoped<ITransactionType, TransactionTypeRepo>();
+            services.AddScoped<ITransactionTypeRepo, TransactionTypeRepo>();
             services.AddScoped<IAddToCartService, CartService>();
-
+            services.AddScoped<ITransactionTypeService, TransactionTypeService>();
+           
             services.AddDbContext<AppDbContext>(opts =>
             {
                 opts.UseSqlServer(DatabaseConnection);

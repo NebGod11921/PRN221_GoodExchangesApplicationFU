@@ -16,7 +16,7 @@ namespace DataAccessObjects.Helpers
             public string ClientId { get; }
             public string ClientSecret { get; }
 
-            public string BaseUrl => Mode == "Live"
+            public string BaseUrl => Mode == "Live" //xac thuc 
                 ? "https://api-m.paypal.com"
                 : "https://api-m.sandbox.paypal.com";
 

@@ -1,5 +1,6 @@
 using DataAccessObjects;
 using DataAccessObjects.Commons;
+using DataAccessObjects.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConfiguration();
@@ -7,6 +8,13 @@ var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConf
 builder.Services.AddRazorPages();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddInfrastructuresServices(configuration.DatabaseConnection);
+
+builder.Services.AddSingleton(x => new PaypalClient(
+        builder.Configuration["PaypalOptions:AppId"],
+        builder.Configuration["PaypalOptions:AppSecret"],
+        builder.Configuration["PaypalOptions:Mode"]
+    ));
+
 builder.Services.AddSession(opts =>
 {
     opts.IdleTimeout = TimeSpan.FromSeconds(20);

@@ -3,10 +3,10 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "_Layout";
+    
+    var paypalClientId = ViewData["PaypalClientId"]?.ToString();
 }
-
-<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=YOUR_COMPONENTS"></script>
-
+}
 
 <div class="container" > 
     <div class="row">
@@ -142,6 +142,9 @@
                     </label>
                 </div>
 
+                
+
+
                 <div class="row mb-4">
                     <div class="col">
                         <div data-mdb-input-init class="form-outline">
@@ -171,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-
+                <div id="paypal-button-container" style="max-width:1000px;"></div>
                 <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">
                     Continue to checkout
                 </button>
@@ -179,3 +182,15 @@
         </div>
     </div>
 </div>
+@section Scripts {
+    @* <script src="https://www.paypal.com/sdk/js?client-id=@ViewBag.PaypalClientId"></script> *@
+
+    <script src="https://www.paypal.com/sdk/js?client-id=@paypalClientId&components=buttons"></script>
+    <script>
+        paypal.Buttons({
+            style: {
+                disableMaxWidth: true,
+            }
+        }).render('#paypal-button-container');
+    </script>
+}

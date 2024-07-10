@@ -2,6 +2,7 @@
 using BusinessObjects;
 using DataAccessObjects.ViewModels.AccountDTOS;
 using DataAccessObjects.ViewModels.ProductDTOs;
+using DataAccessObjects.ViewModels.TransactionDTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace DataAccessObjects.Mappers
             CreateMap<Product, RequestProductDTO>().ReverseMap();
             CreateMap<Product, ResponseProductDTO>().ReverseMap();
             CreateMap<ResponseProductDTO, RequestProductDTO>().ReverseMap();
+
+
+            //Transaction
+            CreateMap<TransactionType, TransactionTypeDTO>().ReverseMap();
+
         }
     }
 }

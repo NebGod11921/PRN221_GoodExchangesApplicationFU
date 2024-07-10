@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.Repositories
 {
-    public class TransactionTypeRepo : GenericRepository<TransactionType>, ITransactionType
+    public class TransactionTypeRepo : GenericRepository<TransactionType>, ITransactionTypeRepo
     {
         private readonly AppDbContext _appDbContext;
 
