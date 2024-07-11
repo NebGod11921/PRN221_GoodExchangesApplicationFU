@@ -1,19 +1,17 @@
-﻿@page "/checkout";
+﻿@page "/CheckOut/create-paypal-order"
 @model MyRazorPage.Pages.Order.CheckOutModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "_Layout";
-    
     var paypalClientId = ViewData["PaypalClientId"]?.ToString();
 }
-}
 
-<div class="container" > 
+<div class="container">
     <div class="row">
         <div class="col-md-4 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-muted">Your Cart</span>
-                <span class="badge badge-secondary badge-pill">3</span> 
+                <span class="badge badge-secondary badge-pill">3</span>
             </h4>
             <ul class="list-group mb-3">
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
@@ -60,7 +58,7 @@
         </div>
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Billing Address</h4>
-            <form class="need-validation">
+            <form class="needs-validation">
                 <div class="row mb-4">
                     <div class="col">
                         <div data-mdb-input-init class="form-outline">
@@ -121,8 +119,7 @@
                 <h5 class="mb-4">Payment</h5>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm3"
-                           checked />
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm3" checked />
                     <label class="form-check-label" for="checkoutForm3">
                         Credit card
                     </label>
@@ -138,12 +135,9 @@
                 <div class="form-check mb-4">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm5" />
                     <label class="form-check-label" for="checkoutForm5">
-                        Paypal
+                        PayPal
                     </label>
                 </div>
-
-                
-
 
                 <div class="row mb-4">
                     <div class="col">
@@ -182,14 +176,50 @@
         </div>
     </div>
 </div>
-@section Scripts {
-    @* <script src="https://www.paypal.com/sdk/js?client-id=@ViewBag.PaypalClientId"></script> *@
 
+@section Scripts {
     <script src="https://www.paypal.com/sdk/js?client-id=@paypalClientId&components=buttons"></script>
     <script>
         paypal.Buttons({
             style: {
-                disableMaxWidth: true,
+                disableMaxWidth: true
+            },
+            createOrder: async function (data, actions) {
+                try {
+                    const response = await fetch("/CheckOut/create-paypal-order", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            cart: [
+                                { sku: "YOUR_PRODUCT_STOCK_KEEPING_UNIT", quantity: "YOUR_PRODUCT_QUANTITY" }
+                            ]
+                        })
+                    });
+
+                    const order = await response.json();
+                    return order.id;
+                } catch (err) {
+                    alert(err.message);
+                }
+            },
+            onApprove: async function (data, actions) {
+                try {
+                    const response = await fetch(`/CheckOut/capture-paypal-order?orderId=${data.orderID}`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({ orderID: data.orderID })
+                    });
+
+                    const details = await response.json();
+                    window.location.href = "/CheckOutSuccess";
+                    alert(`Transaction completed by ${details.payer.name.given_name}`);
+                } catch (err) {
+                    alert(err.message);
+                }
             }
         }).render('#paypal-button-container');
     </script>

@@ -112,7 +112,11 @@
                             <div>
                                 <strong>Total amount</strong>
                             </div>
-                            <span><strong>$ @Model.CartDTOs.Sum(x => x.TotalPrice)</strong></span>
+                            <span><strong>
+                                <input type="hidden" name="txtTotalPrice" value="@Model.CartDTOs.Sum(x => x.TotalPrice)"/>
+                                $ @Model.CartDTOs.Sum(x => x.TotalPrice)
+                                </strong>
+                            </span>
                         </li>
                     </ul>
                     <div>

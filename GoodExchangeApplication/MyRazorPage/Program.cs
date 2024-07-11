@@ -1,6 +1,7 @@
 using DataAccessObjects;
 using DataAccessObjects.Commons;
 using DataAccessObjects.Helpers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConfiguration();
@@ -35,6 +36,8 @@ app.UseStaticFiles();
 app.UseSession();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

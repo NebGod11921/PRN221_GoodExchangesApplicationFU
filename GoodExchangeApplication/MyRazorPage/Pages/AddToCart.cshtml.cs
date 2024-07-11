@@ -100,8 +100,16 @@ namespace MyRazorPage.Pages.Transaction
                 throw new Exception(ex.Message);
             }
         }
-        public IActionResult OnPostCheckOut()
+        public IActionResult OnPostCheckOut(float txtTotalPrice)
         {
+            ViewData["txtTotalPrice"] = txtTotalPrice;
+
+            var json = JsonSerializer.Serialize(txtTotalPrice);
+            HttpContext.Session.SetString("GetTotalPrice", json);
+
+
+
+
             return RedirectToPage("/Checkout");
         }
     }
