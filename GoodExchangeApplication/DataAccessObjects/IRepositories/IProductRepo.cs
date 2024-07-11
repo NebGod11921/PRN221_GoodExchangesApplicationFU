@@ -12,7 +12,7 @@ namespace DataAccessObjects.IRepositories
         public Task<Product> GetByID(int id);
         public Task<List<Product>> GetProduct();
         public Task<Product> CreateProduct(Product product);
-        public Task<bool> UpdateProduct(int id);
+        public Task<Product> UpdateProduct(Product product);
         public Task<bool> DeleteProduct(int id);
         public Task<bool> CheckExist(int id);
     }

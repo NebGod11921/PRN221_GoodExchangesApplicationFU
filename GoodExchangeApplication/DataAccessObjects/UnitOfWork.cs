@@ -13,17 +13,20 @@ namespace DataAccessObjects
         private readonly AppDbContext _appDbContext;
         private readonly IAccountRepository _accountRepository;
         private readonly IProductRepo _productRepo;
+        private readonly IProductCategoryRepo _productCategoryRepo;
 
-
-        public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo)
+        public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, IProductCategoryRepo productCategoryRepo )
         {
             _accountRepository = accountRepository;
             _appDbContext = appDbContext;
             _productRepo = IProductRepo;
+            _productCategoryRepo = productCategoryRepo;
         }
         public IAccountRepository AccountRepository => _accountRepository;
 
         public IProductRepo ProductRepository => _productRepo;
+
+        public IProductCategoryRepo productCategoryRepo => _productCategoryRepo;
 
         public async Task<int> SaveChangeAsync()
         {

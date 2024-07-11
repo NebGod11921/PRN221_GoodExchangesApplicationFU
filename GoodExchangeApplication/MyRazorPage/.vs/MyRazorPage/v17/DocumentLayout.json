@@ -9,24 +9,17 @@
       "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\repositories\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\irepositories\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\iservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C0323B13-8188-4336-B21B-BA4F1991CE0D}|..\\BusinessObjects\\BusinessObjects.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\businessobjects\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\viewmodels\\productdtos\\requestproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\viewmodels\\productdtos\\responseproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\iservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\homepage\\createproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\homepage\\createproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,15 +45,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "register.cshtml",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Account\\register.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Account\\register.cshtml",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Account\\register.cshtml",
-              "RelativeToolTip": "Pages\\Account\\register.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T11:29:48.706Z",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\Services\\ProductService.cs",
+              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\ProductService.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\Services\\ProductService.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAkwG4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T04:14:09.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestProductDTO.cs",
+              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
+              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T06:24:26.253Z",
               "EditorCaption": ""
             },
             {
@@ -71,22 +77,22 @@
               "RelativeDocumentMoniker": "..\\DataAccessObjects\\Repositories\\ProductRepo.cs",
               "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Repositories\\ProductRepo.cs",
               "RelativeToolTip": "..\\DataAccessObjects\\Repositories\\ProductRepo.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAswDgAAAAJAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAIAzwEEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:33:16.937Z",
+              "WhenOpened": "2024-07-11T06:12:48.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\Services\\ProductService.cs",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\ProductService.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\Services\\ProductService.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAuwGUAAAAPAAAA",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\Product.cs",
+              "RelativeDocumentMoniker": "..\\BusinessObjects\\Product.cs",
+              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\Product.cs",
+              "RelativeToolTip": "..\\BusinessObjects\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:33:04.343Z",
+              "WhenOpened": "2024-07-11T09:02:11.29Z",
               "EditorCaption": ""
             },
             {
@@ -97,59 +103,22 @@
               "RelativeDocumentMoniker": "..\\DataAccessObjects\\IServices\\IProductService.cs",
               "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IServices\\IProductService.cs",
               "RelativeToolTip": "..\\DataAccessObjects\\IServices\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:29:13.734Z",
+              "WhenOpened": "2024-07-11T08:09:42.404Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProductRepo.cs",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IRepositories\\IProductRepo.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\IRepositories\\IProductRepo.cs",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IRepositories\\IProductRepo.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\IRepositories\\IProductRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:28:55.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RequestProductDTO.cs",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\ViewModels\\ProductDTOs\\RequestProductDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:31:49.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ResponseProductDTO.cs",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\ViewModels\\ProductDTOs\\ResponseProductDTO.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\ViewModels\\ProductDTOs\\ResponseProductDTO.cs",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\ViewModels\\ProductDTOs\\ResponseProductDTO.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\ViewModels\\ProductDTOs\\ResponseProductDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T08:32:00.205Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-02T08:27:07.445Z"
+              "Title": "CreateProduct.cshtml.cs",
+              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Homepage\\CreateProduct.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Homepage\\CreateProduct.cshtml.cs",
+              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Homepage\\CreateProduct.cshtml.cs",
+              "RelativeToolTip": "Pages\\Homepage\\CreateProduct.cshtml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAEwBgAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T07:35:26.547Z"
             }
           ]
         }

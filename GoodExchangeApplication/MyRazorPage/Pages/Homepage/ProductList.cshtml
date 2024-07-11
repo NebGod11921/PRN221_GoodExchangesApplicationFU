@@ -283,7 +283,8 @@
                                         <input type="hidden" name="txtProductId" value="@result.Id"/>
                                         <input type="submit" class="btn btn-primary" value="ViewDetail" />
                                     </form>
-                                    
+                                    <a asp-page="./UpdateProduct" asp-route-id="@result.Id">Update</a>
+                                    <a asp-page="./DeleteProduct" asp-route-id="@result.Id">Delete</a>
                                 </div>
                             </div>
                             <button type="button" class="btn btn-default wishlist" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="fa fa-heart"></i></button>
