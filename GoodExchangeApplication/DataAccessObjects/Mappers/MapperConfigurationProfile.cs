@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using BusinessObjects;
 using DataAccessObjects.ViewModels.AccountDTOS;
+using DataAccessObjects.ViewModels.PostDTOs;
+using DataAccessObjects.ViewModels.ProductDTOs;
 using DataAccessObjects.ViewModels.ProductDTOs;
 using DataAccessObjects.ViewModels.TransactionDTOs;
 using System;
@@ -18,6 +20,8 @@ namespace DataAccessObjects.Mappers
             CreateMap<User, LoginAccountDTOs>().ReverseMap();
             CreateMap<User, RegisterAccountDTOs>().ReverseMap();    
             CreateMap<User, AccountDTOs>().ReverseMap();
+            CreateMap<Product, ProductDTO>().ReverseMap();
+            CreateMap<Post, PostDTO>().ReverseMap();
 
             //
             CreateMap<Product, ProductDTos>().ReverseMap();

@@ -9,6 +9,7 @@ namespace DataAccessObjects.IServices
 {
     public interface IProductService
     {
+        Task<IEnumerable<ProductDTO>> SearchProductByNameOrCodeAsync(string searchQuery);
         public Task<IEnumerable<ResponseProductDTO>> GetAllProducts(ResponseProductDTO productDTO);
         public Task<IEnumerable<ProductDTos>> GetAllProductsSecVers();
         public Task<ProductDTos> GetProductByIdSecondVers(int productId);
