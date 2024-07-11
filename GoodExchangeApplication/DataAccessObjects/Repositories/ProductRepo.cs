@@ -65,7 +65,7 @@ namespace DataAccessObjects.Repositories
                 exist.Quantity= product.Quantity;
                 exist.Image= product.Image;
                 exist.Location= product.Location;
-                _appDbContext.Products.Update(exist);
+                _appDbContext.Products.UpdateRange(exist);
             }
             await _appDbContext.SaveChangesAsync();
             return exist;

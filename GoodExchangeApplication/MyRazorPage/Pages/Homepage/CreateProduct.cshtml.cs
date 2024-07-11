@@ -34,7 +34,6 @@ namespace MyRazorPage.Pages.Homepage
             if (result != null)
             {
                 ViewData["Message"] = "Create Successfully";
-                return RedirectToPage("./Homepage/ProductList");
             }
             else
                 ViewData["Message"] = "Fail";

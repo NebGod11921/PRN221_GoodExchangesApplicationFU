@@ -108,8 +108,12 @@ namespace DataAccessObjects.Services
             {
                 var map = _mapper.Map<Product>(updateProduct);
                 var result=await _unitOfWork.ProductRepository.UpdateProduct(map);
-                var mapResult=_mapper.Map<RequestProductDTO>(result);
-                return mapResult;
+                if (result != null)
+                {
+                    var mapResult = _mapper.Map<RequestProductDTO>(result);
+                    return mapResult;
+                }
+                else return null;
             }
             catch (Exception ex)
             {
