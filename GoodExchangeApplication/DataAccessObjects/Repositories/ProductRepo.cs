@@ -64,5 +64,20 @@ namespace DataAccessObjects.Repositories
             }
             return false;
         }
+        public async Task<IEnumerable<Product>> SearchProductByNameOrCode(string searchQuery)
+        {
+            try
+            {
+                var result = await _appDbContext.Products
+                    .Where(p => p.Title.Contains(searchQuery) || p.Category.Name.Contains(searchQuery))
+                    .ToListAsync();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

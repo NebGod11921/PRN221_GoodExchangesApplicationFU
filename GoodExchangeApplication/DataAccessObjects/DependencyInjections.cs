@@ -22,7 +22,7 @@ namespace DataAccessObjects
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IAccountService, AccountService>();
-            services.AddScoped<IProductRepository, ProductRepository>();
+            
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<IPostService, PostService>();

@@ -10,7 +10,6 @@ namespace DataAccessObjects
     public interface IUnitOfWork
     {
         public IAccountRepository AccountRepository { get; }
-        public IProductRepository ProductRepository { get; }
         public IPostRepository PostRepository { get; }
         public Task<int> SaveChangeAsync();
         public IProductRepo ProductRepository { get; }
