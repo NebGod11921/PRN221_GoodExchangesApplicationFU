@@ -1,11 +1,11 @@
-﻿@page "/CheckOut/create-paypal-order"
+﻿@page "/CheckOut"
 @model MyRazorPage.Pages.Order.CheckOutModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "_Layout";
     var paypalClientId = ViewData["PaypalClientId"]?.ToString();
 }
-
+<script src="https://www.paypal.com/sdk/js?client-id=@(paypalClientId)&components=buttons"></script>
 <div class="container">
     <div class="row">
         <div class="col-md-4 order-md-2 mb-4">
@@ -168,7 +168,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="paypal-button-container" style="max-width:1000px;"></div>
+
+                <div id="paypal-button-container" name="id" style="max-width:1000px;"></div>
+
                 <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">
                     Continue to checkout
                 </button>
@@ -176,51 +178,34 @@
         </div>
     </div>
 </div>
+<script>
+    paypal.Buttons({
+        style: {
+            disableMaxWidth: true,
+        },
+        createOrder: async function (data, actions) {
+            const response = await fetch("/CheckOut?handler=CreateOrder", {
+                method: "POST",
+            });
+            const order = await response.json();
+            return order.id;
+        },
+        onApprove: async function (data, actions) {
+            // Capture the funds from the transaction.
+            const response = await fetch("/CheckOut?handler=CompleteOrder", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    orderID: data.orderID
+                })
+            });
+            const details = await response.json();
 
-@section Scripts {
-    <script src="https://www.paypal.com/sdk/js?client-id=@paypalClientId&components=buttons"></script>
-    <script>
-        paypal.Buttons({
-            style: {
-                disableMaxWidth: true
-            },
-            createOrder: async function (data, actions) {
-                try {
-                    const response = await fetch("/CheckOut/create-paypal-order", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({
-                            cart: [
-                                { sku: "YOUR_PRODUCT_STOCK_KEEPING_UNIT", quantity: "YOUR_PRODUCT_QUANTITY" }
-                            ]
-                        })
-                    });
+            // Show success message to buyer
+            alert(`Transaction completed by ${details.payer.name.given_name}`);
+        }
+    }).render('#paypal-button-container');
+</script>
 
-                    const order = await response.json();
-                    return order.id;
-                } catch (err) {
-                    alert(err.message);
-                }
-            },
-            onApprove: async function (data, actions) {
-                try {
-                    const response = await fetch(`/CheckOut/capture-paypal-order?orderId=${data.orderID}`, {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({ orderID: data.orderID })
-                    });
-
-                    const details = await response.json();
-                    window.location.href = "/CheckOutSuccess";
-                    alert(`Transaction completed by ${details.payer.name.given_name}`);
-                } catch (err) {
-                    alert(err.message);
-                }
-            }
-        }).render('#paypal-button-container');
-    </script>
-}

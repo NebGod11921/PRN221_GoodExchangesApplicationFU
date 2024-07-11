@@ -9,7 +9,14 @@ var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConf
 builder.Services.AddRazorPages();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddInfrastructuresServices(configuration.DatabaseConnection);
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
+builder.Services.Configure<CookiePolicyOptions>(opts =>
+{
+    opts.MinimumSameSitePolicy = SameSiteMode.None;
+    opts.HttpOnly = Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy.None;
 
+});
 builder.Services.AddSingleton(x => new PaypalClient(
         builder.Configuration["PaypalOptions:AppId"],
         builder.Configuration["PaypalOptions:AppSecret"],

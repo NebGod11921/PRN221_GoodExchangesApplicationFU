@@ -36,7 +36,7 @@ namespace MyRazorPage.Pages.Homepage
         }
  
 
-
+        
 
         public async Task<IActionResult> OnPostAddToCart(int txtProductId, int Quantity = 1)
         {
