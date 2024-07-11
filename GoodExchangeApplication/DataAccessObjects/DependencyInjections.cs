@@ -1,7 +1,9 @@
 ﻿using DataAccessObjects.IRepositories;
 using DataAccessObjects.IServices;
+using DataAccessObjects.Mappers;
 using DataAccessObjects.Repositories;
 using DataAccessObjects.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -24,12 +26,22 @@ namespace DataAccessObjects
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<IPostService, PostService>();
+            services.AddAutoMapper(typeof(MapperConfigurationProfile).Assembly);
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepo, ProductRepo>();
+            services.AddScoped<ITransactionRepo, TransactionRepo>();
+            services.AddScoped<IPaymentRepo, PaymentRepo>();
+            services.AddScoped<ITransactionTypeRepo, TransactionTypeRepo>();
+            services.AddScoped<IAddToCartService, CartService>();
+            services.AddScoped<ITransactionTypeService, TransactionTypeService>();
+           
             services.AddDbContext<AppDbContext>(opts =>
             {
                 opts.UseSqlServer(DatabaseConnection);
                 opts.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
             });
+            services.AddAutoMapper(typeof(MapperConfigurationProfile).Assembly);
             return services;
         }
     }

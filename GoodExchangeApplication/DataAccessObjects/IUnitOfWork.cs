@@ -13,5 +13,11 @@ namespace DataAccessObjects
         public IProductRepository ProductRepository { get; }
         public IPostRepository PostRepository { get; }
         public Task<int> SaveChangeAsync();
+        public IProductRepo ProductRepository { get; }
+        public ITransactionRepo TransactionRepository { get; }
+        public ITransactionTypeRepo TransactionType { get; }
+        
+
+
     }
 }

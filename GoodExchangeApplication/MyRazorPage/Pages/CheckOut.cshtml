@@ -1,0 +1,196 @@
+﻿@page "/checkout";
+@model MyRazorPage.Pages.Order.CheckOutModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+    
+    var paypalClientId = ViewData["PaypalClientId"]?.ToString();
+}
+}
+
+<div class="container" > 
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Your Cart</span>
+                <span class="badge badge-secondary badge-pill">3</span> 
+            </h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Product Name</h6>
+                        <small class="text-muted">Brief Description</small>
+                    </div>
+                    <span class="text-muted">$10</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Product Name 2</h6>
+                        <small class="text-muted">Brief Description</small>
+                    </div>
+                    <span class="text-muted">$10</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Product Name 3</h6>
+                        <small class="text-muted">Brief Description</small>
+                    </div>
+                    <span class="text-muted">$10</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                    <div class="text-success">
+                        <h6 class="my-0">Promo Code</h6>
+                        <small class="text-muted">FREESHIP</small>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (USD)</span>
+                    <strong>$20</strong>
+                </li>
+            </ul>
+
+            <form class="card p-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Promo-code" />
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Billing Address</h4>
+            <form class="need-validation">
+                <div class="row mb-4">
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="form6Example1" class="form-control" />
+                            <label class="form-label" for="form6Example1">First name</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="form6Example2" class="form-control" />
+                            <label class="form-label" for="form6Example2">Last name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="form6Example3" class="form-control" />
+                    <label class="form-label" for="form6Example3">Company name</label>
+                </div>
+
+                <!-- Text input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="form6Example4" class="form-control" />
+                    <label class="form-label" for="form6Example4">Address</label>
+                </div>
+
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="form6Example5" class="form-control" />
+                    <label class="form-label" for="form6Example5">Email</label>
+                </div>
+
+                <!-- Number input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="number" id="form6Example6" class="form-control" />
+                    <label class="form-label" for="form6Example6">Phone</label>
+                </div>
+
+                <hr class="my-4" />
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkoutForm1" />
+                    <label class="form-check-label" for="checkoutForm1">
+                        Shipping address is the same as my billing address
+                    </label>
+                </div>
+
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="checkoutForm2" checked />
+                    <label class="form-check-label" for="checkoutForm2">
+                        Save this information for next time
+                    </label>
+                </div>
+
+                <hr class="my-4" />
+
+                <h5 class="mb-4">Payment</h5>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm3"
+                           checked />
+                    <label class="form-check-label" for="checkoutForm3">
+                        Credit card
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm4" />
+                    <label class="form-check-label" for="checkoutForm4">
+                        Debit card
+                    </label>
+                </div>
+
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm5" />
+                    <label class="form-check-label" for="checkoutForm5">
+                        Paypal
+                    </label>
+                </div>
+
+                
+
+
+                <div class="row mb-4">
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="formNameOnCard" class="form-control" />
+                            <label class="form-label" for="formNameOnCard">Name on card</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="formCardNumber" class="form-control" />
+                            <label class="form-label" for="formCardNumber">Credit card number</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-3">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="formExpiration" class="form-control" />
+                            <label class="form-label" for="formExpiration">Expiration</label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="formCVV" class="form-control" />
+                            <label class="form-label" for="formCVV">CVV</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="paypal-button-container" style="max-width:1000px;"></div>
+                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">
+                    Continue to checkout
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @* <script src="https://www.paypal.com/sdk/js?client-id=@ViewBag.PaypalClientId"></script> *@
+
+    <script src="https://www.paypal.com/sdk/js?client-id=@paypalClientId&components=buttons"></script>
+    <script>
+        paypal.Buttons({
+            style: {
+                disableMaxWidth: true,
+            }
+        }).render('#paypal-button-container');
+    </script>
+}

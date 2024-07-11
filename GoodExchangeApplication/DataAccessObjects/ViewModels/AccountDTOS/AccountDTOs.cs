@@ -15,9 +15,7 @@ namespace DataAccessObjects.ViewModels.AccountDTOS
         public byte[]? ProfilePicture { get; set; }
         public string? TelephoneNumber { get; set; }
         public string? Address { get; set; }
-
-        //Relationships
         public int? RoleId { get; set; }
-        public virtual Role? Role { get; set; }
+        
     }
 }

@@ -108,6 +108,8 @@ namespace DataAccessObjects.Repositories
             return user;
         }
 
+        
+
         public async Task<IEnumerable<User>> SearchUserByNames(string name)
         {
             try
@@ -115,6 +117,31 @@ namespace DataAccessObjects.Repositories
                 var result = await _appDbContext.Users.Where(x => x.UserName.Contains(name)).ToListAsync();
                 return result;
 
+
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async Task<User> UpdateUser(User user, int UserId)
+        {
+            try
+            {
+                var getuserId = await _appDbContext.Users.FindAsync(UserId);
+                if (getuserId != null)
+                {
+                    _appDbContext.Entry(getuserId).CurrentValues.SetValues(user);
+                    var IsSuccess = await _appDbContext.SaveChangesAsync() > 0;
+                    if (IsSuccess)
+                    {
+                        return user;
+                    } else
+                    {
+                        return null;
+                    }
+                }
+                return null;
 
 
             } catch (Exception ex)

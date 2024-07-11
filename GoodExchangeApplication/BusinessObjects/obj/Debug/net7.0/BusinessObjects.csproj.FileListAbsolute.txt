@@ -12,17 +12,32 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\BusinessObjects\obj\Debug\net7
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
-E:\pr_n\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
-E:\pr_n\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
-E:\pr_n\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll
-E:\pr_n\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.pdb
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.AssemblyReference.cache
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfoInputs.cache
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfo.cs
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.CoreCompileInputs.cache
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.dll
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\refint\BusinessObjects.dll
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
-E:\pr_n\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.pdb
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.AssemblyReference.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfoInputs.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfo.cs
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.CoreCompileInputs.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.sourcelink.json
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\refint\BusinessObjects.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.pdb
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.AssemblyReference.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfoInputs.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfo.cs
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.CoreCompileInputs.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\refint\BusinessObjects.dll
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
+D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll

@@ -15,7 +15,8 @@ namespace DataAccessObjects.ViewModels.AccountDTOS
         public string? TelephoneNumber { get; set; }
         public string? Address { get; set; }
 
-        //Relationships
+        
         public int? RoleId { get; set; }
+        public byte? status { get; set; }
     }
 }

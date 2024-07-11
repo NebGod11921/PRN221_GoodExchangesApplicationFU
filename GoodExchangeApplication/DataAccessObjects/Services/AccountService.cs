@@ -21,6 +21,32 @@ namespace DataAccessObjects.Services
             _unitOfWork = unitOfWork;
         }
 
+        public async Task<bool> DeleteAccount(int userId)
+        {
+            try
+            {
+                var result = await _unitOfWork.AccountRepository.GetByIdAsync(userId);
+                if (result != null)
+                {
+                     _unitOfWork.AccountRepository.SoftRemove(result);
+                    var isSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (isSuccess)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                return false;
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<AccountDTOs> GetAccountDTOsById(int id)
         {
             try
@@ -137,6 +163,28 @@ namespace DataAccessObjects.Services
 
 
             } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<AccountDTOs> UpdateUserProfileAsync(AccountDTOs user, int userId)
+        {
+            try
+            {
+                var mapper = _mapper.Map<User>(user);
+                var result = await _unitOfWork.AccountRepository.UpdateUser(mapper, userId);
+                if (result != null)
+                {
+                    var mappedResult = _mapper.Map<AccountDTOs>(result);
+                    return mappedResult;
+                } else
+                {
+                    return null;
+                }
+
+
+            }catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

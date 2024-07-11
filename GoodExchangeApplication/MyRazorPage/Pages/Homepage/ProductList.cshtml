@@ -1,0 +1,237 @@
+﻿@page
+@model MyRazorPage.Pages.Homepage.ProductListModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+<style>
+    body {
+        margin-top: 20px;
+        background: #edf0f5;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .product-list, .product-sidebar {
+        background: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+        .product-list .product-item, .product-sidebar .product-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+            .product-list .product-item .image, .product-sidebar .product-item .image {
+                margin-right: 20px;
+            }
+
+                .product-list .product-item .image img, .product-sidebar .product-item .image img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 5px;
+                }
+
+            .product-list .product-item .details, .product-sidebar .product-item .details {
+                flex-grow: 1;
+            }
+
+                .product-list .product-item .details .name, .product-sidebar .product-item .details .name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                .product-list .product-item .details .description {
+                    margin-bottom: 10px;
+                    color: #777;
+                }
+
+                .product-list .product-item .details .price, .product-sidebar .product-item .details .price {
+                    font-size: 16px;
+                    color: #555;
+                    margin-bottom: 10px;
+                }
+
+                .product-list .product-item .details .rating {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+
+                    .product-list .product-item .details .rating i {
+                        color: #ffce54;
+                    }
+
+                .product-list .product-item .details .actions {
+                    display: flex;
+                    gap: 10px;
+                }
+
+                    .product-list .product-item .details .actions .btn {
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+
+        .product-sidebar .product-item {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            .product-sidebar .product-item .image img {
+                width: 150px;
+                height: 150px;
+            }
+
+    .filter {
+        margin-bottom: 20px;
+    }
+
+        .filter .panel-heading, .filter .panel-footer {
+            background: #fff;
+            border-color: #e4e7ec;
+        }
+
+    .list-group-item.active {
+        background-color: #f5f7fa;
+        border-color: #f5f7fa;
+        color: #434a54;
+    }
+
+    .list-group-item {
+        border: 0;
+        padding: 10px 15px;
+    }
+</style>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 hidden-xs">
+            <div class="list-group">
+                <a href="#" class="list-group-item">Shoes</a>
+                <a href="#" class="list-group-item">Satchel</a>
+                <a href="#" class="list-group-item">Tote</a>
+                <a href="#" class="list-group-item">Shoulder</a>
+                <a href="#" class="list-group-item">Clutch &amp; Mini</a>
+            </div>
+
+            <div class="product-sidebar">
+                <h5 class="text-center">Featured Products</h5>
+                <!-- Featured Product Item -->
+                <div class="product-item">
+                    <div class="image">
+                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Product 4"></a>
+                    </div>
+                    <div class="details">
+                        <div class="name">Leather laptop bag</div>
+                        <div class="price">$722.00</div>
+                    </div>
+                </div>
+                <!--/ Featured Product Item -->
+                <!-- Featured Product Item -->
+                <div class="product-item">
+                    <div class="image">
+                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Product 2"></a>
+                    </div>
+                    <div class="details">
+                        <div class="name">Leather laptop bag navy</div>
+                        <div class="price">$866.00</div>
+                    </div>
+                </div>
+                <!--/ Featured Product Item -->
+                <!-- Featured Product Item -->
+                <div class="product-item">
+                    <div class="image">
+                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Product 3"></a>
+                    </div>
+                    <div class="details">
+                        <div class="name">Soft leather laptop bag</div>
+                        <div class="price">$962.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="filter">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="btn-group">
+                            <button type="button" id="list-view" class="btn btn-default" title="List View"><i class="fa fa-th-list"></i></button>
+                            <button type="button" id="grid-view" class="btn btn-default" title="Grid View"><i class="fa fa-th"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="input-sort">Sort By:</label>
+                                <select id="input-sort" class="form-control">
+                                    <option value="" selected="selected">Default</option>
+                                    <option value="">Name</option>
+                                    <option value="">Date</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="input-limit">Show:</label>
+                                <select id="input-limit" class="form-control">
+                                    <option value="" selected="selected">9</option>
+                                    <option value="">15</option>
+                                    <option value="">25</option>
+                                    <option value="">50</option>
+                                    <option value="">100</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var result in Model.ProductDtos)
+                {
+                    <div class="product-list col-xs-12">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="#"><img src="@result.Image" alt="Product 1"></a>
+                            </div>
+                            <div class="details">
+                                <div class="name">
+                                    <a href="#">@result.Title</a>
+                                </div>
+                                <div class="description">
+                                    <p>@result.Description</p>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <div class="price">
+                                    <span>@result.Price</span>
+                                </div>
+                                <div class="actions">
+                                    <form asp-page-handler="TransferToProductDetail" method="post">
+                                        <input type="hidden" name="txtProductId" value="@result.Id" />
+                                        <input type="submit" class="btn btn-primary" value="View Detail" />
+                                    </form>
+                                    <button type="button" class="btn btn-default" title="Wishlist"><i class="fa fa-heart"></i></button>
+                                    <button type="button" class="btn btn-default" title="Compare"><i class="fa fa-circle-o"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
