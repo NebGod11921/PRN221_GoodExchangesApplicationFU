@@ -14,18 +14,26 @@ namespace MyRazorPage.Pages.Transaction
     public class AddToCartModel : PageModel
     {
         private readonly ITransactionTypeService _transactionTypeService;
+        private readonly ITransactionProductService _transactionProductService;
+        private readonly ITransactionService _transactionService;
         private readonly PaypalClient _paypalClient;
 
-        public AddToCartModel(ITransactionTypeService transactionTypeService, PaypalClient paypalClient)
+        public AddToCartModel(ITransactionTypeService transactionTypeService, PaypalClient paypalClient, ITransactionService transactionService
+            , ITransactionProductService transactionProductService)
         {
             _transactionTypeService = transactionTypeService;
             _paypalClient = paypalClient;
+            _transactionService = transactionService;
+            _transactionProductService = transactionProductService;
 
         }
 
         public IEnumerable<TransactionTypeDTO> TransactionTypeDTOs { get; set; }
 
         public IEnumerable<CartDTOs> CartDTOs { get; set; }
+
+
+
 
 
         public List<CartDTOs> Carts
@@ -100,17 +108,69 @@ namespace MyRazorPage.Pages.Transaction
                 throw new Exception(ex.Message);
             }
         }
-        public IActionResult OnPostCheckOut(float txtTotalPrice)
+        public async Task<IActionResult> OnPostCheckOut(int txtQuantity, float txtTotalPrice, string txtNote, string txtAddress, int txtTransactionTypeId, List<int> productIds)
         {
             ViewData["txtTotalPrice"] = txtTotalPrice;
+            ViewData["txtQuantity"] = txtQuantity;
+            ViewData["txtNote"] = txtNote;
+            ViewData["txtAddress"] = txtAddress;
+            ViewData["txtTransactionTypeId"] = txtTransactionTypeId;
+            ViewData["productIds"] = productIds;
 
-            var json = JsonSerializer.Serialize(txtTotalPrice);
-            HttpContext.Session.SetString("GetTotalPrice", json);
+            try
+            {
+                // Create a new TransactionDTO
+                TransactionDTOs transactionDTOs = new TransactionDTOs();
+                transactionDTOs.Quantity = txtQuantity;
+                transactionDTOs.TotalAmount = txtTotalPrice;
+                transactionDTOs.Note = txtNote;
+                transactionDTOs.ShippingAddress = txtAddress;
+                transactionDTOs.TransactionTypeId = txtTransactionTypeId;
 
+                // Call service method to create transaction
+                var resultTransaction = await _transactionService.CreateTransaction(transactionDTOs, txtTransactionTypeId);
 
+                if (resultTransaction != null)
+                {
+                    List<TransactionProductDTOs> transactionProductDTOs = new List<TransactionProductDTOs>();
 
+                    // Iterate over productIds to create TransactionProductDTOs
+                    foreach (var productId in productIds)
+                    {
+                        TransactionProductDTOs transactionProduct = new TransactionProductDTOs();
+                        transactionProduct.ProductId = productId;
+                        transactionProduct.TransactionId = resultTransaction.Id;
+                        transactionProductDTOs.Add(transactionProduct);
+                    }
 
-            return RedirectToPage("/Checkout");
+                    // Call service method to create transaction products
+                    var resultTransactionProduct = await _transactionProductService.CreateTransactionProducts(transactionProductDTOs, resultTransaction.Id, productIds);
+
+                    if (resultTransactionProduct)
+                    {
+                        var json = JsonSerializer.Serialize(txtTotalPrice);
+                        HttpContext.Session.SetString("GetTotalPrice", json);
+
+                        return RedirectToPage("/Checkout");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Failed to create transaction products.");
+                        return Page();
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Failed to create the transaction.");
+                    return Page();
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, $"An error occurred: {ex.Message}");
+                throw new Exception(ex.Message);
+            }
         }
+
     }
 }

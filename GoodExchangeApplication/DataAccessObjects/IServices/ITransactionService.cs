@@ -12,7 +12,7 @@ namespace DataAccessObjects.IServices
         public Task<IEnumerable<TransactionDTOs>> GetTransactionDTOs();
         public Task<TransactionDTOs> GetTransaction(int id);
         public Task<TransactionDTOs> CreateTransaction(TransactionDTOs transactionDTOs, int TransactionTypeId);
-        public Task<TransactionDTOs> UpdateTransaction(int transactionId, UpdateTransactionDTOs updateTransactionDTOs);
+        public Task<UpdateTransactionDTOs> UpdateTransaction(int transactionId, UpdateTransactionDTOs updateTransactionDTOs);
         public Task<bool> DeleteTransaction(int transactionId);
        
     }

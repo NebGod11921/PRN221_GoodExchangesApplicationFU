@@ -1,6 +1,6 @@
 ﻿using DataAccessObjects.IRepositories;
-using DataAccessObjects.Repositories;
 using DataAccessObjects.IServices;
+using DataAccessObjects.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +17,9 @@ namespace DataAccessObjects
         private readonly IProductRepo _productRepo;
         private readonly ITransactionRepo _transactionRepo;
         private readonly ITransactionTypeRepo _transactionTypeRepo;
+        private readonly ITransactionProductRepository _transactionProductRepository;
         public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, ITransactionRepo transactionRepo, ITransactionTypeRepo transactionTypeRepo,
-            IPostRepository postRepository)
+            IPostRepository postRepository, ITransactionProductRepository transactionProductRepository)
         {
             _accountRepository = accountRepository;
             _productRepo = IProductRepo;
@@ -27,6 +28,7 @@ namespace DataAccessObjects
             _productRepo = IProductRepo;
             _transactionRepo = transactionRepo;
             _transactionTypeRepo = transactionTypeRepo;
+            _transactionProductRepository = transactionProductRepository;
         }
         public IAccountRepository AccountRepository => _accountRepository;
         public IPostRepository PostRepository => _postRepository;
@@ -36,6 +38,8 @@ namespace DataAccessObjects
         public ITransactionRepo TransactionRepository => _transactionRepo;
 
         public ITransactionTypeRepo TransactionType => _transactionTypeRepo;
+
+        public ITransactionProductRepository TransactionProductRepository => _transactionProductRepository;
 
         public async Task<int> SaveChangeAsync()
         {

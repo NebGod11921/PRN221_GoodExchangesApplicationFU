@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,8 @@ namespace DataAccessObjects.ViewModels.TransactionDTOs
         public float? TotalAmount { get; set; }
         public int? Quantity { get; set; }
         public string? Note { get; set; }
+        public int? TransactionTypeId { get; set; }
+        public int? PaymentId { get; set; }
+       
     }
 }

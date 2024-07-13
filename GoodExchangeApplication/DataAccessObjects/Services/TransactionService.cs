@@ -29,6 +29,7 @@ namespace DataAccessObjects.Services
             try
             {
                 var getTransactionTypeId = await _unitOfWork.TransactionType.GetByIdAsync(TransactionTypeId);
+
                 var mapper = _mapper.Map<Transaction>(transactionDTOs);
                 if (getTransactionTypeId != null && getTransactionTypeId.Id == 1)
                 {
@@ -43,13 +44,57 @@ namespace DataAccessObjects.Services
                 {
                     mapper.TransactionDate = _currentTime.GetCurrentTime().AddDays(5);
                 }
-
-                mapper.TransactionTypeId = getTransactionTypeId.Id;
-                var result =  _unitOfWork.TransactionRepository.AddAsync(mapper);
+                await _unitOfWork.TransactionRepository.AddAsync(mapper);
                 var IsSucces = await _unitOfWork.SaveChangeAsync() > 0;
                 if (IsSucces)
                 {
-                    var mappedResult = _mapper.Map<TransactionDTOs>(result);
+                    var mappedResult = _mapper.Map<TransactionDTOs>(mapper);
+                    return mappedResult;
+                } else
+                {
+                    return null;
+                }
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<bool> DeleteTransaction(int transactionId)
+        {
+            try
+            {
+                var result = await _unitOfWork.TransactionRepository.GetByIdAsync(transactionId);
+                if (result != null)
+                {
+                     _unitOfWork.TransactionRepository.SoftRemove(result);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if(IsSuccess)
+                    {
+                        return true;
+                    } else
+                    {
+                        return false;
+                    }
+                }
+                return false;
+
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<TransactionDTOs> GetTransaction(int id)
+        {
+            try
+            {
+                var getTransactionId = await _unitOfWork.TransactionRepository.GetByIdAsync(id);
+                if (getTransactionId != null)
+                {
+                    var mappedResult = _mapper.Map<TransactionDTOs>(getTransactionId);
                     return mappedResult;
                 } else
                 {
@@ -57,6 +102,26 @@ namespace DataAccessObjects.Services
                 }
 
 
+            }catch(Exception ex) 
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<IEnumerable<TransactionDTOs>> GetTransactionDTOs()
+        {
+            try
+            {
+                var result = await _unitOfWork.TransactionRepository.GetAllAsync();
+                if (result != null)
+                {
+                    var mappedResult = _mapper.Map<IEnumerable<TransactionDTOs>>(result);
+                    return mappedResult;
+                }
+                else
+                {
+                    return null;
+                }
 
 
 
@@ -66,24 +131,34 @@ namespace DataAccessObjects.Services
             }
         }
 
-        public Task<bool> DeleteTransaction(int transactionId)
+        public async Task<UpdateTransactionDTOs> UpdateTransaction(int transactionId, UpdateTransactionDTOs updateTransactionDTOs)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                var mapper = _mapper.Map<UpdateTransactionDTOs>(updateTransactionDTOs);
+                var getTransactionId = await _unitOfWork.TransactionRepository.GetByIdAsync(transactionId);
+                if (getTransactionId != null)
+                {
+                    _unitOfWork.TransactionRepository.Update(getTransactionId);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (IsSuccess)
+                    {
+                        var mappedResult = _mapper.Map<UpdateTransactionDTOs>(getTransactionId);
+                        return mappedResult;
+                    } else
+                    {
+                        return null;
+                    }
+                } else
+                {
+                    return null;
+                }
 
-        public Task<TransactionDTOs> GetTransaction(int id)
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task<IEnumerable<TransactionDTOs>> GetTransactionDTOs()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<TransactionDTOs> UpdateTransaction(int transactionId, UpdateTransactionDTOs updateTransactionDTOs)
-        {
-            throw new NotImplementedException();
+            }catch( Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }
