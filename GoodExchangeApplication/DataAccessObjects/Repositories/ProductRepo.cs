@@ -79,5 +79,12 @@ namespace DataAccessObjects.Repositories
                 throw new Exception(ex.Message);
             }
         }
+        public async Task<IEnumerable<Product>> GetProductsByUserIdAsync(int userId)
+        {
+            return await _appDbContext.UserProducts
+                .Where(up => up.UserId == userId)
+                .Select(up => up.Product)
+                .ToListAsync();
+        }
     }
 }

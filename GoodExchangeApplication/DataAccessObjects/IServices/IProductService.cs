@@ -13,6 +13,7 @@ namespace DataAccessObjects.IServices
         public Task<IEnumerable<ResponseProductDTO>> GetAllProducts(ResponseProductDTO productDTO);
         public Task<IEnumerable<ProductDTos>> GetAllProductsSecVers();
         public Task<ProductDTos> GetProductByIdSecondVers(int productId);
+        Task<IEnumerable<ProductDTO>> GetProductsByUserIdAsync(int userId);
 
 
 

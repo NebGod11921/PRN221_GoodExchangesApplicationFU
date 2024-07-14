@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataAccessObjects
-build_property.ProjectDir = D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\DataAccessObjects\
+build_property.ProjectDir = E:\Backup\New folder\GoodExchangeApplication\DataAccessObjects\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

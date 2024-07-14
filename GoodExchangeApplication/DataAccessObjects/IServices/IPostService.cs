@@ -14,5 +14,6 @@ namespace DataAccessObjects.IServices
         Task<IEnumerable<PostDTO>> GetAllPostsAsync();
         Task UpdatePostAsync(PostDTO postDto);
         Task DeletePostAsync(int postId);
+        Task<IEnumerable<PostDTO>> GetPostsByUserIdAsync(int userId);
     }
 }

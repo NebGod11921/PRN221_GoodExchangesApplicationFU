@@ -2,6 +2,7 @@ using DataAccessObjects;
 using DataAccessObjects.Commons;
 using DataAccessObjects.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConfiguration();
@@ -11,6 +12,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddInfrastructuresServices(configuration.DatabaseConnection);
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
+builder.Services.AddSignalR();
 builder.Services.Configure<CookiePolicyOptions>(opts =>
 {
     opts.MinimumSameSitePolicy = SameSiteMode.None;
@@ -49,5 +51,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
+app.MapHub<ChatHub>("/chathub");
 app.Run();

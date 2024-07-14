@@ -1,0 +1,47 @@
+﻿@page "/chat/{chatSessionId:int}"
+@model MyRazorPage.Pages.ChatModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Chat";
+    Layout = "_Layout";
+}
+
+<h2>Chat</h2>
+
+<div id="chatContainer">
+    <div id="messagesList"></div>
+    <input type="text" id="messageInput" placeholder="Enter your message" />
+    <button id="sendButton">Send</button>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
+    <script>
+        const chatSessionId = @Model.ChatSessionId;
+        const userId = @Model.UserId;
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chatHub")
+            .build();
+
+        connection.on("ReceiveMessage", (senderId, message) => {
+            const messageElement = document.createElement("div");
+            messageElement.textContent = `${senderId}: ${message}`;
+            document.getElementById("messagesList").appendChild(messageElement);
+        });
+
+        connection.start().then(() => {
+            connection.invoke("JoinChatSession", chatSessionId);
+
+            document.getElementById("sendButton").addEventListener("click", () => {
+                const message = document.getElementById("messageInput").value;
+                connection.invoke("SendMessage", chatSessionId, message, userId);
+                document.getElementById("messageInput").value = "";
+            });
+        });
+
+        window.addEventListener("beforeunload", () => {
+            connection.invoke("LeaveChatSession", chatSessionId);
+        });
+    </script>
+}

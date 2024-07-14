@@ -85,5 +85,16 @@ namespace DataAccessObjects.Repositories
                 throw new Exception(ex.Message);
             }
         }
+        public async Task<IEnumerable<Post>> GetPostsByUserIdAsync(int userId)
+        {
+            try
+            {
+                return await _appDbContext.Posts.Where(post => post.UserId == userId).ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

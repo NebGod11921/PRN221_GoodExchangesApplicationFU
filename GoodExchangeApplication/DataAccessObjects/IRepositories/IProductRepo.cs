@@ -16,5 +16,6 @@ namespace DataAccessObjects.IRepositories
         public Task<bool> DeleteProduct(int id);
         public Task<bool> CheckExist(int id);
         public Task<IEnumerable<Product>> SearchProductByNameOrCode(string searchQuery);
+        Task<IEnumerable<Product>> GetProductsByUserIdAsync(int userId);
     }
 }
