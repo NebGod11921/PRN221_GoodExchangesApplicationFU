@@ -1,5 +1,6 @@
 using Azure;
 using DataAccessObjects.Helpers;
+using DataAccessObjects.ViewModels.TransactionDTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -17,8 +18,8 @@ namespace MyRazorPage.Pages.Order
         private string PaypalSecret { get; set; } = "";
         public string PaypalUrl { get; set; } = "";
 
-        public string DeliveryAddress { get; set; } = "";
-        public string Total { get; set; } = "";
+        public string? DeliveryAddress { get; set; } = "";
+        public float? Total { get; set; }
         public string ProductIdentifies { get; set; } = "";
         private readonly PaypalClient _paypalClient;
 
@@ -34,134 +35,122 @@ namespace MyRazorPage.Pages.Order
 
         public void OnGet()
         {
-            DeliveryAddress = "HCM";
-            Total = "200";
-            ProductIdentifies = "hahaha";
-            ViewData["PaypalClientId"] = _paypalClient.ClientId;
+            var getSession = HttpContext.Session.GetString("GetTransactionInfo");
+            if (getSession != null)
+            {
+                var json = JsonSerializer.Deserialize<TransactionDTOs>(getSession);
+                DeliveryAddress = json.ShippingAddress;
+                Total = json.TotalAmount;
+                ProductIdentifies = "testing";
+                
+            }
+                ViewData["PaypalClientId"] = _paypalClient.ClientId;
         }
 
 
         public JsonResult OnPostCreateOrder()
         {
-            DeliveryAddress = "HCM";
-            Total = "200";
-            ProductIdentifies = "hahaha";
-            //create the request body
-            JsonObject createOrderRequest = new JsonObject();
-            createOrderRequest.Add("intent", "CAPTURE");    
-
-            JsonObject amount = new JsonObject();
-            amount.Add("currency_code", "USD");
-            amount.Add("value", Total);
-
-            JsonObject purchaseUnit1 = new JsonObject();
-            purchaseUnit1.Add("amount", amount);
-
-            JsonArray purchaseUnits = new JsonArray();
-            purchaseUnits.Add(purchaseUnit1);
-
-            createOrderRequest.Add("purchase_units", purchaseUnits);
-
-            //get access token
-            string accessToken = GetPaypalAccessToken();
-
-
-            //send request
-            string url = PaypalUrl + "/v2/checkout/orders";
-            string orderId = "";
-
-            using(var client = new HttpClient())
+            var getSession = HttpContext.Session.GetString("GetTransactionInfo");
+            if (getSession != null)
             {
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
-                var requestMessage = new HttpRequestMessage(HttpMethod.Post, url);
-                requestMessage.Content = new StringContent(createOrderRequest.ToString(), null, "application/json");
-            
-                var responseTask = client.SendAsync(requestMessage);
-                responseTask.Wait();
+                var json = JsonSerializer.Deserialize<TransactionDTOs>(getSession);
+                DeliveryAddress = json.ShippingAddress;
+                Total = json.TotalAmount;
+                ProductIdentifies = "testing";
 
-                var result = responseTask.Result;
-                if(result.IsSuccessStatusCode)
+                //create the request body
+                JsonObject createOrderRequest = new JsonObject();
+                createOrderRequest.Add("intent", "CAPTURE");
+
+                JsonObject amount = new JsonObject();
+                amount.Add("currency_code", "USD");
+                amount.Add("value", Total);
+
+                JsonObject purchaseUnit1 = new JsonObject();
+                purchaseUnit1.Add("amount", amount);
+
+                JsonArray purchaseUnits = new JsonArray();
+                purchaseUnits.Add(purchaseUnit1);
+
+                createOrderRequest.Add("purchase_units", purchaseUnits);
+
+                //get access token
+                string accessToken = GetPaypalAccessToken();
+
+
+                //send request
+                string url = PaypalUrl + "/v2/checkout/orders";
+                string orderId = "";
+
+                using (var client = new HttpClient())
                 {
-                    var readTask = result.Content.ReadAsStringAsync();
-                    readTask.Wait();
-                    
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
+                    var requestMessage = new HttpRequestMessage(HttpMethod.Post, url);
+                    requestMessage.Content = new StringContent(createOrderRequest.ToString(), null, "application/json");
 
-                    var strResponse = readTask.Result;
-                    var jsonResponse = JsonNode.Parse(strResponse);
-                
-                    if(jsonResponse != null)
+                    var responseTask = client.SendAsync(requestMessage);
+                    responseTask.Wait();
+
+                    var result = responseTask.Result;
+                    if (result.IsSuccessStatusCode)
                     {
-                        orderId = jsonResponse["id"]?.ToString() ?? "";
-                    
-                        //later to save into database
-                    
-                    }
-                
-                }
-            
-            }
-            var response = new
-            {
-                Id = orderId
-            };
-            return new JsonResult(response);
-        }
-
-        public JsonResult OnPostCompleteOrder([FromBody] JsonObject data) 
-        {
-            if(data == null || data["orderID"] == null)
-            {
-                return new JsonResult("");
-            } 
-            var orderID = data["orderID"]!.ToString();
+                        var readTask = result.Content.ReadAsStringAsync();
+                        readTask.Wait();
 
 
-            string accessToken = GetPaypalAccessToken();
+                        var strResponse = readTask.Result;
+                        var jsonResponse = JsonNode.Parse(strResponse);
 
-            string url = PaypalUrl + "/v2/checkout/orders/" + orderID + "/confirm-payment-source";
-
-            using ( var client = new HttpClient())
-            {
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
-
-                var requestMessage = new HttpRequestMessage(HttpMethod.Post, url);
-                requestMessage.Content = new StringContent("", null, "application/json");
-
-                var responseTask = client.SendAsync(requestMessage);
-                responseTask.Wait();
-
-                var result = responseTask.Result;
-                if(result.IsSuccessStatusCode)
-                {
-                    var readTask = result.Content.ReadAsStringAsync();
-                    readTask.Wait();
-
-                    var strResponse = readTask.Result;
-
-
-                    var jsonResponse = JsonNode.Parse(strResponse);
-                    if(jsonResponse != null)
-                    {
-                        string paypalOrderStatus = jsonResponse["status"]?.ToString() ?? "";
-                        if(paypalOrderStatus == "COMPLETED")
+                        if (jsonResponse != null)
                         {
-                            //clear tempdata
-                            TempData.Clear();
+                            orderId = jsonResponse["id"]?.ToString() ?? "";
 
+                            //later to save into database
 
-                            //update payment status in db
-
-
-                            //clear cookie
-
-                            return new JsonResult("success");
                         }
+
                     }
+
                 }
-            
+                var response = new
+                {
+                    Id = orderId
+                };
+                return new JsonResult(response);
+            } else
+            {
+                return null;
             }
-            return new JsonResult("");
         }
+
+        public JsonResult OnPostCompleteOrder([FromBody] JsonObject data)
+        {
+            if (data == null || data["orderID"] == null)
+            {
+                return new JsonResult(new { error = "Invalid request, missing orderID" });
+            }
+
+            var orderID = data["orderID"]!.ToString();
+            var paymentStatus = "COMPLETED"; // Hardcoded for simplicity; use actual status in a real scenario
+
+            if (paymentStatus == "COMPLETED")
+            {
+                // Clear tempdata
+                TempData.Clear();
+
+                // Update payment status in the database
+                // Add your database update logic here
+
+                // Clear cookie if necessary
+
+                return new JsonResult(new { status = "success" });
+            }
+            else
+            {
+                return new JsonResult(new { error = "Payment not completed" });
+            }
+        }
+
 
         private string GetPaypalAccessToken()
         {

@@ -25,5 +25,7 @@ namespace BusinessObjects
         public virtual ICollection<Message> Messages { get; set; }
         public virtual ICollection<ChatSession> ChatSessionsAsUser1 { get; set; }
         public virtual ICollection<ChatSession> ChatSessionsAsUser2 { get; set; }
+        public virtual IEnumerable<Transaction> Transactions { get; set; }
+        
     }
 }

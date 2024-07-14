@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
+using DataAccessObjects.ViewModels.AccountDTOS;
 
 
 namespace MyRazorPage.Pages.Transaction
@@ -119,51 +120,65 @@ namespace MyRazorPage.Pages.Transaction
 
             try
             {
-                // Create a new TransactionDTO
-                TransactionDTOs transactionDTOs = new TransactionDTOs();
-                transactionDTOs.Quantity = txtQuantity;
-                transactionDTOs.TotalAmount = txtTotalPrice;
-                transactionDTOs.Note = txtNote;
-                transactionDTOs.ShippingAddress = txtAddress;
-                transactionDTOs.TransactionTypeId = txtTransactionTypeId;
-
+                var getSession = HttpContext.Session.GetString("GetUser");
+                if(getSession != null)
+                {
+                    var Json = JsonSerializer.Deserialize<LoginAccountDTOs>(getSession);
+                    // Create a new TransactionDTO
+                    TransactionDTOs transactionDTOs = new TransactionDTOs();
+                    transactionDTOs.Quantity = txtQuantity;
+                    transactionDTOs.TotalAmount = txtTotalPrice;
+                    transactionDTOs.Note = txtNote;
+                    transactionDTOs.ShippingAddress = txtAddress;
+                    transactionDTOs.TransactionTypeId = txtTransactionTypeId;
+                    transactionDTOs.Status = 1;
+                    transactionDTOs.UserId = Json.Id;
                 // Call service method to create transaction
                 var resultTransaction = await _transactionService.CreateTransaction(transactionDTOs, txtTransactionTypeId);
 
-                if (resultTransaction != null)
-                {
-                    List<TransactionProductDTOs> transactionProductDTOs = new List<TransactionProductDTOs>();
-
-                    // Iterate over productIds to create TransactionProductDTOs
-                    foreach (var productId in productIds)
+                    if (resultTransaction != null)
                     {
-                        TransactionProductDTOs transactionProduct = new TransactionProductDTOs();
-                        transactionProduct.ProductId = productId;
-                        transactionProduct.TransactionId = resultTransaction.Id;
-                        transactionProductDTOs.Add(transactionProduct);
-                    }
+                        List<TransactionProductDTOs> transactionProductDTOs = new List<TransactionProductDTOs>();
 
-                    // Call service method to create transaction products
-                    var resultTransactionProduct = await _transactionProductService.CreateTransactionProducts(transactionProductDTOs, resultTransaction.Id, productIds);
+                        // Iterate over productIds to create TransactionProductDTOs
+                        foreach (var productId in productIds)
+                        {
+                            TransactionProductDTOs transactionProduct = new TransactionProductDTOs();
+                            transactionProduct.ProductId = productId;
+                            transactionProduct.TransactionId = resultTransaction.Id;
+                            transactionProductDTOs.Add(transactionProduct);
+                        }
 
-                    if (resultTransactionProduct)
-                    {
-                        var json = JsonSerializer.Serialize(txtTotalPrice);
-                        HttpContext.Session.SetString("GetTotalPrice", json);
+                        // Call service method to create transaction products
+                        var resultTransactionProduct = await _transactionProductService.CreateTransactionProducts(transactionProductDTOs, resultTransaction.Id, productIds);
 
-                        return RedirectToPage("/Checkout");
+                        if (resultTransactionProduct)
+                        {
+                            var json = JsonSerializer.Serialize(resultTransaction);
+                            HttpContext.Session.SetString("GetTransactionInfo", json);
+
+                            return RedirectToPage("/Checkout");
+                        }
+                        else
+                        {
+                            ModelState.AddModelError(string.Empty, "Failed to create transaction products.");
+                            return Page();
+                        }
                     }
                     else
                     {
-                        ModelState.AddModelError(string.Empty, "Failed to create transaction products.");
+                        ModelState.AddModelError(string.Empty, "Failed to create the transaction.");
                         return Page();
                     }
-                }
-                else
+                } else
                 {
-                    ModelState.AddModelError(string.Empty, "Failed to create the transaction.");
+                    ModelState.AddModelError(string.Empty, "Login first to use this function");
                     return Page();
                 }
+
+
+
+               
             }
             catch (Exception ex)
             {

@@ -67,7 +67,7 @@ namespace DataAccessObjects.Helpers
                 throw new ApplicationException("Error during authentication with PayPal.", ex);
             }
         }
-
+            
             public async Task<CreateOrderResponse> CreateOrder(string value, string currency, string reference)
             {
                 var auth = await Authenticate();

@@ -59,7 +59,7 @@
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Billing Address</h4>
             <form class="needs-validation">
-                <div class="row mb-4">
+                @* <div class="row mb-4">
                     <div class="col">
                         <div data-mdb-input-init class="form-outline">
                             <input type="text" id="form6Example1" class="form-control" />
@@ -112,13 +112,13 @@
                     <label class="form-check-label" for="checkoutForm2">
                         Save this information for next time
                     </label>
-                </div>
+                </div> *@
 
                 <hr class="my-4" />
 
                 <h5 class="mb-4">Payment</h5>
 
-                <div class="form-check">
+               @*  <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm3" checked />
                     <label class="form-check-label" for="checkoutForm3">
                         Credit card
@@ -167,7 +167,7 @@
                             <label class="form-label" for="formCVV">CVV</label>
                         </div>
                     </div>
-                </div>
+                </div> *@
 
                 <div id="paypal-button-container" name="id" style="max-width:1000px;"></div>
 
@@ -192,20 +192,30 @@
         },
         onApprove: async function (data, actions) {
             // Capture the funds from the transaction.
+            const details = await actions.order.capture();
+
+            // Send the order ID and capture details to the server to complete the order.
             const response = await fetch("/CheckOut?handler=CompleteOrder", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    orderID: data.orderID
+                    orderID: data.orderID,
+                    paymentDetails: details // Optional: Include the capture details for verification
                 })
             });
-            const details = await response.json();
 
-            // Show success message to buyer
-            alert(`Transaction completed by ${details.payer.name.given_name}`);
+            const result = await response.json();
+
+            if (result.status === "success") {
+                // Show success message to buyer.
+                alert(`Transaction completed by ${details.payer.name.given_name}`);
+            } else {
+                alert(`Transaction failed: ${result.message}`);
+            }
         }
     }).render('#paypal-button-container');
+
 </script>
 

@@ -17,6 +17,8 @@ namespace DataAccessObjects.ViewModels.TransactionDTOs
         public string? Note { get; set; }
         public int? TransactionTypeId { get; set; }
         public int? PaymentId { get; set; }
+        public byte? Status { get; set; }
+        public int? UserId { get; set; }
        
     }
 }
