@@ -3,14 +3,13 @@
   "WorkspaceRootPath": "E:\\Backup\\New folder\\GoodExchangeApplication\\MyRazorPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\backup\\new folder\\goodexchangeapplication\\myrazorpage\\pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\dataaccessobjects\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0323B13-8188-4336-B21B-BA4F1991CE0D}|..\\BusinessObjects\\BusinessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\businessobjects\\chatsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\dataaccessobjects\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\dataaccessobjects\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\dataaccessobjects\\fluentapis\\messageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,40 +36,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Chat.cshtml",
-              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Chat.cshtml",
-              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml",
-              "RelativeToolTip": "Pages\\Chat.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T05:56:38.271Z",
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\UnitOfWork.cs",
+              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\UnitOfWork.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T07:37:56.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ChatSession.cs",
-              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\BusinessObjects\\ChatSession.cs",
-              "RelativeDocumentMoniker": "..\\BusinessObjects\\ChatSession.cs",
-              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\BusinessObjects\\ChatSession.cs",
-              "RelativeToolTip": "..\\BusinessObjects\\ChatSession.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAwwBEAAAAAAAAA",
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\IUnitOfWork.cs",
+              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T05:54:00.828Z",
+              "WhenOpened": "2024-07-14T07:37:55.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\ChatHub.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\ChatHub.cs",
-              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\ChatHub.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\ChatHub.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA9wA8AAAAwAAAA",
+              "Title": "MessageConfiguration.cs",
+              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
+              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T05:31:23.049Z",
+              "WhenOpened": "2024-07-14T07:34:37.755Z",
               "EditorCaption": ""
             }
           ]
