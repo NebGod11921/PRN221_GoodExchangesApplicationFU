@@ -32,4 +32,12 @@
     <Folder Include="wwwroot\images\back\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Chat.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Chat.cshtml" />
+  </ItemGroup>
+
 </Project>

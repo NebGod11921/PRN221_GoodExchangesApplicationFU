@@ -85,5 +85,17 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
+        public async Task<IEnumerable<PostDTO>> GetPostsByUserIdAsync(int userId)
+        {
+            try
+            {
+                var posts = await _unitOfWork.PostRepository.GetPostsByUserIdAsync(userId);
+                return _mapper.Map<IEnumerable<PostDTO>>(posts);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

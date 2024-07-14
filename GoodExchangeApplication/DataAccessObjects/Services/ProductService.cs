@@ -177,6 +177,18 @@ namespace DataAccessObjects.Services
                     throw new Exception(ex.Message);
                 }
             }
-            
+        public async Task<IEnumerable<ProductDTO>> GetProductsByUserIdAsync(int userId)
+        {
+            try
+            {
+                var products = await _unitOfWork.ProductRepository.GetProductsByUserIdAsync(userId);
+                return _mapper.Map<IEnumerable<ProductDTO>>(products);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
     }
 }
