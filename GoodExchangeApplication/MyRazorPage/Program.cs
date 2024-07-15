@@ -27,7 +27,7 @@ builder.Services.AddSingleton(x => new PaypalClient(
 
 builder.Services.AddSession(opts =>
 {
-    opts.IdleTimeout = TimeSpan.FromSeconds(20);
+    /*opts.IdleTimeout = TimeSpan.FromSeconds(20);*/
     opts.Cookie.HttpOnly = true;
     opts.Cookie.IsEssential = true;
 });
