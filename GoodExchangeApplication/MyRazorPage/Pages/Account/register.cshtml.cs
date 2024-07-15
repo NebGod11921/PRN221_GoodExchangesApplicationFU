@@ -43,14 +43,6 @@ namespace MyRazorPage.Pages.Account
             {
                 throw new Exception(ex.Message);
             }
-        }
-
-
-
-
-
-
-
-        
+        } 
     }
 }

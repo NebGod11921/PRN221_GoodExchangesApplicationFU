@@ -23,10 +23,17 @@ namespace MyRazorPage.Pages.Account
             ViewData["Password"] = Password;
             try
             {
-                if (string.IsNullOrEmpty(Password) && string.IsNullOrEmpty(Email))
+                if (string.IsNullOrEmpty(Email))
                 {
+                    ModelState.AddModelError(string.Empty, "Email is required.");
                     return Page();
-                }   
+                }
+
+                if (string.IsNullOrEmpty(Password))
+                {
+                    ModelState.AddModelError(string.Empty, "Password is required.");
+                    return Page();
+                }
                 else
                 {
                     var result = await _accountService.LoginAccountAsync(Email, Password);
@@ -34,6 +41,14 @@ namespace MyRazorPage.Pages.Account
                     {
                         var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
                         HttpContext.Session.SetString("GetUser", json);
+/*                        if (result.Role?.RoleName == "Admin")
+                        {
+                            return RedirectToPage("/Admin/AccountManagement");
+                        }
+                        else
+                        {
+                            return RedirectToPage("/Index");
+                        }*/
                         return RedirectToPage("/Index");
                     } else
                     {

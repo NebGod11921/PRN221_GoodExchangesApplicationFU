@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -41,7 +42,7 @@ namespace DataAccessObjects.Repositories
             return result;
         }
 
-        public void SoftRemove(TEntity entity)
+        public void SoftRemove(TEntity entity) 
         {
             entity.Status = 0;
             _dbSet.Update(entity);
@@ -64,6 +65,10 @@ namespace DataAccessObjects.Repositories
         public void UpdateRange(List<TEntity> entities)
         {
             _dbSet.UpdateRange(entities.ToList());
+        }
+        public IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression)
+        {
+            return _dbSet.Where(expression).AsNoTracking();
         }
     }
 }

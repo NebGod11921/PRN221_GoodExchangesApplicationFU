@@ -2,6 +2,7 @@
 using BusinessObjects;
 using DataAccessObjects.IServices;
 using DataAccessObjects.ViewModels.AccountDTOS;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,11 @@ namespace DataAccessObjects.Services
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
+        }
+
+        public Task<bool> BanAccount(int AccountId)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<bool> DeleteAccount(int userId)
@@ -47,11 +53,11 @@ namespace DataAccessObjects.Services
             }
         }
 
-        public async Task<AccountDTOs> GetAccountDTOsById(int id)
+        public async Task<AccountDTOs> GetAccountDTOsById(int AccountId)
         {
             try
             {
-                var result = await _unitOfWork.AccountRepository.GetByIdAsync(id);
+                var result = await _unitOfWork.AccountRepository.GetByIdAsync(AccountId);
                 var mapper = _mapper.Map<AccountDTOs>(result);
                 if (mapper != null)
                 {
@@ -118,8 +124,9 @@ namespace DataAccessObjects.Services
 
                 if (createUser != null)
                 {
-                    var checkEmail = await _unitOfWork.AccountRepository.CheckEmailExists(createUser.Email);
-                    var checkPhoneNumber = await _unitOfWork.AccountRepository.CheckEmailExists(createUser.TelephoneNumber);
+                    var checkEmail       = await _unitOfWork.AccountRepository.CheckEmailExists(createUser.Email);
+                    var checkPhoneNumber = await _unitOfWork.AccountRepository.CheckTelephoneNumberExists(createUser.TelephoneNumber);
+
                     createUser.RoleId = 1;
                     if (checkEmail == true)
                     {
@@ -168,6 +175,11 @@ namespace DataAccessObjects.Services
             }
         }
 
+        public Task<bool> UnbanAccount(int AccountId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<AccountDTOs> UpdateUserProfileAsync(AccountDTOs user, int userId)
         {
             try
@@ -187,6 +199,46 @@ namespace DataAccessObjects.Services
             }catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        /*        public async Task<AccountDTOs> CheckUsernameExisted(string username)
+                {
+                    try
+                    {
+                        var mapper = _mapper.Map<User>(user);
+                        var result = await _unitOfWork.AccountRepository.
+
+                    }catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+                }*/
+        public async Task<bool> CreateAccountAsync(AccountDTOs account)
+        {
+            // Hash the password before storing it
+            account.Password = HashPassword(account.Password);
+
+            // Add account creation logic here
+            _unitOfWork.AccountRepository.Add(account);
+            return await _unitOfWork.SaveChangeAsync() > 0;
+        }
+
+        public class HashPassword
+        {
+            public static string HashWithSHA256(string input)
+            {
+                using SHA256 sHA256 = SHA256.Create();
+
+                var inputBytes = Encoding.UTF8.GetBytes(input);
+                byte[] bytes = sHA256.ComputeHash(inputBytes);
+
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
     }

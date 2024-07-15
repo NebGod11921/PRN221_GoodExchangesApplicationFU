@@ -20,8 +20,25 @@ namespace DataAccessObjects.Repositories
             _appDbContext = appDbContext;
         }
 
-
-
+        public async Task<bool> CheckUserNameExisted(string username)
+        {
+            try
+            {
+                var result = await _appDbContext.Users.AnyAsync(u => u.UserName == username);
+                if (result)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
         public async Task<bool> CheckEmailExists(string email)
         {
             try
