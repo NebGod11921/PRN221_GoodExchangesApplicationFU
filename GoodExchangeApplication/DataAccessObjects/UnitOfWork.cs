@@ -20,8 +20,11 @@ namespace DataAccessObjects
         private readonly ITransactionRepo _transactionRepo;
         private readonly ITransactionTypeRepo _transactionTypeRepo;
         private readonly ITransactionProductRepository _transactionProductRepository;
+        private readonly IPaymentRepo _paymentRepo;
+
+
         public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, ITransactionRepo transactionRepo, ITransactionTypeRepo transactionTypeRepo,
-            IPostRepository postRepository, IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository, ITransactionProductRepository transactionProductRepository)
+            IPostRepository postRepository, IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository, ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo)
 
         {
             _accountRepository = accountRepository;
@@ -34,6 +37,7 @@ namespace DataAccessObjects
             _transactionRepo = transactionRepo;
             _transactionTypeRepo = transactionTypeRepo;
             _transactionProductRepository = transactionProductRepository;
+            _paymentRepo = paymentRepo;
         }
         public IAccountRepository AccountRepository => _accountRepository;
         public IPostRepository PostRepository => _postRepository;
@@ -47,6 +51,8 @@ namespace DataAccessObjects
         public ITransactionTypeRepo TransactionType => _transactionTypeRepo;
 
         public ITransactionProductRepository TransactionProductRepository => _transactionProductRepository;
+
+        public IPaymentRepo PaymentsRepository => _paymentRepo;
 
         public async Task<int> SaveChangeAsync()
         {

@@ -1,4 +1,3 @@
-
 using DataAccessObjects.Helpers;
 using DataAccessObjects.IServices;
 using DataAccessObjects.ViewModels.CartDTOS;
@@ -8,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using DataAccessObjects.ViewModels.AccountDTOS;
+using DataAccessObjects.ViewModels.PaymentDTOS;
 
 
 namespace MyRazorPage.Pages.Transaction
@@ -17,22 +17,23 @@ namespace MyRazorPage.Pages.Transaction
         private readonly ITransactionTypeService _transactionTypeService;
         private readonly ITransactionProductService _transactionProductService;
         private readonly ITransactionService _transactionService;
+        private readonly IPaymentService _paymentService;
         private readonly PaypalClient _paypalClient;
 
         public AddToCartModel(ITransactionTypeService transactionTypeService, PaypalClient paypalClient, ITransactionService transactionService
-            , ITransactionProductService transactionProductService)
+            , ITransactionProductService transactionProductService, IPaymentService paymentService)
         {
             _transactionTypeService = transactionTypeService;
             _paypalClient = paypalClient;
             _transactionService = transactionService;
             _transactionProductService = transactionProductService;
-
+            _paymentService = paymentService;
         }
 
         public IEnumerable<TransactionTypeDTO> TransactionTypeDTOs { get; set; }
 
         public IEnumerable<CartDTOs> CartDTOs { get; set; }
-
+        public IEnumerable<PaymentDTOs> PaymentDTOs { get; set; }
 
 
 
@@ -55,7 +56,7 @@ namespace MyRazorPage.Pages.Transaction
         public async Task OnGet()
         {
             TransactionTypeDTOs = await _transactionTypeService.GetAllTransactionTypeDTOs();
-        
+            PaymentDTOs = await _paymentService.GetPaymentDTOs();
             var getSession =  HttpContext.Session.GetString("MyCart");
                 if (getSession != null)
                 {
@@ -109,7 +110,8 @@ namespace MyRazorPage.Pages.Transaction
                 throw new Exception(ex.Message);
             }
         }
-        public async Task<IActionResult> OnPostCheckOut(int txtQuantity, float txtTotalPrice, string txtNote, string txtAddress, int txtTransactionTypeId, List<int> productIds)
+        public async Task<IActionResult> OnPostCheckOut(int txtQuantity, float txtTotalPrice, string txtNote, string txtAddress, int txtTransactionTypeId, List<int> productIds
+            ,int txtPaymentMethodId)
         {
             ViewData["txtTotalPrice"] = txtTotalPrice;
             ViewData["txtQuantity"] = txtQuantity;
@@ -117,7 +119,7 @@ namespace MyRazorPage.Pages.Transaction
             ViewData["txtAddress"] = txtAddress;
             ViewData["txtTransactionTypeId"] = txtTransactionTypeId;
             ViewData["productIds"] = productIds;
-
+            ViewData["txtPaymentMethodId"] = txtPaymentMethodId;
             try
             {
                 var getSession = HttpContext.Session.GetString("GetUser");
@@ -131,6 +133,7 @@ namespace MyRazorPage.Pages.Transaction
                     transactionDTOs.Note = txtNote;
                     transactionDTOs.ShippingAddress = txtAddress;
                     transactionDTOs.TransactionTypeId = txtTransactionTypeId;
+                    transactionDTOs.PaymentId = txtPaymentMethodId;
                     transactionDTOs.Status = 1;
                     transactionDTOs.UserId = Json.Id;
                 // Call service method to create transaction
@@ -152,12 +155,18 @@ namespace MyRazorPage.Pages.Transaction
                         // Call service method to create transaction products
                         var resultTransactionProduct = await _transactionProductService.CreateTransactionProducts(transactionProductDTOs, resultTransaction.Id, productIds);
 
-                        if (resultTransactionProduct)
+                        if (resultTransactionProduct && resultTransaction.PaymentId == 2)
                         {
                             var json = JsonSerializer.Serialize(resultTransaction);
                             HttpContext.Session.SetString("GetTransactionInfo", json);
-
+                            HttpContext.Session.Clear();
                             return RedirectToPage("/Checkout");
+                        } else if (resultTransactionProduct && resultTransaction.PaymentId == 1)
+                        {
+                            var json = JsonSerializer.Serialize(resultTransaction);
+                            HttpContext.Session.SetString("GetTransactionInfo", json);
+                            HttpContext.Session.Clear();
+                            return RedirectToPage("/Success");
                         }
                         else
                         {
@@ -175,10 +184,6 @@ namespace MyRazorPage.Pages.Transaction
                     ModelState.AddModelError(string.Empty, "Login first to use this function");
                     return Page();
                 }
-
-
-
-               
             }
             catch (Exception ex)
             {

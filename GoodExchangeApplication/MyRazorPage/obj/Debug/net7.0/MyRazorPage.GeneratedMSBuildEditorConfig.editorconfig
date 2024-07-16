@@ -52,6 +52,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/TransactionHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJIaXN0b3J5XFRyYW5zYWN0aW9uSGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJIaXN0b3J5XFVzZXJQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Homepage/HomePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcSG9tZVBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -94,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/_ViewStart.cshtml]

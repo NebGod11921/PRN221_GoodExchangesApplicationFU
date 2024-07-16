@@ -142,8 +142,9 @@ namespace MyRazorPage.Pages.Order
                 // Add your database update logic here
 
                 // Clear cookie if necessary
+                
 
-                return new JsonResult(new { status = "success" });
+                return new JsonResult(new { status = "success", redirectUrl = Url.Page("/Success") });
             }
             else
             {

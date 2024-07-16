@@ -91,6 +91,23 @@
             </div>
             <div class="card mb-4 mb-lg-0">
                 <div class="card-body">
+                    <p><strong>Select Your Payment Method</strong></p>
+                    <div>
+                        @foreach (var method in Model.PaymentDTOs)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="txtPaymentMethodId" id="paymentMethod@method.Id" value="@method.Id" required>
+                                <label class="form-check-label" for="paymentMethod@method.Id">
+                                    @method.PaymentMethod
+                                </label>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 mb-lg-0">
+                <div class="card-body">
                     <p><strong>Write note here:</strong></p>
                     <div>
                         <input type="text" id="note" />
@@ -128,6 +145,7 @@
                             <input type="hidden" name="txtNote" id="hiddenNote" value="" />
                             <input type="hidden" name="txtAddress" id="hiddenAddress" value="" />
                             <input type="hidden" name="txtTransactionTypeId" id="hiddenTransactionTypeId" value="" />
+                            <input type="hidden" name="txtPaymentMethodId" id="hiddenPaymentId" value=""/>
                             @foreach (var item in Model.CartDTOs)
                             {
                                 <input type="hidden" name="productIds" value="@item.Id" />
@@ -148,6 +166,10 @@
         document.getElementById('hiddenNote').value = document.getElementById('note').value;
         document.getElementById('hiddenAddress').value = document.getElementById('address').value;
         document.getElementById('hiddenTransactionTypeId').value = document.getElementById('transactionType').value;
+        var paymentMethod = document.querySelector('input[name="txtPaymentMethodId"]:checked');
+        if (paymentMethod) {
+            document.getElementById('hiddenPaymentId').value = paymentMethod.value;
+        }
     }
 
     document.getElementById('transactionType').addEventListener('change', function () {
