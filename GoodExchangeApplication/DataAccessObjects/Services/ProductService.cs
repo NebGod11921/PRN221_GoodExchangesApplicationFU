@@ -37,6 +37,13 @@ namespace DataAccessObjects.Services
             }
         }
 
+        public async Task<RequestProductDTO> GetById(int id)
+        {
+            try
+            {
+                var result = await _unitOfWork.ProductRepository.GetByID(id);
+                var map = _mapper.Map<RequestProductDTO>(result);
+                if (map != null)
             public async Task<IEnumerable<ResponseProductDTO>> GetAllProducts(ResponseProductDTO productDTO)
             {
                 try
@@ -55,9 +62,57 @@ namespace DataAccessObjects.Services
                     throw new Exception(ex.Message);
                 }
             }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async Task<RequestProductDTO> CreateProduct(RequestProductDTO newProduct)
+        {
+            try
+            {
+                var map = _mapper.Map<Product>(newProduct);
+                map.Popularities = 1;
+                map.Status = 1;
+                var createProduct = await _unitOfWork.ProductRepository.CreateProduct(map);
+                
+                if (createProduct != null)
+                {
+                    
+                    var result = _mapper.Map<RequestProductDTO>(createProduct);
+                    return result;
+                }
+                else 
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
             public async Task<ResponseProductDTO> GetById(int id)
             {
+                await _unitOfWork.ProductRepository.DeleteProduct(id);
+                return true;
+            }
+            return false;
+        }
+
+
+        //Error Update
+        public async Task<RequestProductDTO> UpdateProduct(RequestProductDTO updateProduct)
+        {
+            try
+            {
+                var map = _mapper.Map<Product>(updateProduct);
+                var result=await _unitOfWork.ProductRepository.UpdateProduct(map);
+                if (result != null)
+                {
+                    var mapResult = _mapper.Map<RequestProductDTO>(result);
+                    return mapResult;
+                }
+                else return null;
                 try
                 {
                     var result = await _unitOfWork.ProductRepository.GetByID(id);
@@ -190,5 +245,25 @@ namespace DataAccessObjects.Services
             }
         }
 
+        public async Task<ProductDTos> UpdateProductSec(ProductDTos updateProduct)
+        {
+            try
+            {
+                var map = _mapper.Map<Product>(updateProduct);
+                var checkExist = await _unitOfWork.ProductRepository.GetByID(map.Id);
+                if (checkExist != null)
+                {
+                    var result = await _unitOfWork.ProductRepository.UpdateProduct(map);
+                    var mapResult = _mapper.Map<ProductDTos>(result);
+                    return mapResult;
+                }
+                else return null;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

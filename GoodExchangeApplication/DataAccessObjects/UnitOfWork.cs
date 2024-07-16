@@ -17,6 +17,9 @@ namespace DataAccessObjects
         private readonly IChatSessionRepository _chatSessionRepository;
         private readonly IMessageRepository _messageRepository;
         private readonly IProductRepo _productRepo;
+        private readonly IProductCategoryRepo _productCategoryRepo;
+
+        public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, IProductCategoryRepo productCategoryRepo )
         private readonly ITransactionRepo _transactionRepo;
         private readonly ITransactionTypeRepo _transactionTypeRepo;
         private readonly ITransactionProductRepository _transactionProductRepository;
@@ -34,6 +37,7 @@ namespace DataAccessObjects
             _postRepository = postRepository;
             _appDbContext = appDbContext;
             _productRepo = IProductRepo;
+            _productCategoryRepo = productCategoryRepo;
             _transactionRepo = transactionRepo;
             _transactionTypeRepo = transactionTypeRepo;
             _transactionProductRepository = transactionProductRepository;
@@ -46,6 +50,7 @@ namespace DataAccessObjects
 
         public IProductRepo ProductRepository => _productRepo;
 
+        public IProductCategoryRepo productCategoryRepo => _productCategoryRepo;
         public ITransactionRepo TransactionRepository => _transactionRepo;
 
         public ITransactionTypeRepo TransactionType => _transactionTypeRepo;
