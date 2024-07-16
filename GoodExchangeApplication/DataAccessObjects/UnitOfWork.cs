@@ -19,7 +19,7 @@ namespace DataAccessObjects
         private readonly IProductRepo _productRepo;
         private readonly IProductCategoryRepo _productCategoryRepo;
 
-        public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, IProductCategoryRepo productCategoryRepo )
+       
         private readonly ITransactionRepo _transactionRepo;
         private readonly ITransactionTypeRepo _transactionTypeRepo;
         private readonly ITransactionProductRepository _transactionProductRepository;
