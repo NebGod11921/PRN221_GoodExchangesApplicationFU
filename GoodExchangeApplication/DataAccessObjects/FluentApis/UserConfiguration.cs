@@ -18,6 +18,7 @@ namespace DataAccessObjects.FluentApis
             builder.HasMany(x => x.Posts).WithOne(x => x.User);
             builder.HasMany(x => x.Reviews).WithOne(x => x.User);
             builder.HasMany(x => x.Reports).WithOne(x => x.User);
+            builder.HasMany(x => x.Transactions).WithOne(x => x.User);
         }
     }
 }

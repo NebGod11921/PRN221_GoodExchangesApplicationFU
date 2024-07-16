@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.IRepositories
 {
-    public interface ITransactionType : IGenericRepository<TransactionType>
+   public interface IChatSessionRepository
     {
-
+        Task<ChatSession> GetChatSessionAsync(int user1Id, int user2Id);
+        Task AddChatSessionAsync(ChatSession chatSession);
     }
 }

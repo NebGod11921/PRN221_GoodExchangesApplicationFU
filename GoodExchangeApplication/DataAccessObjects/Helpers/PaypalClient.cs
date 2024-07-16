@@ -16,7 +16,7 @@ namespace DataAccessObjects.Helpers
             public string ClientId { get; }
             public string ClientSecret { get; }
 
-            public string BaseUrl => Mode == "Live"
+            public string BaseUrl => Mode == "Live" //xac thuc 
                 ? "https://api-m.paypal.com"
                 : "https://api-m.sandbox.paypal.com";
 
@@ -29,32 +29,45 @@ namespace DataAccessObjects.Helpers
 
             private async Task<AuthResponse> Authenticate()
             {
-                var auth = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{ClientId}:{ClientSecret}"));
+            var auth = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{ClientId}:{ClientSecret}"));
 
-                var content = new List<KeyValuePair<string, string>>
+            var content = new List<KeyValuePair<string, string>>
+        {
+            new KeyValuePair<string, string>("grant_type", "client_credentials")
+        };
+
+            var request = new HttpRequestMessage
             {
-                new("grant_type", "client_credentials")
+                RequestUri = new Uri($"{BaseUrl}/v1/oauth2/token"),
+                Method = HttpMethod.Post,
+                Headers =
+            {
+                { "Authorization", $"Basic {auth}" }
+            },
+                Content = new FormUrlEncodedContent(content)
             };
 
-                var request = new HttpRequestMessage
-                {
-                    RequestUri = new Uri($"{BaseUrl}/v1/oauth2/token"),
-                    Method = HttpMethod.Post,
-                    Headers =
-                {
-                    { "Authorization", $"Basic {auth}" }
-                },
-                    Content = new FormUrlEncodedContent(content)
-                };
-
+            try
+            {
                 var httpClient = new HttpClient();
                 var httpResponse = await httpClient.SendAsync(request);
                 var jsonResponse = await httpResponse.Content.ReadAsStringAsync();
                 var response = JsonSerializer.Deserialize<AuthResponse>(jsonResponse);
 
+                if (response == null || string.IsNullOrEmpty(response.access_token))
+                {
+                    throw new ApplicationException("Failed to retrieve access token from PayPal.");
+                }
+
                 return response;
             }
-
+            catch (Exception ex)
+            {
+                // Handle and log the exception
+                throw new ApplicationException("Error during authentication with PayPal.", ex);
+            }
+        }
+            
             public async Task<CreateOrderResponse> CreateOrder(string value, string currency, string reference)
             {
                 var auth = await Authenticate();
@@ -90,21 +103,25 @@ namespace DataAccessObjects.Helpers
              //save and capture the order
             public async Task<CaptureOrderResponse> CaptureOrder(string orderId)
             {
-                var auth = await Authenticate();
+            var auth = await Authenticate();
 
-                var httpClient = new HttpClient();
+            var httpClient = new HttpClient();
 
-                httpClient.DefaultRequestHeaders.Authorization = AuthenticationHeaderValue.Parse($"Bearer {auth.access_token}");
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", auth.access_token);
 
-                var httpContent = new StringContent("", Encoding.Default, "application/json");
+            var httpResponse = await httpClient.PostAsync($"{BaseUrl}/v2/checkout/orders/{orderId}/capture", null);
 
-                var httpResponse = await httpClient.PostAsync($"{BaseUrl}/v2/checkout/orders/{orderId}/capture", httpContent);
-
-                var jsonResponse = await httpResponse.Content.ReadAsStringAsync();
-                var response = JsonSerializer.Deserialize<CaptureOrderResponse>(jsonResponse);
-
-                return response;
+            if (!httpResponse.IsSuccessStatusCode)
+            {
+                // Handle the error here, log or throw an exception
+                throw new HttpRequestException($"Failed to capture order. Status code: {httpResponse.StatusCode}");
             }
+
+            var jsonResponse = await httpResponse.Content.ReadAsStringAsync();
+            var response = JsonSerializer.Deserialize<CaptureOrderResponse>(jsonResponse);
+
+            return response;
+        }
         }
 
         public sealed class AuthResponse

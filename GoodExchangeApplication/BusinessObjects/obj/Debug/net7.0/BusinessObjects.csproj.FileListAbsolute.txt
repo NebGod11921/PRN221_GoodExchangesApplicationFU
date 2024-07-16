@@ -41,3 +41,18 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\Busine
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.pdb
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.AssemblyReference.cache
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfo.cs
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.sourcelink.json
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.dll
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\refint\BusinessObjects.dll
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
+E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll

@@ -70,5 +70,27 @@ namespace DataAccessObjects.Repositories
             await _appDbContext.SaveChangesAsync();
             return exist;
         }
+        public async Task<IEnumerable<Product>> SearchProductByNameOrCode(string searchQuery)
+        {
+            try
+            {
+                var result = await _appDbContext.Products
+                    .Where(p => p.Title.Contains(searchQuery) || p.Category.Name.Contains(searchQuery))
+                    .ToListAsync();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async Task<IEnumerable<Product>> GetProductsByUserIdAsync(int userId)
+        {
+            return await _appDbContext.UserProducts
+                .Where(up => up.UserId == userId)
+                .Select(up => up.Product)
+                .ToListAsync();
+        }
     }
 }

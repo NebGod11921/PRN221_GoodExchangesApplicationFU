@@ -43,3 +43,9 @@ MyRazorPage/.vs/MyRazorPage/FileContentIndex/7dc0c9f3-e413-4108-8c4b-f615a950252
 MyRazorPage/.vs/MyRazorPage/v17/.suo
 *.BuildWithSkipAnalyzers
 *.vsidx
+*.dll
+*.dll
+*.cache
+*.exe
+*.editorconfig
+*.json

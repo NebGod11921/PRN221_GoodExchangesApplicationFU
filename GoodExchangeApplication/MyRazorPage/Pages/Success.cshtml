@@ -1,0 +1,49 @@
+﻿@page "/Success"
+@using System.Text.Json
+@using DataAccessObjects.ViewModels.AccountDTOS
+@using DataAccessObjects.ViewModels.TransactionDTOs
+@model MyRazorPage.Pages.SuccessModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+    var getTransactionInfoPaypal = HttpContext.Session.GetString("GetTransactionInfo");
+    var getUserSession = HttpContext.Session.GetString("GetUser");
+}
+
+@if(getTransactionInfoPaypal != null && getUserSession != null)
+{
+    var transactionJson = JsonSerializer.Deserialize<TransactionDTOs>(getTransactionInfoPaypal);
+    var userJson = JsonSerializer.Deserialize<LoginAccountDTOs>(getUserSession);
+
+    @if(userJson.RoleId == 1)
+    {
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="mb-0">Thank You for Your Purchase!</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Your order was completed successfully.</h5>
+                            <p class="card-text">We appreciate your business and hope you enjoy your purchase.</p>
+                            <p class="card-text">Order Number: <strong>SAP_@transactionJson.Id</strong></p>
+                            <a href="/" class="btn btn-primary">Continue Shopping</a>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            If you have any questions or need further assistance, please contact our support team.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    } else
+    {
+        <h3>Other user's actor could not use this function</h3>
+    }
+
+} else
+{
+    <h3>You should recreate another other</h3>
+}
+

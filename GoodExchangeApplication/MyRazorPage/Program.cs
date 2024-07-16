@@ -1,5 +1,8 @@
 using DataAccessObjects;
 using DataAccessObjects.Commons;
+using DataAccessObjects.Helpers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConfiguration();
@@ -7,9 +10,24 @@ var configuration = builder.Configuration.Get<AppConfiguration>() ?? new AppConf
 builder.Services.AddRazorPages();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddInfrastructuresServices(configuration.DatabaseConnection);
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
+builder.Services.AddSignalR();
+builder.Services.Configure<CookiePolicyOptions>(opts =>
+{
+    opts.MinimumSameSitePolicy = SameSiteMode.None;
+    opts.HttpOnly = Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy.None;
+
+});
+builder.Services.AddSingleton(x => new PaypalClient(
+        builder.Configuration["PaypalOptions:AppId"],
+        builder.Configuration["PaypalOptions:AppSecret"],
+        builder.Configuration["PaypalOptions:Mode"]
+    ));
+
 builder.Services.AddSession(opts =>
 {
-    opts.IdleTimeout = TimeSpan.FromSeconds(20);
+    /*opts.IdleTimeout = TimeSpan.FromSeconds(20);*/
     opts.Cookie.HttpOnly = true;
     opts.Cookie.IsEssential = true;
 });
@@ -28,8 +46,10 @@ app.UseSession();
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapRazorPages();
-
+app.MapHub<ChatHub>("/chathub");
 app.Run();
