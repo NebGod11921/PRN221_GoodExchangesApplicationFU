@@ -1,4 +1,4 @@
-﻿@page "/chat/{chatSessionId:int}"
+﻿@page "/chat/{user2Id:int}"
 @model MyRazorPage.Pages.ChatModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
@@ -8,10 +8,28 @@
 
 <h2>Chat</h2>
 
-<div id="chatContainer">
-    <div id="messagesList"></div>
-    <input type="text" id="messageInput" placeholder="Enter your message" />
-    <button id="sendButton">Send</button>
+<div id="chatContainer" style="max-width: 600px; margin: auto;">
+    <div id="messagesList" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+        @foreach (var message in Model.Messages)
+        {
+            <div style="margin-bottom: 8px; padding: 5px; border-radius: 8px; background-color: #f0f0f0;">
+                @if (message.UserId == Model.UserId)
+                {
+                    <div style="text-align: right; color: #007bff;">
+                        Me: @message.Content
+                    </div>
+                }
+                else
+                {
+                    <div style="text-align: left; color: #28a745;">
+                        @message.Content
+                    </div>
+                }
+            </div>
+        }
+    </div>
+    <input type="text" id="messageInput" class="form-control" placeholder="Enter your message" style="width: 80%; display: inline-block;" />
+    <button id="sendButton" class="btn btn-primary" style="width: 18%; display: inline-block; margin-left: 2%;">Send</button>
 </div>
 
 @section Scripts {
@@ -26,7 +44,15 @@
 
         connection.on("ReceiveMessage", (senderId, message) => {
             const messageElement = document.createElement("div");
-            messageElement.textContent = `${senderId}: ${message}`;
+            if (senderId === userId) {
+                messageElement.style.textAlign = "right";
+                messageElement.style.color = "#007bff";
+                messageElement.innerHTML = `Me: ${message}`;
+            } else {
+                messageElement.style.textAlign = "left";
+                messageElement.style.color = "#28a745";
+                messageElement.innerHTML = `User ${senderId}: ${message}`;
+            }
             document.getElementById("messagesList").appendChild(messageElement);
         });
 

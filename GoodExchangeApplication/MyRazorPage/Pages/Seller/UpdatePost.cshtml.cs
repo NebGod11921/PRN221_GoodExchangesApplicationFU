@@ -25,10 +25,12 @@ namespace MyRazorPage.Pages.Seller
         public PostDTO Post { get; set; }
 
         public List<ProductDTO> Products { get; set; }
-        int userId = 2;
+        int userId;
 
         public async Task<IActionResult> OnGetAsync(int postId)
         {
+            int? id = HttpContext.Session.GetInt32("userId");
+            int userId = id ?? 0;
             try
             {
                 Post = await _postService.GetPostByIdAsync(postId);

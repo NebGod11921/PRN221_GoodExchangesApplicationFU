@@ -34,6 +34,7 @@ namespace MyRazorPage.Pages.Account
                     {
                         var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
                         HttpContext.Session.SetString("GetUser", json);
+                        HttpContext.Session.SetInt32("userId", result.Id);
                         return RedirectToPage("/Index");
                     } else
                     {

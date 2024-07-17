@@ -1,15 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Backup\\New folder\\GoodExchangeApplication\\MyRazorPage\\",
+  "WorkspaceRootPath": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\dataaccessobjects\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\dataaccessobjects\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\chat.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\chat.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\backup\\new folder\\goodexchangeapplication\\dataaccessobjects\\fluentapis\\messageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\iservices\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,41 +37,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\UnitOfWork.cs",
-              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\UnitOfWork.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\UnitOfWork.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBoAAAAzAAAA",
+              "DocumentIndex": 2,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IServices\\IChatService.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\IServices\\IChatService.cs",
+              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IServices\\IChatService.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\IServices\\IChatService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T07:37:56.637Z",
+              "WhenOpened": "2024-07-17T13:49:54.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chat.cshtml",
+              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Chat.cshtml",
+              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml",
+              "RelativeToolTip": "Pages\\Chat.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAowEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T13:23:03.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\IUnitOfWork.cs",
-              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\IUnitOfWork.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Chat.cshtml.cs",
+              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Chat.cshtml.cs",
+              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml.cs",
+              "RelativeToolTip": "Pages\\Chat.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T07:37:55.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MessageConfiguration.cs",
-              "DocumentMoniker": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
-              "ToolTip": "E:\\Backup\\New folder\\GoodExchangeApplication\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\FluentApis\\MessageConfiguration.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T07:34:37.755Z",
+              "WhenOpened": "2024-07-17T13:19:15.894Z",
               "EditorCaption": ""
             }
           ]
