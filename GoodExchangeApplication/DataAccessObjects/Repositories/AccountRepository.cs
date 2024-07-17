@@ -1,5 +1,6 @@
 ﻿using BusinessObjects;
 using DataAccessObjects.IRepositories;
+using DataAccessObjects.ViewModels.AccountDTOS;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -164,6 +165,23 @@ namespace DataAccessObjects.Repositories
             } catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<IEnumerable<User>> CreateAccountAsync(AccountDTOs accountDTOs)
+        {
+            try
+            {
+                var getuserId = await _appDbContext.Users.
+                if (accountDTOs == null)
+                {
+                    
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
             }
         }
     }

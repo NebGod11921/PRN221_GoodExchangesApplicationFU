@@ -201,19 +201,7 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
-
-        /*        public async Task<AccountDTOs> CheckUsernameExisted(string username)
-                {
-                    try
-                    {
-                        var mapper = _mapper.Map<User>(user);
-                        var result = await _unitOfWork.AccountRepository.
-
-                    }catch (Exception ex)
-                    {
-                        throw new Exception(ex.Message);
-                    }
-                }*/
+        
         public async Task<bool> CreateAccountAsync(AccountDTOs account)
         {
             // Hash the password before storing it
@@ -224,7 +212,7 @@ namespace DataAccessObjects.Services
             return await _unitOfWork.SaveChangeAsync() > 0;
         }
 
-        public class HashPassword
+/*        public class HashPassword
         {
             public static string HashWithSHA256(string input)
             {
@@ -240,6 +228,6 @@ namespace DataAccessObjects.Services
                 }
                 return builder.ToString();
             }
-        }
+        }*/
     }
 }

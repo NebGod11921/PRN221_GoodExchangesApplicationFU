@@ -19,8 +19,6 @@ namespace DataAccessObjects.Repositories
             _dbSet = db.Set<TEntity>();
         }
 
-
-
         public async Task AddAsync(TEntity entity)
         {
              await _dbSet.AddAsync(entity);
