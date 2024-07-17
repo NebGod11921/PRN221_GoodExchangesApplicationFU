@@ -3,15 +3,11 @@
   "WorkspaceRootPath": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\postmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\postmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\chat.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\chat.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\iservices\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87DA4B22-5778-4CFE-8D84-6A2A38E4F10E}|..\\DataAccessObjects\\DataAccessObjects.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\dataaccessobjects\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,41 +33,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IChatService.cs",
-              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IServices\\IChatService.cs",
-              "RelativeDocumentMoniker": "..\\DataAccessObjects\\IServices\\IChatService.cs",
-              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\IServices\\IChatService.cs",
-              "RelativeToolTip": "..\\DataAccessObjects\\IServices\\IChatService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T13:49:54.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Chat.cshtml",
-              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Chat.cshtml",
-              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml",
-              "RelativeToolTip": "Pages\\Chat.cshtml",
-              "ViewState": "AQIAACIAAAAAAAAAAAAowEkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-17T13:23:03.597Z",
+              "Title": "PostManagement.cshtml.cs",
+              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\PostManagement.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Seller\\PostManagement.cshtml.cs",
+              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\PostManagement.cshtml.cs",
+              "RelativeToolTip": "Pages\\Seller\\PostManagement.cshtml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:25:55.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Chat.cshtml.cs",
-              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Chat.cshtml.cs",
-              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Chat.cshtml.cs",
-              "RelativeToolTip": "Pages\\Chat.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessObjects\\Services\\PaymentService.cs",
+              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\PaymentService.cs",
+              "RelativeToolTip": "..\\DataAccessObjects\\Services\\PaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T13:19:15.894Z",
+              "WhenOpened": "2024-07-17T19:04:13.753Z",
               "EditorCaption": ""
             }
           ]

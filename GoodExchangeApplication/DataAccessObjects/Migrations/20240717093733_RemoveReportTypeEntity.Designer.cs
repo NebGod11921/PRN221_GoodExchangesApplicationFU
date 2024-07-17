@@ -4,6 +4,7 @@ using DataAccessObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessObjects.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240717093733_RemoveReportTypeEntity")]
+    partial class RemoveReportTypeEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -213,9 +216,6 @@ namespace DataAccessObjects.Migrations
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PostId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("ProductId")
                         .HasColumnType("int");
 
@@ -232,8 +232,6 @@ namespace DataAccessObjects.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("PostId");
 
                     b.HasIndex("ProductId");
 
@@ -496,10 +494,6 @@ namespace DataAccessObjects.Migrations
 
             modelBuilder.Entity("BusinessObjects.Report", b =>
                 {
-                    b.HasOne("BusinessObjects.Post", "Post")
-                        .WithMany("Reports")
-                        .HasForeignKey("PostId");
-
                     b.HasOne("BusinessObjects.Product", "Product")
                         .WithMany("Reports")
                         .HasForeignKey("ProductId");
@@ -507,8 +501,6 @@ namespace DataAccessObjects.Migrations
                     b.HasOne("BusinessObjects.User", "User")
                         .WithMany("Reports")
                         .HasForeignKey("UserId");
-
-                    b.Navigation("Post");
 
                     b.Navigation("Product");
 
@@ -611,11 +603,6 @@ namespace DataAccessObjects.Migrations
             modelBuilder.Entity("BusinessObjects.Payment", b =>
                 {
                     b.Navigation("Transactions");
-                });
-
-            modelBuilder.Entity("BusinessObjects.Post", b =>
-                {
-                    b.Navigation("Reports");
                 });
 
             modelBuilder.Entity("BusinessObjects.Product", b =>

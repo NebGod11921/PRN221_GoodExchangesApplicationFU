@@ -1,0 +1,161 @@
+﻿@page
+@using System.Text.Json
+@using DataAccessObjects.ViewModels.AccountDTOS
+
+@model MyRazorPage.Pages.SellerHistory.TransactionHistoryForSellerModel
+@{
+    Layout = null;
+    var getSession = HttpContext.Session.GetString("GetSeller");
+}
+
+<style>
+    body {
+        margin-top: 20px;
+        background: #f8f9fa;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .card {
+        box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .table th {
+        font-weight: bold;
+        background-color: #e9ecef;
+    }
+
+    .table th, .table td {
+        padding: 1rem;
+        vertical-align: middle;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .badge {
+        font-size: 0.875rem;
+        padding: 0.5em 0.75em;
+        border-radius: 0.5em;
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .bg-tint-warning {
+        background-color: #fff3cd;
+    }
+
+    .text-warning {
+        color: #856404;
+    }
+
+    .bg-tint-success {
+        background-color: #d4edda;
+    }
+
+    .text-success {
+        color: #155724;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .header h5 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+
+    .alert {
+        margin-top: 20px;
+    }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+@if (getSession != null)
+{
+    var json = JsonSerializer.Deserialize<LoginAccountDTOs>(getSession);
+
+    if (json.RoleId == 4)
+    {
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <div class="container">
+            <div class="card table-card">
+                <div class="card-header header">
+                    <h5 class="mb-0">Latest Transactions</h5>
+                    <p class="mb-0 small text-muted">1 Pending</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="small text-uppercase bg-body text-muted">
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model.GetTransactions)
+                            {
+                                <tr class="align-middle">
+                                    <td>SAP_@order.Id</td>
+                                    <td>@order.TransactionDate</td>
+                                    <td>Ander Durham</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <span>$ @order.TotalAmount</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @if (order.Status == 1)
+                                        {
+                                            <span class="badge bg-tint-warning text-warning">Pending</span>
+                                        }
+                                        else if (order.Status == 2)
+                                        {
+                                            <span class="badge bg-tint-success text-success">Completed</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container">
+            <div class="alert alert-warning" role="alert">
+                Other users could not access this function.
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="container">
+        <div class="alert alert-danger" role="alert">
+            Could not find any session.
+        </div>
+    </div>
+}
