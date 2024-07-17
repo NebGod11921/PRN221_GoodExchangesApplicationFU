@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|e:\\new folder\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\postmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\postmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,6 +38,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "login.cshtml.cs",
+              "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Account\\login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Account\\login.cshtml.cs",
+              "ToolTip": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Account\\login.cshtml.cs",
+              "RelativeToolTip": "Pages\\Account\\login.cshtml.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAUwCwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T19:29:42.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PostManagement.cshtml.cs",
               "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\PostManagement.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Seller\\PostManagement.cshtml.cs",
@@ -41,12 +58,11 @@
               "RelativeToolTip": "Pages\\Seller\\PostManagement.cshtml.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T19:25:55.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T19:25:55.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "E:\\New folder\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\Services\\PaymentService.cs",
               "RelativeDocumentMoniker": "..\\DataAccessObjects\\Services\\PaymentService.cs",
@@ -54,8 +70,7 @@
               "RelativeToolTip": "..\\DataAccessObjects\\Services\\PaymentService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T19:04:13.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T19:04:13.753Z"
             }
           ]
         }
