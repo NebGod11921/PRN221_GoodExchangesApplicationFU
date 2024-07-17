@@ -22,7 +22,7 @@ namespace DataAccessObjects
         public DbSet<ChatSession> ChatSessions { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Report> Reports { get; set; }
-        public DbSet<ReportType> ReportTypes { get; set; }
+        /*public DbSet<ReportType> ReportTypes { get; set; }*/
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
