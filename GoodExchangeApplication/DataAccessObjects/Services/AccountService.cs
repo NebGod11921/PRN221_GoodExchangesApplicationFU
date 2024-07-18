@@ -113,32 +113,19 @@ namespace DataAccessObjects.Services
             try
             {
                 var mapper = _mapper.Map<User>(accountDTOs);
-                
-                var createUser = await _unitOfWork.AccountRepository.RegisterAccount(mapper);
-
-                if (createUser != null)
+                await _unitOfWork.AccountRepository.AddAsync(mapper);
+                var IsSucess = await _unitOfWork.SaveChangeAsync() > 0;
+                if (IsSucess == true)
                 {
-                    var checkEmail = await _unitOfWork.AccountRepository.CheckEmailExists(createUser.Email);
-                    var checkPhoneNumber = await _unitOfWork.AccountRepository.CheckEmailExists(createUser.TelephoneNumber);
-                    createUser.RoleId = 1;
-                    if (checkEmail == true)
-                    {
-                        throw new Exception($"This email is already exists");
-                    }
-                    else if (checkPhoneNumber == true)
-                    {
-                        throw new Exception($"This telephobe number is already exists");
-                    }
-                    else
-                    {
-                        var mapperResult = _mapper.Map<RegisterAccountDTOs>(createUser);
-                        return mapperResult;
-                    }
+                    var mappedResult =  _mapper.Map<RegisterAccountDTOs>(mapper);
+                    return mappedResult;
                 }
                 else
                 {
-                    return null;
+                    throw new Exception();
                 }
+
+
             } catch(Exception ex)
             {
                 throw new Exception(ex.Message);

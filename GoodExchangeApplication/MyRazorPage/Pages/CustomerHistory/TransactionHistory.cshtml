@@ -5,73 +5,6 @@
     Layout = null;
     var getSession = HttpContext.Session.GetString("GetUser");
 }
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-
-        table th, table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        table th {
-            background-color: #f1f1f1;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-    .status {
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
-        .status.success {
-            color: #155724;
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-        }
-
-        .status.refund {
-            color: #856404;
-            background-color: #fff3cd;
-            border: 1px solid #ffeeba;
-        }
-
-        .status.pending {
-            color: #0c5460;
-            background-color: #d1ecf1;
-            border: 1px solid #bee5eb;
-        }
-
-</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,6 +12,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transaction History</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            table th, table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            table th {
+                background-color: #f1f1f1;
+            }
+
+            table tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+        .status {
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+            .status.success {
+                color: #155724;
+                background-color: #d4edda;
+                border: 1px solid #c3e6cb;
+            }
+
+            .status.refund {
+                color: #856404;
+                background-color: #fff3cd;
+                border: 1px solid #ffeeba;
+            }
+
+            .status.pending {
+                color: #0c5460;
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+            }
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -86,34 +86,37 @@
         <table>
             <thead>
                 <tr>
-                    <th>Date</th>
                     <th>Transaction ID</th>
-                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Notes</th>
                     <th>Amount</th>
+                    <th>Ship Address</th>
                     <th>Status</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    @foreach(var i in Model.GetTransactions)
-                    {
+                @foreach (var i in Model.GetTransactions)
+                {
+                    <tr>
+                        <td>SAP_@i.Id</td>
                         <td>@i.TransactionDate</td>
+                        <td>@i.Note</td>
                         <td>$ @i.TotalAmount</td>
                         <td>@i.ShippingAddress</td>
-                        @if(i.Status == 1)
+                        @if (i.Status == 1)
                         {
                             <td class="status pending">Pending</td>
-                        } else if(i.Status == 2)
+                        }
+                        else if (i.Status == 2)
                         {
                             <td class="status success">Completed</td>
-
-                        } else if(i.Status == 0)
+                        }
+                        else if (i.Status == 0)
                         {
                             <td class="status refund">Refunded</td>
                         }
-                    }
-                </tr>
-                
+                    </tr>
+                }
             </tbody>
         </table>
     </div>
