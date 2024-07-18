@@ -30,5 +30,12 @@ namespace DataAccessObjects.Repositories
             await _context.Messages.AddAsync(message);
             await _context.SaveChangesAsync();
         }
+        public async Task<List<Message>> GetMessagesByChatSessionIdAsync(int chatSessionId)
+        {
+            return await _context.Messages
+                .Where(m => m.ChatSessionId == chatSessionId)
+                .OrderBy(m => m.Timestamp)
+                .ToListAsync();
+        }
     }
 }
