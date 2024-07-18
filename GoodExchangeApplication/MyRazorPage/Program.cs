@@ -51,5 +51,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.MapHub<ChatHub>("/chathub");
+/*app.MapHub<ChatHub>("/chathub");*/
 app.Run();
