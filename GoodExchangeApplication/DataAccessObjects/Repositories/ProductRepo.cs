@@ -53,16 +53,44 @@ namespace DataAccessObjects.Repositories
             }
             return false;
         }
-        public async Task<bool> UpdateProduct(int id)
+        public async Task<Product> UpdateProduct(Product product)
         {
-            var exist = await _appDbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+            var exist = await GetByID(product.Id);
             if (exist != null)
             {
-                _appDbContext.Products.Update(exist);
-                await _appDbContext.SaveChangesAsync();
-                return true;
+                exist.Title= product.Title;
+                exist.Description= product.Description;
+                exist.Price= product.Price;
+                exist.CategoryId= product.CategoryId;
+                exist.Quantity= product.Quantity;
+                exist.Image= product.Image;
+                exist.Location= product.Location;
+                _appDbContext.Products.UpdateRange(exist);
             }
-            return false;
+            await _appDbContext.SaveChangesAsync();
+            return exist;
+        }
+        public async Task<IEnumerable<Product>> SearchProductByNameOrCode(string searchQuery)
+        {
+            try
+            {
+                var result = await _appDbContext.Products
+                    .Where(p => p.Title.Contains(searchQuery) || p.Category.Name.Contains(searchQuery))
+                    .ToListAsync();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async Task<IEnumerable<Product>> GetProductsByUserIdAsync(int userId)
+        {
+            return await _appDbContext.UserProducts
+                .Where(up => up.UserId == userId)
+                .Select(up => up.Product)
+                .ToListAsync();
         }
     }
 }

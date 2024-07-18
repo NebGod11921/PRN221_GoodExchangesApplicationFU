@@ -5,3 +5,38 @@
     ViewData["Title"] = "PostManagement";
     Layout = "_Layout";
 }
+<h2>Posts</h2>
+
+@if (Model.Posts != null && Model.Posts.Any())
+{
+    <a asp-page="CreatePost" class="btn btn-primary">Create New Post</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var post in Model.Posts)
+            {
+                <tr>
+                    <td>@post.Title</td>
+                    <td>@post.Description</td>
+                    <td>
+                        <form method="post" asp-page-handler="Delete" asp-route-postId="@post.Id" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                        <a asp-page="UpdatePost" asp-route-postId="@post.Id" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No posts found.</p>
+}
+<hr />

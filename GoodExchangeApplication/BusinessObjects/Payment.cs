@@ -9,7 +9,7 @@ namespace BusinessObjects
     public class Payment : BaseEntity
     {
         public DateTime? PaymentDate { get; set; }  
-        public float? Amount {  get; set; }
+        /*public float? Amount {  get; set; }*/
         public string? PaymentMethod {  get; set; }
 
         //Relationship

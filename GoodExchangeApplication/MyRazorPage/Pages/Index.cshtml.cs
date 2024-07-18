@@ -1,4 +1,5 @@
 ﻿using BusinessObjects;
+using DataAccessObjects.IServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,9 +9,12 @@ namespace MyRazorPage.Pages
 {
     public class IndexModel : PageModel
     {
-        public IndexModel()
+        private readonly IPostService _postService;
+
+        public IndexModel(IPostService postService)
         {
-            
+            _postService = postService;
+
         }
 
         public void OnGet()

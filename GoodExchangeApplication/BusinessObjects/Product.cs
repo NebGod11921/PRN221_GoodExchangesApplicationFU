@@ -12,7 +12,7 @@ namespace BusinessObjects
         public string? Description { get; set; }
         public float? Price {  get; set; }
         public string? Location {  get; set; }
-        public byte[]? Image {  get; set; }
+        public string? Image {  get; set; }
         public int? Quantity { get; set; }
         public int? Popularities { get; set; }
 

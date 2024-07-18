@@ -1,4 +1,5 @@
 ﻿using DataAccessObjects.IRepositories;
+using DataAccessObjects.IServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,19 @@ namespace DataAccessObjects
     public interface IUnitOfWork
     {
         public IAccountRepository AccountRepository { get; }
+        public IPostRepository PostRepository { get; }
+        public IMessageRepository MessageRepository { get; }
+        public IChatSessionRepository ChatSessionRepository { get; }
+
         public Task<int> SaveChangeAsync();
         public IProductRepo ProductRepository { get; }
+        public IProductCategoryRepo productCategoryRepo { get; }
+        public ITransactionRepo TransactionRepository { get; }
+        public ITransactionTypeRepo TransactionType { get; }
+        public ITransactionProductRepository TransactionProductRepository { get; }
+        public IPaymentRepo PaymentsRepository { get; }
+
+        public IReportRepository ReportRepository { get; }
+        
     }
 }

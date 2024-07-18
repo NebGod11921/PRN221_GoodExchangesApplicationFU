@@ -44,7 +44,7 @@ namespace DataAccessObjects.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("BusinessObjects.Payment", b =>
+            modelBuilder.Entity("BusinessObjects.ChatSession", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -52,8 +52,64 @@ namespace DataAccessObjects.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<float?>("Amount")
-                        .HasColumnType("real");
+                    b.Property<byte?>("Status")
+                        .HasColumnType("tinyint");
+
+                    b.Property<int>("User1Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("User2Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("User1Id");
+
+                    b.HasIndex("User2Id");
+
+                    b.ToTable("ChatSessions");
+                });
+
+            modelBuilder.Entity("BusinessObjects.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ChatSessionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte?>("Status")
+                        .HasColumnType("tinyint");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChatSessionId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Messages");
+                });
+
+            modelBuilder.Entity("BusinessObjects.Payment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime?>("PaymentDate")
                         .HasColumnType("datetime2");
@@ -82,9 +138,6 @@ namespace DataAccessObjects.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<byte[]>("Image")
-                        .HasColumnType("varbinary(max)");
 
                     b.Property<int?>("ProductId")
                         .HasColumnType("int");
@@ -121,8 +174,8 @@ namespace DataAccessObjects.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte[]>("Image")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
@@ -166,8 +219,8 @@ namespace DataAccessObjects.Migrations
                     b.Property<string>("Reason")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ReportTypeId")
-                        .HasColumnType("int");
+                    b.Property<string>("ReportTypeName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<byte?>("Status")
                         .HasColumnType("tinyint");
@@ -179,33 +232,9 @@ namespace DataAccessObjects.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.HasIndex("ReportTypeId");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("Reports");
-                });
-
-            modelBuilder.Entity("BusinessObjects.ReportType", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<byte?>("Status")
-                        .HasColumnType("tinyint");
-
-                    b.Property<string>("TypeName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ReportTypes");
                 });
 
             modelBuilder.Entity("BusinessObjects.Review", b =>
@@ -294,11 +323,16 @@ namespace DataAccessObjects.Migrations
                     b.Property<int?>("TransactionTypeId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("PaymentId");
 
                     b.HasIndex("TransactionTypeId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Transactions");
                 });
@@ -394,6 +428,43 @@ namespace DataAccessObjects.Migrations
                     b.ToTable("UserProducts");
                 });
 
+            modelBuilder.Entity("BusinessObjects.ChatSession", b =>
+                {
+                    b.HasOne("BusinessObjects.User", "User1")
+                        .WithMany("ChatSessionsAsUser1")
+                        .HasForeignKey("User1Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BusinessObjects.User", "User2")
+                        .WithMany("ChatSessionsAsUser2")
+                        .HasForeignKey("User2Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("User1");
+
+                    b.Navigation("User2");
+                });
+
+            modelBuilder.Entity("BusinessObjects.Message", b =>
+                {
+                    b.HasOne("BusinessObjects.ChatSession", "ChatSession")
+                        .WithMany("Messages")
+                        .HasForeignKey("ChatSessionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BusinessObjects.User", "User")
+                        .WithMany("Messages")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("ChatSession");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("BusinessObjects.Post", b =>
                 {
                     b.HasOne("BusinessObjects.Product", "Product")
@@ -424,17 +495,11 @@ namespace DataAccessObjects.Migrations
                         .WithMany("Reports")
                         .HasForeignKey("ProductId");
 
-                    b.HasOne("BusinessObjects.ReportType", "ReportType")
-                        .WithMany("Reports")
-                        .HasForeignKey("ReportTypeId");
-
                     b.HasOne("BusinessObjects.User", "User")
                         .WithMany("Reports")
                         .HasForeignKey("UserId");
 
                     b.Navigation("Product");
-
-                    b.Navigation("ReportType");
 
                     b.Navigation("User");
                 });
@@ -464,9 +529,15 @@ namespace DataAccessObjects.Migrations
                         .WithMany("Transactions")
                         .HasForeignKey("TransactionTypeId");
 
+                    b.HasOne("BusinessObjects.User", "User")
+                        .WithMany("Transactions")
+                        .HasForeignKey("UserId");
+
                     b.Navigation("Payment");
 
                     b.Navigation("TransactionType");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BusinessObjects.TransactionProduct", b =>
@@ -521,6 +592,11 @@ namespace DataAccessObjects.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("BusinessObjects.ChatSession", b =>
+                {
+                    b.Navigation("Messages");
+                });
+
             modelBuilder.Entity("BusinessObjects.Payment", b =>
                 {
                     b.Navigation("Transactions");
@@ -537,11 +613,6 @@ namespace DataAccessObjects.Migrations
                     b.Navigation("TransactionProducts");
 
                     b.Navigation("UserProducts");
-                });
-
-            modelBuilder.Entity("BusinessObjects.ReportType", b =>
-                {
-                    b.Navigation("Reports");
                 });
 
             modelBuilder.Entity("BusinessObjects.Role", b =>
@@ -561,11 +632,19 @@ namespace DataAccessObjects.Migrations
 
             modelBuilder.Entity("BusinessObjects.User", b =>
                 {
+                    b.Navigation("ChatSessionsAsUser1");
+
+                    b.Navigation("ChatSessionsAsUser2");
+
+                    b.Navigation("Messages");
+
                     b.Navigation("Posts");
 
                     b.Navigation("Reports");
 
                     b.Navigation("Reviews");
+
+                    b.Navigation("Transactions");
 
                     b.Navigation("UserProducts");
                 });

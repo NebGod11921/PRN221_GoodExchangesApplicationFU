@@ -119,26 +119,26 @@
                     </div>
                     
                     <div class="ms-1">
-                        <button type="button" class="btn btn-outline-success me-2">Create Post</button>
+                        <a asp-page="/Seller/PostManagement" class="btn btn-outline-success me-2">Manage Post</a>
                     </div>
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                         </svg>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <a asp-page="/AddToCart" class="nav-icon position-relative text-decoration-none">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                             <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
                             <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
                         </svg>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                        @* <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> *@
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <a asp-page="/CustomerHistory/UserProfile" class="nav-icon position-relative text-decoration-none" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                         </svg>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                      @*   <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> *@
                     </a>
                 </div>
             </div>
@@ -291,7 +291,7 @@
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
+                        <a href="#">
                             <img src="images/feature_prod_01.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
@@ -315,7 +315,7 @@
                                 </li>
                                 <li class="text-muted text-right">$240.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Gym Weight</a>
+                            <a href="#" class="h2 text-decoration-none text-dark">Gym Weight</a>
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                             </p>
@@ -325,7 +325,7 @@
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
+                        <a href="#">
                             <img src="images/feature_prod_02.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
@@ -349,7 +349,7 @@
                                 </li>
                                 <li class="text-muted text-right">$480.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                            <a href="#" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
                             <p class="card-text">
                                 Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
                             </p>
@@ -359,7 +359,7 @@
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
+                        <a href="#">
                             <img src="images/feature_prod_03.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
@@ -383,7 +383,7 @@
                                 </li>
                                 <li class="text-muted text-right">$360.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
+                            <a href="#" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
                             <p class="card-text">
                                 Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
                             </p>

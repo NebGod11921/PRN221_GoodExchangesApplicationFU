@@ -1,0 +1,36 @@
+﻿@page "/updatepost/{postId:int}"
+@model MyRazorPage.Pages.Seller.UpdatePostModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Update Post";
+    Layout = "_Layout";
+}
+
+<h2>Update Post</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Post.Id" />
+    <input type="hidden" asp-for="Post.CreatedDate" />
+    <input type="hidden" asp-for="Post.Status" />
+    <div class="form-group">
+        <label asp-for="Post.Title"></label>
+        <input asp-for="Post.Title" class="form-control" />
+        <span asp-validation-for="Post.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Post.Description"></label>
+        <textarea asp-for="Post.Description" class="form-control"></textarea>
+        <span asp-validation-for="Post.Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Post.ProductId"></label>
+        <select asp-for="Post.ProductId" class="form-control">
+            @foreach (var product in Model.Products)
+            {
+                <option value="@product.Id">@product.Title</option>
+            }
+        </select>
+        <span asp-validation-for="Post.ProductId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
