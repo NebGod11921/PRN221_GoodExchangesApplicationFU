@@ -214,6 +214,14 @@
                         <option value="@item.Value">@item.Text</option>
                     }
                 </select>
+                <select name="SortField">
+        <option value="Title" >Title</option>
+        <option value="Price" >Price</option>
+    </select>
+    <select name="SortOrder">
+        <option value="asc" >Ascending</option>
+        <option value="desc" >Descending</option>
+    </select>
             </form>
             <div class="row">
                 @foreach (var result in Model.ProductDtos)

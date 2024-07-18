@@ -22,6 +22,12 @@ namespace MyRazorPage.Pages.Homepage
 
         public Pagination<ProductDTos> ProductDtos { get; set; }
         [BindProperty(SupportsGet = true)]
+        public string SortField { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string SortOrder { get; set; }
+
+        [BindProperty(SupportsGet = true)]
         public string Title { get; set; }
 
         [BindProperty(SupportsGet = true)]
@@ -38,7 +44,7 @@ namespace MyRazorPage.Pages.Homepage
             CategorySelectList = new SelectList(category, "Id", "Name");
             
             int pageSize = 10;
-            ProductDtos = await _productService.GetProductsPaging(pageIndex ?? 1, pageSize, Title, MinPrice, MaxPrice, CategoryId);
+            ProductDtos = await _productService.GetProductsPaging(pageIndex ?? 1, pageSize, Title, MinPrice, MaxPrice, CategoryId, SortField, SortOrder);
         }
         public async Task<IActionResult> OnPostTransferToProductDetail(int txtProductId)
         {

@@ -3,3 +3,84 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
 }
+
+<h1>Product Management</h1>
+<a asp-page="./CreateProduct" >Create New Product</a> 
+<form method="get">
+    <input type="text" name="Title" value="@Model.Title" placeholder="Filter by title" />
+    <input type="number" name="MinPrice" value="@Model.MinPrice" placeholder="Min Price" />
+    <input type="number" name="MaxPrice" value="@Model.MaxPrice" placeholder="Max Price" />
+    <input type="submit" value="Filter" class="btn btn-primary" /><br />
+    <select name="CategoryId">
+        <option value="">All Categories</option>
+        @foreach (var item in Model.CategorySelectList)
+        {
+            <option value="@item.Value">@item.Text</option>
+        }
+    </select>
+    <select name="SortField" >
+        <option value="Title" >Title</option>
+        <option value="Price" >Price</option>
+    </select>
+    <select name="SortOrder">
+        <option value="asc" >Ascending</option>
+        <option value="desc" >Descending</option>
+    </select>
+</form>
+@if (Model.ProductDtos != null && Model.ProductDtos.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Location</th>
+                <th>Image</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.ProductDtos)
+            {
+                <tr>
+                    <td>@product.Title</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price</td>
+                    <td>@product.Location</td>
+                    <td>@product.Image</td>
+                    <td>@product.Quantity</td>
+                    <td>
+                        <a asp-page="" asp-route-id="@product.Id">Edit</a> |
+                        <a asp-page="" asp-route-id="@product.Id">Details</a> |
+                        <a asp-page="" asp-route-id="@product.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item @(Model.ProductDtos.HasPreviousPage ? "" : "disabled")">
+                <a class="page-link"
+                   href="?pageIndex=@(Model.ProductDtos.PageIndex - 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Previous</a>
+            </li>
+            @for (int i = 1; i <= Model.ProductDtos.TotalPages; i++)
+            {
+                <li class="page-item @(Model.ProductDtos.PageIndex == i ? "active" : "")">
+                    <a class="page-link"
+                       href="?pageIndex=@i&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">@i</a>
+                </li>
+            }
+            <li class="page-item @(Model.ProductDtos.HasNextPage ? "" : "disabled")">
+                <a class="page-link"
+                   href="?pageIndex=@(Model.ProductDtos.PageIndex + 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Next</a>
+            </li>
+        </ul>
+    </nav>
+}
+else
+{
+    <p>No products available.</p>
+}

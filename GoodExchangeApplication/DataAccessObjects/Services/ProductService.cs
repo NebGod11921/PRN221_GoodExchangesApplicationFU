@@ -182,9 +182,9 @@ namespace DataAccessObjects.Services
                 }
             }
 
-        public async Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null)
+        public async Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null, string? sortField = null, string sortOrder = "asc")
         {
-            return await _unitOfWork.ProductRepository.GetProductsPaging(pageIndex, pageSize, title, minPrice, maxPrice, categoryId);
+            return await _unitOfWork.ProductRepository.GetProductsPaging(pageIndex, pageSize, title, minPrice, maxPrice, categoryId, sortField, sortOrder);
         }
         public async Task<IEnumerable<Category>> GetProductCategories()
         {

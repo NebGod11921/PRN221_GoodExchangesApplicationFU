@@ -81,7 +81,9 @@ namespace DataAccessObjects.Repositories
                 throw new Exception(ex.Message);
             }
         }
-        public async Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null)
+        public async Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, 
+            float? minPrice = null, float? maxPrice = null, int? categoryId = null, 
+            string? sortField = null, string sortOrder = "asc")
         {
             var query = _appDbContext.Products.AsQueryable();
 
@@ -102,6 +104,18 @@ namespace DataAccessObjects.Repositories
             if (categoryId.HasValue)
             {
                 query = query.Where(p => p.CategoryId == categoryId.Value);
+            }
+            switch (sortField)
+            {
+                case "Title":
+                    query = sortOrder == "asc" ? query.OrderBy(p => p.Title) : query.OrderByDescending(p => p.Title);
+                    break;
+                case "Price":
+                    query = sortOrder == "asc" ? query.OrderBy(p => p.Price) : query.OrderByDescending(p => p.Price);
+                    break;
+                default:
+                    query = query.OrderBy(p => p.Id);
+                    break;
             }
             var list = query.Select(p => new ProductDTos
             {
