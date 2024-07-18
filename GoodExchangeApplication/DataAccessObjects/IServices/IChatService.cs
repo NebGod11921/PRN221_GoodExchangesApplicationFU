@@ -11,5 +11,7 @@ namespace DataAccessObjects.IServices
     {
         Task SendMessageAsync(int chatSessionId, string content, int userId);
         Task<ChatSession> GetOrCreateChatSessionAsync(int user1Id, int user2Id);
+        Task<List<Message>> GetMessagesAsync(int chatSessionId);
+
     }
 }

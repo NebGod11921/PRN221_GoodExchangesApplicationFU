@@ -45,5 +45,9 @@ namespace DataAccessObjects.Services
 
             return chatSession;
         }
+        public async Task<List<Message>> GetMessagesAsync(int chatSessionId)
+        {
+            return await _messageRepository.GetMessagesByChatSessionIdAsync(chatSessionId);
+        }
     }
 }
