@@ -108,6 +108,27 @@ namespace DataAccessObjects.Services
             }
         }
 
+        public async Task<IEnumerable<TransactionDTOs>> GetTransactionByUserID(int userId)
+        {
+            try
+            {
+                var getUserID = await _unitOfWork.AccountRepository.GetByIdAsync(userId);
+                if (getUserID != null)
+                {
+                    var transactionResult = await _unitOfWork.TransactionRepository.GetAllAsync();
+                    var mapperREsult = _mapper.Map<IEnumerable<TransactionDTOs>>(transactionResult);
+                    return mapperREsult;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }catch( Exception ex )
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<IEnumerable<TransactionDTOs>> GetTransactionDTOs()
         {
             try

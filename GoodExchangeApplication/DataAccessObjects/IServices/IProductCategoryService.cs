@@ -1,4 +1,5 @@
 ﻿using BusinessObjects;
+using DataAccessObjects.ViewModels.ProductDTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace DataAccessObjects.IServices
 {
     public interface IProductCategoryService
     {
-        public Task<IEnumerable<Category>> GetCategories();
+        public Task<IEnumerable<ProductCategoryDTOs>> GetCategories();
     }
 }

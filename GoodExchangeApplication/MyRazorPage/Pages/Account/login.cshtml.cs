@@ -32,13 +32,13 @@ namespace MyRazorPage.Pages.Account
                     var result = await _accountService.LoginAccountAsync(Email, Password);
                     if (result != null)
                     {
-                        if(result.RoleId == 1)
+                        if(result.RoleId == 1 && result.Status == 1)
                         {
                             var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
                             HttpContext.Session.SetString("GetUser", json);
                             return RedirectToPage("/Index");
                         }
-                        else if(result.RoleId == 4)
+                        else if(result.RoleId == 4 && result.Status == 1)
                         {
                             var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
                             HttpContext.Session.SetString("GetSeller", json);

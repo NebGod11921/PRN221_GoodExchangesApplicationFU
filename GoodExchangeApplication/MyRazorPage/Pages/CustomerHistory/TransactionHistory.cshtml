@@ -3,6 +3,7 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = null;
+    var getSession = HttpContext.Session.GetString("GetUser");
 }
 <style>
     body {
@@ -94,26 +95,25 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>2024-07-16</td>
-                    <td>TXN123456</td>
-                    <td>Payment for order #1234</td>
-                    <td>$100.00</td>
-                    <td class="status success">Completed</td>
+                    @foreach(var i in Model.GetTransactions)
+                    {
+                        <td>@i.TransactionDate</td>
+                        <td>$ @i.TotalAmount</td>
+                        <td>@i.ShippingAddress</td>
+                        @if(i.Status == 1)
+                        {
+                            <td class="status pending">Pending</td>
+                        } else if(i.Status == 2)
+                        {
+                            <td class="status success">Completed</td>
+
+                        } else if(i.Status == 0)
+                        {
+                            <td class="status refund">Refunded</td>
+                        }
+                    }
                 </tr>
-                <tr>
-                    <td>2024-07-15</td>
-                    <td>TXN123457</td>
-                    <td>Refund for order #1233</td>
-                    <td>-$50.00</td>
-                    <td class="status refund">Refunded</td>
-                </tr>
-                <tr>
-                    <td>2024-07-14</td>
-                    <td>TXN123458</td>
-                    <td>Payment for order #1232</td>
-                    <td>$75.00</td>
-                    <td class="status pending">Pending</td>
-                </tr>
+                
             </tbody>
         </table>
     </div>
