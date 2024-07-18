@@ -110,6 +110,13 @@
         border: 0;
         padding: 10px 15px;
     }
+
+    .page-item.disabled .page-link {
+        pointer-events: none;
+        color: #6c757d;
+        background-color: #fff;
+        border-color: #dee2e6;
+    }
 </style>
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -162,7 +169,7 @@
             </div>
         </div>
         <div class="col-sm-9">
-            <div class="filter">
+            @* <div class="filter">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="btn-group">
@@ -193,7 +200,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> *@
+
+            <form method="get">
+                <input type="text" name="Title" value="@Model.Title" placeholder="Filter by title" />
+                <input type="number" name="MinPrice" value="@Model.MinPrice" placeholder="Min Price" />
+                <input type="number" name="MaxPrice" value="@Model.MaxPrice" placeholder="Max Price" />
+                <input type="submit" value="Filter" class="btn btn-primary" /><br/>
+                <select name="CategoryId">
+                    <option value="">All Categories</option>
+                    @foreach (var item in Model.CategorySelectList)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                </select>
+            </form>
             <div class="row">
                 @foreach (var result in Model.ProductDtos)
                 {
@@ -232,6 +253,30 @@
                     </div>
                 }
             </div>
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item @(Model.ProductDtos.HasPreviousPage ? "" : "disabled")">
+                        <a class="page-link" 
+                           href="?pageIndex=@(Model.ProductDtos.PageIndex - 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice"
+                           >Previous</a>
+                    </li>
+                    @for (int i = 1; i <= Model.ProductDtos.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.ProductDtos.PageIndex == i ? "active" : "")">
+                            <a class="page-link" 
+                               href="?pageIndex=@i&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice"
+                               >@i</a>
+                        </li>
+                    }
+                    <li class="page-item @(Model.ProductDtos.HasNextPage ? "" : "disabled")">
+                        <a class="page-link" 
+                           href="?pageIndex=@(Model.ProductDtos.PageIndex + 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice"
+                           >Next</a>
+                    </li>
+                </ul>
+            </nav>
+            
         </div>
     </div>
 </div>

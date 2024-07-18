@@ -1,12 +1,16 @@
 ﻿using AutoMapper;
 using BusinessObjects;
+using DataAccessObjects.Helpers;
 using DataAccessObjects.IServices;
 using DataAccessObjects.ViewModels.ProductDTOs;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace DataAccessObjects.Services
 {
@@ -14,12 +18,12 @@ namespace DataAccessObjects.Services
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
-
-
-        public ProductService(IMapper mapper, IUnitOfWork unitOfWork)
+        private AppDbContext _appDbContext;
+        public ProductService(IMapper mapper, IUnitOfWork unitOfWork, AppDbContext context)
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
+            _appDbContext = context;
         }
 
         public async Task<IEnumerable<ProductDTO>> SearchProductByNameOrCodeAsync(string searchQuery)
@@ -37,12 +41,12 @@ namespace DataAccessObjects.Services
             }
         }
 
-            public async Task<IEnumerable<ResponseProductDTO>> GetAllProducts(ResponseProductDTO productDTO)
+            public async Task<IEnumerable<ResponseProductDTO>> GetAllProducts()
             {
                 try
                 {
                     var result = await _unitOfWork.ProductRepository.GetProduct();
-                    var map = _mapper.Map<IEnumerable<ResponseProductDTO>>(productDTO);
+                    var map = _mapper.Map<IEnumerable<ResponseProductDTO>>(result);
                     if (result == null)
                     {
                         return null;
@@ -177,6 +181,14 @@ namespace DataAccessObjects.Services
                     throw new Exception(ex.Message);
                 }
             }
-            
+
+        public async Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null)
+        {
+            return await _unitOfWork.ProductRepository.GetProductsPaging(pageIndex, pageSize, title, minPrice, maxPrice, categoryId);
+        }
+        public async Task<IEnumerable<Category>> GetProductCategories()
+        {
+            return await _unitOfWork.ProductRepository.GetProductCategories();
+        }
     }
 }

@@ -242,3 +242,7 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazo
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll

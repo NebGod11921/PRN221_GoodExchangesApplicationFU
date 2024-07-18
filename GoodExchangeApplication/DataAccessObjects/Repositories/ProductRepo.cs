@@ -1,5 +1,7 @@
 ﻿using BusinessObjects;
+using DataAccessObjects.Helpers;
 using DataAccessObjects.IRepositories;
+using DataAccessObjects.ViewModels.ProductDTOs;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -78,6 +80,46 @@ namespace DataAccessObjects.Repositories
             {
                 throw new Exception(ex.Message);
             }
+        }
+        public async Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null)
+        {
+            var query = _appDbContext.Products.AsQueryable();
+
+            if (!string.IsNullOrEmpty(title))
+            {
+                query = query.Where(p => p.Title.Trim().ToLower().Contains(title));
+            }
+
+            if (minPrice.HasValue)
+            {
+                query = query.Where(p => p.Price >= minPrice.Value);
+            }
+
+            if (maxPrice.HasValue)
+            {
+                query = query.Where(p => p.Price <= maxPrice.Value);
+            }
+            if (categoryId.HasValue)
+            {
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+            }
+            var list = query.Select(p => new ProductDTos
+            {
+                Id = p.Id,
+                Title = p.Title,
+                Description = p.Description,
+                Image = p.Image,
+                Price = p.Price,
+                Location = p.Location,
+                Quantity = p.Quantity,
+            });
+            
+            
+            return await Pagination<ProductDTos>.CreateAsync(list.AsNoTracking(), pageIndex, pageSize);
+        }
+        public async Task<List<Category>> GetProductCategories()
+        {
+            return await _appDbContext.Categories.ToListAsync();
         }
     }
 }

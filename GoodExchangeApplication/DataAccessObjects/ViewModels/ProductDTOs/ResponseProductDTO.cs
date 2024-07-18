@@ -9,12 +9,13 @@ namespace DataAccessObjects.ViewModels.ProductDTOs
 {
     public class ResponseProductDTO:BaseEntity
     {
-        public string? Title { get; set; }
-        public string? Description { get; set; }
-        public float? Price { get; set; }
-        public string? Location { get; set; }
-        public string? Image { get; set; }
-        public int? Quantity { get; set; }
-        public int? Popularities { get; set; }
+        public int TotalPage { get; set; }
+
+        public int PageNumber { get; set; }
+
+        public int PageSize { get; set; }
+
+        public object[] List { get; set; } = new object[] { };
+
     }
 }

@@ -1,4 +1,6 @@
 ﻿using BusinessObjects;
+using DataAccessObjects.Helpers;
+using DataAccessObjects.ViewModels.ProductDTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +18,7 @@ namespace DataAccessObjects.IRepositories
         public Task<bool> DeleteProduct(int id);
         public Task<bool> CheckExist(int id);
         public Task<IEnumerable<Product>> SearchProductByNameOrCode(string searchQuery);
+        public Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null);
+        public Task<List<Category>> GetProductCategories();
     }
 }
