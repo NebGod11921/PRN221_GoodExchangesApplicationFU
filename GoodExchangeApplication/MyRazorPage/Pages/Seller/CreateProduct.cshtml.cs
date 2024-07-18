@@ -32,10 +32,15 @@ namespace MyRazorPage.Pages.Seller
             if (result != null)
             {
                 ViewData["Message"] = "Create Successfully";
+                return RedirectToPage("./ProductManagement");
             }
             else
+            {
                 ViewData["Message"] = "Fail";
-            return Page();
+                return Page();
+            }
+                
+            
         }
     }
 }

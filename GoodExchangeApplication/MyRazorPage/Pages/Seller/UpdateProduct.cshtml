@@ -1,0 +1,70 @@
+﻿@page
+@model MyRazorPage.Pages.Seller.UpdateProductModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+}
+@if (ViewData["Message"] != null)
+{
+    @if (ViewData["Message"] == "Update Successfully")
+    {
+        <div class="alert alert-success">
+            @ViewData["Message"]
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            @ViewData["Message"]
+        </div>
+    }
+
+}
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="requestProduct.Title" class="control-label"></label>
+                <input asp-for="requestProduct.Title" class="form-control" />
+                <span asp-validation-for="requestProduct.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="requestProduct.CategoryId" class="control-label"></label>
+                <select asp-for="requestProduct.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="requestProduct.Description" class="control-label"></label>
+                <input asp-for="requestProduct.Description" class="form-control" />
+                <span asp-validation-for="requestProduct.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="requestProduct.Price" class="control-label"></label>
+                <input asp-for="requestProduct.Price" class="form-control" />
+                <span asp-validation-for="requestProduct.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="requestProduct.Location" class="control-label"></label>
+                <input asp-for="requestProduct.Location" class="form-control" />
+                <span asp-validation-for="requestProduct.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="requestProduct.Image" class="control-label"></label>
+                <input asp-for="requestProduct.Image" class="form-control" />
+                <span asp-validation-for="requestProduct.Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="requestProduct.Quantity" class="control-label"></label>
+                <input asp-for="requestProduct.Quantity" class="form-control" />
+                <span asp-validation-for="requestProduct.Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./ProductManagement">Back to List</a>
+</div>

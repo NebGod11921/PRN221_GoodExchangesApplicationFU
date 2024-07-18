@@ -20,9 +20,9 @@ namespace DataAccessObjects.IServices
         public Task<Pagination<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null, string? sortField = null, string sortOrder = "asc");
         public Task<IEnumerable<Category>> GetProductCategories();
 
-        public Task<ResponseProductDTO> GetById(int id);
+        public Task<RequestProductDTO> GetById(int id);
         public Task<RequestProductDTO> CreateProduct(RequestProductDTO createProduct);
-        public Task<ResponseProductDTO> UpdateProduct(ResponseProductDTO updateProduct);
+        public Task<RequestProductDTO> UpdateProduct(RequestProductDTO updateProduct);
         public Task<bool> DeleteProduct(int id);
     }
 }

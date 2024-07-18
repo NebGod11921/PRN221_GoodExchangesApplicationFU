@@ -52,9 +52,9 @@
                     <td>@product.Image</td>
                     <td>@product.Quantity</td>
                     <td>
-                        <a asp-page="" asp-route-id="@product.Id">Edit</a> |
-                        <a asp-page="" asp-route-id="@product.Id">Details</a> |
-                        <a asp-page="" asp-route-id="@product.Id">Delete</a>
+                        <a asp-page="./UpdateProduct" asp-route-id="@product.Id">Edit</a> |
+                        <a asp-page="./ProductDetail" asp-route-id="@product.Id">Details</a> |
+                        <a asp-page="./DeleteProduct" asp-route-id="@product.Id">Delete</a>
                     </td>
                 </tr>
             }

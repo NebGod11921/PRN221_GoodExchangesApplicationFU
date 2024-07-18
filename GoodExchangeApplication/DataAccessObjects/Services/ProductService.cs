@@ -60,12 +60,12 @@ namespace DataAccessObjects.Services
                 }
             }
 
-            public async Task<ResponseProductDTO> GetById(int id)
+            public async Task<RequestProductDTO> GetById(int id)
             {
                 try
                 {
                     var result = await _unitOfWork.ProductRepository.GetByID(id);
-                    var map = _mapper.Map<ResponseProductDTO>(result);
+                    var map = _mapper.Map<RequestProductDTO>(result);
                     if (map != null)
                     {
                         return map;
@@ -112,7 +112,7 @@ namespace DataAccessObjects.Services
 
 
             //Error Update
-            public async Task<ResponseProductDTO> UpdateProduct(ResponseProductDTO updateProduct)
+            public async Task<RequestProductDTO> UpdateProduct(RequestProductDTO updateProduct)
             {
                 try
                 {
@@ -121,7 +121,7 @@ namespace DataAccessObjects.Services
                     if (checkExist != null)
                     {
                         var result = await _unitOfWork.ProductRepository.UpdateProduct(map.Id);
-                        var mapResult = _mapper.Map<ResponseProductDTO>(result);
+                        var mapResult = _mapper.Map<RequestProductDTO>(result);
                         return mapResult;
                     }
                     else return null;
