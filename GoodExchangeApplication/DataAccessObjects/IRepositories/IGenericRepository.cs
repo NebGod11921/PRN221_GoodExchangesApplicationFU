@@ -19,5 +19,10 @@ namespace DataAccessObjects.IRepositories
         Task AddRangeAsync(List<TEntity> entities);
         void SoftRemoveRange(List<TEntity> entities);
         IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression);
+
+        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
+        Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> predicate);
+
+        IQueryable<TEntity> FindAll(Func<TEntity, bool> predicate);
     }
 }

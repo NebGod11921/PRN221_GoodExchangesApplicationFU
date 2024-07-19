@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessObjects;
 using DataAccessObjects.IServices;
+using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.AccountDTOS;
 using Microsoft.Identity.Client;
 using System;
@@ -87,8 +88,6 @@ namespace DataAccessObjects.Services
                 {
                     return mapper;
                 }
-
-
             }catch (Exception ex) 
             {
                 throw new Exception(ex.Message);
@@ -202,7 +201,7 @@ namespace DataAccessObjects.Services
             }
         }
         
-        public async Task<bool> CreateAccountAsync(AccountDTOs account)
+/*        public async Task<bool> CreateAccountAsync(AccountDTOs account)
         {
             // Hash the password before storing it
             account.Password = HashPassword(account.Password);
@@ -210,7 +209,7 @@ namespace DataAccessObjects.Services
             // Add account creation logic here
             _unitOfWork.AccountRepository.Add(account);
             return await _unitOfWork.SaveChangeAsync() > 0;
-        }
+        }*/
 
 /*        public class HashPassword
         {

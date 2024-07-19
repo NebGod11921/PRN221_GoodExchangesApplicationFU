@@ -1,6 +1,7 @@
 ﻿using BusinessObjects;
 using DataAccessObjects.IRepositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,22 @@ namespace DataAccessObjects.Repositories
         {
             await _dbSet.AddRangeAsync(entities);
         }
+
+        public IEnumerable<TEntity> Find(Expression<Func<TEntity,bool>> predicate) 
+        {
+            return _dbSet.AsQueryable().Where(predicate).ToList();
+        }
+
+        public async Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> predicate)
+        {
+            return await _dbSet.SingleOrDefaultAsync(predicate);
+        }
+
+        public IQueryable<TEntity> FindAll(Func<TEntity, bool> predicate)
+        {
+            return _dbSet.Where(predicate).AsQueryable();
+        }
+
 
         public async Task<List<TEntity>> GetAllAsync()
         {

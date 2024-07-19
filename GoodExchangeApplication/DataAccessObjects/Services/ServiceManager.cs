@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DataAccessObjects.IServices;
+using DataAccessObjects.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -10,13 +10,13 @@ namespace DataAccessObjects.IServices
 {
     public interface IReportService
     {
-        Task<List<ReportResponseModel>> GetAllReports();
+        Task<IEnumerable<ReportResponseModel>> GetAllReports(ReportResponseModel reportDTO);
         Task<IEnumerable<ReportResponseModel>> GetReportByUserId(int userId);
         Task<IEnumerable<ReportResponseModel>> GetReportByPostId(int postId);
         Task<List<ReportResponseModel>> SearchReportByName(string reportName);
         Task<bool> DeleteReport(int ReportId);
-        Task<List<ReportResponseModel>> GetAll();
-        Task<List<ReportResponseModel>> GetAllValidReport();
+/*        Task<List<ReportResponseModel>> GetAll();*/
+/*        Task<List<ReportResponseModel>> GetAllValidReport();*/
         Task<string> AddReportByUser(ReportRequestModels dto, int userId);
         Task<string> UpdateReportByUser(int id, ReportRequestModels dto);
 /*        Task<string> DeleteReport(int id);

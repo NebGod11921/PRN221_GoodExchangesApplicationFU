@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessObjects
+namespace DataAccessObjects.UnitOfWork
 {
     public interface IUnitOfWork
     {
@@ -14,7 +14,7 @@ namespace DataAccessObjects
         public IPostRepository PostRepository { get; }
         public IMessageRepository MessageRepository { get; }
         public IChatSessionRepository ChatSessionRepository { get; }
-
+        int Commit();
         public Task<int> SaveChangeAsync();
         public IProductRepo ProductRepository { get; }
         public IProductCategoryRepo productCategoryRepo { get; }
@@ -24,6 +24,6 @@ namespace DataAccessObjects
         public IPaymentRepo PaymentsRepository { get; }
 
         public IReportRepository ReportRepository { get; }
-        
+
     }
 }
