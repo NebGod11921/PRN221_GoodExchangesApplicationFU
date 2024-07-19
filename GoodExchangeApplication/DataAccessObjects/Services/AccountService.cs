@@ -47,12 +47,12 @@ namespace DataAccessObjects.Services
             }
         }
 
-        public async Task<AccountDTOs> GetAccountDTOsById(int id)
+        public async Task<LoginAccountDTOs> GetAccountDTOsById(int id)
         {
             try
             {
                 var result = await _unitOfWork.AccountRepository.GetByIdAsync(id);
-                var mapper = _mapper.Map<AccountDTOs>(result);
+                var mapper = _mapper.Map<LoginAccountDTOs>(result);
                 if (mapper != null)
                 {
                     return mapper;
@@ -155,20 +155,34 @@ namespace DataAccessObjects.Services
             }
         }
 
-        public async Task<AccountDTOs> UpdateUserProfileAsync(AccountDTOs user, int userId)
+        public async Task<LoginAccountDTOs> UpdateUserProfileAsync(LoginAccountDTOs user, int userId)
         {
             try
             {
                 var mapper = _mapper.Map<User>(user);
-                var result = await _unitOfWork.AccountRepository.UpdateUser(mapper, userId);
-                if (result != null)
+                var getUserId = await _unitOfWork.AccountRepository.GetByIdAsync(userId);
+
+                if (getUserId != null)
                 {
-                    var mappedResult = _mapper.Map<AccountDTOs>(result);
-                    return mappedResult;
-                } else
-                {
-                    return null;
+                    _unitOfWork.AccountRepository.Update(mapper);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (IsSuccess == true)
+                    {
+                        var mappedResult = _mapper.Map<LoginAccountDTOs>(mapper);
+                        return mappedResult;
+                    }
+                    else
+                    {
+                        return null;
+                    }
                 }
+                else
+                {
+                    return new LoginAccountDTOs();
+                }
+
+
+              
 
 
             }catch (Exception ex)
