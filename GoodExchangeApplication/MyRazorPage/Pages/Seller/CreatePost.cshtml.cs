@@ -36,14 +36,12 @@ namespace MyRazorPage.Pages.Seller
 
             try
             {
-                // Replace with your session handling logic
+
                 // var user = HttpContext.Session.GetString("GetUser");
                 // var userDto = JsonSerializer.Deserialize<LoginAccountDTOs>(user);
                 // int userId = userDto.RoleId ?? 0;
-
-                int userId = 2; // Replace with your actual user ID retrieval logic
-
-                // Get products associated with the user ID
+                int? id = HttpContext.Session.GetInt32("userId");
+                int userId = id ?? 0;
                 var products = await _productService.GetProductsByUserIdAsync(userId);
 
                 if (products != null)
@@ -52,15 +50,12 @@ namespace MyRazorPage.Pages.Seller
                 }
                 else
                 {
-                    // Handle case where products list is null
-                    // Log or throw an exception as needed
-                    // Example: throw new Exception("Failed to fetch products.");
+                  throw new Exception("Failed to fetch products.");
                 }
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
-                // Handle exception as per your application's requirements
             }
 
             return Page();

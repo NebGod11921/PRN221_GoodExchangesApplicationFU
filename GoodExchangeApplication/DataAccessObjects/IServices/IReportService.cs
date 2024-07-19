@@ -11,8 +11,8 @@ namespace DataAccessObjects.IServices
     public interface IReportService
     {
         Task<IEnumerable<ReportResponseModel>> GetAllReports(ReportResponseModel reportDTO);
-        Task<IEnumerable<ReportResponseModel>> GetReportByUserId(int userId);
-        Task<IEnumerable<ReportResponseModel>> GetReportByPostId(int postId);
+        Task<List<ReportResponseModel>> GetReportByUserId(int userId);
+        Task<List<ReportResponseModel>> GetReportByPostId(int postId);
         Task<List<ReportResponseModel>> SearchReportByName(string reportName);
         Task<bool> DeleteReport(int ReportId);
 /*        Task<List<ReportResponseModel>> GetAll();*/

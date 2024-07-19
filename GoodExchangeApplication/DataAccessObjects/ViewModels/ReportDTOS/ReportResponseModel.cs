@@ -21,6 +21,7 @@ namespace DataAccessObjects.ViewModels.ReportDTOS
         [MaxLength(50, ErrorMessage = "Up to 50 characters")]
         public string? Reason { get; set; }
 
+        public string title { get; set; }
         [Required(ErrorMessage = "Please input the created date")]
         public DateTime? CreatedDate { get; set; }
 

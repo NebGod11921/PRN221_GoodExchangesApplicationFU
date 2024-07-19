@@ -4,6 +4,7 @@ using DataAccessObjects.IRepositories;
 using DataAccessObjects.IServices;
 using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.TransactionDTOs;
+using Microsoft.AspNetCore.Server.IIS.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -104,6 +105,49 @@ namespace DataAccessObjects.Services
 
 
             }catch(Exception ex) 
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<IEnumerable<TransactionDTOs>> GetTransactionByUserID(int userId)
+        {
+            try
+            {
+                var getUserID = await _unitOfWork.AccountRepository.GetByIdAsync(userId);
+                if (getUserID != null)
+                {
+                    var transactionResult = await _unitOfWork.TransactionRepository.GetAllAsync();
+                    var mapperREsult = _mapper.Map<IEnumerable<TransactionDTOs>>(transactionResult);
+                    return mapperREsult;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }catch( Exception ex )
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<PagingTransaction<TransactionDTOs>> GetTransactionByUserID(int userId, int pageNumber, int pageSize)
+        {
+            try
+            {
+                var result = await _unitOfWork.TransactionRepository.GetTransactionByUserID(userId, pageNumber, pageSize);
+                if (result != null)
+                {
+                    var mapper = _mapper.Map <PagingTransaction<TransactionDTOs>>(result);
+                    return mapper;
+                } else
+                {
+                    throw new Exception();
+                }
+
+
+
+            }catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

@@ -159,13 +159,13 @@ namespace MyRazorPage.Pages.Transaction
                         {
                             var json = JsonSerializer.Serialize(resultTransaction);
                             HttpContext.Session.SetString("GetTransactionInfo", json);
-                            HttpContext.Session.Clear();
+                            
                             return RedirectToPage("/Checkout");
                         } else if (resultTransactionProduct && resultTransaction.PaymentId == 1)
                         {
                             var json = JsonSerializer.Serialize(resultTransaction);
                             HttpContext.Session.SetString("GetTransactionInfo", json);
-                            HttpContext.Session.Clear();
+                            
                             return RedirectToPage("/Success");
                         }
                         else

@@ -11,6 +11,8 @@ namespace DataAccessObjects.IRepositories
     {
         Task<IEnumerable<Message>> GetMessagesBySessionIdAsync(int sessionId);
         Task AddMessageAsync(Message message);
+        Task<List<Message>> GetMessagesByChatSessionIdAsync(int chatSessionId);
+
 
     }
 }

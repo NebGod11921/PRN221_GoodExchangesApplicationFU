@@ -24,9 +24,9 @@ namespace DataAccessObjects.Mappers
             CreateMap<Product, ProductDTO>().ReverseMap();
             CreateMap<Post, PostDTO>().ReverseMap();
 
-            //
+            //Product
             CreateMap<Product, ProductDTos>().ReverseMap();
-
+            CreateMap<Category, ProductCategoryDTOs>().ReverseMap();
 
             CreateMap<Product, RequestProductDTO>().ReverseMap();
             CreateMap<Product, ResponseProductDTO>().ReverseMap();
@@ -38,6 +38,7 @@ namespace DataAccessObjects.Mappers
             CreateMap<TransactionProduct, TransactionProductDTOs>().ReverseMap();
             CreateMap<Transaction, TransactionDTOs>().ReverseMap(); 
             CreateMap<Transaction, UpdateTransactionDTOs>().ReverseMap();
+            CreateMap<PagingTransaction<Transaction>, PagingTransaction<TransactionDTOs>>().ReverseMap();
 
             //Payment
             CreateMap<Payment, PaymentDTOs>().ReverseMap();

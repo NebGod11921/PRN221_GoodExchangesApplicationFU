@@ -39,18 +39,23 @@ namespace MyRazorPage.Pages.Account
                     var result = await _accountService.LoginAccountAsync(Email, Password);
                     if (result != null)
                     {
-                        var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
-                        HttpContext.Session.SetString("GetUser", json);
-/*                        if (result.Role?.RoleName == "Admin")
+                        if(result.RoleId == 1 && result.Status == 1)
                         {
-                            return RedirectToPage("/Admin/AccountManagement");
-                        }
-                        else
-                        {
+                            var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
+                            HttpContext.Session.SetString("GetUser", json);
                             return RedirectToPage("/Index");
-                        }*/
-                        return RedirectToPage("/Index");
-                    } else
+                        }
+                        else if(result.RoleId == 4 && result.Status == 1)
+                        {
+                            var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
+                            HttpContext.Session.SetString("GetSeller", json);
+                            return RedirectToPage("/SellerHistory/TransactionHistoryForSeller");
+                        } else
+                        {
+                            return Page();
+                        }
+                    }
+                    else
                     {
                         return Page();
                     }

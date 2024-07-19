@@ -13,9 +13,9 @@ namespace DataAccessObjects.IServices
         public Task<LoginAccountDTOs> LoginAccountAsync(string email, string password);
         public Task<RegisterAccountDTOs> RegisterAccountAsync(RegisterAccountDTOs accountDTOs);
         public Task<IEnumerable<AccountDTOs>> GetAllAccounts(AccountDTOs accountDTOs);
-        public Task<AccountDTOs> GetAccountDTOsById(int id);
+        public Task<LoginAccountDTOs> GetAccountDTOsById(int id);
         public Task<List<AccountDTOs>> SearchAccountByName(string userName);
-        public Task<AccountDTOs> UpdateUserProfileAsync(AccountDTOs user, int userId);
+        public Task<LoginAccountDTOs> UpdateUserProfileAsync(LoginAccountDTOs user, int userId);
         public Task<bool> DeleteAccount(int userId);
 
         public Task<bool> BanAccount(int AccountId);

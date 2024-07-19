@@ -24,6 +24,6 @@ namespace DataAccessObjects.ViewModels.AccountDTOS
 
         
         public int? RoleId { get; set; }
-        public byte? status { get; set; }
+        public byte? Status { get; set; }
     }
 }

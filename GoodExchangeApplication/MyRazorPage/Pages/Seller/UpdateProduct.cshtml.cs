@@ -5,29 +5,29 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace MyRazorPage.Pages.Homepage
+namespace MyRazorPage.Pages.Seller
 {
     public class UpdateProductModel : PageModel
     {
         private readonly IProductService productService;
-        private readonly IProductCategoryService productCategoryService;
-        public UpdateProductModel(IProductService service, IProductCategoryService categoryService)
+        
+        public UpdateProductModel(IProductService service)
         {
             productService = service;
-            productCategoryService = categoryService;
+            
         }
         public async Task OnGet(int? id)
         {
-            
+
             if (id != null)
             {
                 var request = await productService.GetById((int)id);
-                
-                requestProduct= request;
+
+                requestProduct = request;
             }
-            var Categories = await productCategoryService.GetCategories();
-            
-            CategoryDTOs = new SelectList(Categories, "Id", "Name");
+            var Categories = await productService.GetCategories();
+
+            ViewData["Id"] = new SelectList(Categories, "Id", "Name");
         }
         public SelectList CategoryDTOs { get; set; }
         [BindProperty]
@@ -38,10 +38,14 @@ namespace MyRazorPage.Pages.Homepage
             if (result != null)
             {
                 ViewData["Message"] = "Update Successfully";
+                return RedirectToPage("./ProductManagement");
             }
             else
+            {
                 ViewData["Message"] = "Fail";
-            return Page();
+                return Page();
+            }
+                
         }
     }
 }

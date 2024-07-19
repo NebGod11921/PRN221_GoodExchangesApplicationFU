@@ -25,11 +25,10 @@ namespace MyRazorPage.Pages.Seller
 
         public async Task OnGetAsync()
         {
-            // Example: Get user information from session
-            //var user = HttpContext.Session.GetString("GetUser");
             //var userDto = JsonSerializer.Deserialize<LoginAccountDTOs>(user);
-            //int userId = userDto.RoleId ?? 0;
-            int userId = 2;
+            int? id = HttpContext.Session.GetInt32("userId");
+            int userId = id ?? 0;
+            //int userId = 2;
             Posts = await _postService.GetPostsByUserIdAsync(userId);
         }
 

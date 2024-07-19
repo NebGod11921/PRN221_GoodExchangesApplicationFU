@@ -10,8 +10,8 @@ namespace DataAccessObjects.ViewModels.ReportDTOS
     public class ReportRequestModels
     { 
 
-        public int ReportId {get;set;}
+        public int PostId {get;set;}
         [Required(ErrorMessage = "Please input the reason here")]
-        public string Reason { get; set; }
+        public string? Reason { get; set; }
     }
 }

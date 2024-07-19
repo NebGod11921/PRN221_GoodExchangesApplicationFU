@@ -54,12 +54,12 @@ namespace DataAccessObjects.Services
             }
         }
 
-        public async Task<AccountDTOs> GetAccountDTOsById(int AccountId)
+        public async Task<LoginAccountDTOs> GetAccountDTOsById(int id)
         {
             try
             {
-                var result = await _unitOfWork.AccountRepository.GetByIdAsync(AccountId);
-                var mapper = _mapper.Map<AccountDTOs>(result);
+                var result = await _unitOfWork.AccountRepository.GetByIdAsync(id);
+                var mapper = _mapper.Map<LoginAccountDTOs>(result);
                 if (mapper != null)
                 {
                     return mapper;
@@ -118,10 +118,9 @@ namespace DataAccessObjects.Services
             try
             {
                 var mapper = _mapper.Map<User>(accountDTOs);
-                
-                var createUser = await _unitOfWork.AccountRepository.RegisterAccount(mapper);
-
-                if (createUser != null)
+                await _unitOfWork.AccountRepository.AddAsync(mapper);
+                var IsSucess = await _unitOfWork.SaveChangeAsync() > 0;
+                if (IsSucess == true)
                 {
                     var checkEmail       = await _unitOfWork.AccountRepository.CheckEmailExists(createUser.Email);
                     var checkPhoneNumber = await _unitOfWork.AccountRepository.CheckTelephoneNumberExists(createUser.TelephoneNumber);
@@ -179,20 +178,34 @@ namespace DataAccessObjects.Services
             throw new NotImplementedException();
         }
 
-        public async Task<AccountDTOs> UpdateUserProfileAsync(AccountDTOs user, int userId)
+        public async Task<LoginAccountDTOs> UpdateUserProfileAsync(LoginAccountDTOs user, int userId)
         {
             try
             {
                 var mapper = _mapper.Map<User>(user);
-                var result = await _unitOfWork.AccountRepository.UpdateUser(mapper, userId);
-                if (result != null)
+                var getUserId = await _unitOfWork.AccountRepository.GetByIdAsync(userId);
+
+                if (getUserId != null)
                 {
-                    var mappedResult = _mapper.Map<AccountDTOs>(result);
-                    return mappedResult;
-                } else
-                {
-                    return null;
+                    _unitOfWork.AccountRepository.Update(mapper);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (IsSuccess == true)
+                    {
+                        var mappedResult = _mapper.Map<LoginAccountDTOs>(mapper);
+                        return mappedResult;
+                    }
+                    else
+                    {
+                        return null;
+                    }
                 }
+                else
+                {
+                    return new LoginAccountDTOs();
+                }
+
+
+              
 
 
             }catch (Exception ex)

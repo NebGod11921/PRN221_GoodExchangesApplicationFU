@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace MyRazorPage.Pages.Seller
+namespace MyRazorPage.Pages.CustomerHistory
 {
-    public class TransactionManagementModel : PageModel
+    public class ViewTransactionDetailsModel : PageModel
     {
         public void OnGet()
         {

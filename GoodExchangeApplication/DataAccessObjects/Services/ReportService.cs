@@ -105,26 +105,70 @@ namespace DataAccessObjects.Services
             throw new NotImplementedException();
         }*/
 
-        public async Task<IEnumerable<ReportResponseModel>> GetReportByPostId(int postId)
+        public async Task<List<ReportResponseModel>> GetReportByPostId(int postId)
         {
             try
             {
-                var findPost = await _unitOfWork.AccountRepository.GetByIdAsync(postId);
+                var findPost = await _unitOfWork.PostRepository.GetByIdAsync(postId);
                 if (findPost != null)
                 {
-                   
+                    var Report = _unitOfWork.ReportRepository.FindAll(r => r.PostId == postId).ToList();
+                    List<ReportResponseModel> Final = new List<ReportResponseModel>();
+                    foreach (var report in Report)
+                    {
+                        var user = await _unitOfWork.AccountRepository.FindAsync(u => u.Id.Equals(report.UserId));
+                        var post = await _unitOfWork.PostRepository.FindAsync(c => c.Id.Equals(report.PostId));
+                        ReportResponseModel result = new ReportResponseModel();
+                        result = _mapper.Map<ReportResponseModel>(result);
+                        result.UserName = user.UserName;
+                        result.title = post.Title;
+                        Final.Add(result);
+                    }
+                    return Final;
+                }
+                else
+                {
+                    return null;
                 }
 
             }catch(Exception ex)
             {
-                throw new Exception("Error DB!")
+                throw new Exception("Error DB!");
             }
-            return null;
+            
         }
 
-        public Task<IEnumerable<ReportResponseModel>> GetReportByUserId(int userId)
+        public async Task<List<ReportResponseModel>> GetReportByUserId(int userId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var findPost = await _unitOfWork.AccountRepository.GetByIdAsync(userId);
+                if (findPost != null)
+                {
+                    var Report = _unitOfWork.ReportRepository.FindAll(r => r.UserId == userId).ToList();
+                    List<ReportResponseModel> Final = new List<ReportResponseModel>();
+                    foreach (var report in Report)
+                    {
+                        var user = await _unitOfWork.AccountRepository.FindAsync(u => u.Id.Equals(report.UserId));
+                        var post = await _unitOfWork.PostRepository.FindAsync(c => c.Id.Equals(report.PostId));
+                        ReportResponseModel result = new ReportResponseModel();
+                        result = _mapper.Map<ReportResponseModel>(result);
+                        result.UserName = user.UserName;
+                        result.title = post.Title;
+                        Final.Add(result);
+                    }
+                    return Final;
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error DB!");
+            }
         }
 
         public Task<List<ReportResponseModel>> SearchReportByName(string reportName)
@@ -132,8 +176,20 @@ namespace DataAccessObjects.Services
             throw new NotImplementedException();
         }
 
-        public Task<string> UpdateReportByUser(int id, ReportRequestModels dto)
+        public async Task<string> UpdateReportByUser(int id, ReportRequestModels dto)
         {
-            throw new NotImplementedException();
+            var report = await _unitOfWork.ReportRepository.GetByIdAsync(id);
+            if(report != null)
+            {
+                if(dto.PostId != 0)
+                {
+                    report.PostId = dto.PostId;
+                }
+                if (dto.Reason != null)
+                {
+                    report.Reason = dto.Reason;
+                }
+                await _unitOfWork.ReportRepository.UpdateAsync(report);
+            }
         }
     }

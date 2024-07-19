@@ -131,7 +131,7 @@ namespace MyRazorPage.Pages.Order
             }
 
             var orderID = data["orderID"]!.ToString();
-            var paymentStatus = "COMPLETED"; // Hardcoded for simplicity; use actual status in a real scenario
+            var paymentStatus = "COMPLETED"; //hard code
 
             if (paymentStatus == "COMPLETED")
             {
