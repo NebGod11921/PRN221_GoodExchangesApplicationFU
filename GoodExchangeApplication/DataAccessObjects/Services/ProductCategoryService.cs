@@ -20,11 +20,11 @@ namespace DataAccessObjects.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<ProductCategoryDTOs>> GetCategories()
+        public async Task<IEnumerable<Category>> GetCategories()
         {
             try
             {
-                var result = await _unitOfWork.productCategoryRepo.GetAllAsync();
+               /* var result = await _unitOfWork.productCategoryRepo.GetAllAsync();
                 if (result != null)
                 {
                     var mappedResult = _mapper.Map<IEnumerable<ProductCategoryDTOs>>(result);
@@ -32,7 +32,8 @@ namespace DataAccessObjects.Services
                 } else
                 {
                     return null;
-                }
+                }*/
+               return await _unitOfWork.productCategoryRepo.GetCategories();
             }catch(Exception ex)
             {
                 throw new Exception(ex.Message);

@@ -260,5 +260,16 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
+        public async Task<IEnumerable<Category>> GetCategories()
+        {
+            try
+            {
+                return await _unitOfWork.ProductRepository.GetCategories();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

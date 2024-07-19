@@ -12,16 +12,16 @@ namespace MyRazorPage.Pages.Homepage
     public class CreateProductModel : PageModel
     {
         private readonly IProductService productService;
-        private readonly IProductCategoryService productCategoryService;
+        
 
-        public CreateProductModel(IProductService service, IProductCategoryService categoryService)
+        public CreateProductModel(IProductService service)
         {
             productService= service;
-            productCategoryService= categoryService;
+            
         }
         public async Task OnGet()
         {
-            var categories = await productCategoryService.GetCategories();
+            var categories = await productService.GetCategories();
             CategorySelectList = new SelectList(categories, "Id", "Name");
         }
         public SelectList CategorySelectList {  get; set; }

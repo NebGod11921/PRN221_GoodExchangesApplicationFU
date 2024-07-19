@@ -92,5 +92,12 @@ namespace DataAccessObjects.Repositories
                 .Select(up => up.Product)
                 .ToListAsync();
         }
+        public async Task<List<Category>> GetCategories()
+        {
+            var List = await _appDbContext.Categories.ToListAsync();
+            Console.WriteLine(List.ToArray());
+            return List;
+
+        }
     }
 }

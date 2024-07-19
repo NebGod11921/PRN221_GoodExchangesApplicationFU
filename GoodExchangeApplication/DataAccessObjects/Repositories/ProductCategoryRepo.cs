@@ -18,8 +18,11 @@ namespace DataAccessObjects.Repositories
         }
 
         public async Task<List<Category>> GetCategories()
-        {
-            return await _dbContext.Categories.ToListAsync();
+        { 
+            var List= await _dbContext.Categories.ToListAsync();
+            Console.WriteLine(List.ToArray());
+            return List;
+
         }
     }
 }

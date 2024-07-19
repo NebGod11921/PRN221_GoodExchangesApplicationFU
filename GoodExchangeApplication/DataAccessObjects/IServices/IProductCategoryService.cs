@@ -10,6 +10,7 @@ namespace DataAccessObjects.IServices
 {
     public interface IProductCategoryService
     {
-        public Task<IEnumerable<ProductCategoryDTOs>> GetCategories();
+        /*public Task<IEnumerable<ProductCategoryDTOs>> GetCategories();*/
+        public Task<IEnumerable<Category>> GetCategories();
     }
 }
