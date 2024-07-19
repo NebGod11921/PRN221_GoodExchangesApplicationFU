@@ -13,6 +13,6 @@ namespace DataAccessObjects.IServices
         public Task<bool> AddTransactionProduct(List<TransactionProduct> transactionProducts, int transactionId, List<int> productIds);
 
         public Task<IEnumerable<TransactionProduct>> GetTransactionProductsById(int transactionId);
-
+        public Task<IEnumerable<Product>> GetProductsByTransactionIdAsync(int transactionId);
     }
 }

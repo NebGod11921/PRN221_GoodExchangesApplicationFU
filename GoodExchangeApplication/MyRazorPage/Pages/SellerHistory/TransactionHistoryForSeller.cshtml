@@ -8,178 +8,216 @@
     var getSession = HttpContext.Session.GetString("GetSeller");
 }
 
-<style>
-    body {
-        margin-top: 20px;
-        background: #f8f9fa;
-        font-family: 'Lato', sans-serif;
-    }
-
-    .card {
-        box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
-        border-radius: 10px;
-        border: none;
-        margin-bottom: 20px;
-    }
-
-    .table th {
-        font-weight: bold;
-        background-color: #e9ecef;
-    }
-
-    .table th, .table td {
-        padding: 1rem;
-        vertical-align: middle;
-        border-bottom: 1px solid #dee2e6;
-    }
-
-    .badge {
-        font-size: 0.875rem;
-        padding: 0.5em 0.75em;
-        border-radius: 0.5em;
-        display: inline-block;
-        margin-top: 5px;
-    }
-
-    .bg-tint-warning {
-        background-color: #fff3cd;
-    }
-
-    .text-warning {
-        color: #856404;
-    }
-
-    .bg-tint-success {
-        background-color: #d4edda;
-    }
-
-    .text-success {
-        color: #155724;
-    }
-
-    .container {
-        max-width: 960px;
-        margin: auto;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-        padding: 15px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-        .header h5 {
-            margin: 0;
-            font-size: 1.5rem;
-            font-weight: 700;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Lato', sans-serif;
+            margin-top: 20px;
         }
 
-        .header p {
-            margin: 0;
+        .container {
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .table th {
+            font-weight: bold;
+            background-color: #e9ecef;
+        }
+
+        .table th, .table td {
+            padding: 1rem;
+            vertical-align: middle;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .badge {
             font-size: 0.875rem;
-            color: #6c757d;
+            padding: 0.5em 0.75em;
+            border-radius: 0.5em;
+            display: inline-block;
+            margin-top: 5px;
         }
 
-    .nav-buttons {
-        display: flex;
-        gap: 10px;
-    }
-
-        .nav-buttons a {
-            text-decoration: none;
+        .bg-tint-warning {
+            background-color: #fff3cd;
         }
 
-        .nav-buttons .btn {
-            margin-right: 10px;
+        .text-warning {
+            color: #856404;
         }
 
-    .alert {
-        margin-top: 20px;
-    }
-</style>
+        .bg-tint-success {
+            background-color: #d4edda;
+        }
 
+        .text-success {
+            color: #155724;
+        }
 
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
+            .header h5 {
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
 
+            .header p {
+                margin: 0;
+                font-size: 0.875rem;
+                color: #6c757d;
+            }
 
-@if (getSession != null)
-{
-    var json = JsonSerializer.Deserialize<LoginAccountDTOs>(getSession);
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
 
-    if (json.RoleId == 4)
-    {
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-        <div class="container">
-            <div class="card table-card">
-                <div class="card-header header">
+            .nav-buttons a {
+                text-decoration: none;
+            }
+
+            .nav-buttons .btn {
+                margin-right: 10px;
+            }
+
+        .alert {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        @if (getSession != null)
+        {
+            var json = JsonSerializer.Deserialize<LoginAccountDTOs>(getSession);
+
+            if (json.RoleId == 4)
+            {
+                <div class="header">
                     <h5 class="mb-0">Latest Transactions</h5>
                     <div class="nav-buttons">
                         <a asp-page="/Seller/PostManagement" class="btn btn-secondary">Post Management</a>
                         <a asp-page="/Seller/ProductManagement" class="btn btn-secondary">Product Management</a>
-                        <a asp-page="#" class="btn btn-danger">Logout</a>
+                        <a asp-page="/Logout" class="btn btn-danger">Logout</a>
                     </div>
                     <p class="mb-0 small text-muted">1 Pending</p>
                 </div>
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead class="small text-uppercase bg-body text-muted">
-                            <tr>
-                                <th>Transaction ID</th>
-                                <th>Date</th>
-                                <th>Name</th>
-                                <th>Amount</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var order in Model.GetTransactions)
-                            {
-                                <tr class="align-middle">
-                                    <td>SAP_@order.Id</td>
-                                    <td>@order.TransactionDate</td>
-                                    <td>Ander Durham</td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <span>$ @order.TotalAmount</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        @if (order.Status == 1)
-                                        {
-                                            <span class="badge bg-tint-warning text-warning">Pending</span>
-                                        }
-                                        else if (order.Status == 2)
-                                        {
-                                            <span class="badge bg-tint-success text-success">Completed</span>
-                                        }
-                                    </td>
+                <div class="card table-card">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="small text-uppercase bg-body text-muted">
+                                <tr>
+                                    <th>Transaction ID</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Shipping Address</th>
+                                    <th>Quantity</th>
+                                    <th>Note</th>
+                                    <th>View Details</th>
+                                    <th>Status</th>
                                 </tr>
-                            }
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                @foreach (var order in Model.GetTransactions)
+                                {
+                                    <tr class="align-middle">
+                                        <td>SAP_@order.Id</td>
+                                        <td>@order.TransactionDate</td>
+                                        <td>$ @order.TotalAmount</td>
+                                        <td>@order.ShippingAddress</td>
+                                        <td>@order.Quantity</td>
+                                        <td>@order.Note</td>
+                                        <td>
+                                            <form asp-page-handler="TransferTransactionDetail" method="post">
+                                                <input type="hidden" name="txtOrderId" value="@order.Id" />
+                                                <input type="submit" class="btn btn-primary" value="View Details" />
+                                            </form>
+                                        </td>
+                                        <td>
+                                            @if (order.Status == 0)
+                                            {
+                                                <span class="badge bg-tint-warning text-warning">Cancel</span>
+                                                <form asp-page-handler="ReOrder" method="post">
+                                                    <input type="hidden" name="txtReOrderId" value="@order.Id" />
+                                                    <input type="submit" class="btn btn-primary" value="Re order" />
+                                                </form>
+                                            }
+                                            @if (order.Status == 1)
+                                            {
+                                                <span class="badge bg-tint-warning text-warning">Pending</span>
+                                                <form asp-page-handler="ConfirmOrder" method="post">
+                                                    <input type="hidden" name="txtConfirmOrderId" value="@order.Id" />
+                                                    <input type="submit" class="btn btn-primary" value="Confirm Order" />
+                                                </form>
+                                                <form asp-page-handler="CancelOrder" method="post">
+                                                    <input type="hidden" name="txtCancelOrderId" value="@order.Id" />
+                                                    <input type="submit" class="btn btn-primary" value="Cancel Order" />
+                                                </form>
+                                            }
+                                            else if (order.Status == 2)
+                                            {
+                                                <span class="badge bg-tint-success text-success">Completed</span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            }
+            else
+            {
+                <div class="alert alert-warning" role="alert">
+                    Other users could not access this function.
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-danger" role="alert">
+                Could not find any session.
             </div>
-        </div>
-    }
-    else
-    {
-        <div class="container">
-            <div class="alert alert-warning" role="alert">
-                Other users could not access this function.
-            </div>
-        </div>
-    }
-}
-else
-{
-    <div class="container">
-        <div class="alert alert-danger" role="alert">
-            Could not find any session.
-        </div>
+        }
     </div>
-}
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
