@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\deleteproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\deleteproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\createproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\createproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\createproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\createproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\productmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -15,16 +19,12 @@
       "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\deleteproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\deleteproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\productdetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\productdetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\deleteproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\deleteproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\createproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|solutionrelative:pages\\seller\\createproduct.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA6FB11C-9C70-4FD6-8320-95511A29BBAD}|MyRazorPage.csproj|d:\\major subject\\prn221\\prn221_goodexchangesapplicationfu\\goodexchangeapplication\\myrazorpage\\pages\\seller\\updateproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -45,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,7 +61,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "CreateProduct.cshtml",
+              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\CreateProduct.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Seller\\CreateProduct.cshtml",
+              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\CreateProduct.cshtml",
+              "RelativeToolTip": "Pages\\Seller\\CreateProduct.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-19T08:59:41.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProductDetail.cshtml",
               "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\ProductDetail.cshtml",
               "RelativeDocumentMoniker": "Pages\\Seller\\ProductDetail.cshtml",
@@ -74,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductManagement.cshtml",
               "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\ProductManagement.cshtml",
               "RelativeDocumentMoniker": "Pages\\Seller\\ProductManagement.cshtml",
@@ -87,20 +100,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DeleteProduct.cshtml",
               "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\DeleteProduct.cshtml",
               "RelativeDocumentMoniker": "Pages\\Seller\\DeleteProduct.cshtml",
               "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\DeleteProduct.cshtml",
               "RelativeToolTip": "Pages\\Seller\\DeleteProduct.cshtml",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGMAAABGAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAGMAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-18T13:20:05.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductDetail.cshtml.cs",
               "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\ProductDetail.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Seller\\ProductDetail.cshtml.cs",
@@ -108,21 +121,7 @@
               "RelativeToolTip": "Pages\\Seller\\ProductDetail.cshtml.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAQwBwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T13:41:22.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateProduct.cshtml.cs",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\CreateProduct.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Seller\\CreateProduct.cshtml.cs",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\CreateProduct.cshtml.cs",
-              "RelativeToolTip": "Pages\\Seller\\CreateProduct.cshtml.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwCIAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T10:15:38.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T13:41:22.758Z"
             },
             {
               "$type": "Document",
@@ -134,8 +133,7 @@
               "RelativeToolTip": "Pages\\Seller\\UpdateProduct.cshtml",
               "ViewState": "AQIAACQAAACA//////8QwD0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-18T10:03:16.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T10:03:16.797Z"
             },
             {
               "$type": "Document",
@@ -147,8 +145,7 @@
               "RelativeToolTip": "Pages\\Seller\\UpdateProduct.cshtml.cs",
               "ViewState": "AQIAAAwAAADAzMzMzGwzwCUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T10:06:15.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T10:06:15.211Z"
             },
             {
               "$type": "Document",
@@ -170,15 +167,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeleteProduct.cshtml.cs",
-              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\DeleteProduct.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Seller\\DeleteProduct.cshtml.cs",
-              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\DeleteProduct.cshtml.cs",
-              "RelativeToolTip": "Pages\\Seller\\DeleteProduct.cshtml.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAawB4AAAAJAAAA",
+              "DocumentIndex": 0,
+              "Title": "CreateProduct.cshtml.cs",
+              "DocumentMoniker": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\CreateProduct.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Seller\\CreateProduct.cshtml.cs",
+              "ToolTip": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\Pages\\Seller\\CreateProduct.cshtml.cs",
+              "RelativeToolTip": "Pages\\Seller\\CreateProduct.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T13:24:30.708Z",
+              "WhenOpened": "2024-07-18T10:15:38.99Z",
               "EditorCaption": ""
             }
           ]

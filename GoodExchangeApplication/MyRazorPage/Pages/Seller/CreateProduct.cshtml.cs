@@ -20,7 +20,7 @@ namespace MyRazorPage.Pages.Seller
         public async Task OnGet()
         {
             var categories = await productService.GetProductCategories();
-            CategorySelectList = new SelectList(categories, "Id", "Name");
+            ViewData["Id"] = new SelectList(categories, "Id", "Name");
         }
         public SelectList CategorySelectList { get; set; }
         public IEnumerable<Category> CategoryDTOs { get; set; }

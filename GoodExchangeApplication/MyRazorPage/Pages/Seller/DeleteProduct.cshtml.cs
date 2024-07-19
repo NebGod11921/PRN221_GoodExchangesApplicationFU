@@ -21,7 +21,7 @@ namespace MyRazorPage.Pages.Seller
         public async Task OnGet(int? id)
         {
             var Categories = await productService.GetProductCategories();
-            CategoryDTOs = new SelectList(Categories, "Id", "Name");
+            CategoryDTOs = new SelectList(Categories, "CategoryId", "Name");
             if (id != null)
             {
                 var request = await productService.GetById((int)id);
