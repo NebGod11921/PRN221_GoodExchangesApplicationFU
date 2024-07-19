@@ -1,7 +1,7 @@
 ﻿@page
 @using System.Text.Json
 @using DataAccessObjects.ViewModels.AccountDTOS
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @model MyRazorPage.Pages.SellerHistory.TransactionHistoryForSellerModel
 @{
     Layout = null;
@@ -67,6 +67,10 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
         .header h5 {
@@ -81,12 +85,27 @@
             color: #6c757d;
         }
 
+    .nav-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+        .nav-buttons a {
+            text-decoration: none;
+        }
+
+        .nav-buttons .btn {
+            margin-right: 10px;
+        }
+
     .alert {
         margin-top: 20px;
     }
 </style>
 
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
 
 @if (getSession != null)
 {
@@ -99,6 +118,11 @@
             <div class="card table-card">
                 <div class="card-header header">
                     <h5 class="mb-0">Latest Transactions</h5>
+                    <div class="nav-buttons">
+                        <a asp-page="/Seller/PostManagement" class="btn btn-secondary">Post Management</a>
+                        <a asp-page="/Seller/ProductManagement" class="btn btn-secondary">Product Management</a>
+                        <a asp-page="#" class="btn btn-danger">Logout</a>
+                    </div>
                     <p class="mb-0 small text-muted">1 Pending</p>
                 </div>
                 <div class="table-responsive">

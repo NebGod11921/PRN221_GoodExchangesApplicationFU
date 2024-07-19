@@ -10,11 +10,14 @@ namespace MyRazorPage.Pages.TransactionHistory
     public class TransactionHistoryModel : PageModel
     {
         private readonly ITransactionService _transactionService;
+        private readonly ITransactionTypeService _transactionTypeService;
+        private readonly ITransactionProductService _transactionProductService;
 
-
-        public TransactionHistoryModel(ITransactionService transactionService)
+        public TransactionHistoryModel(ITransactionService transactionService, ITransactionProductService transactionProductService, ITransactionTypeService transactionTypeService)
         {
             _transactionService = transactionService;
+            _transactionTypeService = transactionTypeService;
+            _transactionProductService = transactionProductService;
         }
         
         public IEnumerable<TransactionDTOs> GetTransactions { get; set; }
@@ -73,6 +76,21 @@ namespace MyRazorPage.Pages.TransactionHistory
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<IActionResult> OnPostTransferTransactionDetails(int txtTransferTransactionDetails)
+        {
+            ViewData["txtTransferTransactionDetails"] = txtTransferTransactionDetails;
+            try
+            {
+
+                return Page();
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
 
     }
 }

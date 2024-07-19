@@ -2,84 +2,166 @@
 @model MyRazorPage.Pages.Seller.ProductManagementModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
+   
 }
-<h1>Product Management</h1>
-<a asp-page="./CreateProduct">Create New Product</a>
-<form method="get">
-    <input type="text" name="Title" value="@Model.Title" placeholder="Filter by title" />
-    <input type="number" name="MinPrice" value="@Model.MinPrice" placeholder="Min Price" />
-    <input type="number" name="MaxPrice" value="@Model.MaxPrice" placeholder="Max Price" />
-    <input type="submit" value="Filter" class="btn btn-primary" /><br />
-    <select name="CategoryId">
-        <option value="">All Categories</option>
-        @foreach (var item in Model.CategorySelectList)
-        {
-            <option value="@item.Value">@item.Text</option>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
         }
-    </select>
-    <select name="SortField">
-        <option value="Title">Title</option>
-        <option value="Price">Price</option>
-    </select>
-    <select name="SortOrder">
-        <option value="asc">Ascending</option>
-        <option value="desc">Descending</option>
-    </select>
-</form>
-@if (Model.ProductDtos != null && Model.ProductDtos.Any())
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Location</th>
-                <th>Image</th>
-                <th>Quantity</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in Model.ProductDtos)
-            {
-                <tr>
-                    <td>@product.Title</td>
-                    <td>@product.Description</td>
-                    <td>@product.Price</td>
-                    <td>@product.Location</td>
-                    <td>@product.Image</td>
-                    <td>@product.Quantity</td>
-                    <td>
-                        <a asp-page="./UpdateProduct" asp-route-id="@product.Id">Edit</a> |
-                        <a asp-page="./ProductDetail" asp-route-id="@product.Id">Details</a> |
-                        <a asp-page="./DeleteProduct" asp-route-id="@product.Id">Delete</a>
-                    </td>
-                </tr>
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .page-header h1 {
+                font-size: 2rem;
+                margin: 0;
             }
-        </tbody>
-    </table>
-    <nav aria-label="Page navigation">
-        <ul class="pagination">
-            <li class="page-item @(Model.ProductDtos.HasPreviousPage ? "" : "disabled")">
-                <a class="page-link"
-                   href="?pageIndex=@(Model.ProductDtos.PageIndex - 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Previous</a>
-            </li>
-            @for (int i = 1; i <= Model.ProductDtos.TotalPages; i++)
-            {
-                <li class="page-item @(Model.ProductDtos.PageIndex == i ? "active" : "")">
-                    <a class="page-link"
-                       href="?pageIndex=@i&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">@i</a>
-                </li>
+
+        .filter-form {
+            margin-bottom: 30px;
+        }
+
+            .filter-form .form-row {
+                margin-bottom: 15px;
             }
-            <li class="page-item @(Model.ProductDtos.HasNextPage ? "" : "disabled")">
-                <a class="page-link"
-                   href="?pageIndex=@(Model.ProductDtos.PageIndex + 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Next</a>
-            </li>
-        </ul>
-    </nav>
-}
-else
-{
-    <p>No products available.</p>
-}
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .pagination {
+            justify-content: center;
+        }
+
+        .filter-btn {
+            margin-top: 1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Product Management</h1>
+            <a class="btn btn-primary" asp-page="./CreateProduct">Create New Product</a>
+        </div>
+
+        <div class="filter-form">
+            <form method="get">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <input type="text" name="Title" value="@Model.Title" class="form-control" placeholder="Filter by title" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="number" name="MinPrice" value="@Model.MinPrice" class="form-control" placeholder="Min Price" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="number" name="MaxPrice" value="@Model.MaxPrice" class="form-control" placeholder="Max Price" />
+                    </div>
+                    <div class="col-md-2">
+                        <select name="CategoryId" class="form-select">
+                            <option value="">All Categories</option>
+                            @foreach (var item in Model.CategorySelectList)
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select name="SortField" class="form-select">
+                            <option value="Title">Title</option>
+                            <option value="Price">Price</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select name="SortOrder" class="form-select">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary filter-btn">Filter</button>
+            </form>
+        </div>
+
+        @if (Model.ProductDtos != null && Model.ProductDtos.Any())
+        {
+            <div class="row">
+                @foreach (var product in Model.ProductDtos)
+                {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="@product.Image" class="card-img-top" alt="@product.Title">
+                            <div class="card-body">
+                                <h5 class="card-title">@product.Title</h5>
+                                <p class="card-text">@product.Description</p>
+                                <p class="card-text"><strong>Price:</strong> @product.Price</p>
+                                <p class="card-text"><strong>Location:</strong> @product.Location</p>
+                                <p class="card-text"><strong>Quantity:</strong> @product.Quantity</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-secondary btn-sm" asp-page="./UpdateProduct" asp-route-id="@product.Id">Edit</a>
+                                    <a class="btn btn-info btn-sm" asp-page="./ProductDetail" asp-route-id="@product.Id">Details</a>
+                                    <a class="btn btn-danger btn-sm" asp-page="./DeleteProduct" asp-route-id="@product.Id">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination">
+                    <li class="page-item @(Model.ProductDtos.HasPreviousPage ? "" : "disabled")">
+                        <a class="page-link" href="?pageIndex=@(Model.ProductDtos.PageIndex - 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Previous</a>
+                    </li>
+                    @for (int i = 1; i <= Model.ProductDtos.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.ProductDtos.PageIndex == i ? "active" : "")">
+                            <a class="page-link" href="?pageIndex=@i&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">@i</a>
+                        </li>
+                    }
+                    <li class="page-item @(Model.ProductDtos.HasNextPage ? "" : "disabled")">
+                        <a class="page-link" href="?pageIndex=@(Model.ProductDtos.PageIndex + 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        }
+        else
+        {
+            <div class="alert alert-info" role="alert">
+                No products available.
+            </div>
+        }
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

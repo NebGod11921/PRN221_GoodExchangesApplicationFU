@@ -82,7 +82,24 @@ namespace DataAccessObjects.Repositories
             }
         }
 
-        
+        public async Task<IEnumerable<TransactionProduct>> GetTransactionProductsById(int transactionId)
+        {
+            try
+            {
+                var getTransaction = await _appDbContext.TransactionProducts.Where(x => x.TransactionId == transactionId).ToListAsync();
+                if (getTransaction.Count > 0)
+                {
+                    return getTransaction;
+                }
+                else
+                {
+                   return new List<TransactionProduct>();
+                }
 
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

@@ -43,5 +43,25 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<IEnumerable<TransactionProductDTOs>> GetTransactionProductsById(int transactionId)
+        {
+            try
+            {
+                var result = await _unitOfWork.TransactionProductRepository.GetTransactionProductsById(transactionId);
+                if (result != null)
+                {
+                    var mappedResult =  _mapper.Map<IEnumerable<TransactionProductDTOs>>(result);
+                    return mappedResult;
+                } else
+                {
+                    return new List<TransactionProductDTOs>();
+                }
+
+            }catch  (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

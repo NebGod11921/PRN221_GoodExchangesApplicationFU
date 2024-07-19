@@ -10,5 +10,6 @@ namespace DataAccessObjects.IServices
     public interface ITransactionProductService
     {
         public Task<bool> CreateTransactionProducts(List<TransactionProductDTOs> transactionDTOs, int transactionId, List<int> productIds );
+        public Task<IEnumerable<TransactionProductDTOs>> GetTransactionProductsById( int transactionId );
     }
 }

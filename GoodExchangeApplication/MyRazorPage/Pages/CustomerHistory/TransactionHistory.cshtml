@@ -184,11 +184,12 @@
                         <td>@i.Note</td>
                         <td>$ @i.TotalAmount</td>
                         <td>@i.ShippingAddress</td>
-                        <td><form asp-page-handler="TransferTransactionDetails" method="post">
-
-
-
-                        </form></td>
+                        <td>
+                        <form asp-page-handler="TransferTransactionDetails" method="post">
+                            <input type="hidden" name="txtTransferTransactionDetails" value="@i.Id"/>
+                            <input type="submit" class="btn btn-primary" value="View Details"/>
+                        </form>
+                        </td>
                         @if (i.Status == 1)
                         {
                             <td class="status pending">Pending</td>
