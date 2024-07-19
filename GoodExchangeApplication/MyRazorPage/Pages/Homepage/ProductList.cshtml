@@ -164,7 +164,28 @@
         <div class="col-sm-9">
             <div class="filter">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <form method="get">
+                        <input type="text" name="Title" value="@Model.Title" placeholder="Filter by title" />
+                        <input type="number" name="MinPrice" value="@Model.MinPrice" placeholder="Min Price" />
+                        <input type="number" name="MaxPrice" value="@Model.MaxPrice" placeholder="Max Price" />
+                        <input type="submit" value="Filter" class="btn btn-primary" /><br />
+                        <select name="CategoryId">
+                            <option value="">All Categories</option>
+                            @foreach (var item in Model.CategorySelectList)
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        </select>
+                        <select name="SortField">
+                            <option value="Title">Title</option>
+                            <option value="Price">Price</option>
+                        </select>
+                        <select name="SortOrder">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </form>
+                    @* <div class="col-sm-6">
                         <div class="btn-group">
                             <button type="button" id="list-view" class="btn btn-default" title="List View"><i class="fa fa-th-list"></i></button>
                             <button type="button" id="grid-view" class="btn btn-default" title="Grid View"><i class="fa fa-th"></i></button>
@@ -191,7 +212,7 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
+                    </div> *@
                 </div>
             </div>
             <div class="row">

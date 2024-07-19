@@ -38,8 +38,7 @@ namespace DataAccessObjects
             services.AddScoped<IPaymentService, PaymentService>();
             services.AddScoped<ITransactionTypeRepo, TransactionTypeRepo>();
             services.AddScoped<IAddToCartService, CartService>();
-            services.AddScoped<IProductCategoryRepo, ProductCategoryRepo>();
-            services.AddScoped<IProductCategoryService, ProductCategoryService>();
+            
             services.AddScoped<ITransactionTypeService, TransactionTypeService>();
             services.AddScoped<ITransactionProductRepository, TransactionProductRepository>();
             services.AddScoped<ITransactionProductService, TransactionProductService>();

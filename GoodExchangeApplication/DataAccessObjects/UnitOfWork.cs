@@ -17,7 +17,7 @@ namespace DataAccessObjects
         private readonly IChatSessionRepository _chatSessionRepository;
         private readonly IMessageRepository _messageRepository;
         private readonly IProductRepo _productRepo;
-        private readonly IProductCategoryRepo _productCategoryRepo;
+        
 
        
         private readonly ITransactionRepo _transactionRepo;
@@ -37,7 +37,7 @@ namespace DataAccessObjects
             _postRepository = postRepository;
             _appDbContext = appDbContext;
             _productRepo = IProductRepo;
-            _productCategoryRepo = productCategoryRepo;
+            
             _transactionRepo = transactionRepo;
             _transactionTypeRepo = transactionTypeRepo;
             _transactionProductRepository = transactionProductRepository;
@@ -50,7 +50,7 @@ namespace DataAccessObjects
 
         public IProductRepo ProductRepository => _productRepo;
 
-        public IProductCategoryRepo productCategoryRepo => _productCategoryRepo;
+        
         public ITransactionRepo TransactionRepository => _transactionRepo;
 
         public ITransactionTypeRepo TransactionType => _transactionTypeRepo;

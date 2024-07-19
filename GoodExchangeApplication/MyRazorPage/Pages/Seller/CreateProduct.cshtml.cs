@@ -7,37 +7,41 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace MyRazorPage.Pages.Homepage
+namespace MyRazorPage.Pages.Seller
 {
     public class CreateProductModel : PageModel
     {
         private readonly IProductService productService;
-        private readonly IProductCategoryService productCategoryService;
 
-        public CreateProductModel(IProductService service, IProductCategoryService categoryService)
+
+        public CreateProductModel(IProductService service)
         {
-            productService= service;
-            productCategoryService= categoryService;
+            productService = service;
+
         }
         public async Task OnGet()
         {
-            var categories = await productCategoryService.GetCategories();
-            CategorySelectList = new SelectList(categories, "Id", "Name");
+            var categories = await productService.GetCategories();
+            ViewData["Id"] = new SelectList(categories, "Id", "Name");
         }
-        public SelectList CategorySelectList {  get; set; }
+        public SelectList CategorySelectList { get; set; }
         public IEnumerable<Category> CategoryDTOs { get; set; }
         [BindProperty]
         public RequestProductDTO requestProduct { get; set; }
         public async Task<IActionResult> OnPostAsync()
         {
-            var result=await productService.CreateProduct(requestProduct);
+            var result = await productService.CreateProduct(requestProduct);
             if (result != null)
             {
                 ViewData["Message"] = "Create Successfully";
+                return RedirectToPage("./ProductManagement");
             }
             else
+            {
                 ViewData["Message"] = "Fail";
-            return Page();
+                return Page();
+            }
+                
         }
     }
 }
