@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessObjects;
+using DataAccessObjects.Helpers;
 using DataAccessObjects.IServices;
 using DataAccessObjects.ViewModels.ProductDTOs;
 using System;
@@ -270,6 +271,10 @@ namespace DataAccessObjects.Services
             {
                 throw new Exception(ex.Message);
             }
+        }
+        public async Task<Paging<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null, string? sortField = null, string sortOrder = "asc")
+        {
+            return await _unitOfWork.ProductRepository.GetProductsPaging(pageIndex, pageSize, title, minPrice, maxPrice, categoryId, sortField, sortOrder);
         }
     }
 }
