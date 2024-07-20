@@ -151,5 +151,21 @@ namespace DataAccessObjects.Repositories
 
             return await Paging<ProductDTos>.CreateAsync(list.AsNoTracking(), pageIndex, pageSize);
         }
+        public async Task<List<ProductDTos>> GetTopPopularProductsAsync()
+        {
+            return await _appDbContext.Products
+                .OrderByDescending(p => p.Popularities)
+                .Take(3)
+                .Select(p => new ProductDTos
+                {
+                    Id = p.Id,
+                    Title = p.Title,
+                    Description = p.Description,
+                    Image = p.Image,
+                    Price = p.Price,
+                    CategoryId=p.CategoryId,
+                })
+                .ToListAsync();
+        }
     }
 }

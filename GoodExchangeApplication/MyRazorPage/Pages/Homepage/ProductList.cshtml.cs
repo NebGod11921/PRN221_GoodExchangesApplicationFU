@@ -36,11 +36,12 @@ namespace MyRazorPage.Pages.Homepage
         public SelectList CategorySelectList { get; set; }
         [BindProperty(SupportsGet = true)]
         public int? CategoryId { get; set; }
+        public List<ProductDTos> TopProducts { get; set; }
         public async Task OnGetAsync(int? pageIndex)
         {
             var category = await _productService.GetCategories();
             CategorySelectList = new SelectList(category, "Id", "Name");
-
+            TopProducts=await _productService.GetTopPopularProductsAsync();
             int pageSize = 10;
             ProductDtos = await _productService.GetProductsPaging(pageIndex ?? 1, pageSize, Title, MinPrice, MaxPrice, CategoryId, SortField, SortOrder);
         }

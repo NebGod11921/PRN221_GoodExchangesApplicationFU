@@ -20,6 +20,7 @@ namespace DataAccessObjects.IRepositories
         public Task<IEnumerable<Product>> SearchProductByNameOrCode(string searchQuery);
         Task<IEnumerable<Product>> GetProductsByUserIdAsync(int userId);
         public Task<List<Category>> GetCategories();
+        public Task<List<ProductDTos>> GetTopPopularProductsAsync();
         public Task<Paging<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null, string? sortField = null, string sortOrder = "asc");
     }
 }

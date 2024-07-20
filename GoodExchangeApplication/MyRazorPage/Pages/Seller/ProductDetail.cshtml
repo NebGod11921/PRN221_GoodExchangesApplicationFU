@@ -41,7 +41,14 @@
             @Html.DisplayNameFor(model => model.requestProduct.Image)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.requestProduct.Image)
+            @if (!string.IsNullOrEmpty(Model.requestProduct.Image))
+            {
+                <img src="~/uploads/@Model.requestProduct.Image" alt="@Model.requestProduct.Title" style="max-width: 100%; height: auto;" />
+            }
+            else
+            {
+                <p>No image available</p>
+            }
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.requestProduct.Quantity)
