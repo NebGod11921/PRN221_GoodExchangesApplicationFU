@@ -277,6 +277,9 @@ namespace DataAccessObjects.Services
             return await _unitOfWork.ProductRepository.GetProductsPaging(pageIndex, pageSize, title, minPrice, maxPrice, categoryId, sortField, sortOrder);
         }
 
+        public async Task<List<ProductDTos>> GetTopPopularProductsAsync()
+        {
+            return await _unitOfWork.ProductRepository.GetTopPopularProductsAsync();
         public async Task<IEnumerable<ProductDTos>> GetProductsByTransactionId(int transactionId)
         {
             try
