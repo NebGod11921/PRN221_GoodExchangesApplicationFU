@@ -77,13 +77,15 @@ namespace MyRazorPage.Pages.TransactionHistory
             }
         }
 
-        public async Task<IActionResult> OnPostTransferTransactionDetails(int txtTransferTransactionDetails)
+        public IActionResult OnPostTransferTransactionDetails(int txtTransferTransactionDetails)
         {
             ViewData["txtTransferTransactionDetails"] = txtTransferTransactionDetails;
             try
             {
+                HttpContext.Session.SetInt32("transactionDetailId", txtTransferTransactionDetails);
+                return RedirectToPage("/CustomerHistory/ViewTransactionDetails");
 
-                return Page();
+                
 
             }catch (Exception ex)
             {

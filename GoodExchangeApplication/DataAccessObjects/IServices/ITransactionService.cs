@@ -17,7 +17,9 @@ namespace DataAccessObjects.IServices
         public Task<PagingTransaction<TransactionDTOs>> GetTransactionByUserID(int userId, int pageNumber, int pageSize);
 
 
-
+        //Set Status
+        public Task<bool> ReOrderTransaction(int transactionId);
+        public Task<bool> ConfirmTransaction(int transactionId);
         public Task<bool> DeleteTransaction(int transactionId);
        
     }
