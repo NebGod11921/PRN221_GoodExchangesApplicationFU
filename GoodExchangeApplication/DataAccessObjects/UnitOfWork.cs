@@ -14,8 +14,8 @@ namespace DataAccessObjects
         private readonly AppDbContext _appDbContext;
         private readonly IAccountRepository _accountRepository;
         private readonly IPostRepository _postRepository;
-        private readonly IChatSessionRepository _chatSessionRepository;
-        private readonly IMessageRepository _messageRepository;
+        /*private readonly IChatSessionRepository _chatSessionRepository;
+        private readonly IMessageRepository _messageRepository;*/
         private readonly IProductRepo _productRepo;
         
 
@@ -27,13 +27,13 @@ namespace DataAccessObjects
 
 
         public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, ITransactionRepo transactionRepo, ITransactionTypeRepo transactionTypeRepo,
-            IPostRepository postRepository, IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository, ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo)
+            IPostRepository postRepository, /*IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository,*/ ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo)
 
         {
             _accountRepository = accountRepository;
             _productRepo = IProductRepo;
-            _messageRepository = messageRepository;
-            _chatSessionRepository = chatSessionRepository;
+            /*_messageRepository = messageRepository;
+            _chatSessionRepository = chatSessionRepository;*/
             _postRepository = postRepository;
             _appDbContext = appDbContext;
             _productRepo = IProductRepo;
@@ -45,8 +45,8 @@ namespace DataAccessObjects
         }
         public IAccountRepository AccountRepository => _accountRepository;
         public IPostRepository PostRepository => _postRepository;
-        public IMessageRepository MessageRepository => _messageRepository;
-        public IChatSessionRepository ChatSessionRepository => _chatSessionRepository;
+        /*public IMessageRepository MessageRepository => _messageRepository;
+        public IChatSessionRepository ChatSessionRepository => _chatSessionRepository;*/
 
         public IProductRepo ProductRepository => _productRepo;
 

@@ -9,22 +9,30 @@ namespace MyRazorPage.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly IPostService _postService;
+        
 
-        public IndexModel(IPostService postService)
+        public IndexModel()
         {
-            _postService = postService;
+           
 
         }
 
-        public void OnGet()
+
+        public IActionResult OnPostLogout()
         {
-                
-        }
-        public async Task<IActionResult> OnPostLogout()
-        {
-            HttpContext.Session.Clear();
-            return RedirectToPage("/Account/Login");
+            var getSession = HttpContext.Session.GetString("GetUser");
+            if (getSession != null)
+            {
+                HttpContext.Session.Clear();
+                return RedirectToPage("/Account/Login");
+            } else
+            {
+                return Page();
+            }
+
+
+
+         
         }
     }
 }

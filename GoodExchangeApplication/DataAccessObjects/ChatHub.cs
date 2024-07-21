@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects
 {
-    public class ChatHub : Hub
+    public class ChatHub /*: Hub*/
     {
-        private readonly IChatService _chatService;
+        /*private readonly IChatService _chatService;
 
         public ChatHub(IChatService chatService)
         {
@@ -35,6 +35,6 @@ namespace DataAccessObjects
         public async Task LeaveChatSession(int chatSessionId)
         {
             await Groups.RemoveFromGroupAsync(Context.ConnectionId, chatSessionId.ToString());
-        }
+        }*/
     }
 }

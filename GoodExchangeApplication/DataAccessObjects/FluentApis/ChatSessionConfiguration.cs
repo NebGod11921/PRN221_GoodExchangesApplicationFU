@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.FluentApis
 {
-    public class ChatSessionConfiguration : IEntityTypeConfiguration<ChatSession>
+    public class ChatSessionConfiguration /*: IEntityTypeConfiguration<ChatSession>*/
     {
-        public void Configure(EntityTypeBuilder<ChatSession> builder)
+        /*public void Configure(EntityTypeBuilder<ChatSession> builder)
         {
             builder.HasOne(cs => cs.User1)
                    .WithMany(u => u.ChatSessionsAsUser1)
@@ -22,6 +22,6 @@ namespace DataAccessObjects.FluentApis
                    .WithMany(u => u.ChatSessionsAsUser2)
                    .HasForeignKey(cs => cs.User2Id)
                    .OnDelete(DeleteBehavior.Restrict);
-        }
+        }*/
     }
 }

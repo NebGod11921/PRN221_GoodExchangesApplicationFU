@@ -12,8 +12,8 @@ namespace DataAccessObjects
     {
         public IAccountRepository AccountRepository { get; }
         public IPostRepository PostRepository { get; }
-        public IMessageRepository MessageRepository { get; }
-        public IChatSessionRepository ChatSessionRepository { get; }
+        /*public IMessageRepository MessageRepository { get; }*/
+        /*public IChatSessionRepository ChatSessionRepository { get; }*/
 
         public Task<int> SaveChangeAsync();
         public IProductRepo ProductRepository { get; }

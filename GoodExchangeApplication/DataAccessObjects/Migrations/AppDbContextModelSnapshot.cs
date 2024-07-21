@@ -44,65 +44,6 @@ namespace DataAccessObjects.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("BusinessObjects.ChatSession", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<byte?>("Status")
-                        .HasColumnType("tinyint");
-
-                    b.Property<int>("User1Id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("User2Id")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("User1Id");
-
-                    b.HasIndex("User2Id");
-
-                    b.ToTable("ChatSessions");
-                });
-
-            modelBuilder.Entity("BusinessObjects.Message", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ChatSessionId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<byte?>("Status")
-                        .HasColumnType("tinyint");
-
-                    b.Property<DateTime>("Timestamp")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ChatSessionId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Messages");
-                });
-
             modelBuilder.Entity("BusinessObjects.Payment", b =>
                 {
                     b.Property<int>("Id")
@@ -433,43 +374,6 @@ namespace DataAccessObjects.Migrations
                     b.ToTable("UserProducts");
                 });
 
-            modelBuilder.Entity("BusinessObjects.ChatSession", b =>
-                {
-                    b.HasOne("BusinessObjects.User", "User1")
-                        .WithMany("ChatSessionsAsUser1")
-                        .HasForeignKey("User1Id")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("BusinessObjects.User", "User2")
-                        .WithMany("ChatSessionsAsUser2")
-                        .HasForeignKey("User2Id")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("User1");
-
-                    b.Navigation("User2");
-                });
-
-            modelBuilder.Entity("BusinessObjects.Message", b =>
-                {
-                    b.HasOne("BusinessObjects.ChatSession", "ChatSession")
-                        .WithMany("Messages")
-                        .HasForeignKey("ChatSessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BusinessObjects.User", "User")
-                        .WithMany("Messages")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("ChatSession");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("BusinessObjects.Post", b =>
                 {
                     b.HasOne("BusinessObjects.Product", "Product")
@@ -603,11 +507,6 @@ namespace DataAccessObjects.Migrations
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("BusinessObjects.ChatSession", b =>
-                {
-                    b.Navigation("Messages");
-                });
-
             modelBuilder.Entity("BusinessObjects.Payment", b =>
                 {
                     b.Navigation("Transactions");
@@ -648,12 +547,6 @@ namespace DataAccessObjects.Migrations
 
             modelBuilder.Entity("BusinessObjects.User", b =>
                 {
-                    b.Navigation("ChatSessionsAsUser1");
-
-                    b.Navigation("ChatSessionsAsUser2");
-
-                    b.Navigation("Messages");
-
                     b.Navigation("Posts");
 
                     b.Navigation("Reports");

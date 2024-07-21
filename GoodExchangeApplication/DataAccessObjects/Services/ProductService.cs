@@ -280,6 +280,7 @@ namespace DataAccessObjects.Services
         public async Task<List<ProductDTos>> GetTopPopularProductsAsync()
         {
             return await _unitOfWork.ProductRepository.GetTopPopularProductsAsync();
+        }
         public async Task<IEnumerable<ProductDTos>> GetProductsByTransactionId(int transactionId)
         {
             try

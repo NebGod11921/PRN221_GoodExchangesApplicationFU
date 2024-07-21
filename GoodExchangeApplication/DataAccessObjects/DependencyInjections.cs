@@ -26,9 +26,9 @@ namespace DataAccessObjects
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<IPostService, PostService>();
-            services.AddScoped<IMessageRepository, MessageRepository>();
-            services.AddScoped<IChatSessionRepository, ChatSessionRepository>();
-            services.AddScoped<IChatService, ChatService>();
+            /*services.AddScoped<IMessageRepository, MessageRepository>();
+            services.AddScoped<IChatSessionRepository, ChatSessionRepository>();*/
+            /*services.AddScoped<IChatService, ChatService>();*/
             services.AddAutoMapper(typeof(MapperConfigurationProfile).Assembly);
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductRepo, ProductRepo>();

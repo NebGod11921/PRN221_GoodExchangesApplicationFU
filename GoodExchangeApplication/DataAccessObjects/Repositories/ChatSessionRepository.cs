@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.Repositories
 {
-    public class ChatSessionRepository : GenericRepository<ChatSession>, IChatSessionRepository
+    public class ChatSessionRepository /*: GenericRepository<ChatSession>, IChatSessionRepository*/
     {
-        private readonly AppDbContext _context;
+        /*private readonly AppDbContext _context;
 
         public ChatSessionRepository(AppDbContext context) : base(context)
         {
@@ -25,6 +25,6 @@ namespace DataAccessObjects.Repositories
         {
             await _context.ChatSessions.AddAsync(chatSession);
             await _context.SaveChangesAsync();
-        }
+        }*/
     }
 }

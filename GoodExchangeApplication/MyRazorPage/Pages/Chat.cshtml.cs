@@ -9,13 +9,12 @@ namespace MyRazorPage.Pages
 {
     public class ChatModel : PageModel
     {
-        private readonly IChatService _chatService;
+       /* private readonly IChatService _chatService;
 
         public ChatModel(IChatService chatService)
         {
             _chatService = chatService;
         }
-
         public int User2Id { get; set; }
         public int UserId { get; set; }
         public int ChatSessionId { get; set; }
@@ -32,6 +31,6 @@ namespace MyRazorPage.Pages
 
             // Fetch the messages for this chat session
             Messages = await _chatService.GetMessagesAsync(ChatSessionId);
-        }
+        }*/
     }
 }
