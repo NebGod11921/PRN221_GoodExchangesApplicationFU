@@ -1,36 +1,49 @@
-﻿@page "/updatepost/{postId:int}"
+﻿@page 
+@using System.Text.Json
+@using DataAccessObjects.ViewModels.PostDTOs
 @model MyRazorPage.Pages.Seller.UpdatePostModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    ViewData["Title"] = "Update Post";
+    ViewData["Title"] = "UpdatePost";
     Layout = "_Layout";
+    var session = HttpContext.Session.GetString("GetPostDetail");
 }
 
 <h2>Update Post</h2>
 
-<form method="post">
-    <input type="hidden" asp-for="Post.Id" />
-    <input type="hidden" asp-for="Post.CreatedDate" />
-    <input type="hidden" asp-for="Post.Status" />
-    <div class="form-group">
-        <label asp-for="Post.Title"></label>
-        <input asp-for="Post.Title" class="form-control" />
-        <span asp-validation-for="Post.Title" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Post.Description"></label>
-        <textarea asp-for="Post.Description" class="form-control"></textarea>
-        <span asp-validation-for="Post.Description" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Post.ProductId"></label>
-        <select asp-for="Post.ProductId" class="form-control">
-            @foreach (var product in Model.Products)
-            {
-                <option value="@product.Id">@product.Title</option>
-            }
-        </select>
-        <span asp-validation-for="Post.ProductId" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Update</button>
-</form>
+@if(session != null)
+{
+    var json = JsonSerializer.Deserialize<PostDTO>(session);
+    <form asp-page-handler="UpdatePost" method="post">
+        <input type="hidden" name="txtPostId" value="@json.Id"/>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" name="txtTitle" value="@json.Title" class="form-control" />
+   
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea name="txtDescription" value="@json.Description" class="form-control"></textarea>
+           
+        </div>
+        <div class="form-group">
+            <label>Product</label>
+            <select name="txtSelectProduct" class="form-control">
+                @foreach (var product in Model.Products)
+                {
+                    <option value="@product.Id">@product.Title</option>
+                }
+            </select>
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+
+} else
+{
+    <h3>There are no session</h3>
+}
+
+
+
+

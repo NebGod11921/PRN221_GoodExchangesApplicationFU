@@ -9,11 +9,11 @@ namespace DataAccessObjects.IServices
 {
     public interface IPostService
     {
-        Task<PostDTO> CreatePostAsync(PostDTO postDto);
-        Task<PostDTO> GetPostByIdAsync(int postId);
-        Task<IEnumerable<PostDTO>> GetAllPostsAsync();
-        Task UpdatePostAsync(PostDTO postDto);
-        Task DeletePostAsync(int postId);
-        Task<IEnumerable<PostDTO>> GetPostsByUserIdAsync(int userId);
+        public Task<PostDTO> CreatePostAsync(PostDTO postDto, int userId, int productId);
+        public Task<PostDTO> GetPostByIdAsync(int postId);
+        public Task<IEnumerable<PostDTO>> GetAllPostsAsync();
+        public Task<PostDTO> UpdatePostAsync(PostDTO postDto, int postId);
+        public Task<bool> DeletePostAsync(int postId);
+        /*public Task<IEnumerable<PostDTO>> GetPostsByUserIdAsync(int userId);*/
     }
 }
