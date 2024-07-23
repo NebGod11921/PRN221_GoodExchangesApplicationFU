@@ -21,7 +21,7 @@ namespace BusinessObjects
         public virtual IEnumerable<Post>? Posts { get; set; }
         public int? CategoryId { get; set; }
         public virtual Category? Category { get; set; }
-        public virtual IEnumerable<Review>? Reviews { get; set; }
+        /*public virtual IEnumerable<Review>? Reviews { get; set; }*/
         public virtual IEnumerable<Report>? Reports { get; set; }
         public virtual IEnumerable<TransactionProduct>? TransactionProducts { get; set; }
     }

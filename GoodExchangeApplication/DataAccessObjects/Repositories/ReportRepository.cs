@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.Repositories
 {
-    public class ReportRepository : IReportRepository
+    public class ReportRepository : GenericRepository<Report>, IReportRepository
     {
         private readonly AppDbContext _appDbContext;
 

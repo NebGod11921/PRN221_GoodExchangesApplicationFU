@@ -76,7 +76,7 @@ namespace DataAccessObjects.Repositories
                 var post = await _appDbContext.Posts.FindAsync(postId);
                 if (post != null)
                 {
-                    _appDbContext.Posts.Remove(post);
+                    SoftRemove(post);
                     await _appDbContext.SaveChangesAsync();
                 }
             }

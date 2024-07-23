@@ -25,7 +25,7 @@ namespace DataAccessObjects.ViewModels.ReportDTOS
         [Required(ErrorMessage = "Please input the created date")]
         public DateTime? CreatedDate { get; set; }
 
-
+        public byte? Status { get; set; }
         public int? UserId { get; set; }
         [Required(ErrorMessage = "Please input your username here")]
         public string? UserName { get; set; }

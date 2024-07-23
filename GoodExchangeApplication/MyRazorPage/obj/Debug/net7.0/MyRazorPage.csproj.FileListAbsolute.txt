@@ -357,7 +357,6 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazo
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.pdb
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
-<<<<<<< HEAD
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.csproj.AssemblyReference.cache
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.GeneratedMSBuildEditorConfig.editorconfig
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.AssemblyInfoInputs.cache
@@ -440,7 +439,6 @@ D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExch
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
 D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
 =======
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\Backup\New folder\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\appsettings.Development.json
 E:\Backup\New folder\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\appsettings.json
 E:\Backup\New folder\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\MyRazorPage.staticwebassets.runtime.json
@@ -524,25 +522,8 @@ E:\Backup\New folder\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\refint
 E:\Backup\New folder\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.pdb
 E:\Backup\New folder\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
 E:\Backup\New folder\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.Build.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.Build.Framework.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
-=======
 >>>>>>> 7bf449a857368c33616e65988b9b79152b654179
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
@@ -550,8 +531,6 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazo
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\NuGet.Common.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\NuGet.Configuration.dll
@@ -562,21 +541,12 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazo
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\NuGet.ProjectModel.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\NuGet.Protocol.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\NuGet.Versioning.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.CodeDom.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Composition.AttributedModel.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Composition.Convention.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Composition.Hosting.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Composition.Runtime.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Composition.TypedParts.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Drawing.Common.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Memory.Data.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Runtime.Caching.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Security.Permissions.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\System.Windows.Extensions.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\af\Humanizer.resources.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\ar\Humanizer.resources.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\az\Humanizer.resources.dll
@@ -716,50 +686,7 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazo
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-<<<<<<< HEAD
 >>>>>>> 0eedf604441b1f694050bf6d38e85bd84691c8b7
-=======
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\BusinessObjects.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\DataAccessObjects.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\BusinessObjects.pdb
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\DataAccessObjects.pdb
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.csproj.AssemblyReference.cache
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.GeneratedMSBuildEditorConfig.editorconfig
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.AssemblyInfoInputs.cache
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.AssemblyInfo.cs
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.csproj.CoreCompileInputs.cache
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.MvcApplicationPartsAssemblyInfo.cache
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.RazorAssemblyInfo.cache
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.RazorAssemblyInfo.cs
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\staticwebassets\msbuild.MyRazorPage.Microsoft.AspNetCore.StaticWebAssets.props
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\staticwebassets\msbuild.build.MyRazorPage.props
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MyRazorPage.props
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.MyRazorPage.props
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\staticwebassets.pack.json
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\staticwebassets.build.json
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\staticwebassets.development.json
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\scopedcss\Pages\Shared\_UserLayout.cshtml.rz.scp.css
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\scopedcss\bundle\MyRazorPage.styles.css
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\scopedcss\projectbundle\MyRazorPage.bundle.scp.css
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.csproj.CopyComplete
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\refint\MyRazorPage.dll
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.pdb
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
-D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
 D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\appsettings.Development.json
 D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\appsettings.json
 D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\bin\Debug\net7.0\MyRazorPage.staticwebassets.runtime.json
@@ -1021,4 +948,3 @@ D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplicatio
 D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.pdb
 D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\MyRazorPage.genruntimeconfig.cache
 D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\obj\Debug\net7.0\ref\MyRazorPage.dll
->>>>>>> 7bf449a857368c33616e65988b9b79152b654179

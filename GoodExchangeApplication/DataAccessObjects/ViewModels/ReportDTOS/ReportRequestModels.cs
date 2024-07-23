@@ -13,5 +13,6 @@ namespace DataAccessObjects.ViewModels.ReportDTOS
         public int PostId {get;set;}
         [Required(ErrorMessage = "Please input the reason here")]
         public string? Reason { get; set; }
+
     }
 }

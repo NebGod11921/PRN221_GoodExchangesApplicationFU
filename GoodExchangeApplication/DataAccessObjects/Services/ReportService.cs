@@ -25,39 +25,99 @@ namespace DataAccessObjects.Services
             _mapper = mapper;
         }
 
-        public Task<string> AddReportByUser(ReportRequestModels dto, int userId)
+        public async Task<string> AcceptReport(int id, bool isApproved)
         {
             try
             {
-                var result = _unitOfWork.PostRepository.GetByIdAsync(dto.ReportId);
-                if (result == null)
+                var report = await _unitOfWork.ReportRepository.GetByIdAsync(id);
+                if (report == null)
                 {
-                    return ;
+                    return "Report not found";
                 }
-                if (result. == userId)
+
+                var post = await _unitOfWork.PostRepository.GetByIdAsync(id);
+                if (post == null)
                 {
-                    return "You cannot report your own Post";
+                    return "Post not found";
                 }
-                var result = _mapper.Map<Report>(dto);
-                result.Status = false;
-                result.UserId = userId;
-                result.Date = DateTime.Now;
-                await _unitOfWork.Repository<Report>().InsertAsync(result);
-                await _unitOfWork.CommitAsync();
-                return "Add successful!";
+
+                if (isApproved)
+                {
+                    _unitOfWork.PostRepository.SoftRemove(post);
+                    report.Status = 1;  // Report approved and post deleted
+                }
+                else
+                {
+                    report.Status = 2;  // Report reviewed and found no violation
+                }
+
+                _unitOfWork.ReportRepository.Update(report);
+                var isSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+
+                if (isSuccess)
+                {
+                    return "Report processed successfully!";
+                }
+                else
+                {
+                    return "Failed to process report";
+                }
             }
             catch (Exception ex)
             {
-                throw new Exception("Error DB!");
+                throw new Exception("Error processing report in DB!", ex);
             }
         }
+
+
+        public async Task<string> AddReportByUser(ReportRequestModels dto, int userId)
+        {
+            try
+            {
+                // Check if the post exists
+                var post = await _unitOfWork.PostRepository.GetByIdAsync(dto.PostId);
+                if (post == null)
+                {
+                    return "Post not found";
+                }
+
+                // Check if the post belongs to the user
+                if (post.UserId == userId)
+                {
+                    return "You cannot report your own post";
+                }
+
+                // Map the dto to a Report entity
+                var report = _mapper.Map<Report>(dto);
+                report.UserId = userId;
+                report.CreatedDate = DateTime.Now;
+
+                // Add the report to the repository
+                await _unitOfWork.ReportRepository.AddAsync(report);
+                var isSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+
+                if (isSuccess)
+                {
+                    return "Add successful!";
+                }
+                else
+                {
+                    return "Failed to add report";
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error DB!", ex);
+            }
+        }
+
 
         public async Task<bool> DeleteReport(int ReportId)
         {
             try
             {
                 var result = await _unitOfWork.ReportRepository.GetByIdAsync(ReportId);
-                if(result != null)
+                if (result != null)
                 {
                     _unitOfWork.ReportRepository.SoftRemove(result);
                     var isSuccess = await _unitOfWork.SaveChangeAsync() > 0;
@@ -71,7 +131,7 @@ namespace DataAccessObjects.Services
                     }
                 }
                 return false;
-            }catch (Exception ex)
+            } catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -99,12 +159,6 @@ namespace DataAccessObjects.Services
                 throw new Exception("Error DB!");
             }
         }
-
-/*        public Task<List<ReportResponseModel>> GetAllValidReport()
-        {
-            throw new NotImplementedException();
-        }*/
-
         public async Task<List<ReportResponseModel>> GetReportByPostId(int postId)
         {
             try
@@ -131,11 +185,11 @@ namespace DataAccessObjects.Services
                     return null;
                 }
 
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 throw new Exception("Error DB!");
             }
-            
+
         }
 
         public async Task<List<ReportResponseModel>> GetReportByUserId(int userId)
@@ -175,21 +229,5 @@ namespace DataAccessObjects.Services
         {
             throw new NotImplementedException();
         }
-
-        public async Task<string> UpdateReportByUser(int id, ReportRequestModels dto)
-        {
-            var report = await _unitOfWork.ReportRepository.GetByIdAsync(id);
-            if(report != null)
-            {
-                if(dto.PostId != 0)
-                {
-                    report.PostId = dto.PostId;
-                }
-                if (dto.Reason != null)
-                {
-                    report.Reason = dto.Reason;
-                }
-                await _unitOfWork.ReportRepository.UpdateAsync(report);
-            }
-        }
     }
+}

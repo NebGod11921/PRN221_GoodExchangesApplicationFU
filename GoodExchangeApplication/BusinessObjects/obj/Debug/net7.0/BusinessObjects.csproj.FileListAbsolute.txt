@@ -72,9 +72,7 @@ E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\re
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
-<<<<<<< HEAD
 >>>>>>> 0eedf604441b1f694050bf6d38e85bd84691c8b7
-=======
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll

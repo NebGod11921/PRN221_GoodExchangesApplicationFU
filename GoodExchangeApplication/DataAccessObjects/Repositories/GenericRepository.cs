@@ -59,7 +59,7 @@ namespace DataAccessObjects.Repositories
 
         public void SoftRemove(TEntity entity) 
         {
-            entity.Status = 0;
+            entity.Status = 0; // 
             _dbSet.Update(entity);
         }
 

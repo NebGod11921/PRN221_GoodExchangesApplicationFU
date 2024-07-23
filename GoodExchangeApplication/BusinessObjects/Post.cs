@@ -18,5 +18,6 @@ namespace BusinessObjects
         public int? ProductId { get; set; }
         public virtual Product? Product { get; set; }
         public IEnumerable<Report>? Reports { get; set; }
+        public IEnumerable<Review>? Reviews { get; set; }
     }
 }

@@ -168,21 +168,26 @@ namespace DataAccessObjects.Repositories
             }
         }
 
-        public async Task<IEnumerable<User>> CreateAccountAsync(AccountDTOs accountDTOs)
+        public Task<IEnumerable<User>> CreateAccountAsync(AccountDTOs accountDTOs)
         {
-            try
-            {
-                var getuserId = await _appDbContext.Users.
-                if (accountDTOs == null)
-                {
-                    
-                }
-                return null;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception();
-            }
+            throw new NotImplementedException();
         }
+
+        /*        public async Task<IEnumerable<User>> CreateAccountAsync(AccountDTOs accountDTOs)
+                {
+                    try
+                    {
+                        var getuserId = await _appDbContext.Users.
+                        if (accountDTOs == null)
+                        {
+
+                        }
+                        return null;
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception();
+                    }
+                }*/
     }
 }

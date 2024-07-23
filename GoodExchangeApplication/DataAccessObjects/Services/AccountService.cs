@@ -136,7 +136,7 @@ namespace DataAccessObjects.Services
                     }
                     else
                     {
-                        var mapperResult = _mapper.Map<RegisterAccountDTOs>(createUser);
+                        var mapperResult = _mapper.Map<RegisterAccountDTOs>(mapper);
                         return mapperResult;
                     }
                 }
