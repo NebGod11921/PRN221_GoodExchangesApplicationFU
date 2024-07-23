@@ -1,4 +1,5 @@
 ﻿@page
+@model MyRazorPage.Pages.IndexModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Home page";
@@ -293,8 +294,13 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-4">
+            
+
+
+                <div class="row">
+                @foreach (var product in Model.FeatureProduct)
+                {
+                    <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="#">
                             <img src="images/feature_prod_01.jpg" class="card-img-top" alt="...">
@@ -318,17 +324,17 @@
                                         <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
                                     </svg>
                                 </li>
-                                <li class="text-muted text-right">$240.00</li>
+                                <li class="text-muted text-right">$@product.Price</li>
                             </ul>
-                            <a href="#" class="h2 text-decoration-none text-dark">Gym Weight</a>
+                            <a href="#" class="h2 text-decoration-none text-dark">@product.Title</a>
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                                @product.Description
                             </p>
                             <p class="text-muted">Reviews (24)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4">
+                @* <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="#">
                             <img src="images/feature_prod_02.jpg" class="card-img-top" alt="...">
@@ -361,8 +367,8 @@
                             <p class="text-muted">Reviews (48)</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
+                </div> *@
+                @* <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="#">
                             <img src="images/feature_prod_03.jpg" class="card-img-top" alt="...">
@@ -395,8 +401,10 @@
                             <p class="text-muted">Reviews (74)</p>
                         </div>
                     </div>
-                </div>
+                </div> *@
+                }
             </div>
+            
         </div>
     </section>
     <!-- End Featured Product -->
