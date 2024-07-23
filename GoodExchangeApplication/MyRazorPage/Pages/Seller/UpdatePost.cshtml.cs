@@ -1,4 +1,6 @@
+using DataAccessObjects.IRepositories;
 using DataAccessObjects.IServices;
+using DataAccessObjects.ViewModels.AccountDTOS;
 using DataAccessObjects.ViewModels.PostDTOs;
 using DataAccessObjects.ViewModels.ProductDTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -6,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace MyRazorPage.Pages.Seller
@@ -14,76 +17,73 @@ namespace MyRazorPage.Pages.Seller
     {
         private readonly IPostService _postService;
         private readonly IProductService _productService;
+        private readonly ICurrentTime _currentTime;
 
-        public UpdatePostModel(IPostService postService, IProductService productService)
+        public UpdatePostModel(IPostService postService, IProductService productService, ICurrentTime currentTime)
         {
             _postService = postService;
             _productService = productService;
+            _currentTime = currentTime;
+        }
+        public IEnumerable<ProductDTos> Products { get; set; }
+        
+        public async Task OnGet()
+        {
+            Products = await _productService.GetAllProductsSecVers();
         }
 
-        [BindProperty]
-        public PostDTO Post { get; set; }
-
-        public List<ProductDTO> Products { get; set; }
-        int userId;
-
-        public async Task<IActionResult> OnGetAsync(int postId)
+        public async Task<IActionResult> OnPostUpdatePost(int txtPostId, string txtTitle, string txtDescription, int txtSelectProduct)
         {
-            int? id = HttpContext.Session.GetInt32("userId");
-            int userId = id ?? 0;
+            ViewData["txtTitle"] = txtTitle;
+            ViewData["txtDescription"] = txtDescription;
+            ViewData["txtSelectProduct"] = txtSelectProduct;
+            ViewData["txtPostId"] = txtPostId;
             try
             {
-                Post = await _postService.GetPostByIdAsync(postId);
-                if (Post == null)
+               
+                var getUserSession = HttpContext.Session.GetString("GetSeller");
+                if (getUserSession != null)
                 {
-                    return NotFound();
-                }
+                    
+                    var userJson = JsonSerializer.Deserialize<LoginAccountDTOs>(getUserSession);
+                    PostDTO p = new PostDTO
+                    {
+                        Id = txtPostId,
+                        ProductId = txtSelectProduct,
+                        Title = txtTitle,
+                        Description = txtDescription,
+                        Status = 1,
+                        UserId = userJson.Id,
+                        CreatedDate = _currentTime.GetCurrentTime(),
+                    };
+                    var result = await _postService.UpdatePostAsync(p, txtPostId);
+                    if (result != null)
+                    {
+                        return RedirectToPage("/Seller/PostManagement");
+                    } else
+                    {
+                        return Page();
+                    }
 
-                var products = await _productService.GetProductsByUserIdAsync(userId);
-                if (products != null)
+
+                } else
                 {
-                    Products = products.ToList();
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Products could not be loaded.");
                     return Page();
                 }
 
-                return Page();
-            }
-            catch (Exception ex)
+
+
+
+
+            }catch  (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, $"An error occurred: {ex.Message}");
-                return Page();
+                throw new Exception(ex.Message);
             }
         }
 
-        public async Task<IActionResult> OnPostAsync()
-        {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
 
-            try
-            {
-                if (Post == null)
-                {
-                    ModelState.AddModelError(string.Empty, "Post data is missing.");
-                    return Page();
-                }
+        
 
-                Post.UserId = userId;
-
-                await _postService.UpdatePostAsync(Post);
-                return RedirectToPage("/Seller/PostManagement");
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError(string.Empty, $"An error occurred: {ex.Message}");
-                return Page();
-            }
-        }
+        
     }
 }

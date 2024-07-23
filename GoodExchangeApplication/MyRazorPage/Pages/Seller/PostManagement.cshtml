@@ -1,42 +1,75 @@
 ﻿@page "/postmanagement"
+@using System.Text.Json
+@using DataAccessObjects.ViewModels.AccountDTOS
 @model MyRazorPage.Pages.Seller.PostManagementModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "PostManagement";
     Layout = "_Layout";
+    var session = HttpContext.Session.GetString("GetSeller");
+  
 }
 <h2>Posts</h2>
 
-@if (Model.Posts != null && Model.Posts.Any())
+@if (session != null)
 {
-    <a asp-page="CreatePost" class="btn btn-primary">Create New Post</a>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var post in Model.Posts)
-            {
+    var json = JsonSerializer.Deserialize<LoginAccountDTOs>(session);
+
+    @if(json.RoleId == 4)
+    {
+        <a asp-page="/Seller/CreatePost" class="btn btn-primary">Create New Post</a>
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@post.Title</td>
-                    <td>@post.Description</td>
-                    <td>
-                        <form method="post" asp-page-handler="Delete" asp-route-postId="@post.Id" style="display:inline;">
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
-                        <a asp-page="UpdatePost" asp-route-postId="@post.Id" class="btn btn-primary">Edit</a>
-                    </td>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                    <th>Status</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var post in Model.Posts)
+                {
+                    
+                        <tr>
+                            <td>@post.Title</td>
+                            <td>@post.Description</td>
+                        @if (post.Status == 1)
+                        {
+                            <td>
+                                <form asp-page-handler="TransferToUpdatePage" method="post">
+                                    <input type="hidden" name="txtPostId" value="@post.Id" />
+                                    <input type="submit" class="btn btn-primary" value="Update" />
+                                </form>
+                            </td>
+                            <td>
+                                <form asp-page-handler="DeletePost" method="post">
+                                    <input type="hidden" name="txtPostDeleteId" value="@post.Id" />
+                                    <input type="submit" class="btn btn-primary" value="Delete" />
+                                </form>
+                            </td>
+                            <td>Active</td>
+                        }
+                        @if (post.Status == 0)
+                        {
+                            <td></td>
+                            <td></td>
+                            <td>InActive</td>
+                        }
+                    </tr>
+                        
+                    
+        }
+            </tbody>
+        </table>
+    } else
+    {
+        <h3>Only Seller can access this page</h3>
+    }
 }
 else
 {
-    <p>No posts found.</p>
+    <p>You need to login first to use this function</p>
 }
-<hr />
+

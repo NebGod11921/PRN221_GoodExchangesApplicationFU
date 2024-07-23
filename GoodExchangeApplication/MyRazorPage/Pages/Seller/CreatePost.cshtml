@@ -8,29 +8,27 @@
 
 <h1>Create Post</h1>
 
-<form method="post">
+<form asp-page-handler="CreatePost" method="post">
     <div class="form-group">
-        <label asp-for="PostDTO.Title"></label>
-        <input asp-for="PostDTO.Title" class="form-control" />
-        <span asp-validation-for="PostDTO.Title" class="text-danger"></span>
+        <label>Title</label>
+        <input name="txtTitle" class="form-control"/>
     </div>
 
     <div class="form-group">
-        <label asp-for="PostDTO.Description"></label>
-        <textarea asp-for="PostDTO.Description" class="form-control"></textarea>
-        <span asp-validation-for="PostDTO.Description" class="text-danger"></span>
+        <label>Description</label>
+        <textarea name="txtDescription" class="form-control"></textarea>
+        
     </div>
 
     <div class="form-group">
-        <label asp-for="PostDTO.ProductId"></label>
-        <select asp-for="PostDTO.ProductId" class="form-control">
+        <label>Product</label>
+        <select name="txtSelectProductId" class="form-control">
             <option value="">-- Select Product --</option>
             @foreach (var product in Model.Products)
             {
                 <option value="@product.Id">@product.Title</option>
             }
         </select>
-        <span asp-validation-for="PostDTO.ProductId" class="text-danger"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">Create Post</button>
