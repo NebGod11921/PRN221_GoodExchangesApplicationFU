@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessObjects
+namespace DataAccessObjects.UnitOfWork
 {
     public interface IUnitOfWork
     {
@@ -15,16 +15,21 @@ namespace DataAccessObjects
         /*public IMessageRepository MessageRepository { get; }*/
         /*public IChatSessionRepository ChatSessionRepository { get; }*/
 
+<<<<<<< HEAD:GoodExchangeApplication/DataAccessObjects/IUnitOfWork.cs
         /*        public IMessageRepository MessageRepository { get; }
                 public IChatSessionRepository ChatSessionRepository { get; }*/
 =======
         public IMessageRepository MessageRepository { get; }
         public IChatSessionRepository ChatSessionRepository { get; }
 >>>>>>> parent of 8736e30 (Fix the UnitOfWork):GoodExchangeApplication/DataAccessObjects/UnitOfWork/IUnitOfWork.cs
+=======
+/*        public IMessageRepository MessageRepository { get; }
+        public IChatSessionRepository ChatSessionRepository { get; }*/
+>>>>>>> parent of 6c6b025 (fix file):GoodExchangeApplication/DataAccessObjects/UnitOfWork/IUnitOfWork.cs
         int Commit();
         public Task<int> SaveChangeAsync();
         public IProductRepo ProductRepository { get; }
-
+        
         public ITransactionRepo TransactionRepository { get; }
         public ITransactionTypeRepo TransactionType { get; }
         public ITransactionProductRepository TransactionProductRepository { get; }

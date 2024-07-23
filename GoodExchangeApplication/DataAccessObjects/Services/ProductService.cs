@@ -2,6 +2,7 @@
 using BusinessObjects;
 using DataAccessObjects.Helpers;
 using DataAccessObjects.IServices;
+using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.ProductDTOs;
 using System;
 using System.Collections.Generic;

@@ -20,31 +20,30 @@ namespace MyRazorPage.Pages.Admin
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            /*AccountUpdate = await _serviceManager.AccountService.GetAccountDTOsById(id);
+            AccountUpdate = await _serviceManager.AccountService.GetAccountDTOsById(id);
             if (AccountUpdate == null)
             {
                 return NotFound();
-            }*/
+            }
 
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            /*   if (!ModelState.IsValid)
-               {
-                   return Page();
-               }
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
-               var success = await _serviceManager.AccountService.UpdateUserProfileAsync(AccountUpdate, AccountUpdate.AccountId);
-               if (success == null)
-               {
-                   ModelState.AddModelError(string.Empty, "An error occurred while trying to update the account.");
-                   return Page();
-               }
+            var success = await _serviceManager.AccountService.UpdateUserProfileAsync(AccountUpdate, AccountUpdate.AccountId);
+            if (success == null)
+            {
+                ModelState.AddModelError(string.Empty, "An error occurred while trying to update the account.");
+                return Page();
+            }
 
-               return RedirectToPage("./AccountManagement", new { SuccessMessage = "Account updated successfully" });*/
-            return Page();
+            return RedirectToPage("./AccountManagement", new { SuccessMessage = "Account updated successfully" });
         }
     }
 }

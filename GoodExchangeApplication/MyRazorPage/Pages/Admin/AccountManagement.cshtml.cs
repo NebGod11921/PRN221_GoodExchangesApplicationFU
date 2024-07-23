@@ -121,7 +121,7 @@ namespace MyRazorPage.Pages.Admin
                 Address = Address,
                 IsBanned = false
             };
-/*
+
             var result = await _accountService.CreateAccountAsync(newAccount);
 
             if (result)
@@ -131,7 +131,7 @@ namespace MyRazorPage.Pages.Admin
             else
             {
                 ErrorMessage.Add("Failed to add the account.");
-            }*/
+            }
 
             return RedirectToPage();
         }
