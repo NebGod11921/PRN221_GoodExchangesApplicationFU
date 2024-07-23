@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using BusinessObjects;
 using DataAccessObjects.IServices;
-using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.AccountDTOS;
 using Microsoft.Identity.Client;
 using System;
@@ -122,10 +121,10 @@ namespace DataAccessObjects.Services
                 var IsSucess = await _unitOfWork.SaveChangeAsync() > 0;
                 if (IsSucess == true)
                 {
-                    var checkEmail       = await _unitOfWork.AccountRepository.CheckEmailExists(createUser.Email);
-                    var checkPhoneNumber = await _unitOfWork.AccountRepository.CheckTelephoneNumberExists(createUser.TelephoneNumber);
+                    var checkEmail       = await _unitOfWork.AccountRepository.CheckEmailExists(accountDTOs.Email);
+                    var checkPhoneNumber = await _unitOfWork.AccountRepository.CheckTelephoneNumberExists(accountDTOs.TelephoneNumber);
 
-                    createUser.RoleId = 1;
+                    accountDTOs.RoleId = 1;
                     if (checkEmail == true)
                     {
                         throw new Exception($"This email is already exists");
