@@ -122,7 +122,7 @@ namespace MyRazorPage.Pages.Admin
                 IsBanned = false
             };
 
-            var result = await _accountService.CreateAccountAsync(newAccount);
+          /*  var result = await _accountService.CreateAccountAsync(newAccount);
 
             if (result)
             {
@@ -131,7 +131,7 @@ namespace MyRazorPage.Pages.Admin
             else
             {
                 ErrorMessage.Add("Failed to add the account.");
-            }
+            }*/
 
             return RedirectToPage();
         }
