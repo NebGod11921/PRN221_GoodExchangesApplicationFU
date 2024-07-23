@@ -17,7 +17,6 @@ namespace DataAccessObjects.IServices
         Task<string> AddReportByUser(ReportRequestModels dto, int userId);
         /*        Task<string> UpdateReportByUser(int id, ReportRequestModels dto);*/
         Task<string> AcceptReport(int id, bool isApproved);
-;
 
     }
 }

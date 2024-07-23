@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using BusinessObjects;
 using DataAccessObjects.IServices;
-using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.PostDTOs;
 using System;
 using System.Collections.Generic;

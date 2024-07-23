@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessObjects.UnitOfWork
+namespace DataAccessObjects
 {
     public interface IUnitOfWork
     {
@@ -14,12 +14,12 @@ namespace DataAccessObjects.UnitOfWork
         /*public IMessageRepository MessageRepository { get; }*/
         /*public IChatSessionRepository ChatSessionRepository { get; }*/
 
-/*        public IMessageRepository MessageRepository { get; }
-        public IChatSessionRepository ChatSessionRepository { get; }*/
+        /*        public IMessageRepository MessageRepository { get; }
+                public IChatSessionRepository ChatSessionRepository { get; }*/
         int Commit();
         public Task<int> SaveChangeAsync();
         public IProductRepo ProductRepository { get; }
-        
+
         public ITransactionRepo TransactionRepository { get; }
         public ITransactionTypeRepo TransactionType { get; }
         public ITransactionProductRepository TransactionProductRepository { get; }

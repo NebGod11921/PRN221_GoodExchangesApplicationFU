@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessObjects.UnitOfWork
+namespace DataAccessObjects
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -17,7 +17,7 @@ namespace DataAccessObjects.UnitOfWork
         /*private readonly IChatSessionRepository _chatSessionRepository;
         private readonly IMessageRepository _messageRepository;*/
         private readonly IProductRepo _productRepo;
-        
+
 
 
         private readonly ITransactionRepo _transactionRepo;
@@ -27,7 +27,8 @@ namespace DataAccessObjects.UnitOfWork
         private readonly IReportRepository _reportRepo;
 
         public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, ITransactionRepo transactionRepo, ITransactionTypeRepo transactionTypeRepo,
-            IPostRepository postRepository, /*IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository,*/ ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo)
+            IPostRepository postRepository, /*IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository,*/ ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo
+            ,IReportRepository reportRepo)
 
         {
             _accountRepository = accountRepository;
@@ -37,7 +38,7 @@ namespace DataAccessObjects.UnitOfWork
             _postRepository = postRepository;
             _appDbContext = appDbContext;
             _productRepo = IProductRepo;
-            
+
             _transactionRepo = transactionRepo;
             _transactionTypeRepo = transactionTypeRepo;
             _transactionProductRepository = transactionProductRepository;
@@ -52,7 +53,7 @@ namespace DataAccessObjects.UnitOfWork
 
         public IProductRepo ProductRepository => _productRepo;
 
-        
+
         public ITransactionRepo TransactionRepository => _transactionRepo;
 
         public ITransactionTypeRepo TransactionType => _transactionTypeRepo;

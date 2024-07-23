@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using BusinessObjects;
 using DataAccessObjects.IServices;
-using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.AccountDTOS;
 using Microsoft.Identity.Client;
 using System;
