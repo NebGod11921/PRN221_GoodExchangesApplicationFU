@@ -172,7 +172,7 @@ namespace DataAccessObjects.Repositories
         {
             try
             {
-                var getuserId = await _appDbContext.Users.
+                var getuserId = await _appDbContext.Users.FindAsync(accountDTOs.AccountId);
                 if (accountDTOs == null)
                 {
                     

@@ -29,22 +29,23 @@ namespace DataAccessObjects.Services
         {
             try
             {
-                var result = _unitOfWork.PostRepository.GetByIdAsync(dto.ReportId);
-                if (result == null)
-                {
-                    return ;
-                }
-                if (result. == userId)
-                {
-                    return "You cannot report your own Post";
-                }
-                var result = _mapper.Map<Report>(dto);
-                result.Status = false;
-                result.UserId = userId;
-                result.Date = DateTime.Now;
-                await _unitOfWork.Repository<Report>().InsertAsync(result);
-                await _unitOfWork.CommitAsync();
-                return "Add successful!";
+                /* var result = _unitOfWork.PostRepository.GetByIdAsync(dto.ReportId);
+                 if (result == null)
+                 {
+                     return null;
+                 }
+                 if (result.Id == userId)
+                 {
+                     return "You cannot report your own Post";
+                 }
+                 var result = _mapper.Map<Report>(dto);
+                 result.Status = false;
+                 result.UserId = userId;
+                 result.Date = DateTime.Now;
+                 await _unitOfWork.Repository<Report>().InsertAsync(result);
+                 await _unitOfWork.CommitAsync();
+                 return "Add successful!";*/
+                return null;
             }
             catch (Exception ex)
             {
@@ -57,7 +58,7 @@ namespace DataAccessObjects.Services
             try
             {
                 var result = await _unitOfWork.ReportRepository.GetByIdAsync(ReportId);
-                if(result != null)
+                if (result != null)
                 {
                     _unitOfWork.ReportRepository.SoftRemove(result);
                     var isSuccess = await _unitOfWork.SaveChangeAsync() > 0;
@@ -71,7 +72,7 @@ namespace DataAccessObjects.Services
                     }
                 }
                 return false;
-            }catch (Exception ex)
+            } catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -100,10 +101,10 @@ namespace DataAccessObjects.Services
             }
         }
 
-/*        public Task<List<ReportResponseModel>> GetAllValidReport()
-        {
-            throw new NotImplementedException();
-        }*/
+        /*        public Task<List<ReportResponseModel>> GetAllValidReport()
+                {
+                    throw new NotImplementedException();
+                }*/
 
         public async Task<IEnumerable<ReportResponseModel>> GetReportByPostId(int postId)
         {
@@ -112,10 +113,10 @@ namespace DataAccessObjects.Services
                 var findPost = await _unitOfWork.AccountRepository.GetByIdAsync(postId);
                 if (findPost != null)
                 {
-                   
+
                 }
 
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 throw new Exception("Error DB!")
             }
@@ -137,3 +138,4 @@ namespace DataAccessObjects.Services
             throw new NotImplementedException();
         }
     }
+}
