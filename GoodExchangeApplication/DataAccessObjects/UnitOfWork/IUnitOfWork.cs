@@ -11,8 +11,11 @@ namespace DataAccessObjects.UnitOfWork
     {
         public IAccountRepository AccountRepository { get; }
         public IPostRepository PostRepository { get; }
-        public IMessageRepository MessageRepository { get; }
-        public IChatSessionRepository ChatSessionRepository { get; }
+        /*public IMessageRepository MessageRepository { get; }*/
+        /*public IChatSessionRepository ChatSessionRepository { get; }*/
+
+/*        public IMessageRepository MessageRepository { get; }
+        public IChatSessionRepository ChatSessionRepository { get; }*/
         int Commit();
         public Task<int> SaveChangeAsync();
         public IProductRepo ProductRepository { get; }
