@@ -4,6 +4,7 @@ using DataAccessObjects.IRepositories;
 using DataAccessObjects.IServices;
 using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.TransactionDTOs;
+using Microsoft.AspNetCore.Server.IIS.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,33 @@ namespace DataAccessObjects.Services
             _mapper = mapper;
             _unitOfWork = unitOfWork;
             _currentTime = currentTime;
+        }
+
+        public async Task<bool> ConfirmTransaction( int transactionId)
+        {
+            try
+            {
+                var getTransactionId = await _unitOfWork.TransactionRepository.GetByIdAsync(transactionId);
+                if (getTransactionId != null)
+                {
+                    getTransactionId.Status = 2;
+                    _unitOfWork.TransactionRepository.Update(getTransactionId);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (IsSuccess)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                return false;
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<TransactionDTOs> CreateTransaction(TransactionDTOs transactionDTOs, int TransactionTypeId)
@@ -109,6 +137,49 @@ namespace DataAccessObjects.Services
             }
         }
 
+        public async Task<IEnumerable<TransactionDTOs>> GetTransactionByUserID(int userId)
+        {
+            try
+            {
+                var getUserID = await _unitOfWork.AccountRepository.GetByIdAsync(userId);
+                if (getUserID != null)
+                {
+                    var transactionResult = await _unitOfWork.TransactionRepository.GetAllAsync();
+                    var mapperREsult = _mapper.Map<IEnumerable<TransactionDTOs>>(transactionResult);
+                    return mapperREsult;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }catch( Exception ex )
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<PagingTransaction<TransactionDTOs>> GetTransactionByUserID(int userId, int pageNumber, int pageSize)
+        {
+            try
+            {
+                var result = await _unitOfWork.TransactionRepository.GetTransactionByUserID(userId, pageNumber, pageSize);
+                if (result != null)
+                {
+                    var mapper = _mapper.Map <PagingTransaction<TransactionDTOs>>(result);
+                    return mapper;
+                } else
+                {
+                    throw new Exception();
+                }
+
+
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<IEnumerable<TransactionDTOs>> GetTransactionDTOs()
         {
             try
@@ -127,6 +198,37 @@ namespace DataAccessObjects.Services
 
 
             }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<bool> ReOrderTransaction(int transactionId)
+        {
+            try
+            {
+                var getTransactionId = await _unitOfWork.TransactionRepository.GetByIdAsync(transactionId);
+                if (getTransactionId != null)
+                {
+                    getTransactionId.Status = 1;
+                    _unitOfWork.TransactionRepository.Update(getTransactionId);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (IsSuccess)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
+
+                }
+                return false;
+
+
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

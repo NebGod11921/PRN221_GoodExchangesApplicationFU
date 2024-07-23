@@ -1,3 +1,4 @@
+using DataAccessObjects.IRepositories;
 using DataAccessObjects.IServices;
 using DataAccessObjects.ViewModels.AccountDTOS;
 using DataAccessObjects.ViewModels.PostDTOs;
@@ -15,91 +16,73 @@ namespace MyRazorPage.Pages.Seller
     {
         private readonly IPostService _postService;
         private readonly IProductService _productService;
+        private readonly ICurrentTime _currentTime;
 
-        public CreatePostModel(IPostService postService, IProductService productService)
+        public CreatePostModel(IPostService postService, IProductService productService, ICurrentTime currentTime)
         {
             _postService = postService;
             _productService = productService;
+            _currentTime = currentTime;
         }
 
-        [BindProperty]
-        public PostDTO PostDTO { get; set; }
+    
 
-        public List<ProductDTO> Products { get; set; }
+        public IEnumerable<ProductDTos> Products { get; set; }
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task OnGet()
         {
-            PostDTO = new PostDTO();
-
-            // Initialize Products as an empty list
-            Products = new List<ProductDTO>();
-
-            try
-            {
-                // Replace with your session handling logic
-                // var user = HttpContext.Session.GetString("GetUser");
-                // var userDto = JsonSerializer.Deserialize<LoginAccountDTOs>(user);
-                // int userId = userDto.RoleId ?? 0;
-
-                int userId = 2; // Replace with your actual user ID retrieval logic
-
-                // Get products associated with the user ID
-                var products = await _productService.GetProductsByUserIdAsync(userId);
-
-                if (products != null)
-                {
-                    Products = products.ToList();
-                }
-                else
-                {
-                    // Handle case where products list is null
-                    // Log or throw an exception as needed
-                    // Example: throw new Exception("Failed to fetch products.");
-                }
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
-                // Handle exception as per your application's requirements
-            }
-
-            return Page();
+            Products = await _productService.GetAllProductsSecVers();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostCreatePost(string txtTitle, string txtDescription, int txtSelectProductId)
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
+            ViewData["txtTitle"] = txtTitle;
+            ViewData["txtDescription"] = txtDescription;
             try
             {
-                // Replace with your session handling logic
-                // var user = HttpContext.Session.GetString("GetUser");
-                // var userDto = JsonSerializer.Deserialize<LoginAccountDTOs>(user);
-                // PostDTO.UserId = userDto.RoleId;
-
-                PostDTO.UserId = 2; 
-                PostDTO.CreatedDate = DateTime.Now;
-                PostDTO.Status = 1;
-                var createdPost = await _postService.CreatePostAsync(PostDTO);
-
-                if (createdPost != null)
+                var getUserSession = HttpContext.Session.GetString("GetSeller");
+                if (getUserSession != null)
                 {
-                    return RedirectToPage("/Index");
-                }
-                else
+                    var json = JsonSerializer.Deserialize<LoginAccountDTOs>(getUserSession);
+
+                    if (json != null )
+                    {
+                        PostDTO p = new PostDTO
+                        {
+                            ProductId = txtSelectProductId,
+                            Title = txtTitle,
+                            Description = txtDescription,
+                            CreatedDate = _currentTime.GetCurrentTime(),
+                            Status = 1
+                        };
+
+
+                        var result = await _postService.CreatePostAsync(p, json.Id, txtSelectProductId);
+                        if (result != null )
+                        {
+                            return RedirectToPage("/Seller/PostManagement");
+                        } else
+                        {
+                            return Page();
+                        }
+                    } else
+                    {
+                        return Page();
+                    }
+
+
+
+                } else
                 {
-                    ModelState.AddModelError(string.Empty, "Failed to create post.");
                     return Page();
                 }
-            }
-            catch (Exception ex)
+            }catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
-                return Page();
+                throw new Exception(ex.Message);
             }
         }
+
+
+
     }
 }

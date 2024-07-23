@@ -20,7 +20,7 @@ namespace MyRazorPage.Pages.Account
             ViewData["txtPassword"] = txtPassword;
             ViewData["txtEmail"] = txtEmail;
             ViewData["txtTelephone"] = txtTelephone;
-            ViewData["address"] = txtAddress;
+            ViewData["txtAddress"] = txtAddress;
             try
             {
                 RegisterAccountDTOs acc = new RegisterAccountDTOs();
@@ -29,12 +29,12 @@ namespace MyRazorPage.Pages.Account
                 acc.Address = txtAddress;
                 acc.Password = txtPassword;
                 acc.UserName = txtUserName;
-                acc.RoleId = 1;
-                acc.status = 1;
+                acc.RoleId = 1; // set as customer
+                acc.Status = 1; // active
                 var result = await _accountService.RegisterAccountAsync(acc);
                 if (result != null)
                 {
-                    return RedirectToPage("/login");
+                    return RedirectToPage("/Account/login");
                 } else
                 {
                     return Page();

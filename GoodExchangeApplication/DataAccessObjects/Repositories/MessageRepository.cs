@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.Repositories
 {
-    public class MessageRepository : GenericRepository<Message>, IMessageRepository
+    public class MessageRepository /*: GenericRepository<Message>, IMessageRepository*/
     {
-        private readonly AppDbContext _context;
+        /*private readonly AppDbContext _context;
 
         public MessageRepository(AppDbContext context) : base(context)
         {
@@ -30,5 +30,12 @@ namespace DataAccessObjects.Repositories
             await _context.Messages.AddAsync(message);
             await _context.SaveChangesAsync();
         }
+        public async Task<List<Message>> GetMessagesByChatSessionIdAsync(int chatSessionId)
+        {
+            return await _context.Messages
+                .Where(m => m.ChatSessionId == chatSessionId)
+                .OrderBy(m => m.Timestamp)
+                .ToListAsync();
+        }*/
     }
 }

@@ -3,74 +3,8 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = null;
+    var getSession = HttpContext.Session.GetString("GetUser");
 }
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-
-        table th, table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        table th {
-            background-color: #f1f1f1;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-    .status {
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
-        .status.success {
-            color: #155724;
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-        }
-
-        .status.refund {
-            color: #856404;
-            background-color: #fff3cd;
-            border: 1px solid #ffeeba;
-        }
-
-        .status.pending {
-            color: #0c5460;
-            background-color: #d1ecf1;
-            border: 1px solid #bee5eb;
-        }
-
-</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,6 +12,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transaction History</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            table th, table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            table th {
+                background-color: #f1f1f1;
+            }
+
+            table tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+        .status {
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+            .status.success {
+                color: #155724;
+                background-color: #d4edda;
+                border: 1px solid #c3e6cb;
+            }
+
+            .status.refund {
+                color: #856404;
+                background-color: #fff3cd;
+                border: 1px solid #ffeeba;
+            }
+
+            .status.pending {
+                color: #0c5460;
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+            }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+
+            .pagination a.active {
+                background-color: #007bff;
+                color: white;
+                border: 1px solid #007bff;
+            }
+
+            .pagination a:hover:not(.active) {
+                background-color: #ddd;
+            }
+
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -85,37 +164,98 @@
         <table>
             <thead>
                 <tr>
-                    <th>Date</th>
                     <th>Transaction ID</th>
-                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Notes</th>
                     <th>Amount</th>
+                    <th>Ship Address</th>
+                    <th>ViewDetails</th>
                     <th>Status</th>
+                    <th>Cancel Order</th>
+                    
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>2024-07-16</td>
-                    <td>TXN123456</td>
-                    <td>Payment for order #1234</td>
-                    <td>$100.00</td>
-                    <td class="status success">Completed</td>
-                </tr>
-                <tr>
-                    <td>2024-07-15</td>
-                    <td>TXN123457</td>
-                    <td>Refund for order #1233</td>
-                    <td>-$50.00</td>
-                    <td class="status refund">Refunded</td>
-                </tr>
-                <tr>
-                    <td>2024-07-14</td>
-                    <td>TXN123458</td>
-                    <td>Payment for order #1232</td>
-                    <td>$75.00</td>
-                    <td class="status pending">Pending</td>
-                </tr>
+                @foreach (var i in Model.GetTransactions)
+                {
+                    <tr>
+                        <td>SAP_@i.Id</td>
+                        <td>@i.TransactionDate</td>
+                        <td>@i.Note</td>
+                        <td>$ @i.TotalAmount</td>
+                        <td>@i.ShippingAddress</td>
+                        <td>
+                        <form asp-page-handler="TransferTransactionDetails" method="post">
+                            <input type="hidden" name="txtTransferTransactionDetails" value="@i.Id"/>
+                            <input type="submit" class="btn btn-primary" value="View Details"/>
+                        </form>
+                        </td>
+                        @if (i.Status == 1)
+                        {
+                            <td class="status pending">Pending</td>
+                            <td>
+                                <button class="btn btn-primary" onclick="confirmCancel(@i.Id)">Cancel</button>
+                            </td>
+                        }
+                        else if (i.Status == 2)
+                        {
+                            <td class="status success">Completed</td>
+                        }
+                        else if (i.Status == 0)
+                        {
+                            <td class="status refund">Canceled</td>
+                        }
+                    </tr>
+                }
             </tbody>
         </table>
+        <div class="pagination">
+            @if (Model.CurrentPage > 1)
+            {
+                <a asp-page="/CustomerHistory/TransactionHistory" asp-route-pageNumber="@(Model.CurrentPage - 1)">Previous</a>
+            }
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <a asp-page="/CustomerHistory/TransactionHistory" asp-route-pageNumber="@i" class="@(i == Model.CurrentPage ? "active" : "")">@i</a>
+            }
+            @if (Model.CurrentPage < Model.TotalPages)
+            {
+                <a asp-page="/CustomerHistory/TransactionHistory" asp-route-pageNumber="@(Model.CurrentPage + 1)">Next</a>
+            }
+        </div>
     </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="cancelModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Confirm Cancellation</h2>
+            <p>Are you sure you want to cancel this order?</p>
+            <form id="cancelForm" asp-page-handler="CancelOrder" method="post">
+                <input type="hidden" id="txtTransactionId" name="txtTransactionId" value="" />
+                <button type="button" class="btn" onclick="closeModal()">No</button>
+                <button type="submit" class="btn btn-danger">Yes</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function confirmCancel(transactionId) {
+            document.getElementById('txtTransactionId').value = transactionId;
+            document.getElementById('cancelModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('cancelModal').style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            var modal = document.getElementById('cancelModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

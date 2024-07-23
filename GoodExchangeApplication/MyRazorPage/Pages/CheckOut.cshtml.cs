@@ -131,17 +131,16 @@ namespace MyRazorPage.Pages.Order
             }
 
             var orderID = data["orderID"]!.ToString();
-            var paymentStatus = "COMPLETED"; // Hardcoded for simplicity; use actual status in a real scenario
+            var paymentStatus = "COMPLETED"; //hard code
 
             if (paymentStatus == "COMPLETED")
             {
                 // Clear tempdata
                 TempData.Clear();
 
-                // Update payment status in the database
-                // Add your database update logic here
+               
 
-                // Clear cookie if necessary
+                
                 
 
                 return new JsonResult(new { status = "success", redirectUrl = Url.Page("/Success") });

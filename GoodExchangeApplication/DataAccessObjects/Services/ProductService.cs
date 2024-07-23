@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessObjects;
+using DataAccessObjects.Helpers;
 using DataAccessObjects.IServices;
 using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.ProductDTOs;
@@ -254,6 +255,66 @@ namespace DataAccessObjects.Services
                     return mapResult;
                 }
                 else return null;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async Task<IEnumerable<Category>> GetCategories()
+        {
+            try
+            {
+                return await _unitOfWork.ProductRepository.GetCategories();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async Task<Paging<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null, float? minPrice = null, float? maxPrice = null, int? categoryId = null, string? sortField = null, string sortOrder = "asc")
+        {
+            return await _unitOfWork.ProductRepository.GetProductsPaging(pageIndex, pageSize, title, minPrice, maxPrice, categoryId, sortField, sortOrder);
+        }
+
+        public async Task<List<ProductDTos>> GetTopPopularProductsAsync()
+        {
+            return await _unitOfWork.ProductRepository.GetTopPopularProductsAsync();
+        }
+        public async Task<IEnumerable<ProductDTos>> GetProductsByTransactionId(int transactionId)
+        {
+            try
+            {
+                var products = await _unitOfWork.TransactionProductRepository.GetProductsByTransactionIdAsync(transactionId);
+
+                if (products == null || !products.Any())
+                {
+                    return Enumerable.Empty<ProductDTos>();
+                }
+
+                var productDtos = products.Select(p => new ProductDTos
+                {
+                    Id = p.Id,
+                    Title = p.Title,
+                    Description = p.Description,
+                    Price = p.Price,
+                    Quantity = p.Quantity,
+                    Image = p.Image,
+                    Location = p.Location,
+                    // Map other properties as necessary
+                });
+
+                if (productDtos != null)
+                {
+                    var mapperResult =  _mapper.Map<IEnumerable<ProductDTos>>(productDtos);
+                    return mapperResult;
+                } else
+                {
+                    return Enumerable.Empty<ProductDTos>();
+                }
+
+
 
             }
             catch (Exception ex)

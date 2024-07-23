@@ -5,161 +5,168 @@
 @{
     ViewData["Title"] = "AddToCart";
     Layout = "_Layout";
+    var getUserSession = HttpContext.Session.GetString("GetUser");
 }
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-<div class="container py-5">
-    <div class="row d-flex justify-content-center my-4">
-        <div class="col-md-8">
-            <div class="card mb-4">
-                <div class="card-body">
-                    @foreach (var item in Model.CartDTOs)
-                    {
-                        <div class="row">
-                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                <!-- Image -->
-                                <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                    <img src="@item.Images" class="w-100" alt="Product Image" />
-                                    <a href="#!">
-                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                    </a>
+@if(getUserSession != null)
+{
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center my-4">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        @foreach (var item in Model.CartDTOs)
+                        {
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                                    <!-- Image -->
+                                    <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                        <img src="@item.Images" class="w-100" alt="Product Image" />
+                                        <a href="#!">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                                <!-- Data -->
-                                <p><strong>@item.Title</strong></p>
-                                <form asp-page-handler="RemoveCart" method="post">
-                                    <input type="hidden" name="itemId" value="@item.Id" />
-                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm me-1 mb-2" data-mdb-tooltip-init title="Remove item">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                <!-- Quantity -->
-                                <div class="d-flex mb-4" style="max-width: 300px">
-                                    <form asp-page-handler="UpdateQuantity" method="post">
+                                <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                                    <!-- Data -->
+                                    <p><strong>@item.Title</strong></p>
+                                    <form asp-page-handler="RemoveCart" method="post">
                                         <input type="hidden" name="itemId" value="@item.Id" />
-                                        <div class="d-flex mb-4" style="max-width: 300px">
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
-
-                                            <div data-mdb-input-init class="form-outline">
-                                                <input id="form1" min="1" name="quantity" value="@item.Quantity" type="number" class="form-control" />
-                                            </div>
-
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary px-3 ms-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-                                        </div>
+                                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm me-1 mb-2" data-mdb-tooltip-init title="Remove item">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
                                     </form>
                                 </div>
-                                <!-- Price -->
-                                <p class="text-start text-md-center">
-                                    <strong>Product Price:</strong>
-                                    <strong>$ @item.Price</strong>
-                                </p>
+                                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                    <!-- Quantity -->
+                                    <div class="d-flex mb-4" style="max-width: 300px">
+                                        <form asp-page-handler="UpdateQuantity" method="post">
+                                            <input type="hidden" name="itemId" value="@item.Id" />
+                                            <div class="d-flex mb-4" style="max-width: 300px">
+                                                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+
+                                                <div data-mdb-input-init class="form-outline">
+                                                    <input id="form1" min="1" name="quantity" value="@item.Quantity" type="number" class="form-control" />
+                                                </div>
+
+                                                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary px-3 ms-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Price -->
+                                    <p class="text-start text-md-center">
+                                        <strong>Product Price:</strong>
+                                        <strong>$ @item.Price</strong>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    }
+                        }
+                    </div>
                 </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <p><strong>Expected shipping delivery</strong></p>
-                    <div class="form-group">
-                        <label for="transactionType"><strong>Transaction Type</strong></label>
-                        <select class="form-select" id="transactionType" name="txtTransactionTypeId" required>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p><strong>Picking shipping delivery</strong></p>
+                        <div class="form-group">
+                            <label for="transactionType"><strong>Transaction Type</strong></label>
+                            <select class="form-select" id="transactionType" name="txtTransactionTypeId" required>
+                                @foreach (var i in Model.TransactionTypeDTOs)
+                                {
+                                    <option value="@i.Id">@i.TypeName</option>
+                                }
+                            </select>
+                        </div>
+                        <div id="transactionDescriptions">
                             @foreach (var i in Model.TransactionTypeDTOs)
                             {
-                                <option value="@i.Id">@i.TypeName</option>
+                                <div class="transaction-description" data-id="@i.Id" style="display: none;">
+                                    <label>Description:</label>
+                                    <div>@i.Description</div>
+                                </div>
                             }
-                        </select>
-                    </div>
-                    <div id="transactionDescriptions">
-                        @foreach (var i in Model.TransactionTypeDTOs)
-                        {
-                            <div class="transaction-description" data-id="@i.Id" style="display: none;">
-                                <label>Description:</label>
-                                <div>@i.Description</div>
-                            </div>
-                        }
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-4 mb-lg-0">
-                <div class="card-body">
-                    <p><strong>Select Your Payment Method</strong></p>
-                    <div>
-                        @foreach (var method in Model.PaymentDTOs)
-                        {
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="txtPaymentMethodId" id="paymentMethod@method.Id" value="@method.Id" required>
-                                <label class="form-check-label" for="paymentMethod@method.Id">
-                                    @method.PaymentMethod
-                                </label>
-                            </div>
-                        }
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-4 mb-lg-0">
-                <div class="card-body">
-                    <p><strong>Write note here:</strong></p>
-                    <div>
-                        <input type="text" id="note" />
-                    </div>
-                    <p><strong>Write your address here:</strong></p>
-                    <div>
-                        <input type="text" id="address" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-header py-3">
-                    <h5 class="mb-0">Summary</h5>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-                            <div>
-                                <strong>Total amount</strong>
-                            </div>
-                            <span>
-                                <strong>
-                                    <input type="hidden" id="hiddenTxtTotalPrice" name="txtTotalPrice" value="@Model.CartDTOs.Sum(x => x.TotalPrice)" />
-                                    $ @Model.CartDTOs.Sum(x => x.TotalPrice)
-                                </strong>
-                            </span>
-                        </li>
-                    </ul>
-                    <div>
-                        <form id="checkoutForm" asp-page-handler="Checkout" method="post">
-                            <input type="hidden" name="txtTotalPrice" value="@Model.CartDTOs.Sum(x => x.TotalPrice)" />
-                            <input type="hidden" name="txtQuantity" value="@Model.CartDTOs.Sum(x => x.Quantity)" />
-                            <input type="hidden" name="txtNote" id="hiddenNote" value="" />
-                            <input type="hidden" name="txtAddress" id="hiddenAddress" value="" />
-                            <input type="hidden" name="txtTransactionTypeId" id="hiddenTransactionTypeId" value="" />
-                            <input type="hidden" name="txtPaymentMethodId" id="hiddenPaymentId" value=""/>
-                            @foreach (var item in Model.CartDTOs)
+                <div class="card mb-4 mb-lg-0">
+                    <div class="card-body">
+                        <p><strong>Select Your Payment Method</strong></p>
+                        <div>
+                            @foreach (var method in Model.PaymentDTOs)
                             {
-                                <input type="hidden" name="productIds" value="@item.Id" />
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="txtPaymentMethodId" id="paymentMethod@method.Id" value="@method.Id" required>
+                                    <label class="form-check-label" for="paymentMethod@method.Id">
+                                        @method.PaymentMethod
+                                    </label>
+                                </div>
                             }
-                            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" onclick="updateHiddenFields()">
-                                Go to checkout
-                            </button>
-                        </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 mb-lg-0">
+                    <div class="card-body">
+                        <p><strong>Write note here:</strong></p>
+                        <div>
+                            <input type="text" id="note" />
+                        </div>
+                        <p><strong>Write your address here:</strong></p>
+                        <div>
+                            <input type="text" id="address" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header py-3">
+                        <h5 class="mb-0">Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                <div>
+                                    <strong>Total amount</strong>
+                                </div>
+                                <span>
+                                    <strong>
+                                        <input type="hidden" id="hiddenTxtTotalPrice" name="txtTotalPrice" value="@Model.CartDTOs.Sum(x => x.TotalPrice)" />
+                                        $ @Model.CartDTOs.Sum(x => x.TotalPrice)
+                                    </strong>
+                                </span>
+                            </li>
+                        </ul>
+                        <div>
+                            <form id="checkoutForm" asp-page-handler="Checkout" method="post">
+                                <input type="hidden" name="txtTotalPrice" value="@Model.CartDTOs.Sum(x => x.TotalPrice)" />
+                                <input type="hidden" name="txtQuantity" value="@Model.CartDTOs.Sum(x => x.Quantity)" />
+                                <input type="hidden" name="txtNote" id="hiddenNote" value="" />
+                                <input type="hidden" name="txtAddress" id="hiddenAddress" value="" />
+                                <input type="hidden" name="txtTransactionTypeId" id="hiddenTransactionTypeId" value="" />
+                                <input type="hidden" name="txtPaymentMethodId" id="hiddenPaymentId" value="" />
+                                @foreach (var item in Model.CartDTOs)
+                                {
+                                    <input type="hidden" name="productIds" value="@item.Id" />
+                                }
+                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" onclick="updateHiddenFields()">
+                                    Go to checkout
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+} else
+{
+    <h3>User need to login first to use this function</h3>
+}
+
 
 <script>
     function updateHiddenFields() {

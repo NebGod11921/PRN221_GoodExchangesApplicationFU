@@ -1,0 +1,117 @@
+﻿@page
+@model MyRazorPage.Pages.CustomerHistory.ViewTransactionDetailsModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 30px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+        .btn-back {
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            font-size: 0.875rem;
+            padding: 0.5em 0.75em;
+            border-radius: 0.5em;
+        }
+
+        .bg-success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .bg-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .product-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="@Url.Page("/CustomerHistory/TransactionHistory")" class="btn btn-primary btn-back">Back to Transaction History</a>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0">Product Details</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Product Name</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var product in Model.ProductDTos)
+                                {
+                                    <tr>
+                                        <td><img src="@product.Image" alt="@product.Title" class="product-image" /></td>
+                                        <td>@product.Title</td>
+                                        <td>@product.Description</td>
+                                        <td>$ @product.Price</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

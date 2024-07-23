@@ -9,7 +9,7 @@ namespace DataAccessObjects.ViewModels.AccountDTOS
 {
     public class RegisterAccountDTOs
     {
-        [Required(ErrorMessage = "Cần phải nhập username")]
+ 
         public string? UserName { get; set; }
         [Required(ErrorMessage = "Cần phải nhập password")]
         public string? Password { get; set; }
@@ -24,6 +24,6 @@ namespace DataAccessObjects.ViewModels.AccountDTOS
 
         
         public int? RoleId { get; set; }
-        public byte? status { get; set; }
+        public byte? Status { get; set; }
     }
 }

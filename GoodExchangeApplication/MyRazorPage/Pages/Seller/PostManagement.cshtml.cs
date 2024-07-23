@@ -4,6 +4,7 @@ using DataAccessObjects.ViewModels.PostDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
+using System.Runtime.Intrinsics.X86;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -18,46 +19,76 @@ namespace MyRazorPage.Pages.Seller
             _postService = postService;
         }
 
-        [BindProperty]
-        public PostDTO NewPost { get; set; }
+        
 
         public IEnumerable<PostDTO> Posts { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGet()
         {
-            // Example: Get user information from session
-            //var user = HttpContext.Session.GetString("GetUser");
-            //var userDto = JsonSerializer.Deserialize<LoginAccountDTOs>(user);
-            //int userId = userDto.RoleId ?? 0;
-            int userId = 2;
-            Posts = await _postService.GetPostsByUserIdAsync(userId);
+           Posts = await _postService.GetAllPostsAsync();
         }
 
-        public async Task<IActionResult> OnPostCreateAsync()
+        public async Task<IActionResult> OnPostTransferToUpdatePage(int txtPostId)
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
+            ViewData["txtPostId"] = txtPostId;
             try
             {
-                var createdPost = await _postService.CreatePostAsync(NewPost);
-                return RedirectToPage("/Index");
-            }
-            catch (Exception ex)
+                if (txtPostId > 0)
+                {
+                    var getUpdateId = await _postService.GetPostByIdAsync(txtPostId);
+                    if (getUpdateId != null)
+                    {
+                        HttpContext.Session.SetString("GetPostDetail", JsonSerializer.Serialize<PostDTO>(getUpdateId));
+                        return RedirectToPage("/Seller/UpdatePost");
+                    } else
+                    {
+                        return Page();
+                    }
+                } else
+                {
+                    return Page();
+                }
+                
+
+
+
+
+            }catch  (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, $"An error occurred: {ex.Message}");
-                return Page();
+                throw new Exception(ex.Message);
             }
         }
 
-        public async Task<IActionResult> OnPostDeleteAsync(int postId)
+
+
+
+
+
+
+        
+
+        public async Task<IActionResult> OnPostDeletePost(int txtPostDeleteId)
         {
+            ViewData["txtPostDeleteId"] = txtPostDeleteId;
             try
             {
-                await _postService.DeletePostAsync(postId);
-                return RedirectToPage("/Index");
+                if (txtPostDeleteId > 0)
+                {
+                    var result = await _postService.DeletePostAsync(txtPostDeleteId);
+                    if (result == true)
+                    {
+                        return RedirectToPage("/Seller/PostManagement");
+                    }
+                    else
+                    {
+                        return Page();
+                    }
+                } else
+                {
+                    return Page();
+                }
+
+                
             }
             catch (Exception ex)
             {

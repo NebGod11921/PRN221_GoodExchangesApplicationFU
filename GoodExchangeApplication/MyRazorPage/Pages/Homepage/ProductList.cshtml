@@ -118,80 +118,57 @@
     <div class="row">
         <div class="col-sm-3 hidden-xs">
             <div class="list-group">
-                <a href="#" class="list-group-item">Shoes</a>
-                <a href="#" class="list-group-item">Satchel</a>
-                <a href="#" class="list-group-item">Tote</a>
-                <a href="#" class="list-group-item">Shoulder</a>
-                <a href="#" class="list-group-item">Clutch &amp; Mini</a>
+                <form method="get" action="./ProductList">
+                    @foreach (var item in Model.CategorySelectList)
+                    {
+                        <button type="submit" name="CategoryId" value="@item.Value" class="list-group-item list-group-item-action">
+                            @item.Text
+                        </button>
+                    }
+                </form>
+                
             </div>
 
             <div class="product-sidebar">
                 <h5 class="text-center">Featured Products</h5>
-                <!-- Featured Product Item -->
-                <div class="product-item">
-                    <div class="image">
-                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Product 4"></a>
+                @foreach (var product in Model.TopProducts)
+                {
+                    <div class="product-item">
+                        <div class="image">
+                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Product 4"></a>
+                        </div>
+                        <div class="details">
+                            <div class="name">@product.Title</div>
+                            <div class="price">@product.Price</div>
+                        </div>
                     </div>
-                    <div class="details">
-                        <div class="name">Leather laptop bag</div>
-                        <div class="price">$722.00</div>
-                    </div>
-                </div>
-                <!--/ Featured Product Item -->
-                <!-- Featured Product Item -->
-                <div class="product-item">
-                    <div class="image">
-                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Product 2"></a>
-                    </div>
-                    <div class="details">
-                        <div class="name">Leather laptop bag navy</div>
-                        <div class="price">$866.00</div>
-                    </div>
-                </div>
-                <!--/ Featured Product Item -->
-                <!-- Featured Product Item -->
-                <div class="product-item">
-                    <div class="image">
-                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Product 3"></a>
-                    </div>
-                    <div class="details">
-                        <div class="name">Soft leather laptop bag</div>
-                        <div class="price">$962.00</div>
-                    </div>
-                </div>
+                }
             </div>
         </div>
         <div class="col-sm-9">
             <div class="filter">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="btn-group">
-                            <button type="button" id="list-view" class="btn btn-default" title="List View"><i class="fa fa-th-list"></i></button>
-                            <button type="button" id="grid-view" class="btn btn-default" title="Grid View"><i class="fa fa-th"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 text-right">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="input-sort">Sort By:</label>
-                                <select id="input-sort" class="form-control">
-                                    <option value="" selected="selected">Default</option>
-                                    <option value="">Name</option>
-                                    <option value="">Date</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="input-limit">Show:</label>
-                                <select id="input-limit" class="form-control">
-                                    <option value="" selected="selected">9</option>
-                                    <option value="">15</option>
-                                    <option value="">25</option>
-                                    <option value="">50</option>
-                                    <option value="">100</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    <form method="get" action="./ProductList">
+                        <input type="text" name="Title" value="@Model.Title" placeholder="Filter by title" />
+                        <input type="number" name="MinPrice" value="@Model.MinPrice" placeholder="Min Price" />
+                        <input type="number" name="MaxPrice" value="@Model.MaxPrice" placeholder="Max Price" />
+                        <input type="submit" value="Filter" class="btn btn-primary" /><br />
+                        <select name="CategoryId">
+                            <option value="">All Categories</option>
+                            @foreach (var item in Model.CategorySelectList)
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        </select>
+                        <select name="SortField">
+                            <option value="Title">Title</option>
+                            <option value="Price">Price</option>
+                        </select>
+                        <select name="SortOrder">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </form>
                 </div>
             </div>
             <div class="row">
@@ -224,16 +201,35 @@
                                         <input type="hidden" name="txtProductId" value="@result.Id" />
                                         <input type="submit" class="btn btn-primary" value="View Detail" />
                                     </form>
-                                    <a asp-page="./UpdateProduct" asp-route-id="@result.Id">Update</a>
-                                    <a asp-page="./DeleteProduct" asp-route-id="@result.Id">Delete</a>
+                                    
                                     <button type="button" class="btn btn-default" title="Wishlist"><i class="fa fa-heart"></i></button>
                                     <button type="button" class="btn btn-default" title="Compare"><i class="fa fa-circle-o"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 }
             </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item @(Model.ProductDtos.HasPreviousPage ? "" : "disabled")">
+                        <a class="page-link"
+                           href="?pageIndex=@(Model.ProductDtos.PageIndex - 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Previous</a>
+                    </li>
+                    @for (int i = 1; i <= Model.ProductDtos.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.ProductDtos.PageIndex == i ? "active" : "")">
+                            <a class="page-link"
+                               href="?pageIndex=@i&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">@i</a>
+                        </li>
+                    }
+                    <li class="page-item @(Model.ProductDtos.HasNextPage ? "" : "disabled")">
+                        <a class="page-link"
+                           href="?pageIndex=@(Model.ProductDtos.PageIndex + 1)&Title=@Model.Title&MinPrice=@Model.MinPrice&MaxPrice=@Model.MaxPrice">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>

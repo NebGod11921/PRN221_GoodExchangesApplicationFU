@@ -1,7 +1,9 @@
+using DataAccessObjects.Helpers;
 using DataAccessObjects.IServices;
 using DataAccessObjects.ViewModels.ProductDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Text.Json;
 
 namespace MyRazorPage.Pages.Homepage
@@ -14,13 +16,34 @@ namespace MyRazorPage.Pages.Homepage
         {
             _productService = productService;
         }
-        public IEnumerable<ProductDTos> ProductDtos { get; set; }
+        /*public IEnumerable<ProductDTos> ProductDtos { get; set; }*/
 
+        public Paging<ProductDTos> ProductDtos { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string SortField { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string SortOrder { get; set; }
 
-        public async Task OnGet()
+        [BindProperty(SupportsGet = true)]
+        public string Title { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public float? MinPrice { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public float? MaxPrice { get; set; }
+        public SelectList CategorySelectList { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public int? CategoryId { get; set; }
+        public List<ProductDTos> TopProducts { get; set; }
+        public async Task OnGetAsync(int? pageIndex)
         {
-            ProductDtos = await _productService.GetAllProductsSecVers();
+            var category = await _productService.GetCategories();
+            CategorySelectList = new SelectList(category, "Id", "Name");
+            TopProducts=await _productService.GetTopPopularProductsAsync();
+            int pageSize = 10;
+            ProductDtos = await _productService.GetProductsPaging(pageIndex ?? 1, pageSize, Title, MinPrice, MaxPrice, CategoryId, SortField, SortOrder);
         }
         public async Task<IActionResult> OnPostTransferToProductDetail(int txtProductId)
         {

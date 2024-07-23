@@ -7,7 +7,7 @@ namespace DataAccessObjects.Services
 {
     public class ChatService : IChatService
     {
-        private readonly IMessageRepository _messageRepository;
+        /*private readonly IMessageRepository _messageRepository;
         private readonly IChatSessionRepository _chatSessionRepository;
 
         public ChatService(IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository)
@@ -45,5 +45,9 @@ namespace DataAccessObjects.Services
 
             return chatSession;
         }
+        public async Task<List<Message>> GetMessagesAsync(int chatSessionId)
+        {
+            return await _messageRepository.GetMessagesByChatSessionIdAsync(chatSessionId);
+        }*/
     }
 }

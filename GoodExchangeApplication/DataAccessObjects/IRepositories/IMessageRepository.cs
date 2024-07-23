@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.IRepositories
 {
-    public interface IMessageRepository : IGenericRepository<Message>
+    public interface IMessageRepository /*: IGenericRepository<Message>*/
     {
-        Task<IEnumerable<Message>> GetMessagesBySessionIdAsync(int sessionId);
+      /*  Task<IEnumerable<Message>> GetMessagesBySessionIdAsync(int sessionId);
         Task AddMessageAsync(Message message);
+        Task<List<Message>> GetMessagesByChatSessionIdAsync(int chatSessionId);*/
+
 
     }
 }

@@ -18,8 +18,8 @@ namespace DataAccessObjects
         public DbSet<Category> Categories { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Post> Posts { get; set; }
-        public DbSet<Message> Messages { get; set; }
-        public DbSet<ChatSession> ChatSessions { get; set; }
+        /*public DbSet<Message> Messages { get; set; }
+        public DbSet<ChatSession> ChatSessions { get; set; }*/
         public DbSet<Product> Products { get; set; }
         public DbSet<Report> Reports { get; set; }
         /*public DbSet<ReportType> ReportTypes { get; set; }*/
@@ -34,8 +34,8 @@ namespace DataAccessObjects
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(UserProductConfiguration).Assembly);
-            modelBuilder.ApplyConfiguration(new ChatSessionConfiguration());
-            modelBuilder.ApplyConfiguration(new MessageConfiguration());
+           /* modelBuilder.ApplyConfiguration(new ChatSessionConfiguration());
+            modelBuilder.ApplyConfiguration(new MessageConfiguration());*/
         }
     }
 }

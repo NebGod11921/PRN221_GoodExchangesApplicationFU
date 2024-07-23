@@ -1,5 +1,7 @@
 ﻿using BusinessObjects;
+using DataAccessObjects.Helpers;
 using DataAccessObjects.IRepositories;
+using DataAccessObjects.ViewModels.ProductDTOs;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -90,6 +92,79 @@ namespace DataAccessObjects.Repositories
             return await _appDbContext.UserProducts
                 .Where(up => up.UserId == userId)
                 .Select(up => up.Product)
+                .ToListAsync();
+        }
+        public async Task<List<Category>> GetCategories()
+        {
+            var List = await _appDbContext.Categories.ToListAsync();
+            Console.WriteLine(List.ToArray());
+            return List;
+
+        }
+        public async Task<Paging<ProductDTos>> GetProductsPaging(int pageIndex, int pageSize, string? title = null,
+            float? minPrice = null, float? maxPrice = null, int? categoryId = null,
+            string? sortField = null, string sortOrder = "asc")
+        {
+            var query = _appDbContext.Products.AsQueryable();
+
+            if (!string.IsNullOrEmpty(title))
+            {
+                query = query.Where(p => p.Title.Trim().ToLower().Contains(title));
+            }
+
+            if (minPrice.HasValue)
+            {
+                query = query.Where(p => p.Price >= minPrice.Value);
+            }
+
+            if (maxPrice.HasValue)
+            {
+                query = query.Where(p => p.Price <= maxPrice.Value);
+            }
+            if (categoryId.HasValue)
+            {
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+            }
+            switch (sortField)
+            {
+                case "Title":
+                    query = sortOrder == "asc" ? query.OrderBy(p => p.Title) : query.OrderByDescending(p => p.Title);
+                    break;
+                case "Price":
+                    query = sortOrder == "asc" ? query.OrderBy(p => p.Price) : query.OrderByDescending(p => p.Price);
+                    break;
+                default:
+                    query = query.OrderBy(p => p.Id);
+                    break;
+            }
+            var list = query.Select(p => new ProductDTos
+            {
+                Id = p.Id,
+                Title = p.Title,
+                Description = p.Description,
+                Image = p.Image,
+                Price = p.Price,
+                Location = p.Location,
+                Quantity = p.Quantity,
+            });
+
+
+            return await Paging<ProductDTos>.CreateAsync(list.AsNoTracking(), pageIndex, pageSize);
+        }
+        public async Task<List<ProductDTos>> GetTopPopularProductsAsync()
+        {
+            return await _appDbContext.Products
+                .OrderByDescending(p => p.Popularities)
+                .Take(3)
+                .Select(p => new ProductDTos
+                {
+                    Id = p.Id,
+                    Title = p.Title,
+                    Description = p.Description,
+                    Image = p.Image,
+                    Price = p.Price,
+                    CategoryId=p.CategoryId,
+                })
                 .ToListAsync();
         }
     }

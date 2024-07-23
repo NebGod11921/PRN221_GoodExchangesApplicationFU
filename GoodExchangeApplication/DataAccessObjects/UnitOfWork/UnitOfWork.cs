@@ -15,10 +15,10 @@ namespace DataAccessObjects.UnitOfWork
         private readonly AppDbContext _appDbContext;
         private readonly IAccountRepository _accountRepository;
         private readonly IPostRepository _postRepository;
-        private readonly IChatSessionRepository _chatSessionRepository;
-        private readonly IMessageRepository _messageRepository;
+        /*private readonly IChatSessionRepository _chatSessionRepository;
+        private readonly IMessageRepository _messageRepository;*/
         private readonly IProductRepo _productRepo;
-        private readonly IProductCategoryRepo _productCategoryRepo;
+        
 
 
         private readonly ITransactionRepo _transactionRepo;
@@ -28,18 +28,17 @@ namespace DataAccessObjects.UnitOfWork
         private readonly IReportRepository _reportRepo;
 
         public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, ITransactionRepo transactionRepo, ITransactionTypeRepo transactionTypeRepo,
-            IPostRepository postRepository, IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository, ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo, IReportRepository reportRepo
-            )
+            IPostRepository postRepository, /*IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository,*/ ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo)
 
         {
             _accountRepository = accountRepository;
             _productRepo = IProductRepo;
-            _messageRepository = messageRepository;
-            _chatSessionRepository = chatSessionRepository;
+            /*_messageRepository = messageRepository;
+            _chatSessionRepository = chatSessionRepository;*/
             _postRepository = postRepository;
             _appDbContext = appDbContext;
             _productRepo = IProductRepo;
-            _productCategoryRepo = productCategoryRepo;
+            
             _transactionRepo = transactionRepo;
             _transactionTypeRepo = transactionTypeRepo;
             _transactionProductRepository = transactionProductRepository;
@@ -49,12 +48,12 @@ namespace DataAccessObjects.UnitOfWork
         }
         public IAccountRepository AccountRepository => _accountRepository;
         public IPostRepository PostRepository => _postRepository;
-        public IMessageRepository MessageRepository => _messageRepository;
-        public IChatSessionRepository ChatSessionRepository => _chatSessionRepository;
+        /*public IMessageRepository MessageRepository => _messageRepository;
+        public IChatSessionRepository ChatSessionRepository => _chatSessionRepository;*/
 
         public IProductRepo ProductRepository => _productRepo;
 
-        public IProductCategoryRepo productCategoryRepo => _productCategoryRepo;
+        
         public ITransactionRepo TransactionRepository => _transactionRepo;
 
         public ITransactionTypeRepo TransactionType => _transactionTypeRepo;

@@ -17,6 +17,7 @@ namespace DataAccessObjects.FluentApis
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.HasOne(x => x.Product).WithMany(x => x.Posts);
+            builder.HasMany(x => x.Reviews).WithOne(x => x.Post);
         }
     }
 }
