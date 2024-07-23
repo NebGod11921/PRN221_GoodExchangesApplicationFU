@@ -41,6 +41,22 @@ D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\Busine
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
 D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
+<<<<<<< HEAD
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.pdb
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.AssemblyReference.cache
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfoInputs.cache
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.AssemblyInfo.cs
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.csproj.CoreCompileInputs.cache
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.dll
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\refint\BusinessObjects.dll
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
+D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
+=======
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll
@@ -56,6 +72,7 @@ E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\re
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
 E:\Backup\New folder\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
+>>>>>>> 0eedf604441b1f694050bf6d38e85bd84691c8b7
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.deps.json
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.runtimeconfig.json
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\bin\Debug\net7.0\BusinessObjects.dll
@@ -71,3 +88,4 @@ E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\Business
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.pdb
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\BusinessObjects.genruntimeconfig.cache
 E:\New folder\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\obj\Debug\net7.0\ref\BusinessObjects.dll
+>>>>>>> 7bf449a857368c33616e65988b9b79152b654179

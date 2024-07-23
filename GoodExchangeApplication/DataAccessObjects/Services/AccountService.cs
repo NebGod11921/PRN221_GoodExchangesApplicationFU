@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using BusinessObjects;
 using DataAccessObjects.IServices;
+using DataAccessObjects.UnitOfWork;
 using DataAccessObjects.ViewModels.AccountDTOS;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +21,11 @@ namespace DataAccessObjects.Services
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
+        }
+
+        public Task<bool> BanAccount(int AccountId)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<bool> DeleteAccount(int userId)
@@ -81,8 +88,6 @@ namespace DataAccessObjects.Services
                 {
                     return mapper;
                 }
-
-
             }catch (Exception ex) 
             {
                 throw new Exception(ex.Message);
@@ -122,10 +127,8 @@ namespace DataAccessObjects.Services
                 }
                 else
                 {
-                    throw new Exception();
+                    return null;
                 }
-
-
             } catch(Exception ex)
             {
                 throw new Exception(ex.Message);
@@ -153,6 +156,11 @@ namespace DataAccessObjects.Services
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public Task<bool> UnbanAccount(int AccountId)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<LoginAccountDTOs> UpdateUserProfileAsync(LoginAccountDTOs user, int userId)
@@ -190,5 +198,33 @@ namespace DataAccessObjects.Services
                 throw new Exception(ex.Message);
             }
         }
+        
+/*        public async Task<bool> CreateAccountAsync(AccountDTOs account)
+        {
+            // Hash the password before storing it
+            account.Password = HashPassword(account.Password);
+
+            // Add account creation logic here
+            _unitOfWork.AccountRepository.Add(account);
+            return await _unitOfWork.SaveChangeAsync() > 0;
+        }*/
+
+/*        public class HashPassword
+        {
+            public static string HashWithSHA256(string input)
+            {
+                using SHA256 sHA256 = SHA256.Create();
+
+                var inputBytes = Encoding.UTF8.GetBytes(input);
+                byte[] bytes = sHA256.ComputeHash(inputBytes);
+
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }*/
     }
 }

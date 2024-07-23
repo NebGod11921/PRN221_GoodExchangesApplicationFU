@@ -9,6 +9,7 @@ namespace DataAccessObjects.ViewModels.ProductDTOs
 {
     public class ResponseProductDTO:BaseEntity
     {
+
         public string? Title { get; set; }
         public string? Description { get; set; }
         public float? Price { get; set; }

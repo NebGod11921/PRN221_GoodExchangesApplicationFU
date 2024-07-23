@@ -1,4 +1,5 @@
 ﻿using BusinessObjects;
+using DataAccessObjects.ViewModels.AccountDTOS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace DataAccessObjects.IRepositories
         public Task<IEnumerable<User>> GetUserInformationIncludeRoleName();
         public Task<IEnumerable<User>> SearchUserByNames(string name);
         public Task<User> UpdateUser(User user, int userId);
-       /* public Task<bool> RemoveUser(int userId);*/
+        /* public Task<bool> RemoveUser(int userId);*/
+
+        public Task<IEnumerable<User>> CreateAccountAsync(AccountDTOs accountDTOs);
     }
+
 }

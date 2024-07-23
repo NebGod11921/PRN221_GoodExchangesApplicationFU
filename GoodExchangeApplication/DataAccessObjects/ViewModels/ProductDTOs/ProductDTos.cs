@@ -14,7 +14,7 @@ namespace DataAccessObjects.ViewModels.ProductDTOs
         public int? CategoryId {  get; set; }
         public float? Price { get; set; }
         public string? Location { get; set; }
-        public string? Image { get; set; }
+        public string? Image { get; set; }  
         public int? Quantity { get; set; }
     }
 }

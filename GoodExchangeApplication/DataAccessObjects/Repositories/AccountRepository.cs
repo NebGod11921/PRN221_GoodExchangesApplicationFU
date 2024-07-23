@@ -1,5 +1,6 @@
 ﻿using BusinessObjects;
 using DataAccessObjects.IRepositories;
+using DataAccessObjects.ViewModels.AccountDTOS;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,8 +21,25 @@ namespace DataAccessObjects.Repositories
             _appDbContext = appDbContext;
         }
 
-
-
+        public async Task<bool> CheckUserNameExisted(string username)
+        {
+            try
+            {
+                var result = await _appDbContext.Users.AnyAsync(u => u.UserName == username);
+                if (result)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
         public async Task<bool> CheckEmailExists(string email)
         {
             try
@@ -149,5 +167,27 @@ namespace DataAccessObjects.Repositories
                 throw new Exception(ex.Message);
             }
         }
+
+        public Task<IEnumerable<User>> CreateAccountAsync(AccountDTOs accountDTOs)
+        {
+            throw new NotImplementedException();
+        }
+
+        /*        public async Task<IEnumerable<User>> CreateAccountAsync(AccountDTOs accountDTOs)
+                {
+                    try
+                    {
+                        var getuserId = await _appDbContext.Users.
+                        if (accountDTOs == null)
+                        {
+
+                        }
+                        return null;
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception();
+                    }
+                }*/
     }
 }

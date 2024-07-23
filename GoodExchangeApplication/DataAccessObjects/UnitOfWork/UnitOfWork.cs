@@ -1,13 +1,13 @@
 ﻿using DataAccessObjects.IRepositories;
-using DataAccessObjects.IServices;
 using DataAccessObjects.Repositories;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessObjects
+namespace DataAccessObjects.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -19,12 +19,12 @@ namespace DataAccessObjects
         private readonly IProductRepo _productRepo;
         
 
-       
+
         private readonly ITransactionRepo _transactionRepo;
         private readonly ITransactionTypeRepo _transactionTypeRepo;
         private readonly ITransactionProductRepository _transactionProductRepository;
         private readonly IPaymentRepo _paymentRepo;
-
+        private readonly IReportRepository _reportRepo;
 
         public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, ITransactionRepo transactionRepo, ITransactionTypeRepo transactionTypeRepo,
             IPostRepository postRepository, /*IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository,*/ ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo)
@@ -42,6 +42,8 @@ namespace DataAccessObjects
             _transactionTypeRepo = transactionTypeRepo;
             _transactionProductRepository = transactionProductRepository;
             _paymentRepo = paymentRepo;
+            _reportRepo = reportRepo;
+
         }
         public IAccountRepository AccountRepository => _accountRepository;
         public IPostRepository PostRepository => _postRepository;
@@ -59,9 +61,30 @@ namespace DataAccessObjects
 
         public IPaymentRepo PaymentsRepository => _paymentRepo;
 
+        public IReportRepository ReportRepository => _reportRepo;
+        public int Commit()
+        {
+            return _appDbContext.SaveChanges();
+        }
+
         public async Task<int> SaveChangeAsync()
         {
+            TrackChanges();
             return await _appDbContext.SaveChangesAsync();
+        }
+
+        private void TrackChanges()
+        {
+            var validationErrors = _appDbContext.ChangeTracker.Entries<IValidatableObject>()
+                .SelectMany(e => e.Entity.Validate(null))
+                .Where(e => e != ValidationResult.Success)
+                .ToArray();
+            if (validationErrors.Any())
+            {
+                var exceptionMessage = string.Join(Environment.NewLine,
+                    validationErrors.Select(error => $"Properties {error.MemberNames} Error: {error.ErrorMessage}"));
+                throw new Exception(exceptionMessage);
+            }
         }
     }
 }

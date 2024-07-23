@@ -23,7 +23,7 @@ namespace BusinessObjects
         public virtual IEnumerable<Review>? Reviews { get; set; }
         public virtual IEnumerable<Report>? Reports { get; set; }
         
-        public virtual IEnumerable<Transaction> Transactions { get; set; }
+        public virtual IEnumerable<Transaction>? Transactions { get; set; }
         
     }
 }

@@ -1,0 +1,43 @@
+﻿@page
+@model MyRazorPage.Pages.Admin.AccountDeleteModel
+@{
+}
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+    <body>
+    <main class="bg-light" style="/*padding-bottom: 2rem;*/min-height: 80vh;">
+        <div class="d-flex">
+            <div style="flex: 1;" class="p-4">
+                <h2 class="fs-4 text-center mt-0">Delete this account ?</h2>
+                <form method="post">
+                    <label class="form-label d-block mt-4">
+                        Account ID
+                        <input class="form-control mt-2" type="text" readonly="" asp-for="AccountDTOs.AccountId">
+                    </label>
+                    <label class="form-label d-block mt-4">
+                        UserName
+                        <input class="form-control mt-2" type="text" readonly="" asp-for="AccountDTOs.UserName">
+                    </label>
+                    <label class="form-label d-block mt-4">
+                        Email
+                        <input class="form-control mt-2" type="text" readonly="" asp-for="AccountDTOs.Email">
+                    </label>
+                    <label class="form-label d-block mt-4">
+                        Telephone Number
+                        <input class="form-control mt-2" type="text" readonly="" asp-for="AccountDTOs.TelephoneNumber">
+                    </label>
+                    <label class="form-label d-block mt-4">
+                        Address
+                        <input class="form-control mt-2" type="text" readonly="" asp-for="AccountDTOs.Address">
+                    </label>
+                    <div class="d-flex justify-content-between mt-4">
+                        <a class="btn btn-secondary" role="button" asp-page="./AccountManagement">Quay lại</a>
+                        <input type="hidden" asp-for="AccountDTOs.AccountId" />
+                        <input class="btn btn-primary" role="button" value="Submit" type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    </body>
+</html>
