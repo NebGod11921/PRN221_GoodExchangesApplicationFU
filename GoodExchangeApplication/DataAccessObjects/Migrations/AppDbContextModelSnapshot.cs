@@ -197,7 +197,8 @@ namespace DataAccessObjects.Migrations
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("ProductId")
+                    b.Property<int?>("PostId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int?>("Rating")
@@ -211,7 +212,7 @@ namespace DataAccessObjects.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("PostId");
 
                     b.HasIndex("UserId");
 
@@ -421,15 +422,17 @@ namespace DataAccessObjects.Migrations
 
             modelBuilder.Entity("BusinessObjects.Review", b =>
                 {
-                    b.HasOne("BusinessObjects.Product", "Product")
+                    b.HasOne("BusinessObjects.Post", "Post")
                         .WithMany("Reviews")
-                        .HasForeignKey("ProductId");
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("BusinessObjects.User", "User")
                         .WithMany("Reviews")
                         .HasForeignKey("UserId");
 
-                    b.Navigation("Product");
+                    b.Navigation("Post");
 
                     b.Navigation("User");
                 });
@@ -515,6 +518,8 @@ namespace DataAccessObjects.Migrations
             modelBuilder.Entity("BusinessObjects.Post", b =>
                 {
                     b.Navigation("Reports");
+
+                    b.Navigation("Reviews");
                 });
 
             modelBuilder.Entity("BusinessObjects.Product", b =>
@@ -522,8 +527,6 @@ namespace DataAccessObjects.Migrations
                     b.Navigation("Posts");
 
                     b.Navigation("Reports");
-
-                    b.Navigation("Reviews");
 
                     b.Navigation("TransactionProducts");
 
