@@ -118,7 +118,7 @@ namespace DataAccessObjects.Services
 
             } catch (Exception ex)
             {
-                throw new Exception("Error DB!")
+                throw new Exception("Error DB!");
             }
             return null;
         }

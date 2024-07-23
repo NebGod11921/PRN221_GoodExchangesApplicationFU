@@ -165,7 +165,7 @@ namespace DataAccessObjects.Services
             throw new NotImplementedException();
         }
 
-        public async Task<AccountDTOs> UpdateUserProfileAsync(AccountDTOs user, int userId)
+        
         public async Task<LoginAccountDTOs> UpdateUserProfileAsync(LoginAccountDTOs user, int userId)
         {
             try
