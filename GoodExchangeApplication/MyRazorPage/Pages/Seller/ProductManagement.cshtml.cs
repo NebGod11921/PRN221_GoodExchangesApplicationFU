@@ -40,7 +40,7 @@ namespace MyRazorPage.Pages.Seller
             var category = await _productService.GetCategories();
             CategorySelectList = new SelectList(category, "Id", "Name");
 
-            int pageSize = 10;
+            int pageSize = 12;
             ProductDtos = await _productService.GetProductsPaging(pageIndex ?? 1, pageSize, Title, MinPrice, MaxPrice, CategoryId, SortField, SortOrder);
         }
     }

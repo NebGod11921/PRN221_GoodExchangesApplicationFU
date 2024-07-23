@@ -1,3 +1,4 @@
+using DataAccessObjects.IServices;
 using DataAccessObjects.Services;
 using DataAccessObjects.ViewModels.ReportDTOS;
 using Microsoft.AspNetCore.Mvc;
@@ -7,9 +8,10 @@ namespace MyRazorPage.Pages.Admin
 {
     public class ReportManagementModel : PageModel
     {
-        private readonly ReportService _service;
+        private readonly IReportService _service;
 
-        public ReportManagementModel(ReportService service)
+
+        public ReportManagementModel(IReportService service)
         {
             _service = service;
         }

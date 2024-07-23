@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessObjects.FluentApis
 {
-    public class MessageConfiguration : IEntityTypeConfiguration<Message>
+    public class MessageConfiguration /*: IEntityTypeConfiguration<Message>*/
     {
-        public void Configure(EntityTypeBuilder<Message> builder)
+        /*public void Configure(EntityTypeBuilder<Message> builder)
         {
             builder.HasOne(m => m.ChatSession)
                    .WithMany(cs => cs.Messages)
@@ -21,6 +21,6 @@ namespace DataAccessObjects.FluentApis
                    .WithMany(u => u.Messages)
                    .HasForeignKey(m => m.UserId)
                    .OnDelete(DeleteBehavior.SetNull);
-        }
+        }*/
     }
 }

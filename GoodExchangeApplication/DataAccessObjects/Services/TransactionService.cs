@@ -26,6 +26,33 @@ namespace DataAccessObjects.Services
             _currentTime = currentTime;
         }
 
+        public async Task<bool> ConfirmTransaction( int transactionId)
+        {
+            try
+            {
+                var getTransactionId = await _unitOfWork.TransactionRepository.GetByIdAsync(transactionId);
+                if (getTransactionId != null)
+                {
+                    getTransactionId.Status = 2;
+                    _unitOfWork.TransactionRepository.Update(getTransactionId);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (IsSuccess)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                return false;
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<TransactionDTOs> CreateTransaction(TransactionDTOs transactionDTOs, int TransactionTypeId)
         {
             try
@@ -171,6 +198,37 @@ namespace DataAccessObjects.Services
 
 
             }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<bool> ReOrderTransaction(int transactionId)
+        {
+            try
+            {
+                var getTransactionId = await _unitOfWork.TransactionRepository.GetByIdAsync(transactionId);
+                if (getTransactionId != null)
+                {
+                    getTransactionId.Status = 1;
+                    _unitOfWork.TransactionRepository.Update(getTransactionId);
+                    var IsSuccess = await _unitOfWork.SaveChangeAsync() > 0;
+                    if (IsSuccess)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
+
+                }
+                return false;
+
+
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

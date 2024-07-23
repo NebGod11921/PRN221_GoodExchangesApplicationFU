@@ -138,10 +138,9 @@ namespace MyRazorPage.Pages.Order
                 // Clear tempdata
                 TempData.Clear();
 
-                // Update payment status in the database
-                // Add your database update logic here
+               
 
-                // Clear cookie if necessary
+                
                 
 
                 return new JsonResult(new { status = "success", redirectUrl = Url.Page("/Success") });
