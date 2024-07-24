@@ -175,7 +175,7 @@
                             <div class="card-body">
                                 <h1 class="h2">@json.Title</h1>
 
-                                <p class="h3 py-2">@json.Price</p>
+                                <p class="h3 py-2">Price: $ @json.Price</p>
                                @*  <p class="py-2">
                                     <i class="fa fa-star text-warning"></i>
                                     <i class="fa fa-star text-warning"></i>
@@ -199,7 +199,7 @@
                                 
                                     <input type="hidden" name="product-title" value="@json.Title">
                                 
-                                    <div class="row">
+                                    @* <div class="row">
                                    
                                         <div class="col-auto">
                                             <ul class="list-inline pb-3">
@@ -218,7 +218,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> *@
                                     <div class="row pb-3">
                                         @* <div class="col d-grid">
                                     <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button>

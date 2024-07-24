@@ -167,6 +167,8 @@
             </form>
         </div>
     </div>
+
+
     <div class="container mt-5">
         <h2 class="mb-4">Post Detail</h2>
         <div class="card mb-4">
@@ -175,12 +177,27 @@
                 <p class="card-text">@Model.PostDetail.Description</p>
                 <p class="card-text"><small class="text-muted">Posted on @Model.PostDetail.CreatedDate?.ToString("MMMM dd, yyyy")</small></p>
                 <p class="card-text"><small class="text-muted">Status: @Model.PostDetail.Status</small></p>
-                <p class="card-text"><small class="text-muted">User ID: @Model.PostDetail.UserId</small></p>
-                <p class="card-text"><small class="text-muted">Product ID: @Model.PostDetail.ProductId</small></p>
             </div>
         </div>
         <a href="/Post" class="btn btn-primary">Back to Posts</a>
     </div>
+
+    
+    <div class="container mt-5">
+        <form asp-page-handler="SubmitComment" class="w-100 mb-0">
+            <div class="mb-0 form-group">
+                <label for="Content" class="form-label">Comment</label>
+                <textarea class="form-control bg-white" placeholder="Enter your comment" required></textarea>
+                <span class="invalid-feedback"></span>
+            </div>
+            <div class="position-absolute" style="bottom: -1rem; right: 20px;">
+                <button type="submit" class="btn btn-primary" disabled="">
+                    <i class="fas fa-paper-plane"></i> Send
+                </button>
+            </div>
+        </form>
+    </div>
+
 
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
