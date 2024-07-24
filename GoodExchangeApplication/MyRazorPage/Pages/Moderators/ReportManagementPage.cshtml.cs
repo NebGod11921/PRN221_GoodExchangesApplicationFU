@@ -65,7 +65,7 @@ namespace MyRazorPage.Pages.Moderators
                     if (result)
                     {
                         TempData["SuccessMessage"] = "Report deleted successfully!";
-                        return RedirectToPage("/Moderators/ReportManagement");
+                        return RedirectToPage("/Moderators/ReportManagementPage");
                     }
                     else
                     {

@@ -35,7 +35,7 @@
                 @foreach (var report in Model.Reports)
                 {
                     <tr>
-                        <td>@report.ReportId</td>
+                        <td>@report.Id</td>
                         <td>@report.UserId</td>
                         <td>@report.UserName</td>
                         <td>@report.PostId</td>
@@ -49,18 +49,26 @@
                             }
                             else
                             {
-                                <span class="text-warning">Pending</span>
+                                <span class="text-warning">Cancel</span>
                             }
                         </td>
                         <td>
-                            <form asp-page-handler="ApproveReport" method="post" style="display:inline;">
-                                <input type="hidden" name="reportId" value="@report.ReportId" />
-                                <input type="submit" class="btn btn-success" value="Approve" />
-                            </form>
-                            <form asp-page-handler="DeleteReport" method="post" style="display:inline;">
-                                <input type="hidden" name="reportId" value="@report.ReportId" />
-                                <input type="submit" class="btn btn-danger" value="Delete" />
-                            </form>
+                            @if (report.Status == 0)
+                            {
+                                <form asp-page-handler="ApproveReport" method="post" style="display:inline;">
+                                    <input type="hidden" name="reportId" value="@report.Id" />
+                                    <input type="submit" class="btn btn-success" value="Approve" />
+                                </form>
+                            }
+                            else
+                            {
+
+                                <form asp-page-handler="DeleteReport" method="post" style="display:inline;">
+                                    <input type="hidden" name="reportId" value="@report.Id" />
+                                    <input type="submit" class="btn btn-danger" value="Delete" />
+                                </form>
+                            }
+
                         </td>
                     </tr>
                 }

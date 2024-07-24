@@ -9,7 +9,7 @@ namespace DataAccessObjects.ViewModels.ReportDTOS
 {
     public class ReportResponseModel 
     { 
-        public int ReportId { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Please input the reportName")]
         [MinLength(4, ErrorMessage = "Minimum 4 characters")]
