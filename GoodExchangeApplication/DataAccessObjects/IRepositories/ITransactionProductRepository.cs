@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessObjects.IServices
+namespace DataAccessObjects.IRepositories
 {
     public interface ITransactionProductRepository
     {

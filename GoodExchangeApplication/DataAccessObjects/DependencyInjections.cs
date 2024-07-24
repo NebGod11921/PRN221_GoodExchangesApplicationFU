@@ -3,6 +3,7 @@ using DataAccessObjects.IServices;
 using DataAccessObjects.Mappers;
 using DataAccessObjects.Repositories;
 using DataAccessObjects.Services;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -42,6 +43,8 @@ namespace DataAccessObjects
             services.AddScoped<ITransactionTypeService, TransactionTypeService>();
             services.AddScoped<ITransactionProductRepository, TransactionProductRepository>();
             services.AddScoped<ITransactionProductService, TransactionProductService>();
+            services.AddScoped<IReportRepository, ReportRepository>();
+            services.AddScoped<IReportService,ReportService>();
 
 
             services.AddDbContext<AppDbContext>(opts =>

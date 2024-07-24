@@ -17,5 +17,8 @@ namespace DataAccessObjects.IServices
         public Task<List<AccountDTOs>> SearchAccountByName(string userName);
         public Task<LoginAccountDTOs> UpdateUserProfileAsync(LoginAccountDTOs user, int userId);
         public Task<bool> DeleteAccount(int userId);
+
+        public Task<bool> BanAccount(int AccountId);
+        public Task<bool> UnbanAccount(int AccountId);
     }
 }

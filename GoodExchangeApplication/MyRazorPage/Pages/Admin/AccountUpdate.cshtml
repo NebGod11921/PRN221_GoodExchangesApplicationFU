@@ -1,0 +1,42 @@
+﻿@page
+@model MyRazorPage.Pages.Admin.AccountUpdateModel
+@{
+}
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+    <body>
+    <main class="bg-light" style="/*padding-bottom: 2rem;*/min-height: 80vh;">
+        <div class="d-flex">
+            <div style="flex: 1;" class="p-4">
+                <h2 class="fs-4 text-center mt-0">Update the account</h2>
+                <form method="post">
+                    <label class="form-label d-block mt-4">
+                        UserName
+                        <input class="form-control mt-2" type="text" asp-for="AccountUpdate.Username">
+                        <span asp-validation-for="AccountUpdate.Username" class="text-danger"></span>
+                    </label>
+                    <label class="form-label d-block mt-4">
+                        Password
+                        <input class="form-control mt-2" type="text" asp-for="AccountUpdate.Password">
+                        <span asp-validation-for="AccountUpdate.Password" class="text-danger"></span>
+                    </label>
+                    <label class="form-label d-block mt-4">
+                        Telephone Number
+                        <input class="form-control mt-2" type="number" asp-for="AccountUpdate.TelephoneNumber">
+                        <span asp-validation-for="AccountUpdate." class="text-danger"></span>
+                    </label>
+                    <label class="form-label d-block mt-4">
+                        Email
+                        <input class="form-control mt-2" type="number" asp-for="AccountUpdate.TelephoneNumber">
+                        <span asp-validation-for="AccountUpdate." class="text-danger"></span>
+                    </label>
+                    <div class="d-flex justify-content-between mt-4">
+                        <a class="btn btn-secondary" role="button" href="/Admin/AccountManage">Quay lại</a>
+                        <input class="btn btn-primary" role="button" value="Cập nhật" type="submit" asp-route-id="@Model.AccountUpdate.AccountId" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    </body>
+</html>
