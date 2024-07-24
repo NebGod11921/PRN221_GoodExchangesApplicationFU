@@ -1,146 +1,164 @@
 ﻿@page "/accountlist"
 @model MyRazorPage.Pages.Admin.AccountManagementModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.Text.Json
+@using DataAccessObjects.ViewModels.AccountDTOS
 @{
-    ViewData["Title"] = "AccountManagement";
-    
+    ViewData["Title"] = "Account Management";
+
+    var session = HttpContext.Session.GetString("GetSeller"); // Replace with your session key
+    var userRole = session != null ? JsonSerializer.Deserialize<LoginAccountDTOs>(session).RoleId : 0; // Default to 0 if session is null
 }
 
 <html data-bs-theme="light" lang="en">
-
-
 <body>
     <main class="bg-light" style="min-height: 80vh">
         <div class="d-flex">
             <div style="flex: 1;" class="p-4">
-                <h2 class="fs-4 text-center mt-0">User Management</h2>ou
+                <h2 class="fs-4 text-center mt-0">User Management</h2>
 
-
-                @* CHECK IF SUCCESS MESSAGE NOT NULL *@
-                @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+                @if (session == null)
                 {
-                    <div class="alert alert-success" role="alert">
-                        <p class="m-0 p-1">@Model.SuccessMessage</p>
-                    </div>
+                    <p class="text-danger text-center">You need to log in first to access this page.</p>
                 }
-
-                @* CHECK IF ERROR MESSAGE NOT NULL *@
-                @if (Model.ErrorMessage != null && Model.ErrorMessage.Count > 0)
+                else if (userRole != 2 ) // Assuming 2 is for Admin, 3 for Moderator
                 {
-                    <div class="alert alert-danger" role="alert">
-                        @foreach (var message in Model.ErrorMessage)
-                        {
-                            <p class="m-0 p-1">@message</p>
-                        }
-                    </div>
+                    <p class="text-danger text-center">You do not have permission to access this page.</p>
                 }
-
-                <div class="d-flex mt-4"><button class="btn btn-primary" type="button" style="margin-left: auto;" data-bs-target="#modal-1" data-bs-toggle="modal">Thêm</button></div>
-                <form method="get" style="margin-top: 16px;" class="mt-4" asp-action="AccountManagemt">
-                    <input name="searchString" class="form-control" type="search" placeholder="Searching here">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id="advanced-search-button" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                    <div class="d-flex flex-lg-row">
-                        <div class="d-flex" style="column-gap: 1rem;margin-left: auto;">
-                            <div>
-                                <p style="margin-bottom: 8px;margin-top: 8px;">Search By</p>
-                                <select name="searchProperty" class="form-select">
-                                    <option value="AccountId" selected="">AccountId</option>
-                                    <option value="UserName">UserName</option>
-                                    <option value="Email">Email</option>
-                                    <option value="TelephoneNumber">Telephone Number</option>
-                                    <option value="Address">Address</option>
-                                </select>
-                            </div>
-                            <div>
-                                <p style="margin-bottom: 8px;margin-top: 8px;">Sort By</p>
-                                <select name="sortProperty" class="form-select">
-                                    <option value="AccountId" selected="">AccountId</option>
-                                    <option value="Username">UserName</option>
-                                    <option value="Email">Email</option>
-                                    <option value="TelephoneNumber">Telephone Number</option>
-                                    <option value="Address">Address</option>
-                                </select>
-                            </div>
-                            <div>
-                                <p style="margin-bottom: 8px;margin-top: 8px;">Sort Order</p>
-                                <select name="sortOrder" class="form-select">
-                                    <option value="0" selected="">Default</option>
-                                    <option value="1">Ascending</option>
-                                    <option value="-1">Descending</option>
-                                </select>
-                            </div>
-
-                            <input class="btn btn-primary align-self-end mt-4" type="submit" style="height: fit-content;margin-top: 11px;" value="Search">
+                else
+                {
+                    @* CHECK IF SUCCESS MESSAGE NOT NULL *@
+                    if (!string.IsNullOrEmpty(Model.SuccessMessage))
+                    {
+                        <div class="alert alert-success" role="alert">
+                            <p class="m-0 p-1">@Model.SuccessMessage</p>
                         </div>
-                    </div>
-                </form>
-                <div class="table-responsive mt-4">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="text-center">Account ID </th>
-                                <th class="text-center">UserName</th>
-                                <th class="text-center">Email</th>
-                                <th class="text-center">ProfilePicture</th>
-                                <th class="text-center">Telephone Number</th>
-                                <th class="text-center">Address</th>
-                                <th class="text-center">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <p class="text-secondary">Finding the @Model.TotalFindAccount account</p>
-                            @foreach (var item in Model.FilterAccounts)
+                    }
+
+                    @* CHECK IF ERROR MESSAGE NOT NULL *@
+                    if (Model.ErrorMessage != null && Model.ErrorMessage.Count > 0)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @foreach (var message in Model.ErrorMessage)
                             {
-                                <tr class="text-center">
-                                    <td class="text-center">
-                                        @Html.DisplayFor(modelItem => item.AccountId)</td>
-                                    <td class="text-center">
-                                        @Html.DisplayFor(modelItem => item.UserName)</td>
-                                    <td class="text-center">
-                                        @Html.DisplayFor(modelItem => item.Email)</td>
-                                    <td class="text-center">
-                                        @Html.DisplayFor(modelItem => item.ProfilePicture)</td>
-                                    <td class="text-center">
-                                        @Html.DisplayFor(modelItem => item.TelephoneNumber)</td>
-                                    <td class="text-center">
-                                        @Html.DisplayFor(modelItem => item.Address)</td>
-                                    <td class="text-center">
-                                        <a asp-page="./AccountUpdate" class="btn btn-light" role="button" asp-route-id="@item?.AccountId">Update</a>
-                                        <a asp-page="./AccountDelete" class="btn btn-danger ms-4" role="button" asp-route-id="@item?.AccountId">Delete</a>
-                                    </td>
-                                </tr>
+                                <p class="m-0 p-1">@message</p>
                             }
-                        </tbody>
-                    </table>
-                </div>
-                <nav>
-                    <ul class="pagination">
-                        @if (Model.CurrentPage > 1)
-                        {
-                            <li class="page-item">
-                                <a class="page-link" aria-label="Previous" href="?page=@(Model.CurrentPage - 1)&searchString=@Request.Query["searchString"]&searchProperty=@Request.Query["searchProperty"]&sortProperty=@Request.Query["sortProperty"]&sortOrder=@Request.Query["sortOrder"]">
-                                    <span aria-hidden="true">«</span>
-                                </a>
-                            </li>
-                        }
-                        @for (int i = 1; i <= Model.TotalPages; i++)
-                        {
-                            <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
-                                <a class="page-link" href="?page=@i&searchString=@Request.Query["searchString"]&searchProperty=@Request.Query["searchProperty"]&sortProperty=@Request.Query["sortProperty"]&sortOrder=@Request.Query["sortOrder"]">@i</a>
-                            </li>
-                        }
-                        @if (Model.CurrentPage < Model.TotalPages)
-                        {
-                            <li class="page-item">
-                                <a class="page-link" aria-label="Next" href="?page=@(Model.CurrentPage + 1)&searchString=@Request.Query["searchString"]&searchProperty=@Request.Query["searchProperty"]&sortProperty=@Request.Query["sortProperty"]&sortOrder=@Request.Query["sortOrder"]">
-                                    <span aria-hidden="true">»</span>
-                                </a>
-                            </li>
-                        }
-                    </ul>
-                </nav>
+                        </div>
+                    }
+
+                    <div class="d-flex mt-4"><button class="btn btn-primary" type="button" style="margin-left: auto;" data-bs-target="#modal-1" data-bs-toggle="modal">Thêm</button></div>
+                    <form method="get" style="margin-top: 16px;" class="mt-4" asp-action="AccountManagement">
+                        <input name="searchString" class="form-control" type="search" placeholder="Searching here">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id="advanced-search-button" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <div class="d-flex flex-lg-row">
+                            <div class="d-flex" style="column-gap: 1rem;margin-left: auto;">
+                                <div>
+                                    <p style="margin-bottom: 8px;margin-top: 8px;">Search By</p>
+                                    <select name="searchProperty" class="form-select">
+                                        <option value="AccountId" selected="">AccountId</option>
+                                        <option value="UserName">UserName</option>
+                                        <option value="Email">Email</option>
+                                        <option value="TelephoneNumber">Telephone Number</option>
+                                        <option value="Address">Address</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 8px;margin-top: 8px;">Sort By</p>
+                                    <select name="sortProperty" class="form-select">
+                                        <option value="AccountId" selected="">AccountId</option>
+                                        <option value="Username">UserName</option>
+                                        <option value="Email">Email</option>
+                                        <option value="TelephoneNumber">Telephone Number</option>
+                                        <option value="Address">Address</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 8px;margin-top: 8px;">Sort Order</p>
+                                    <select name="sortOrder" class="form-select">
+                                        <option value="0" selected="">Default</option>
+                                        <option value="1">Ascending</option>
+                                        <option value="-1">Descending</option>
+                                    </select>
+                                </div>
+
+                                <input class="btn btn-primary align-self-end mt-4" type="submit" style="height: fit-content;margin-top: 11px;" value="Search">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="table-responsive mt-4">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Account ID </th>
+                                    <th class="text-center">UserName</th>
+                                    <th class="text-center">Email</th>
+                                    <th class="text-center">ProfilePicture</th>
+                                    <th class="text-center">Telephone Number</th>
+                                    <th class="text-center">Address</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <p class="text-secondary">Finding the @Model.TotalFindAccount account</p>
+                                @foreach (var item in Model.FilterAccounts)
+                                {
+                                    <tr class="text-center">
+                                        <td class="text-center">
+                                            @Html.DisplayFor(modelItem => item.AccountId)
+                                        </td>
+                                        <td class="text-center">
+                                            @Html.DisplayFor(modelItem => item.UserName)
+                                        </td>
+                                        <td class="text-center">
+                                            @Html.DisplayFor(modelItem => item.Email)
+                                        </td>
+                                        <td class="text-center">
+                                            @Html.DisplayFor(modelItem => item.ProfilePicture)
+                                        </td>
+                                        <td class="text-center">
+                                            @Html.DisplayFor(modelItem => item.TelephoneNumber)
+                                        </td>
+                                        <td class="text-center">
+                                            @Html.DisplayFor(modelItem => item.Address)
+                                        </td>
+                                        <td class="text-center">
+                                            <a asp-page="./AccountUpdate" class="btn btn-light" role="button" asp-route-id="@item?.AccountId">Update</a>
+                                            <a asp-page="./AccountDelete" class="btn btn-danger ms-4" role="button" asp-route-id="@item?.AccountId">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav>
+                        <ul class="pagination">
+                            @if (Model.CurrentPage > 1)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" aria-label="Previous" href="?page=@(Model.CurrentPage - 1)&searchString=@Request.Query["searchString"]&searchProperty=@Request.Query["searchProperty"]&sortProperty=@Request.Query["sortProperty"]&sortOrder=@Request.Query["sortOrder"]">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                            }
+                            @for (int i = 1; i <= Model.TotalPages; i++)
+                            {
+                                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                                    <a class="page-link" href="?page=@i&searchString=@Request.Query["searchString"]&searchProperty=@Request.Query["searchProperty"]&sortProperty=@Request.Query["sortProperty"]&sortOrder=@Request.Query["sortOrder"]">@i</a>
+                                </li>
+                            }
+                            @if (Model.CurrentPage < Model.TotalPages)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" aria-label="Next" href="?page=@(Model.CurrentPage + 1)&searchString=@Request.Query["searchString"]&searchProperty=@Request.Query["searchProperty"]&sortProperty=@Request.Query["sortProperty"]&sortOrder=@Request.Query["sortOrder"]">
+                                        <span aria-hidden="true">»</span>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                }
             </div>
         </div>
         <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
@@ -163,12 +181,12 @@
                             </label>
                             <label class="form-label mt-4" style="display: block;">
                                 Mã câu lạc bộ quản lý
-                               @*  <select asp-for="AddAccount.ClubId" class="form-control mt-2">
-                                    <option value="" selected disabled>-- Chọn mã câu lạc bộ --</option>
-                                    @foreach (var club in ViewBag.ClubId)
-                                    {
-                                        <option value="@club.Value">@club.Value - @club.Text</option>
-                                    }
+                                @*  <select asp-for="AddAccount.ClubId" class="form-control mt-2">
+                                <option value="" selected disabled>-- Chọn mã câu lạc bộ --</option>
+                                @foreach (var club in ViewBag.ClubId)
+                                {
+                                <option value="@club.Value">@club.Value - @club.Text</option>
+                                }
                                 </select>
                                 <span asp-validation-for="AddAccount.ClubId" class="text-danger"></span> *@
                             </label>
@@ -192,13 +210,13 @@
         @{
             await Html.RenderPartialAsync("_ValidationScriptsPartial");
         }
-    <script>
-        $(function () {
-            $("advanced-search-button").click(function(){
-                $("Form").submit;
-            })
-        });
-    </script>
+        <script>
+            $(function () {
+                $("advanced-search-button").click(function () {
+                    $("Form").submit;
+                })
+            });
+        </script>
     }
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

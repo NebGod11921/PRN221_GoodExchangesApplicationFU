@@ -22,5 +22,7 @@ namespace DataAccessObjects
 
         public IReportRepository ReportRepository { get; }
 
+        public IReviewRepository ReviewRepository { get; }
+
     }
 }
