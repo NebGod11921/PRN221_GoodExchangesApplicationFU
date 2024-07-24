@@ -135,7 +135,7 @@
                 {
                     <div class="product-item">
                         <div class="image">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Product 4"></a>
+                            <a href="#"><img src="@product.Image" alt="Product 4"></a>
                         </div>
                         <div class="details">
                             <div class="name">@product.Title</div>
@@ -194,7 +194,7 @@
                                     <span class="fa fa-star-o"></span>
                                 </div>
                                 <div class="price">
-                                    <span>@result.Price</span>
+                                    <span>$ @result.Price</span>
                                 </div>
                                 <div class="actions">
                                     <form asp-page-handler="TransferToProductDetail" method="post">
