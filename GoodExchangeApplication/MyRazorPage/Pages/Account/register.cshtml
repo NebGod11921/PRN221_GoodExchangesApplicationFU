@@ -16,17 +16,17 @@
 
 <body>
     <div class="wrapper">
-        <div class="container main">
-            <div class="row">
+        <div class="container-fluid main">
+            <div class="row min-vh-100 content-layout-register">
                 <!-- Image -->
-                <div class="col-md-6 side-image">
+                <div class="col-md-6 d-flex align-items-center justify-content-center side-image">
                     <img src="~/images/side_image.jpg" alt="" />
                     <div class="text">
                         <p>Join the community of FU Students <i>- Goodies</i></p>
                     </div>
                 </div>
                 <!-- Registration Form -->
-                <div class="col-md-6 right">
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
                     <div class="input-box">
                         <h1 class="text-center">Register</h1>
                         <form asp-page-handler="Register" method="post" class="my-4">
@@ -69,7 +69,7 @@
                             </div>
                         </form>
                         <div class="signin">
-                            <p>Already have an account? <a asp-page="/login">Login here</a></p>
+                            <p>Already have an account? <a asp-page="Account/login">Login here</a></p>
                         </div>
                         <div class="signin">
                             <p>Are you an admin? <a asp-page="./LoginAdmin">Login admin here</a></p>

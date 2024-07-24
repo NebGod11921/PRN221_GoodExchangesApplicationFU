@@ -25,10 +25,11 @@ namespace DataAccessObjects
         private readonly ITransactionProductRepository _transactionProductRepository;
         private readonly IPaymentRepo _paymentRepo;
         private readonly IReportRepository _reportRepo;
+        private readonly IReviewRepository _reviewRepo;
 
         public UnitOfWork(IAccountRepository accountRepository, AppDbContext appDbContext, IProductRepo IProductRepo, ITransactionRepo transactionRepo, ITransactionTypeRepo transactionTypeRepo,
             IPostRepository postRepository, /*IMessageRepository messageRepository, IChatSessionRepository chatSessionRepository,*/ ITransactionProductRepository transactionProductRepository, IPaymentRepo paymentRepo,
-            IReportRepository reportRepo)
+            IReportRepository reportRepo,IReviewRepository reviewRepo)
 
         {
             _accountRepository = accountRepository;
@@ -44,6 +45,7 @@ namespace DataAccessObjects
             _transactionProductRepository = transactionProductRepository;
             _paymentRepo = paymentRepo;
             _reportRepo = reportRepo;
+            _reviewRepo = reviewRepo;
 
         }
         public IAccountRepository AccountRepository => _accountRepository;
@@ -63,6 +65,8 @@ namespace DataAccessObjects
         public IPaymentRepo PaymentsRepository => _paymentRepo;
 
         public IReportRepository ReportRepository => _reportRepo;
+
+        public IReviewRepository ReviewRepository => _reviewRepo;
         public int Commit()
         {
             return _appDbContext.SaveChanges();

@@ -155,7 +155,7 @@ namespace DataAccessObjects.Services
             }
             catch (Exception ex)
             {
-                throw new Exception("Error DB!");
+                throw new Exception(ex.Message);
             }
         }
         public async Task<List<ReportResponseModel>> GetReportByPostId(int postId)

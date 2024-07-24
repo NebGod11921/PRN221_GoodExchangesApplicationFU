@@ -4,9 +4,12 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-.wrapper{
+.wrapper {
     background: #ececec;
     padding: 0 20px 0 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .main{
     display: flex;
@@ -23,8 +26,11 @@
     position: relative;
 }
 .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width:  900px;
-  height:550px;
+  height: fit-content;
   border-radius: 10px;
   background: #fff;
   padding: 0px;

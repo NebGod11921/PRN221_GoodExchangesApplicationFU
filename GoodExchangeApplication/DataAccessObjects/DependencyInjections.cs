@@ -45,6 +45,8 @@ namespace DataAccessObjects
             services.AddScoped<ITransactionProductService, TransactionProductService>();
             services.AddScoped<IReportRepository, ReportRepository>();
             services.AddScoped<IReportService,ReportService>();
+            services.AddScoped<IReviewRepository, ReviewRepository>();
+            services.AddScoped<IReviewService, ReviewService>();
 
 
             services.AddDbContext<AppDbContext>(opts =>

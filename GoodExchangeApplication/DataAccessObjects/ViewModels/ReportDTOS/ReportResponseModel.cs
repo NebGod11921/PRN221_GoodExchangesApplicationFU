@@ -16,6 +16,8 @@ namespace DataAccessObjects.ViewModels.ReportDTOS
         [MaxLength(50, ErrorMessage = "Up to 50 characters")]
         public string? ReportName { get; set; }
 
+        public int PostId { get; set; }
+
         [Required(ErrorMessage = "Please input the reason here")]
         [MinLength(4, ErrorMessage = "Minimum 4 characters")]
         [MaxLength(50, ErrorMessage = "Up to 50 characters")]

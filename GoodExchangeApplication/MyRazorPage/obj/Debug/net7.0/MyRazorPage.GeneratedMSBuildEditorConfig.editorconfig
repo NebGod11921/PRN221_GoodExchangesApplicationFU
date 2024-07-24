@@ -9,97 +9,108 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyRazorPage
 build_property.RootNamespace = MyRazorPage
-build_property.ProjectDir = D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\
+build_property.ProjectDir = D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage
+build_property.MSBuildProjectDirectory = D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\MyRazorPage
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Account/login.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Account/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Account/logout.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Account/logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxsb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Account/register.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Account/register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxyZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/AddToCart.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/AddToCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVG9DYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/AccountDelete.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/AccountDelete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/AccountManagement.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/AccountManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudE1hbmFnZW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/AccountUpdate.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/AccountUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjb3VudFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/loginAdmin.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/loginAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cbG9naW5BZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/ReportManagement.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Admin/ReportManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUmVwb3J0TWFuYWdlbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Chat.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Chat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/ChatBot/ChatBot.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/ChatBot/ChatBot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdEJvdFxDaGF0Qm90LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CheckOut.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/TransactionHistory.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/TransactionHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJIaXN0b3J5XFRyYW5zYWN0aW9uSGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/UserProfile.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/UserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJIaXN0b3J5XFVzZXJQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/ViewTransactionDetails.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/CustomerHistory/ViewTransactionDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJIaXN0b3J5XFZpZXdUcmFuc2FjdGlvbkRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Homepage/HomePage.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Homepage/HomePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcSG9tZVBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Homepage/ProductDetailPage.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Homepage/ProductDetailPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcUHJvZHVjdERldGFpbFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Homepage/ProductList.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Homepage/ProductList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2VcUHJvZHVjdExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Index.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Moderators/ReportManagementPage.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Moderators/ReportManagementPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kZXJhdG9yc1xSZXBvcnRNYW5hZ2VtZW50UGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/NotFound.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/PostDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/SellerHistory/TransactionDetailsForSeller.cshtml]
+=======
 [D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Post.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -109,61 +120,62 @@ build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/SellerHistory/TransactionDetailsForSeller.cshtml]
+>>>>>>> 15de2fe5cbedc7d19dadd9334fe92f09d71d2439
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVySGlzdG9yeVxUcmFuc2FjdGlvbkRldGFpbHNGb3JTZWxsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/SellerHistory/TransactionHistoryForSeller.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/SellerHistory/TransactionHistoryForSeller.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVySGlzdG9yeVxUcmFuc2FjdGlvbkhpc3RvcnlGb3JTZWxsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/CreatePost.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/CreatePost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXENyZWF0ZVBvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/CreateProduct.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/CreateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXENyZWF0ZVByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/DeleteProduct.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/DeleteProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXERlbGV0ZVByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/PostManagement.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/PostManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFBvc3RNYW5hZ2VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/ProductDetail.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFByb2R1Y3REZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/ProductManagement.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/ProductManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFByb2R1Y3RNYW5hZ2VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/UpdatePost.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/UpdatePost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFVwZGF0ZVBvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/UpdateProduct.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Seller/UpdateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFVwZGF0ZVByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Success.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/_ViewStart.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Shared/_Layout.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-h585kgjiel
 
-[D:/GitHubClones/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Shared/_UserLayout.cshtml]
+[D:/FPT - SUM24 - Kì 7/PRN221/project/PRN221_GoodExchangesApplicationFU/GoodExchangeApplication/MyRazorPage/Pages/Shared/_UserLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-jlvvok02p2
