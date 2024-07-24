@@ -1,4 +1,5 @@
-﻿using BusinessObjects;
+﻿using AutoMapper;
+using BusinessObjects;
 using DataAccessObjects.IServices;
 using DataAccessObjects.ViewModels.Reviews;
 using System;
@@ -9,14 +10,36 @@ namespace DataAccessObjects.Services
     public class ReviewService : IReviewService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
         private readonly IPostService _postService;
         private readonly IAccountService _accountService;
 
-        public ReviewService(IUnitOfWork unitOfWork, IPostService postService, IAccountService accountService)
+        public ReviewService(IUnitOfWork unitOfWork, IPostService postService, IAccountService accountService
+            , IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _postService = postService;
             _accountService = accountService;
+            _mapper = mapper;
+        }
+
+        public async Task<IEnumerable<ReviewDTO>> GetAllReviewDtos()
+        {
+            try
+            {
+                var result = await _unitOfWork.ReviewRepository.GetAllAsync();
+                if (result != null)
+                {
+                    var mapperResult = _mapper.Map<IEnumerable<ReviewDTO>>(result);
+                    return mapperResult;
+                }else { return Enumerable.Empty<ReviewDTO>(); }
+
+
+
+            }catch  (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<bool> GetRatingByUser(int userId, int postId)

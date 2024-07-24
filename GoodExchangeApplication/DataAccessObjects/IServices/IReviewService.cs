@@ -13,5 +13,6 @@ namespace DataAccessObjects.IServices
 
         Task<bool> RatingPost(int userId, ReviewRequestModels dto);
         Task<bool> GetRatingByUser(int userId, int postId);
+        public Task<IEnumerable<ReviewDTO>> GetAllReviewDtos();
     }
 }

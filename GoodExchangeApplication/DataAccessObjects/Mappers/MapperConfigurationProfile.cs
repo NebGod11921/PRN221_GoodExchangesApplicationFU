@@ -5,6 +5,7 @@ using DataAccessObjects.ViewModels.PaymentDTOS;
 using DataAccessObjects.ViewModels.PostDTOs;
 using DataAccessObjects.ViewModels.ProductDTOs;
 using DataAccessObjects.ViewModels.ReportDTOS;
+using DataAccessObjects.ViewModels.Reviews;
 using DataAccessObjects.ViewModels.TransactionDTOs;
 using System;
 using System.Collections.Generic;
@@ -46,6 +47,15 @@ namespace DataAccessObjects.Mappers
             //Report 
             CreateMap<Report,ReportRequestModels>().ReverseMap();
             CreateMap<Report,ReportResponseModel>().ReverseMap();
+
+            //Review 
+            CreateMap<Review, ReviewRequestModels>().ReverseMap();
+            CreateMap<Review, ReviewResponseModels>().ReverseMap();
+            CreateMap<ReviewRequestModels, ReviewResponseModels>().ReverseMap();
+
+            CreateMap<Review, ReviewDTO>();
+
+
         }
     }
 }

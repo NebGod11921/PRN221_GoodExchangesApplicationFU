@@ -8,14 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BusinessObjects
-<<<<<<< HEAD
-<<<<<<< HEAD
-build_property.ProjectDir = D:\FPT - SUM24 - Kì 7\PRN221\project\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\
-=======
-build_property.ProjectDir = D:\MAJOR SUBJECT\PRN221\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
->>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
-=======
 build_property.ProjectDir = D:\GitHubClones\PRN221_GoodExchangesApplicationFU\GoodExchangeApplication\BusinessObjects\
->>>>>>> 15de2fe5cbedc7d19dadd9334fe92f09d71d2439
