@@ -85,21 +85,23 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-page="/Homepage/ProductList">Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        @if(session != null)
+                        
+                        @if (session != null)
                         {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Post">Post</a>
+                            </li>
                             <li class="nav-item">
                                 <form asp-page="/Account/login" method="post" asp-page-handler="Logout">
                                     <input type="submit" class="btn btn-primary" value="Log Out" />
                                 </form>
                             </li>
-                        } else
+                        }
+                        else
                         {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Account/login">Post</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-page="/Account/login">Login</a>
                             </li>

@@ -77,8 +77,12 @@
                                 <div class="col-md-12"><label class="labels">Telephone</label><input type="tel" name="txtTelephone" class="form-control" placeholder="enter address line 2" value="@json.TelephoneNumber" required></div>
                                 <div class="col-md-12"><label class="labels">Address</label><input type="text" name="txtAddress" class="form-control" placeholder="enter address line 2" value="@json.Address" required></div>
                             </div>
-                            <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
+                            <div class="mt-5 text-center">
+                                <button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+                                <a asp-page="/Index" class="btn btn-primary">Back</a>
+                            </div>
                         </form>
+                        
                         <div class="mt-3 text-center">
                             @if (TempData["SuccessMessage"] != null)
                             {
@@ -107,6 +111,7 @@
                 </div>
             </div>
         </div>
+        
     }
     else
     {

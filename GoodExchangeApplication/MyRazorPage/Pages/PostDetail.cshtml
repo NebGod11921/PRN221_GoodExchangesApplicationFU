@@ -176,9 +176,8 @@
                 <h5 class="card-title">@Model.PostDetail.Title</h5>
                 <p class="card-text">@Model.PostDetail.Description</p>
                 <p class="card-text"><small class="text-muted">Posted on @Model.PostDetail.CreatedDate?.ToString("MMMM dd, yyyy")</small></p>
-                <p class="card-text"><small class="text-muted">Status: @Model.PostDetail.Status</small></p>
-                <p class="card-text"><small class="text-muted">User ID: @Model.PostDetail.UserId</small></p>
-                <p class="card-text"><small class="text-muted">Product ID: @Model.PostDetail.ProductId</small></p>
+                <p class="card-text"><small class="text-muted">By: @Model.PostDetail.UserId</small></p>
+                
             </div>
         </div>
         <a href="/Post" class="btn btn-primary">Back to Posts</a>

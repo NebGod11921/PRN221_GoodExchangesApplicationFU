@@ -90,14 +90,11 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-page="/Homepage/ProductList">Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
                         @if (session != null)
                         {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Post">Post</a>
+                            </li>
                             <li class="nav-item">
                                 <form asp-page="/Account/login" method="post" asp-page-handler="Logout">
                                     <input type="submit" class="btn btn-primary" value="Log Out" />
@@ -107,10 +104,12 @@
                         else
                         {
                             <li class="nav-item">
+                                <a class="nav-link" asp-page="/Account/login">Post</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" asp-page="/Account/login">Login</a>
                             </li>
                         }
-
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
@@ -261,9 +260,7 @@
                     <h5 class="card-title">@post.Title</h5>
                     <p class="card-text">@post.Description</p>
                     <p class="card-text"><small class="text-muted">Posted on @post.CreatedDate?.ToString("MMMM dd, yyyy")</small></p>
-                    <p class="card-text"><small class="text-muted">Status: @post.Status</small></p>
-                    <p class="card-text"><small class="text-muted">User ID: @post.UserId</small></p>
-                    <p class="card-text"><small class="text-muted">Product ID: @post.ProductId</small></p>
+                    <p class="card-text"><small class="text-muted">By: @post.UserId</small></p>
                     <a class="btn btn-secondary btn-sm" asp-page="./PostDetail" asp-route-id="@post.Id">More</a>
                 </div>
             </div>
