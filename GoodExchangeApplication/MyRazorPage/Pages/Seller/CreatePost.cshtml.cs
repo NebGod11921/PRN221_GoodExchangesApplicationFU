@@ -34,10 +34,11 @@ namespace MyRazorPage.Pages.Seller
             Products = await _productService.GetAllProductsSecVers();
         }
 
-        public async Task<IActionResult> OnPostCreatePost(string txtTitle, string txtDescription, int txtSelectProductId)
+        public async Task<IActionResult> OnPostCreatePost(string txtTitle, string txtDescription, int txtSelectProductId, string txtImageURL)
         {
             ViewData["txtTitle"] = txtTitle;
             ViewData["txtDescription"] = txtDescription;
+            ViewData["txtImageURL"] = txtImageURL;
             try
             {
                 var getUserSession = HttpContext.Session.GetString("GetSeller");
@@ -53,6 +54,7 @@ namespace MyRazorPage.Pages.Seller
                             Title = txtTitle,
                             Description = txtDescription,
                             CreatedDate = _currentTime.GetCurrentTime(),
+                            ImageURL = txtImageURL,
                             Status = 1
                         };
 

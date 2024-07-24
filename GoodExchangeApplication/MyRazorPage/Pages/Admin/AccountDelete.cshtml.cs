@@ -11,30 +11,32 @@ namespace MyRazorPage.Pages.Admin
     { 
         private readonly IServiceManager _service;
 
-        public AccountDTOs AccountDTOs { get; set; }
+        [BindProperty]
+        public LoginAccountDTOs AccountDTOs { get; set; }
 
         public AccountDeleteModel(IServiceManager service)
         {
             _service = service;
         }
-        public IActionResult OnGet(int? id)
+        public async Task<IActionResult> OnGetAsync(int id)
         {
-           
-            if (_service.AccountService.GetAccountDTOsById(AccountDTOs.AccountId) == null)
+            AccountDTOs = await _service.AccountService.GetAccountDTOsById(id);
+            if (AccountDTOs == null)
             {
-                return RedirectToPage("/NotFound");
+                return NotFound();
             }
+
             return Page();
         }
 
         public IActionResult OnPost(int? id)
         {
-            if (AccountDTOs == null || AccountDTOs.AccountId == 0)
+            if (AccountDTOs == null || AccountDTOs.Id == 0)
             {
                 return RedirectToPage("/NotFound");
             }
 
-            _service.AccountService.DeleteAccount(AccountDTOs.AccountId);
+            _service.AccountService.DeleteAccount(AccountDTOs.Id);
 
             return RedirectToPage("./AccountManagement", new { SuccessMessage = "Account deleted successfully" });
         }

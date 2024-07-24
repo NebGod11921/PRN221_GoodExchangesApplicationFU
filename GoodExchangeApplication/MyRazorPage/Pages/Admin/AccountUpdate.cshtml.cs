@@ -16,16 +16,16 @@ namespace MyRazorPage.Pages.Admin
         }
 
         [BindProperty]
-        public AccountDTOs AccountUpdate { get; set; }
+        public LoginAccountDTOs AccountUpdate { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            /*AccountUpdate = await _serviceManager.AccountService.GetAccountDTOsById(id);
+            AccountUpdate = await _serviceManager.AccountService.GetAccountDTOsById(id);
             if (AccountUpdate == null)
             {
                 return NotFound();
             }
-*/
+
             return Page();
         }
 
@@ -36,12 +36,12 @@ namespace MyRazorPage.Pages.Admin
                 return Page();
             }
 
-        /*    var success = await _serviceManager.AccountService.UpdateUserProfileAsync(AccountUpdate, AccountUpdate.AccountId);
+            var success = await _serviceManager.AccountService.UpdateUserProfileAsync(AccountUpdate, AccountUpdate.Id);
             if (success == null)
             {
                 ModelState.AddModelError(string.Empty, "An error occurred while trying to update the account.");
                 return Page();
-            }*/
+            }
 
             return RedirectToPage("./AccountManagement", new { SuccessMessage = "Account updated successfully" });
         }

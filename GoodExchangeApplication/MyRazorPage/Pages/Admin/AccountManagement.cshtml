@@ -91,10 +91,9 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th class="text-center">Account ID </th>
+                                    <th class="text-center">Id</th>
                                     <th class="text-center">UserName</th>
                                     <th class="text-center">Email</th>
-                                    <th class="text-center">ProfilePicture</th>
                                     <th class="text-center">Telephone Number</th>
                                     <th class="text-center">Address</th>
                                     <th class="text-center">Action</th>
@@ -106,7 +105,7 @@
                                 {
                                     <tr class="text-center">
                                         <td class="text-center">
-                                            @Html.DisplayFor(modelItem => item.AccountId)
+                                            @Html.DisplayFor(modelItem => item.Id)
                                         </td>
                                         <td class="text-center">
                                             @Html.DisplayFor(modelItem => item.UserName)
@@ -114,9 +113,9 @@
                                         <td class="text-center">
                                             @Html.DisplayFor(modelItem => item.Email)
                                         </td>
-                                        <td class="text-center">
+                                        @* <td class="text-center">
                                             @Html.DisplayFor(modelItem => item.ProfilePicture)
-                                        </td>
+                                        </td> *@
                                         <td class="text-center">
                                             @Html.DisplayFor(modelItem => item.TelephoneNumber)
                                         </td>
@@ -124,8 +123,8 @@
                                             @Html.DisplayFor(modelItem => item.Address)
                                         </td>
                                         <td class="text-center">
-                                            <a asp-page="./AccountUpdate" class="btn btn-light" role="button" asp-route-id="@item?.AccountId">Update</a>
-                                            <a asp-page="./AccountDelete" class="btn btn-danger ms-4" role="button" asp-route-id="@item?.AccountId">Delete</a>
+                                            <a asp-page="./AccountUpdate" class="btn btn-light" role="button" asp-route-id="@item?.Id">Update</a>
+                                            <a asp-page="./AccountDelete" class="btn btn-danger ms-4" role="button" asp-route-id="@item?.Id">Delete</a>
                                         </td>
                                     </tr>
                                 }

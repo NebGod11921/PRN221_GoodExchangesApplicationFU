@@ -1,5 +1,6 @@
 ﻿@page
 @model MyRazorPage.Pages.Admin.AccountDeleteModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
 }
 <!DOCTYPE html>
@@ -12,7 +13,7 @@
                 <form method="post">
                     <label class="form-label d-block mt-4">
                         Account ID
-                        <input class="form-control mt-2" type="text" readonly="" asp-for="AccountDTOs.AccountId">
+                        <input class="form-control mt-2" type="text" readonly="" asp-for="AccountDTOs.Id">
                     </label>
                     <label class="form-label d-block mt-4">
                         UserName
@@ -32,7 +33,7 @@
                     </label>
                     <div class="d-flex justify-content-between mt-4">
                         <a class="btn btn-secondary" role="button" asp-page="./AccountManagement">Quay lại</a>
-                        <input type="hidden" asp-for="AccountDTOs.AccountId" />
+                        <input type="hidden" asp-for="AccountDTOs.Id"/>
                         <input class="btn btn-primary" role="button" value="Submit" type="submit">
                     </div>
                 </form>

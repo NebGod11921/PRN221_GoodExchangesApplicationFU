@@ -1,5 +1,6 @@
 ﻿@page
 @model MyRazorPage.Pages.Admin.AccountUpdateModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
 }
 <!DOCTYPE html>
@@ -12,8 +13,8 @@
                 <form method="post">
                     <label class="form-label d-block mt-4">
                         UserName
-                        <input class="form-control mt-2" type="text" asp-for="AccountUpdate.Username">
-                        <span asp-validation-for="AccountUpdate.Username" class="text-danger"></span>
+                        <input class="form-control mt-2" type="text" asp-for="AccountUpdate.UserName">
+                        <span asp-validation-for="AccountUpdate.UserName" class="text-danger"></span>
                     </label>
                     <label class="form-label d-block mt-4">
                         Password
@@ -23,16 +24,16 @@
                     <label class="form-label d-block mt-4">
                         Telephone Number
                         <input class="form-control mt-2" type="number" asp-for="AccountUpdate.TelephoneNumber">
-                        <span asp-validation-for="AccountUpdate." class="text-danger"></span>
+                        <span asp-validation-for="AccountUpdate.TelephoneNumber" class="text-danger"></span>
                     </label>
                     <label class="form-label d-block mt-4">
                         Email
                         <input class="form-control mt-2" type="number" asp-for="AccountUpdate.TelephoneNumber">
-                        <span asp-validation-for="AccountUpdate." class="text-danger"></span>
+                        <span asp-validation-for="AccountUpdate.TelephoneNumber" class="text-danger"></span>
                     </label>
                     <div class="d-flex justify-content-between mt-4">
                         <a class="btn btn-secondary" role="button" href="/Admin/AccountManage">Quay lại</a>
-                        <input class="btn btn-primary" role="button" value="Cập nhật" type="submit" asp-route-id="@Model.AccountUpdate.AccountId" />
+                        <input class="btn btn-primary" role="button" value="Cập nhật" type="submit" asp-route-id="@Model.AccountUpdate.Id" />
                     </div>
                 </form>
             </div>

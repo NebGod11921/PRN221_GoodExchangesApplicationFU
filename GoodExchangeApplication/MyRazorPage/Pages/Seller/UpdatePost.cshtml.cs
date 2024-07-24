@@ -32,19 +32,19 @@ namespace MyRazorPage.Pages.Seller
             Products = await _productService.GetAllProductsSecVers();
         }
 
-        public async Task<IActionResult> OnPostUpdatePost(int txtPostId, string txtTitle, string txtDescription, int txtSelectProduct)
+        public async Task<IActionResult> OnPostUpdatePost(int txtPostId, string txtTitle, string txtDescription, int txtSelectProduct, string txtImage)
         {
             ViewData["txtTitle"] = txtTitle;
             ViewData["txtDescription"] = txtDescription;
             ViewData["txtSelectProduct"] = txtSelectProduct;
             ViewData["txtPostId"] = txtPostId;
+            ViewData["txtImage"] = txtImage;
             try
             {
                
                 var getUserSession = HttpContext.Session.GetString("GetSeller");
                 if (getUserSession != null)
                 {
-                    
                     var userJson = JsonSerializer.Deserialize<LoginAccountDTOs>(getUserSession);
                     PostDTO p = new PostDTO
                     {
@@ -54,6 +54,7 @@ namespace MyRazorPage.Pages.Seller
                         Description = txtDescription,
                         Status = 1,
                         UserId = userJson.Id,
+                        ImageURL = txtImage,
                         CreatedDate = _currentTime.GetCurrentTime(),
                     };
                     var result = await _postService.UpdatePostAsync(p, txtPostId);

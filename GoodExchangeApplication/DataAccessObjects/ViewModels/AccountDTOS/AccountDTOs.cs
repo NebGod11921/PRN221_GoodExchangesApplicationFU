@@ -10,7 +10,7 @@ namespace DataAccessObjects.ViewModels.AccountDTOS
 {
     public class AccountDTOs
     {
-        public int AccountId { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "Cần nhập tên tài khoản")]
         public string? UserName { get; set; }
         [Required(ErrorMessage = "Cần nhập mật khẩu")]

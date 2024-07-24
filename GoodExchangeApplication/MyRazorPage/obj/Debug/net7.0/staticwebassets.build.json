@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ir9Pu6bu63oQhWGHAkX94ZQFO+09S8tKsz5jkm1sZ1o=",
+  "Hash": "nEfRlUVAyhgflfkxBjDvJHA0vazXlmtVYmk3kso7lk4=",
   "Source": "MyRazorPage",
   "BasePath": "_content/MyRazorPage",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\4ad2b45e-46da-48a3-b327-58de471d5589.png",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+      "BasePath": "_content/MyRazorPage",
+      "RelativePath": "images/4ad2b45e-46da-48a3-b327-58de471d5589.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4ad2b45e-46da-48a3-b327-58de471d5589.png"
     },
     {
       "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\about-hero.svg",
@@ -729,6 +746,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product_single_10.jpg"
+    },
+    {
+      "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\protect.webp",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+      "BasePath": "_content/MyRazorPage",
+      "RelativePath": "images/protect.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\protect.webp"
+    },
+    {
+      "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\reuseImage.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+      "BasePath": "_content/MyRazorPage",
+      "RelativePath": "images/reuseImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\reuseImage.jpg"
     },
     {
       "Identity": "D:\\GitHubClones\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_01.jpg",

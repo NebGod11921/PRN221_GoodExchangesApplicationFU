@@ -71,7 +71,7 @@ namespace MyRazorPage.Pages.Admin
                         query = query.Where(a => a.Address.Contains(SearchString));
                         break;
                     default:
-                        query = query.Where(a => a.AccountId.ToString().Contains(SearchString));
+                        query = query.Where(a => a.Id.ToString().Contains(SearchString));
                         break;
                 }
             }
@@ -91,7 +91,7 @@ namespace MyRazorPage.Pages.Admin
                     query = SortOrder == 1 ? query.OrderBy(a => a.Address) : query.OrderByDescending(a => a.Address);
                     break;
                 default:
-                    query = SortOrder == 1 ? query.OrderBy(a => a.AccountId) : query.OrderByDescending(a => a.AccountId);
+                    query = SortOrder == 1 ? query.OrderBy(a => a.Id) : query.OrderByDescending(a => a.Id);
                     break;
             }
 
