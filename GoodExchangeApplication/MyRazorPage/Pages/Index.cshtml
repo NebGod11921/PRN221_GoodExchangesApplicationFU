@@ -91,20 +91,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        @if(session != null)
-                        {
-                            <li class="nav-item">
-                                <form asp-page="/Account/login" method="post" asp-page-handler="Logout">
-                                    <input type="submit" class="btn btn-primary" value="Log Out" />
-                                </form>
-                            </li>
-                        } else
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-page="/Account/login">Login</a>
-                            </li>
-                        }
-                        
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
@@ -132,13 +118,51 @@
                         </svg>
                         @* <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> *@
                     </a>
-                    <a asp-page="/CustomerHistory/UserProfile" class="nav-icon position-relative text-decoration-none" >
+                    @* <a asp-page="/CustomerHistory/UserProfile" class="nav-icon position-relative text-decoration-none" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                         </svg>
-                      @*   <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> *@
-                    </a>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> 
+                    </a> *@
+                    <div class="dropdown">
+                        @* <a asp-page="/CustomerHistory/UserProfile" class="nav-icon position-relative text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </a> *@
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </button>
+                        @if (session != null)
+                        {
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-page="/CustomerHistory/TransactionHistory">Transaction History</a></li>
+                                <li><a class="dropdown-item" asp-page="/CustomerHistory/UserProfile">User Profile</a></li>
+                                <li class="dropdown-item">
+                                    <form asp-page="/Account/login" method="post" asp-page-handler="Logout">
+                                        <input type="submit" class="btn btn-primary" value="Log Out" />
+                                    </form>
+                                </li>
+                               
+                            </ul>
+                        }
+                        else
+                        {
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-page="/Account/login">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-page="/Account/register">Register</a>
+                                </li>
+                            </ul>
+                        }
+                    </div>
                 </div>
             </div>
 
@@ -336,6 +360,81 @@
         </div>
     </section>
     <!-- End Featured Product -->
+    <!-- Start Why To Choose  -->
+    <section>
+        <div class="container mt-4">
+            <div class="text-center mb-4">
+                <h2>Why Choose Us</h2>
+                <p class="font-italic">6 reasons to Choose us</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3">
+                            @*                            <img src="~/images/protect.webp" alt="Environmental protection" class="img-fluid" />*@
+                            <img src="@Url.Content("~/images/protect.webp")" alt="Cost Savings" class="img-fluid" />
+                        </div>
+                        <div>
+                            <h5>Environmental Protection</h5>
+                            <p>Exchanging old items helps reduce the amount of waste that ends up in landfills and decreases the demand for new production.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3">
+                            <img src="@Url.Content("~/images/protectionIMG.jpg")" alt="Cost Savings" class="img-fluid" />
+                        </div>
+                        <div>
+                            <h5>Cost Savings</h5>
+                            <p>Instead of buying new items, exchanging old ones allows you to obtain necessary goods without spending much money.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3">
+                            <img src="@Url.Content("~/images/protectionIMG.jpg")" alt="Resource Conservation" class="img-fluid" />
+                        </div>
+                        <div>
+                            <h5>Resource Conservation</h5>
+                            <p>When old items are exchanged and reused, natural resources are conserved because there is less need for extraction and new production. This helps sustain the planet's resources.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-4 mb-4">
+                    <img src="@Url.Content("~/images/reUseImage.jpg")" alt="ReUse" class="img-fluid rounded" style="height: 80%;" />
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3">
+                            <img src="@Url.Content("~/images/protectionIMG.jpg")" alt="Discover Unique Items" class="img-fluid" />
+                        </div>
+                        <div>
+                            <h5>Discover Unique Items</h5>
+                            <p>Through exchanges, you can find unique, vintage, or rare items that may not be available in modern stores.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3">
+                            <img src="@Url.Content("~/images/protectionIMG.jpg")" alt="Build Community" class="img-fluid" />
+                        </div>
+                        <div>
+                            <h5>Build Community and Social Connections</h5>
+                            <p>Participating in the exchange of old items helps you connect with like-minded individuals and create a supportive community.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3">
+                            <img src="@Url.Content("~/images/protectionIMG.jpg")" alt="Sustainable Consumption" class="img-fluid" />
+                        </div>
+                        <div>
+                            <h5>Encourage Sustainable Consumption Habits</h5>
+                            <p>Exchanging old items encourages people to think and act more sustainably in their consumption habits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">

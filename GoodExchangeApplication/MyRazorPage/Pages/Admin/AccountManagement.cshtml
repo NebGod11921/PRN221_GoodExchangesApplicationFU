@@ -6,7 +6,7 @@
 @{
     ViewData["Title"] = "Account Management";
 
-    var session = HttpContext.Session.GetString("GetSeller"); // Replace with your session key
+    var session = HttpContext.Session.GetString("GetAdmin"); // Replace with your session key
     var userRole = session != null ? JsonSerializer.Deserialize<LoginAccountDTOs>(session).RoleId : 0; // Default to 0 if session is null
 }
 

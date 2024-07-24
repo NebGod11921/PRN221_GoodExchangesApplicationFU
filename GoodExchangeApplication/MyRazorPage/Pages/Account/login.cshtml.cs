@@ -39,21 +39,35 @@ namespace MyRazorPage.Pages.Account
                     var result = await _accountService.LoginAccountAsync(Email, Password);
                     if (result != null)
                     {
-                        if(result.RoleId == 1 && result.Status == 1)
+                        if (result.RoleId == 1 && result.Status == 1)
                         {
                             var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
                             HttpContext.Session.SetString("GetUser", json);
                             return RedirectToPage("/Index");
                         }
-                        else if(result.RoleId == 4 && result.Status == 1)
+                        else if (result.RoleId == 4 && result.Status == 1)
                         {
                             var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
                             HttpContext.Session.SetString("GetSeller", json);
                             return RedirectToPage("/SellerHistory/TransactionHistoryForSeller");
-                        } else
+                        } else if (result.RoleId == 3 && result.Status == 1)
                         {
-                            return Page();
+                            var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
+                            HttpContext.Session.SetString("GetMod", json);
+                            return RedirectToPage("/Moderators/ReportManagementPage");
+                        } else if (result.RoleId == 2 && result.Status == 1)
+                        {
+                            var json = JsonSerializer.Serialize<LoginAccountDTOs>(result);
+                            HttpContext.Session.SetString("GetAdmin", json);
+                            return RedirectToPage("/Admin/AccountManagement");
                         }
+
+
+
+                    else
+                    {
+                        return Page();
+                    }
                     }
                     else
                     {
