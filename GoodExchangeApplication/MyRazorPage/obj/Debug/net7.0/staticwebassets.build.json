@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "xDN9cFh3bORoNvEnuo7ybR6gfQQ+ztBMOwvPaa2tc7c=",
+=======
+  "Hash": "0kVupKzfrIhOSfVwkiPmiU/AqmFWdbVbW+Ys1FUoLro=",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
   "Source": "MyRazorPage",
   "BasePath": "_content/MyRazorPage",
   "Mode": "Default",
@@ -10,27 +14,41 @@
     {
       "Name": "MyRazorPage\\wwwroot",
       "Source": "MyRazorPage",
+<<<<<<< HEAD
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MyRazorPage.styles.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Computed",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MyRazorPage.styles.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "MyRazorPage.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MyRazorPage.styles.css"
     },
     {
@@ -38,16 +56,28 @@
       "SourceId": "MyRazorPage",
       "SourceType": "Computed",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\bundle\\MyRazorPage.styles.css"
+    },
+    {
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MyRazorPage.bundle.scp.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "MyRazorPage.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MyRazorPage.bundle.scp.css"
     },
     {
@@ -55,11 +85,22 @@
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "OriginalItemSpec": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MyRazorPage.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\auth\\login.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/auth/login.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -68,15 +109,24 @@
       "OriginalItemSpec": "wwwroot\\css\\auth\\login.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -85,15 +135,24 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\custom.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\custom.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/custom.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -102,15 +161,24 @@
       "OriginalItemSpec": "wwwroot\\css\\custom.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\fontawesome.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\fontawesome.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/fontawesome.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -119,15 +187,24 @@
       "OriginalItemSpec": "wwwroot\\css\\fontawesome.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\fontawesome.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\fontawesome.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/fontawesome.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -136,15 +213,24 @@
       "OriginalItemSpec": "wwwroot\\css\\fontawesome.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\site.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\site.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -153,15 +239,24 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\slick.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\slick.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/slick.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -170,15 +265,24 @@
       "OriginalItemSpec": "wwwroot\\css\\slick.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\slick-theme.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\slick-theme.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/slick-theme.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -187,15 +291,24 @@
       "OriginalItemSpec": "wwwroot\\css\\slick-theme.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\slick-theme.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\slick-theme.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/slick-theme.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -204,15 +317,24 @@
       "OriginalItemSpec": "wwwroot\\css\\slick-theme.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\templatemo.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\templatemo.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/templatemo.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -221,15 +343,24 @@
       "OriginalItemSpec": "wwwroot\\css\\templatemo.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\templatemo.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\css\\templatemo.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "css/templatemo.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -238,15 +369,24 @@
       "OriginalItemSpec": "wwwroot\\css\\templatemo.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\favicon.ico",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\favicon.ico",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -255,15 +395,24 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\about-hero.svg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\about-hero.svg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/about-hero.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -272,15 +421,24 @@
       "OriginalItemSpec": "wwwroot\\images\\about-hero.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\ajax-loader.gif",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\ajax-loader.gif",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/ajax-loader.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -289,15 +447,24 @@
       "OriginalItemSpec": "wwwroot\\images\\ajax-loader.gif"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\apple-icon.png",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\apple-icon.png",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/apple-icon.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -306,15 +473,24 @@
       "OriginalItemSpec": "wwwroot\\images\\apple-icon.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\banner_img_01.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\banner_img_01.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/banner_img_01.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -323,15 +499,24 @@
       "OriginalItemSpec": "wwwroot\\images\\banner_img_01.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\banner_img_02.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\banner_img_02.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/banner_img_02.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -340,15 +525,24 @@
       "OriginalItemSpec": "wwwroot\\images\\banner_img_02.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\banner_img_03.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\banner_img_03.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/banner_img_03.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -357,15 +551,24 @@
       "OriginalItemSpec": "wwwroot\\images\\banner_img_03.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_01.png",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_01.png",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/brand_01.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -374,15 +577,24 @@
       "OriginalItemSpec": "wwwroot\\images\\brand_01.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_02.png",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_02.png",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/brand_02.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -391,15 +603,24 @@
       "OriginalItemSpec": "wwwroot\\images\\brand_02.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_03.png",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_03.png",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/brand_03.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -408,15 +629,24 @@
       "OriginalItemSpec": "wwwroot\\images\\brand_03.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_04.png",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\brand_04.png",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/brand_04.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -425,15 +655,24 @@
       "OriginalItemSpec": "wwwroot\\images\\brand_04.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\category_img_01.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\category_img_01.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/category_img_01.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -442,15 +681,24 @@
       "OriginalItemSpec": "wwwroot\\images\\category_img_01.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\category_img_02.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\category_img_02.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/category_img_02.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -459,15 +707,24 @@
       "OriginalItemSpec": "wwwroot\\images\\category_img_02.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\category_img_03.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\category_img_03.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/category_img_03.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -476,15 +733,24 @@
       "OriginalItemSpec": "wwwroot\\images\\category_img_03.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\favicon.ico",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\favicon.ico",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -493,15 +759,24 @@
       "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\feature_prod_01.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\feature_prod_01.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/feature_prod_01.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -510,15 +785,24 @@
       "OriginalItemSpec": "wwwroot\\images\\feature_prod_01.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\feature_prod_02.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\feature_prod_02.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/feature_prod_02.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -527,15 +811,24 @@
       "OriginalItemSpec": "wwwroot\\images\\feature_prod_02.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\feature_prod_03.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\feature_prod_03.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/feature_prod_03.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -544,15 +837,24 @@
       "OriginalItemSpec": "wwwroot\\images\\feature_prod_03.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\logo.svg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\logo.svg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/logo.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -561,15 +863,24 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_01.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_01.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_01.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -578,15 +889,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_01.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_02.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_02.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_02.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -595,15 +915,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_02.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_03.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_03.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_03.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -612,15 +941,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_03.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_04.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_04.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_04.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -629,15 +967,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_04.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_05.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_05.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_05.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -646,15 +993,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_05.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_06.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_06.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_06.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -663,15 +1019,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_06.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_07.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_07.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_07.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -680,15 +1045,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_07.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_08.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_08.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_08.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -697,15 +1071,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_08.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_09.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_09.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_09.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -714,15 +1097,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_09.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_10.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\product_single_10.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/product_single_10.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -731,15 +1123,24 @@
       "OriginalItemSpec": "wwwroot\\images\\product_single_10.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_01.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_01.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_01.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -748,15 +1149,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_01.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_02.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_02.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_02.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -765,15 +1175,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_02.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_03.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_03.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_03.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -782,15 +1201,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_03.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_04.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_04.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_04.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -799,15 +1227,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_04.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_05.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_05.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_05.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -816,15 +1253,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_05.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_06.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_06.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_06.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -833,15 +1279,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_06.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_07.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_07.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_07.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -850,15 +1305,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_07.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_08.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_08.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_08.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -867,15 +1331,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_08.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_09.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_09.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_09.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -884,15 +1357,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_09.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_10.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_10.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_10.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -901,15 +1383,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_10.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_11.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\shop_11.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/shop_11.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -918,15 +1409,24 @@
       "OriginalItemSpec": "wwwroot\\images\\shop_11.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\side_image.jpg",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\images\\side_image.jpg",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "images/side_image.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -935,15 +1435,24 @@
       "OriginalItemSpec": "wwwroot\\images\\side_image.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\bootstrap.bundle.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/bootstrap.bundle.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -952,15 +1461,24 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\custom.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\custom.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/custom.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -969,15 +1487,24 @@
       "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\jquery-1.11.0.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\jquery-1.11.0.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/jquery-1.11.0.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -986,15 +1513,24 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-1.11.0.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\jquery-migrate-1.2.1.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\jquery-migrate-1.2.1.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/jquery-migrate-1.2.1.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1003,15 +1539,24 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-migrate-1.2.1.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\site.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\site.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1020,15 +1565,24 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\slick.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\slick.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/slick.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1037,15 +1591,24 @@
       "OriginalItemSpec": "wwwroot\\js\\slick.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\templatemo.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\templatemo.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/templatemo.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1054,15 +1617,24 @@
       "OriginalItemSpec": "wwwroot\\js\\templatemo.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\templatemo.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\js\\templatemo.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "js/templatemo.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1071,15 +1643,24 @@
       "OriginalItemSpec": "wwwroot\\js\\templatemo.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1088,15 +1669,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1105,15 +1695,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1122,15 +1721,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1139,15 +1747,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1156,15 +1773,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1173,15 +1799,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1190,15 +1825,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1207,15 +1851,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1224,15 +1877,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1241,15 +1903,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1258,15 +1929,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1275,15 +1955,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1292,15 +1981,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1309,15 +2007,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1326,15 +2033,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1343,15 +2059,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1360,15 +2085,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1377,15 +2111,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1394,15 +2137,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1411,15 +2163,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1428,15 +2189,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1445,15 +2215,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1462,15 +2241,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1479,15 +2267,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1496,15 +2293,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1513,15 +2319,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1530,15 +2345,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1547,15 +2371,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1564,15 +2397,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1581,15 +2423,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1598,15 +2449,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1615,15 +2475,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1632,15 +2501,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1649,15 +2527,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1666,15 +2553,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1683,15 +2579,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1700,15 +2605,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1717,15 +2631,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1734,15 +2657,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1751,15 +2683,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1768,15 +2709,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1785,15 +2735,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1802,15 +2761,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1819,15 +2787,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1836,15 +2813,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1853,15 +2839,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1870,15 +2865,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1887,15 +2891,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1904,15 +2917,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1921,15 +2943,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1938,15 +2969,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1955,15 +2995,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1972,15 +3021,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1989,15 +3047,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -2006,15 +3073,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -2023,15 +3099,24 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "MyRazorPage",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+=======
+      "Identity": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "MyRazorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\wwwroot\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
       "BasePath": "_content/MyRazorPage",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",

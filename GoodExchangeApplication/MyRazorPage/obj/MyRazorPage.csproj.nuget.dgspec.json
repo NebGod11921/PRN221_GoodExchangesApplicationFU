@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\khoad\\.nuget\\packages\\",
         "outputPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\obj\\",
+=======
+    "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj": {}
+  },
+  "projects": {
+    "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
+        "projectName": "BusinessObjects",
+        "projectPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\duykh\\.nuget\\packages\\",
+        "outputPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\obj\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Visual Community\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\khoad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\duykh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +57,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -98,6 +121,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
@@ -110,12 +134,30 @@
         "projectPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
         "packagesPath": "C:\\Users\\khoad\\.nuget\\packages\\",
         "outputPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
+        "projectName": "DataAccessObjects",
+        "projectPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj",
+        "packagesPath": "C:\\Users\\duykh\\.nuget\\packages\\",
+        "outputPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\obj\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Visual Community\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\khoad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\duykh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -131,8 +173,13 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
                 "projectPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
+=======
+              "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
               }
             }
           }
@@ -141,6 +188,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -204,6 +256,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
@@ -216,12 +269,30 @@
         "projectPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
         "packagesPath": "C:\\Users\\khoad\\.nuget\\packages\\",
         "outputPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
+        "projectName": "MyRazorPage",
+        "projectPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\MyRazorPage.csproj",
+        "packagesPath": "C:\\Users\\duykh\\.nuget\\packages\\",
+        "outputPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\MyRazorPage\\obj\\",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Visual Community\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\khoad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\duykh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -237,11 +308,19 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
                 "projectPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
               },
               "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj": {
                 "projectPath": "D:\\FPT - SUM24 - Kì 7\\PRN221\\project\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj"
+=======
+              "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\BusinessObjects\\BusinessObjects.csproj"
+              },
+              "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj": {
+                "projectPath": "D:\\MAJOR SUBJECT\\PRN221\\PRN221_GoodExchangesApplicationFU\\GoodExchangeApplication\\DataAccessObjects\\DataAccessObjects.csproj"
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
               }
             }
           }
@@ -250,6 +329,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -316,7 +400,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+>>>>>>> 41e214d3301ce372e753247ab4998edbf3328262
         }
       }
     }
